@@ -1,0 +1,79 @@
+.logo-lava {
+  --lava-sun: 0;
+  --lava-fill: 0;
+
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.logo-lava__stage {
+  position: relative;
+  width: min(98vw, 1040px);
+  aspect-ratio: 1.05 / 1;
+  overflow: visible;
+}
+
+/* Bright sun behind the GIF — shrinks away completely as sun → 0 */
+.logo-lava__sun {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: min(70%, 520px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 42% 36%,
+    #fff 0%,
+    #fff 14%,
+    color-mix(in srgb, var(--title-violet) 92%, white) 34%,
+    color-mix(in srgb, var(--light-violet) 80%, white) 54%,
+    color-mix(in srgb, var(--light-violet) 35%, transparent) 72%,
+    transparent 84%
+  );
+  transform: translate(-50%, -50%)
+    scale(calc(0.2 + var(--lava-sun) * 1.55));
+  opacity: var(--lava-sun);
+  filter: blur(calc(2px + (1 - var(--lava-sun)) * 12px));
+  box-shadow:
+    0 0 40px color-mix(in srgb, #fff 50%, transparent),
+    0 0 90px color-mix(in srgb, var(--title-violet) 70%, transparent),
+    0 0 160px color-mix(in srgb, var(--light-violet) 50%, transparent);
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+/* Return glow — peeks back at 6th para, then yields to solid works fill */
+.logo-lava__return {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  width: min(55%, 400px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 45% 40%,
+    color-mix(in srgb, var(--light-violet) 95%, white) 0%,
+    color-mix(in srgb, var(--light-violet) 75%, transparent) 50%,
+    transparent 72%
+  );
+  transform: translate(-50%, -50%)
+    scale(calc(0.2 + var(--lava-fill) * 5.5));
+  /* Peak mid-fill, fade out once works is solid violet */
+  opacity: calc(var(--lava-fill) * (1 - var(--lava-fill)) * 3.6);
+  filter: blur(28px);
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-lava__sun,
+  .logo-lava__return {
+    filter: none;
+  }
+}

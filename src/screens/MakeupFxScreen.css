@@ -1,0 +1,260 @@
+.makeup-fx-screen {
+  background-color: var(--light-violet);
+  color: var(--title-purple);
+}
+
+.makeup-fx-screen__brush {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.makeup-fx-screen__brush .watercolor-brush {
+  inset: auto;
+  top: 0;
+  left: 0;
+}
+
+.makeup-fx-screen .watercolor-brush--paint-only {
+  z-index: 0;
+  opacity: 0.25;
+  mix-blend-mode: multiply;
+}
+
+.makeup-fx-screen__content {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--status-bar-h);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.makeup-fx-screen .site-nav {
+  background-color: var(--light-violet);
+}
+
+.makeup-fx-screen .site-nav__link {
+  color: var(--deep-purple);
+}
+
+.makeup-fx-screen__intro {
+  width: min(100%, 68ch);
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 72px) var(--content-padding) clamp(28px, 4vw, 40px);
+  text-align: center;
+}
+
+.makeup-fx-screen__title {
+  margin: 0 0 clamp(16px, 2.5vw, 24px);
+  font-family: var(--font-title);
+  font-size: clamp(22px, 3.2vw, 40px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  white-space: pre-line;
+  color: var(--title-purple);
+}
+
+.makeup-fx-screen__body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.35vw, 18px);
+  line-height: 1.7;
+  color: rgba(20, 10, 30, 0.72);
+}
+
+.makeup-fx-screen__body--expertise {
+  margin-top: clamp(16px, 2.2vw, 22px);
+}
+
+.makeup-fx-screen__portfolios {
+  width: 100%;
+  padding: 0 var(--content-padding) clamp(48px, 8vw, 96px);
+}
+
+.makeup-fx-screen__reel-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+.makeup-fx-screen__reel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.95em 2.6em;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--deep-purple) 28%, transparent);
+  background: color-mix(in srgb, #ffffff 42%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: var(--font-title);
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--title-purple);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.makeup-fx-screen__reel:hover {
+  background: color-mix(in srgb, #ffffff 58%, transparent);
+  border-color: color-mix(in srgb, var(--deep-purple) 42%, transparent);
+  transform: translateY(-1px);
+}
+
+.makeup-fx-screen__reel:focus-visible {
+  outline: 2px solid var(--deep-purple);
+  outline-offset: 3px;
+}
+
+.makeup-fx-screen__subtitle {
+  margin: 0 0 clamp(28px, 4vw, 44px);
+  font-family: var(--font-title);
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.makeup-fx-screen__mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 48px) clamp(20px, 3.5vw, 40px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+.makeup-fx-screen__mosaic-item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(14px, 2vw, 20px);
+}
+
+.makeup-fx-screen__explore {
+  padding: 0.45em 1.1em;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--deep-purple) 22%, transparent);
+  background: color-mix(in srgb, #ffffff 38%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: var(--font-title);
+  font-size: clamp(10px, 1.05vw, 12px);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-purple);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.makeup-fx-screen__explore:hover {
+  background: color-mix(in srgb, #ffffff 55%, transparent);
+  border-color: color-mix(in srgb, var(--deep-purple) 36%, transparent);
+  transform: translateY(-1px);
+}
+
+.makeup-fx-screen__explore:focus-visible {
+  outline: 2px solid var(--deep-purple);
+  outline-offset: 3px;
+}
+
+.makeup-fx-screen__mosaic {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 1.8vw, 18px);
+}
+
+.makeup-fx-screen__mosaic-cover {
+  display: block;
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: clamp(12px, 1.5vw, 18px);
+  background: color-mix(in srgb, var(--deep-purple) 14%, transparent);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.makeup-fx-screen__mosaic-cover:hover {
+  transform: translateY(-2px);
+}
+
+.makeup-fx-screen__mosaic-cover:focus-visible {
+  outline: 2px solid var(--deep-purple);
+  outline-offset: 3px;
+}
+
+.makeup-fx-screen__mosaic-cover--empty {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--deep-purple) 10%, #ffffff) 0%,
+    color-mix(in srgb, var(--deep-purple) 22%, var(--light-violet)) 100%
+  );
+}
+
+.makeup-fx-screen__mosaic-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  display: block;
+}
+
+.makeup-fx-screen__mosaic-image--sfx,
+.makeup-fx-screen__mosaic-image--fashion {
+  transform: scale(1.26);
+  transform-origin: top left;
+}
+
+.makeup-fx-screen__mosaic-legend {
+  margin: 0;
+  text-align: center;
+}
+
+.makeup-fx-screen__mosaic-legend-title.project-row__title {
+  width: 100%;
+  align-items: center;
+  font-size: clamp(12px, 1.15vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.makeup-fx-screen__mosaic-legend-title .project-row__line {
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .makeup-fx-screen__mosaic-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}

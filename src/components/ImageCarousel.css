@@ -1,0 +1,132 @@
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: clamp(64px, 10vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel__viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.image-carousel__slide {
+  --slide-w: min(22vw, 180px);
+  --slide-gap: clamp(8px, 1.2vw, 16px);
+
+  position: absolute;
+  width: var(--slide-w);
+  aspect-ratio: 16 / 9;
+  max-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  transform: translateX(calc(var(--offset) * (var(--slide-w) + var(--slide-gap))));
+  transition:
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.7s ease,
+    opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.image-carousel__slide--active {
+  filter: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-carousel__slide--negative {
+  filter: invert(1);
+  opacity: 0.85;
+}
+
+.image-carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+}
+
+/* Horizontal large (legacy) */
+.image-carousel--large.image-carousel--horizontal {
+  height: clamp(220px, 36vw, 420px);
+}
+
+.image-carousel--large.image-carousel--horizontal .image-carousel__slide {
+  --slide-w: min(66vw, 540px);
+  --slide-gap: clamp(16px, 2.4vw, 32px);
+}
+
+/* Vertical carousel — About column
+   Explicit height (not height: 100%) so absolute slides stay visible. */
+.image-carousel.image-carousel--vertical {
+  width: 100%;
+  height: clamp(420px, 62vh, 680px);
+  min-height: 420px;
+}
+
+.image-carousel--vertical .image-carousel__slide {
+  --slide-w: 280px;
+  --slide-span: 174px; /* slide height + gap for vertical step */
+  --slide-gap: 16px;
+
+  width: min(92%, var(--slide-w));
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: none;
+  transform: translateY(calc(var(--offset) * var(--slide-span)));
+}
+
+.image-carousel--large.image-carousel--vertical .image-carousel__slide {
+  --slide-w: 300px;
+  --slide-span: 186px;
+  --slide-gap: 18px;
+}
+
+.image-carousel--large.image-carousel--vertical .image-carousel__slide--active {
+  transform:
+    translateY(calc(var(--offset) * var(--slide-span)))
+    scale(2);
+  transform-origin: center center;
+  z-index: 30;
+}
+
+@media (max-width: 900px) {
+  .image-carousel.image-carousel--vertical {
+    height: clamp(360px, 52vh, 520px);
+    min-height: 360px;
+  }
+
+  .image-carousel--large.image-carousel--vertical .image-carousel__slide {
+    --slide-w: 220px;
+    --slide-span: 140px;
+  }
+
+  .image-carousel--large.image-carousel--vertical .image-carousel__slide--active {
+    transform:
+      translateY(calc(var(--offset) * var(--slide-span)))
+      scale(1.65);
+  }
+}
+
+@media (max-width: 640px) {
+  /* Scope to horizontal so vertical About slides keep their size */
+  .image-carousel--horizontal .image-carousel__slide {
+    --slide-w: min(34vw, 140px);
+  }
+
+  .image-carousel--large.image-carousel--horizontal {
+    height: clamp(180px, 48vw, 320px);
+  }
+
+  .image-carousel--large.image-carousel--horizontal .image-carousel__slide {
+    --slide-w: min(78vw, 360px);
+  }
+}

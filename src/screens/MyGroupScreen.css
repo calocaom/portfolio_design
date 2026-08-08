@@ -1,0 +1,12 @@
+.my-group-screen {
+  background: var(--base-grey);
+}
+
+.my-group-screen__header {
+  position: absolute;
+  top: var(--status-bar-h);
+  left: 0;
+  right: 0;
+  padding: var(--space-sm) var(--content-padding);
+  z-index: 5;
+}

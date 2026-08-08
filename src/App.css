@@ -1,0 +1,71 @@
+.phone-frame {
+  width: 100%;
+  max-width: var(--app-max-w);
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--base-grey);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--base-grey);
+}
+
+.screen.main-page,
+.screen.contact-screen,
+.screen.about-screen,
+.screen.makeup-fx-screen {
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.back-arrow {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.back-arrow__img {
+  width: clamp(20px, 2vw, 28px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(16px, 1.5vw, 20px);
+  color: var(--dark-blue);
+}
+
+.screen-content {
+  position: absolute;
+  inset: var(--status-bar-h) 0 var(--footer-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--content-padding);
+  overflow: auto;
+}
+
+.screen-placeholder {
+  font-family: var(--font-body);
+  font-size: clamp(14px, 1.25vw, 18px);
+  color: var(--dark-grey);
+  text-align: center;
+  max-width: 40ch;
+}

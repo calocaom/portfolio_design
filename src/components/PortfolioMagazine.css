@@ -1,0 +1,226 @@
+.portfolio-magazine {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(12px, 2vw, 28px);
+  background: rgba(12, 6, 20, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.portfolio-magazine__panel {
+  width: min(1180px, 100%);
+  height: min(92dvh, 920px);
+  display: flex;
+  flex-direction: column;
+  border-radius: clamp(16px, 2vw, 24px);
+  background: color-mix(in srgb, var(--light-violet) 88%, #ffffff);
+  box-shadow: 0 24px 64px rgba(10, 4, 20, 0.35);
+  overflow: hidden;
+}
+
+.portfolio-magazine__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: clamp(14px, 2vw, 20px) clamp(16px, 2.5vw, 28px);
+  border-bottom: 1px solid rgba(26, 10, 40, 0.08);
+}
+
+.portfolio-magazine__title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(13px, 1.3vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.portfolio-magazine__close {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--title-purple);
+  background: rgba(255, 255, 255, 0.45);
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.portfolio-magazine__close:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.portfolio-magazine__stage {
+  position: relative;
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: clamp(4px, 1vw, 12px);
+  min-height: 0;
+  padding: clamp(8px, 1.5vw, 18px);
+  perspective: 1600px;
+  touch-action: pan-y;
+}
+
+.portfolio-magazine__arrow {
+  width: clamp(40px, 5vw, 56px);
+  height: clamp(40px, 5vw, 56px);
+  border-radius: 999px;
+  font-size: clamp(28px, 3.5vw, 40px);
+  line-height: 1;
+  color: var(--title-purple);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 6px 18px rgba(20, 10, 30, 0.1);
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  z-index: 2;
+}
+
+.portfolio-magazine__arrow:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.85);
+  transform: scale(1.04);
+}
+
+.portfolio-magazine__arrow:disabled {
+  opacity: 0.28;
+  cursor: default;
+}
+
+.portfolio-magazine__spread {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  transition:
+    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.32s ease;
+}
+
+.portfolio-magazine__spread.is-exit-left {
+  transform: translateX(-18%) rotateY(-8deg);
+  opacity: 0;
+}
+
+.portfolio-magazine__spread.is-exit-right {
+  transform: translateX(18%) rotateY(8deg);
+  opacity: 0;
+}
+
+.portfolio-magazine__spread.is-enter-right {
+  transform: translateX(22%) rotateY(10deg);
+  opacity: 0;
+  transition: none;
+}
+
+.portfolio-magazine__spread.is-enter-left {
+  transform: translateX(-22%) rotateY(-10deg);
+  opacity: 0;
+  transition: none;
+}
+
+.portfolio-magazine__spread.is-settle {
+  transform: translateX(0) rotateY(0);
+  opacity: 1;
+}
+
+.portfolio-magazine__pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 1.2vw, 16px);
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.portfolio-magazine__pages--pair .portfolio-magazine__page {
+  width: calc(50% - 8px);
+}
+
+.portfolio-magazine__page {
+  width: min(100%, 520px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 14px 34px rgba(20, 10, 30, 0.18),
+    0 2px 6px rgba(20, 10, 30, 0.08);
+  overflow: hidden;
+}
+
+.portfolio-magazine__pages--pair .portfolio-magazine__page:first-child {
+  box-shadow:
+    4px 0 12px rgba(20, 10, 30, 0.08),
+    0 14px 34px rgba(20, 10, 30, 0.16);
+}
+
+.portfolio-magazine__canvas,
+.portfolio-magazine__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.portfolio-magazine__status {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: rgba(20, 10, 30, 0.65);
+}
+
+.portfolio-magazine__counter {
+  margin: 0;
+  padding: 0 clamp(16px, 2.5vw, 28px) clamp(12px, 1.8vw, 18px);
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 1vw, 13px);
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: rgba(20, 10, 30, 0.55);
+}
+
+@media (max-width: 1024px) {
+  .portfolio-magazine__panel {
+    height: min(94dvh, 100%);
+  }
+
+  .portfolio-magazine__page {
+    width: min(100%, 640px);
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-magazine {
+    padding: 0;
+  }
+
+  .portfolio-magazine__panel {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .portfolio-magazine__arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 26px;
+  }
+}

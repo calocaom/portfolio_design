@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(4px, 0.8vw, 10px);
+  padding: clamp(20px, 3vw, 40px) 0 clamp(12px, 2vw, 24px);
+  background: var(--deep-purple);
+  color: #fff;
+  overflow: hidden;
+}
+
+.header__title {
+  font-family: var(--font-rains);
+  font-size: clamp(28px, 5vw, 72px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--title-violet) 25%, transparent);
+  -webkit-text-stroke: 1.5px var(--title-violet);
+  paint-order: stroke fill;
+  margin: 0;
+  text-align: center;
+  padding: 0 var(--content-padding);
+}
+
+@media (max-width: 640px) {
+  .header__title {
+    letter-spacing: 0.12em;
+  }
+}
