@@ -9,6 +9,7 @@
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "build:gh": "BASE_PATH=/portfolio_design/ vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
