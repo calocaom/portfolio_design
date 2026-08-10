@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import './MainPage.css'
-import StatusBar from '../components/StatusBar'
 import Header from '../components/Header'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
@@ -221,8 +220,6 @@ export default function MainPage({
       ref={pageRef}
       className={`screen main-page${lightBg ? ' main-page--light' : ''}`}
     >
-      <StatusBar />
-
       <main className="main-page__content">
         <div id="home">
           <Header />

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import './AboutScreen.css'
-import StatusBar from '../components/StatusBar'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import ImageCarousel from '../components/ImageCarousel'
@@ -107,8 +106,6 @@ export default function AboutScreen({ onNavigate }) {
         '--lava-fill': lava.fill,
       }}
     >
-      <StatusBar />
-
       <main className="about-screen__content">
         <SiteNav activeId="about" onNavigate={onNavigate} />
 

@@ -8,8 +8,6 @@
  *   import { MY_ICON } from '../assets'
  */
 
-export { default as STATUS_ICONS } from './assets/status-icons.svg'
-
 export { default as LOGO } from './assets/logo.svg'
 export { default as BACK_ARROW } from './assets/back-arrow.svg'
 

@@ -46,10 +46,10 @@
   --radius-pill: 20px;
 
   /* Layout */
-  --status-bar-h: 44px;
+  --status-bar-h: 0px;
   --footer-h: 56px;
   --content-padding: var(--space-md);
-  --app-max-w: 100%;
+  --site-max-w: 100%;
 }
 
 *, *::before, *::after {
@@ -96,7 +96,6 @@ a {
 
 @media (min-width: 768px) {
   :root {
-    --status-bar-h: 0px;
     --footer-h: 52px;
     --content-padding: clamp(24px, 4vw, 64px);
   }

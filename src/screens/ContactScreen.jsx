@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import './ContactScreen.css'
-import StatusBar from '../components/StatusBar'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import WatercolorBrush from '../components/WatercolorBrush'
@@ -104,8 +103,6 @@ export default function ContactScreen({ onNavigate }) {
         />
         <WatercolorBrush containerRef={screenRef} />
       </div>
-
-      <StatusBar />
 
       <main className="contact-screen__content">
         <SiteNav activeId="contact" onNavigate={onNavigate} />

@@ -24,7 +24,7 @@
 
 .about-screen__lava-sticky {
   position: sticky;
-  top: calc(var(--status-bar-h) + clamp(40px, 7vh, 80px));
+  top: clamp(40px, 7vh, 80px);
   z-index: 0;
   height: 0;
   display: flex;

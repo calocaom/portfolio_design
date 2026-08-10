@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import './MakeupFxScreen.css'
-import StatusBar from '../components/StatusBar'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import PortfolioMagazine from '../components/PortfolioMagazine'
@@ -47,8 +46,6 @@ export default function MakeupFxScreen({ onNavigate }) {
       <div className="makeup-fx-screen__brush" aria-hidden="true">
         <WatercolorBrush containerRef={screenRef} variant="paint" />
       </div>
-
-      <StatusBar />
 
       <main className="makeup-fx-screen__content">
         <SiteNav
