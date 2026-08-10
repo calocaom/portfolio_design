@@ -107,10 +107,6 @@ export const translations = {
         title: 'UX / UI DESIGN',
         description: 'Research, Analysis and Mapping',
       },
-      3: {
-        title: 'PROGRAMMING',
-        description: 'React, JavaScript, HTML, CSS',
-      },
       4: {
         title: 'DESIGN FOR MAKEUP FX',
         description:
@@ -223,10 +219,6 @@ export const translations = {
       2: {
         title: 'UX / UI DESIGN',
         description: 'Research, analyse og mapping',
-      },
-      3: {
-        title: 'PROGRAMMERING',
-        description: 'React, JavaScript, HTML, CSS',
       },
       4: {
         title: 'DESIGN TIL MAKEUP FX',
@@ -341,10 +333,6 @@ export const translations = {
         title: 'DESIGN UX / UI',
         description: 'Recherche, analyse et cartographie',
       },
-      3: {
-        title: 'PROGRAMMATION',
-        description: 'React, JavaScript, HTML, CSS',
-      },
       4: {
         title: 'DESIGN POUR MAKEUP FX',
         description:
@@ -458,10 +446,6 @@ export const translations = {
         title: 'UX / UI DESIGN',
         description: 'Research, Analyse und Mapping',
       },
-      3: {
-        title: 'PROGRAMMIERUNG',
-        description: 'React, JavaScript, HTML, CSS',
-      },
       4: {
         title: 'DESIGN FÜR MAKEUP FX',
         description:
@@ -574,10 +558,6 @@ export const translations = {
       2: {
         title: 'DISEÑO UX / UI',
         description: 'Investigación, análisis y mapeo',
-      },
-      3: {
-        title: 'PROGRAMACIÓN',
-        description: 'React, JavaScript, HTML, CSS',
       },
       4: {
         title: 'DISEÑO PARA MAKEUP FX',
