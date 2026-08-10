@@ -13,15 +13,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "vscode.git": "^1.105.0",
-    "vscode.github": "^1.105.0",
-    "vscode.github-authentication": "^1.105.0",
-    "vscode.github-pull-request": "^1.105.0",
-    "vscode.github-pull-request-create": "^1.105.0"
-    
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -31,6 +24,7 @@
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
     "vite": "^8.0.12"
   }

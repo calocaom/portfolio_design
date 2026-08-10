@@ -4,12 +4,13 @@ import {
   CAROUSEL_3,
   PROJECT_ART,
 } from '../assets'
+import { publicUrl } from '../utils/publicUrl'
 
 export const PROJECT_IMAGES = {
   1: CAROUSEL_1,
   2: CAROUSEL_2,
   3: CAROUSEL_3,
-  4: '/portfolios/mua/06.png',
+  4: publicUrl('portfolios/mua/06.png'),
   5: PROJECT_ART,
 }
 

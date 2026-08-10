@@ -7,17 +7,18 @@ import PortfolioMagazine from '../components/PortfolioMagazine'
 import AnimatedTitle from '../components/AnimatedTitle'
 import WatercolorBrush from '../components/WatercolorBrush'
 import { useI18n } from '../i18n/I18nContext'
+import { publicUrl } from '../utils/publicUrl'
 
 const MUA_SFX_PAGES = Array.from({ length: 18 }, (_, i) => {
   const n = String(i + 1).padStart(2, '0')
-  return `/portfolios/mua/${n}.png`
+  return publicUrl(`portfolios/mua/${n}.png`)
 })
 
 const MUA_FASHION_PAGES = Array.from({ length: 13 }, (_, i) => {
   const n = String(i + 1).padStart(2, '0')
   // Page 11 reuses mua/12.png (mua-fashion/11.png removed)
-  if (n === '11') return '/portfolios/mua/12.png'
-  return `/portfolios/mua-fashion/${n}.png`
+  if (n === '11') return publicUrl('portfolios/mua/12.png')
+  return publicUrl(`portfolios/mua-fashion/${n}.png`)
 })
 
 const PORTFOLIO_PAGES = {
@@ -27,8 +28,8 @@ const PORTFOLIO_PAGES = {
 
 /** Single cover image per portfolio button — set when assets are ready */
 const MOSAIC_IMAGES = {
-  sfx: '/portfolios/mua/02.png',
-  fashion: '/portfolios/mua/03.png',
+  sfx: publicUrl('portfolios/mua/02.png'),
+  fashion: publicUrl('portfolios/mua/03.png'),
 }
 
 const MOSAIC_KEYS = ['sfx', 'fashion']
