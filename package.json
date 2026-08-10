@@ -15,7 +15,13 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "vscode.git": "^1.105.0",
+    "vscode.github": "^1.105.0",
+    "vscode.github-authentication": "^1.105.0",
+    "vscode.github-pull-request": "^1.105.0",
+    "vscode.github-pull-request-create": "^1.105.0"
+    
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
