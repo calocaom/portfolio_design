@@ -35,6 +35,25 @@ export const translations = {
       missionLabel: 'My mission:',
       checkWorks: 'CHECK MY WORK',
       worksAria: 'Works',
+      educationTitle: 'Education',
+      educationAria: 'Education',
+      education: [
+        {
+          program: 'Multimedia and Design Program',
+          school: 'Aarhus Business Academy',
+          detail: 'Currently on 3rd semester',
+        },
+        {
+          program: 'Global Makeup Co-Op Diploma Program',
+          school: 'Blanche Macdonald Centre',
+          detail: 'Completed 2016',
+        },
+        {
+          program: 'Digital Painting Certificate Course',
+          school: 'Synn Studio',
+          detail: 'Completed 2016',
+        },
+      ],
       bioBefore: [
         'I am currently a student of the Multimedia and Design Program at Aarhus Business Academy in Denmark.',
         'Born and raised in Mexico, I hold a Global Makeup Co-Op Diploma from the Canadian institution Blanche Macdonald Centre and a Certificate of Digital Painting from Synn Studio.',
@@ -98,6 +117,21 @@ export const translations = {
       magazineError: 'Could not load this portfolio.',
       magazineCounter: 'Pages {current} of {total}',
     },
+    uxUi: {
+      title: 'UX / UI DESIGN PROJECTS',
+      navCrumb: 'UX / UI Design',
+      projectsAria: 'UX / UI design projects',
+      mosaics: {
+        projectOne: {
+          title: 'Project title',
+          description: 'Project description to be added.',
+        },
+        projectTwo: {
+          title: 'Project title',
+          description: 'Project description to be added.',
+        },
+      },
+    },
     projects: {
       1: {
         title: 'DESIGN FOR\nDIGITAL SOLUTIONS',
@@ -148,6 +182,25 @@ export const translations = {
       missionLabel: 'Min mission:',
       checkWorks: 'TJEK MIT ARBEJDE',
       worksAria: 'Arbejde',
+      educationTitle: 'Uddannelse',
+      educationAria: 'Uddannelse',
+      education: [
+        {
+          program: 'Multimedia and Design-programmet',
+          school: 'Erhvervsakademi Aarhus',
+          detail: 'På 3. semester i øjeblikket',
+        },
+        {
+          program: 'Global Makeup Co-Op Diploma Program',
+          school: 'Blanche Macdonald Centre',
+          detail: 'Afsluttet 2016',
+        },
+        {
+          program: 'Digital Painting Certificate Course',
+          school: 'Synn Studio',
+          detail: 'Afsluttet 2016',
+        },
+      ],
       bioBefore: [
         'Jeg er i øjeblikket studerende på Multimedia and Design-programmet på Erhvervsakademi Aarhus i Danmark.',
         'Født og opvokset i Mexico har jeg et Global Makeup Co-Op Diploma fra den canadiske institution Blanche Macdonald Centre og et Certificate of Digital Painting fra Synn Studio.',
@@ -211,6 +264,21 @@ export const translations = {
       magazineError: 'Kunne ikke indlæse denne portefølje.',
       magazineCounter: 'Side {current} af {total}',
     },
+    uxUi: {
+      title: 'UX / UI DESIGN PROJEKTER',
+      navCrumb: 'UX / UI Design',
+      projectsAria: 'UX / UI designprojekter',
+      mosaics: {
+        projectOne: {
+          title: 'Projekttitel',
+          description: 'Projektbeskrivelse tilføjes senere.',
+        },
+        projectTwo: {
+          title: 'Projekttitel',
+          description: 'Projektbeskrivelse tilføjes senere.',
+        },
+      },
+    },
     projects: {
       1: {
         title: 'DESIGN TIL\nDIGITALE LØSNINGER',
@@ -261,6 +329,25 @@ export const translations = {
       missionLabel: 'Ma mission :',
       checkWorks: 'VOIR MON TRAVAIL',
       worksAria: 'Travaux',
+      educationTitle: 'Formation',
+      educationAria: 'Formation',
+      education: [
+        {
+          program: 'Programme Multimedia and Design',
+          school: 'Aarhus Business Academy',
+          detail: 'Actuellement en 3ᵉ semestre',
+        },
+        {
+          program: 'Global Makeup Co-Op Diploma Program',
+          school: 'Blanche Macdonald Centre',
+          detail: 'Obtenu en 2016',
+        },
+        {
+          program: 'Digital Painting Certificate Course',
+          school: 'Synn Studio',
+          detail: 'Obtenu en 2016',
+        },
+      ],
       bioBefore: [
         'Je suis actuellement étudiant du programme Multimedia and Design à Aarhus Business Academy au Danemark.',
         'Né et élevé au Mexique, je détiens un Global Makeup Co-Op Diploma de l’institution canadienne Blanche Macdonald Centre ainsi qu’un Certificate of Digital Painting de Synn Studio.',
@@ -324,6 +411,21 @@ export const translations = {
       magazineError: 'Impossible de charger ce portfolio.',
       magazineCounter: 'Pages {current} sur {total}',
     },
+    uxUi: {
+      title: 'PROJETS UX / UI DESIGN',
+      navCrumb: 'Design UX / UI',
+      projectsAria: 'Projets UX / UI design',
+      mosaics: {
+        projectOne: {
+          title: 'Titre du projet',
+          description: 'Description du projet à ajouter.',
+        },
+        projectTwo: {
+          title: 'Titre du projet',
+          description: 'Description du projet à ajouter.',
+        },
+      },
+    },
     projects: {
       1: {
         title: 'DESIGN POUR\nSOLUTIONS NUMÉRIQUES',
@@ -374,6 +476,25 @@ export const translations = {
       missionLabel: 'Meine Mission:',
       checkWorks: 'MEINE ARBEIT ANSEHEN',
       worksAria: 'Arbeiten',
+      educationTitle: 'Ausbildung',
+      educationAria: 'Ausbildung',
+      education: [
+        {
+          program: 'Multimedia-and-Design-Programm',
+          school: 'Aarhus Business Academy',
+          detail: 'Derzeit im 3. Semester',
+        },
+        {
+          program: 'Global Makeup Co-Op Diploma Program',
+          school: 'Blanche Macdonald Centre',
+          detail: 'Abgeschlossen 2016',
+        },
+        {
+          program: 'Digital Painting Certificate Course',
+          school: 'Synn Studio',
+          detail: 'Abgeschlossen 2016',
+        },
+      ],
       bioBefore: [
         'Ich bin derzeit Student des Multimedia-and-Design-Programms an der Aarhus Business Academy in Dänemark.',
         'In Mexiko geboren und aufgewachsen, besitze ich ein Global Makeup Co-Op Diploma der kanadischen Institution Blanche Macdonald Centre sowie ein Certificate of Digital Painting von Synn Studio.',
@@ -437,6 +558,21 @@ export const translations = {
       magazineError: 'Dieses Portfolio konnte nicht geladen werden.',
       magazineCounter: 'Seiten {current} von {total}',
     },
+    uxUi: {
+      title: 'UX / UI DESIGN PROJEKTE',
+      navCrumb: 'UX / UI Design',
+      projectsAria: 'UX / UI Design-Projekte',
+      mosaics: {
+        projectOne: {
+          title: 'Projekttitel',
+          description: 'Projektbeschreibung folgt später.',
+        },
+        projectTwo: {
+          title: 'Projekttitel',
+          description: 'Projektbeschreibung folgt später.',
+        },
+      },
+    },
     projects: {
       1: {
         title: 'DESIGN FÜR\nDIGITALE LÖSUNGEN',
@@ -487,6 +623,25 @@ export const translations = {
       missionLabel: 'Mi misión:',
       checkWorks: 'VER MI TRABAJO',
       worksAria: 'Trabajos',
+      educationTitle: 'Educación',
+      educationAria: 'Educación',
+      education: [
+        {
+          program: 'Programa Multimedia and Design',
+          school: 'Aarhus Business Academy',
+          detail: 'Actualmente en 3.º semestre',
+        },
+        {
+          program: 'Global Makeup Co-Op Diploma Program',
+          school: 'Blanche Macdonald Centre',
+          detail: 'Completado en 2016',
+        },
+        {
+          program: 'Digital Painting Certificate Course',
+          school: 'Synn Studio',
+          detail: 'Completado en 2016',
+        },
+      ],
       bioBefore: [
         'Actualmente soy estudiante del programa Multimedia and Design en Aarhus Business Academy en Dinamarca.',
         'Nacido y criado en México, cuento con un Global Makeup Co-Op Diploma de la institución canadiense Blanche Macdonald Centre y un Certificate of Digital Painting de Synn Studio.',
@@ -549,6 +704,21 @@ export const translations = {
       magazineLoading: 'Cargando portafolio…',
       magazineError: 'No se pudo cargar este portafolio.',
       magazineCounter: 'Páginas {current} de {total}',
+    },
+    uxUi: {
+      title: 'PROYECTOS UX / UI DESIGN',
+      navCrumb: 'Diseño UX / UI',
+      projectsAria: 'Proyectos de diseño UX / UI',
+      mosaics: {
+        projectOne: {
+          title: 'Título del proyecto',
+          description: 'Descripción del proyecto por añadir.',
+        },
+        projectTwo: {
+          title: 'Título del proyecto',
+          description: 'Descripción del proyecto por añadir.',
+        },
+      },
     },
     projects: {
       1: {

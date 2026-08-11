@@ -20,6 +20,31 @@ function easeInOut(t) {
 
 const LAVA_IDLE = { sun: 0, fill: 0 }
 
+function BookContourIcon() {
+  return (
+    <svg
+      className="about-screen__book-icon"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M24 12.5c-3.2-2.4-7.4-3.8-12-3.8H8v27.6h4.2c4.5 0 8.6 1.3 11.8 3.5 3.2-2.2 7.3-3.5 11.8-3.5H40V8.7h-3.8c-4.6 0-8.8 1.4-12 3.8Z"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M24 12.5v27.3"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
 export default function AboutScreen({ onNavigate }) {
   const { dict, t } = useI18n()
   const bioBefore = dict.about.bioBefore
@@ -171,6 +196,27 @@ export default function AboutScreen({ onNavigate }) {
                 <AnimatedSubheadline />
               </div>
             </aside>
+          </section>
+
+          <section
+            className="about-screen__education"
+            aria-label={t('about.educationAria')}
+          >
+            <div className="about-screen__education-heading">
+              <AnimatedTitle>{t('about.educationTitle')}</AnimatedTitle>
+            </div>
+            <ul className="about-screen__education-list">
+              {dict.about.education.map((item) => (
+                <li key={item.program} className="about-screen__education-item">
+                  <BookContourIcon />
+                  <div className="about-screen__education-copy">
+                    <p className="about-screen__education-program">{item.program}</p>
+                    <p className="about-screen__education-school">{item.school}</p>
+                    <p className="about-screen__education-detail">{item.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <section

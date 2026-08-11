@@ -1,11 +1,13 @@
 import './SiteNav.css'
 import LanguageFilter from './LanguageFilter'
 import { useI18n } from '../i18n/I18nContext'
+import { publicUrl } from '../utils/publicUrl'
 
-const LINK_IDS = ['home', 'about', 'works', 'contact']
+const LINK_IDS = ['about', 'works', 'contact']
 
 export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail = null }) {
   const { t } = useI18n()
+  const homeActive = activeId === 'home'
 
   function handleClick(id) {
     if (onNavigate) {
@@ -21,6 +23,21 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
       <div className="site-nav__bar">
         <LanguageFilter />
         <ul className="site-nav__list">
+          <li>
+            <button
+              type="button"
+              className={`site-nav__home${homeActive ? ' site-nav__home--active' : ''}`}
+              onClick={() => handleClick('home')}
+              aria-label={t('nav.home')}
+              aria-current={homeActive ? 'page' : undefined}
+            >
+              <img
+                src={publicUrl('logoicon.png')}
+                alt=""
+                className="site-nav__home-icon"
+              />
+            </button>
+          </li>
           {LINK_IDS.map((id) => {
             const isActive = activeId === id
             const showTrail = id === 'works' && trail

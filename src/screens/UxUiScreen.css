@@ -1,0 +1,111 @@
+.ux-ui-screen {
+  background-color: var(--light-violet);
+  color: var(--title-purple);
+}
+
+.ux-ui-screen__content {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--status-bar-h);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.ux-ui-screen .site-nav {
+  background-color: var(--light-violet);
+}
+
+.ux-ui-screen .site-nav__link {
+  color: var(--deep-purple);
+}
+
+.ux-ui-screen__intro {
+  width: min(100%, 72ch);
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 72px) var(--content-padding) clamp(24px, 3.5vw, 36px);
+  text-align: center;
+}
+
+.ux-ui-screen__title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(22px, 3.2vw, 40px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.ux-ui-screen__projects {
+  width: 100%;
+  flex: 1;
+  padding: 0 var(--content-padding) clamp(48px, 8vw, 96px);
+}
+
+.ux-ui-screen__mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 48px) clamp(24px, 3.5vw, 40px);
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1040px;
+}
+
+.ux-ui-screen__mosaic-item {
+  min-width: 0;
+}
+
+.ux-ui-screen__mosaic {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 2vw, 20px);
+  height: 100%;
+}
+
+.ux-ui-screen__mosaic-panel {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  border-radius: clamp(4px, 0.6vw, 8px);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--deep-purple) 12%, #ffffff) 0%,
+    color-mix(in srgb, var(--deep-purple) 28%, var(--light-violet)) 100%
+  );
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--deep-purple) 10%, transparent);
+}
+
+.ux-ui-screen__mosaic-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+}
+
+.ux-ui-screen__mosaic-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(14px, 1.35vw, 18px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.ux-ui-screen__mosaic-description {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(14px, 1.25vw, 16px);
+  line-height: 1.55;
+  color: rgba(20, 10, 30, 0.68);
+}
+
+@media (max-width: 900px) {
+  .ux-ui-screen__mosaic-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+}
