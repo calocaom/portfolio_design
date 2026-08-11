@@ -25,38 +25,43 @@
 }
 
 .ux-case-study__intro {
-  width: min(100%, 72ch);
+  width: min(100%, 48rem);
   margin: 0 auto;
-  padding: clamp(36px, 6vw, 72px) var(--content-padding) clamp(20px, 3vw, 32px);
+  padding: clamp(48px, 8vw, 96px) var(--content-padding) clamp(36px, 5vw, 56px);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ux-case-study__title {
-  margin: 0 0 clamp(12px, 1.8vw, 18px);
-  font-family: var(--font-title);
-  font-size: clamp(22px, 3.2vw, 40px);
+  margin: 0 0 clamp(16px, 2.2vw, 24px);
+  font-family: var(--font-rains);
+  font-size: clamp(2rem, 5.5vw, 4.25rem);
   font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.15;
-  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  text-transform: none;
   color: var(--title-purple);
 }
 
 .ux-case-study__lede {
   margin: 0 auto;
-  max-width: 58ch;
-  font-family: var(--font-body);
-  font-size: clamp(15px, 1.35vw, 18px);
-  line-height: 1.65;
-  color: rgba(20, 10, 30, 0.68);
+  max-width: 36rem;
+  font-family: var(--font-rains);
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: rgba(20, 10, 30, 0.62);
 }
 
 .ux-case-study__cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: clamp(18px, 2.4vw, 28px);
-  padding: 0.8em 2.05em;
+  margin-top: clamp(28px, 3.5vw, 40px);
+  padding: 0.85em 2.2em;
   border-radius: 999px;
   border: 1px solid color-mix(in srgb, var(--case-accent) 22%, rgba(255, 255, 255, 0.72));
   background: rgba(255, 255, 255, 0.32);
@@ -66,10 +71,10 @@
     0 8px 24px color-mix(in srgb, var(--case-accent) 8%, transparent);
   backdrop-filter: blur(14px) saturate(1.35);
   -webkit-backdrop-filter: blur(14px) saturate(1.35);
-  font-family: var(--font-title);
-  font-size: clamp(13px, 1.35vw, 16px);
+  font-family: var(--font-rains);
+  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--case-accent, var(--title-purple));
@@ -96,13 +101,13 @@
 }
 
 .ux-case-study__body {
-  width: min(100%, 1100px);
+  width: min(100%, 1120px);
   margin: 0 auto;
   flex: 1;
-  padding: 0 var(--content-padding) clamp(48px, 8vw, 96px);
+  padding: 0 var(--content-padding) clamp(64px, 10vw, 120px);
   display: flex;
   flex-direction: column;
-  gap: clamp(36px, 5vw, 56px);
+  gap: clamp(56px, 8vw, 96px);
 }
 
 .ux-case-study__split {
@@ -138,11 +143,11 @@
 
 .ux-case-study__video-legend {
   margin: 0;
-  font-family: var(--font-body);
-  font-size: clamp(13px, 1.2vw, 15px);
+  font-family: var(--font-rains);
+  font-size: clamp(0.8rem, 1.05vw, 0.9rem);
   line-height: 1.45;
   letter-spacing: 0.01em;
-  color: rgba(20, 10, 30, 0.62);
+  color: rgba(20, 10, 30, 0.55);
 }
 
 .ux-case-study__meta {
@@ -163,8 +168,8 @@
 
 .ux-case-study__meta-label {
   margin: 0;
-  font-family: var(--font-title);
-  font-size: clamp(12px, 1.15vw, 14px);
+  font-family: var(--font-rains);
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -173,10 +178,10 @@
 
 .ux-case-study__meta-value {
   margin: 0;
-  font-family: var(--font-body);
-  font-size: clamp(15px, 1.3vw, 17px);
+  font-family: var(--font-rains);
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   line-height: 1.45;
-  color: rgba(20, 10, 30, 0.78);
+  color: rgba(20, 10, 30, 0.72);
 }
 
 @media (max-width: 900px) {
@@ -195,44 +200,48 @@
 .ux-case-study__section {
   display: flex;
   flex-direction: column;
-  gap: clamp(12px, 1.8vw, 18px);
-  padding-top: clamp(28px, 4vw, 44px);
-  border-top: 1px solid color-mix(in srgb, var(--case-accent) 22%, transparent);
+  align-items: center;
+  gap: clamp(18px, 2.4vw, 28px);
+  padding-top: clamp(48px, 7vw, 80px);
+  border-top: 1px solid color-mix(in srgb, var(--case-accent) 18%, transparent);
 }
 
 .ux-case-study__section:has(.ux-case-study__figure) {
-  gap: clamp(6px, 1vw, 10px);
+  gap: clamp(20px, 2.6vw, 32px);
 }
 
 .ux-case-study__subtitle,
 .ux-case-study__section-title {
   margin: 0;
-  font-family: var(--font-title);
-  font-size: clamp(22px, 2.6vw, 32px);
+  font-family: var(--font-rains);
+  font-size: clamp(1.65rem, 3.4vw, 2.75rem);
   font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-transform: none;
   color: var(--title-purple);
 }
 
 .ux-case-study__subtitle {
   text-align: center;
-  padding-top: clamp(4px, 0.8vw, 8px);
+  max-width: 22ch;
 }
 
 .ux-case-study__section-text {
   margin: 0;
-  font-family: var(--font-body);
-  font-size: clamp(15px, 1.3vw, 17px);
-  line-height: 1.7;
-  color: rgba(20, 10, 30, 0.72);
-  max-width: 68ch;
+  font-family: var(--font-rains);
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: rgba(20, 10, 30, 0.64);
+  max-width: 40rem;
 }
 
 .ux-case-study__section-text--center {
   margin-inline: auto;
   text-align: center;
-  max-width: 62ch;
+  max-width: 34rem;
 }
 
 .ux-case-study__quote {
@@ -259,20 +268,22 @@
   font-family: var(--font-quote);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(16px, 1.45vw, 19px);
-  line-height: 1.65;
-  letter-spacing: 0.01em;
-  color: rgba(20, 10, 30, 0.78);
+  font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+  line-height: 1.55;
+  letter-spacing: 0.005em;
+  color: rgba(20, 10, 30, 0.76);
+  max-width: 32rem;
 }
 
 .ux-case-study__figure {
-  margin: 0;
+  margin: clamp(12px, 2vw, 24px) 0 0;
   width: 100%;
 }
 
 .ux-case-study__figure--sm {
-  width: 90%;
+  width: min(100%, 52rem);
   margin-inline: auto;
+  margin-top: clamp(16px, 2.5vw, 32px);
 }
 
 .ux-case-study__topic-list {
@@ -283,8 +294,8 @@
 }
 
 .ux-case-study__topic-list .ux-case-study__section {
-  padding-top: clamp(32px, 4.5vw, 52px);
-  padding-bottom: clamp(8px, 1.5vw, 16px);
+  padding-top: clamp(52px, 7.5vw, 88px);
+  padding-bottom: clamp(12px, 2vw, 24px);
 }
 
 .ux-case-study__figure-image {

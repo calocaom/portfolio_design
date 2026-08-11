@@ -10,8 +10,8 @@
   gap: var(--space-md);
   min-height: clamp(120px, 18vw, 180px);
   padding: clamp(28px, 4vw, 48px) var(--content-padding);
-  background: #000;
-  color: #fff;
+  background: var(--deep-purple);
+  color: var(--light-violet);
 }
 
 .footer__text {
@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--light-violet);
   transition: opacity 0.15s ease;
 }
 
