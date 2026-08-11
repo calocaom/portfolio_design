@@ -3,7 +3,7 @@
  *
  * Portfolio website: routes nav targets to pages.
  * home / works open MainPage and scroll to section.
- * about, contact, makeup-fx, and ux-ui open their pages.
+ * about, contact, makeup-fx, ux-ui, botanical, and yoga open their pages.
  */
 
 import { useState } from 'react'
@@ -13,6 +13,8 @@ import AboutScreen from './screens/AboutScreen'
 import ContactScreen from './screens/ContactScreen'
 import MakeupFxScreen from './screens/MakeupFxScreen'
 import UxUiScreen from './screens/UxUiScreen'
+import Botanical from './screens/Botanical'
+import Yoga from './screens/Yoga'
 
 const MAIN_SECTION_IDS = new Set(['home', 'works'])
 
@@ -41,6 +43,18 @@ export default function App() {
 
     if (target === 'ux-ui') {
       setPage('ux-ui')
+      setPendingScroll(null)
+      return
+    }
+
+    if (target === 'botanical') {
+      setPage('botanical')
+      setPendingScroll(null)
+      return
+    }
+
+    if (target === 'yoga') {
+      setPage('yoga')
       setPendingScroll(null)
       return
     }
@@ -78,6 +92,14 @@ export default function App() {
 
       {page === 'ux-ui' && (
         <UxUiScreen onNavigate={handleNavigate} />
+      )}
+
+      {page === 'botanical' && (
+        <Botanical onNavigate={handleNavigate} />
+      )}
+
+      {page === 'yoga' && (
+        <Yoga onNavigate={handleNavigate} />
       )}
     </div>
   )

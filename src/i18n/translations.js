@@ -119,17 +119,123 @@ export const translations = {
     },
     uxUi: {
       title: 'UX / UI DESIGN PROJECTS',
-      navCrumb: 'UX / UI Design',
+      navCrumb: 'UX / UI',
       projectsAria: 'UX / UI design projects',
       mosaics: {
         projectOne: {
-          title: 'Project title',
-          description: 'Project description to be added.',
+          title: 'Aarhus Botanical Garden',
+          description: 'Discover fun facts about the plants',
         },
         projectTwo: {
-          title: 'Project title',
+          title: 'Yoga',
           description: 'Project description to be added.',
         },
+      },
+    },
+    botanical: {
+      title: 'Aarhus Botanical Garden',
+      description:
+        'Info Screens that connect people with nature, learning in a fun, interactive way',
+      navCrumb: 'Garden',
+      figmaCta: 'Click to see Figma prototype',
+      videoLegend: 'Video synthesizes the project',
+      videoFallback: 'Your browser does not support embedded video.',
+      problemStatement: 'Problem Statement',
+      problemDescription:
+        'How may we inform and captivate the visitors of Aarhus Botanical Garden with the least amount of interruption of the green scenery',
+      researchResults: 'Research Results',
+      researchDescription:
+        'Conducted Desk and Field research, 7 interviews on site and market research aimed for Danish demographics crowd.',
+      researchImageAlt:
+        'Main research insights Venn diagram of explorers and learners, with goals for the experience',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription:
+        'Concluded on a study of the types of visitors of the Garden based on the data extracted from the research.',
+      personaTitle: 'Persona',
+      personaDescription:
+        'Based on research we narrowed down our target audience to be directed to "The Learners".',
+      personaImageAlt:
+        'Persona profile for Matthias Norsegade, representing The Learners target audience',
+      topics: [
+        {
+          title: 'Storytelling',
+          description: 'Description to be set.',
+          imageKey: 'storytelling',
+          imageAlt:
+            'Storytelling and tone of voice: linear storytelling notes and four dimensions of tone of voice',
+        },
+        {
+          title: 'Purpose',
+          description: 'Description to be set.',
+        },
+        {
+          title: 'List of Values',
+          description: 'Description to be set.',
+        },
+        {
+          title: 'OOUX Table',
+          description: 'Description to be set.',
+        },
+        {
+          title: '4 Key Dimensions',
+          description: 'Description to be set.',
+        },
+        {
+          title: 'Conventions and Results',
+          description: 'Description to be set.',
+        },
+      ],
+      metaAria: 'Project details',
+      metaLabels: {
+        date: 'Project date',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methods',
+        client: 'Client',
+      },
+      meta: {
+        date: 'April 2026',
+        team: '5 students',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Aarhus Botanical Garden',
+      },
+    },
+    yoga: {
+      title: 'Yoga',
+      description: 'Project description to be added.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Click to see Figma prototype',
+      problemStatement: 'Problem Statement',
+      problemDescription: 'Problem description to be set.',
+      researchResults: 'Research Results',
+      researchDescription: 'Research description to be set.',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription: 'Affinity diagram description to be set.',
+      personaTitle: 'Persona',
+      personaDescription: 'Persona description to be set.',
+      topics: [
+        { title: 'Storytelling', description: 'Description to be set.' },
+        { title: 'Purpose', description: 'Description to be set.' },
+        { title: 'List of Values', description: 'Description to be set.' },
+        { title: 'OOUX Table', description: 'Description to be set.' },
+        { title: '4 Key Dimensions', description: 'Description to be set.' },
+        { title: 'Conventions and Results', description: 'Description to be set.' },
+      ],
+      metaAria: 'Project details',
+      metaLabels: {
+        date: 'Project date',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methods',
+        client: 'Client',
+      },
+      meta: {
+        date: 'To be set',
+        team: 'To be set',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'To be set',
       },
     },
     projects: {
@@ -266,17 +372,108 @@ export const translations = {
     },
     uxUi: {
       title: 'UX / UI DESIGN PROJEKTER',
-      navCrumb: 'UX / UI Design',
+      navCrumb: 'UX / UI',
       projectsAria: 'UX / UI designprojekter',
       mosaics: {
         projectOne: {
-          title: 'Projekttitel',
-          description: 'Projektbeskrivelse tilføjes senere.',
+          title: 'Aarhus Botaniske Have',
+          description: 'Opdag sjove fakta om planterne',
         },
         projectTwo: {
-          title: 'Projekttitel',
+          title: 'Yoga',
           description: 'Projektbeskrivelse tilføjes senere.',
         },
+      },
+    },
+    botanical: {
+      title: 'Aarhus Botaniske Have',
+      description:
+        'Infoskærme, der forbinder mennesker med naturen gennem sjov, interaktiv læring',
+      navCrumb: 'Have',
+      figmaCta: 'Klik for at se Figma-prototypen',
+      videoLegend: 'Videoen opsummerer projektet',
+      videoFallback: 'Din browser understøtter ikke indlejret video.',
+      problemStatement: 'Problemformulering',
+      problemDescription:
+        'Hvordan kan vi informere og fascinere besøgende i Aarhus Botaniske Have med mindst mulig forstyrrelse af den grønne natur',
+      researchResults: 'Forskningsresultater',
+      researchDescription:
+        'Desk- og field research, 7 interviews on site og markedsresearch rettet mod en dansk demografi.',
+      researchImageAlt:
+        'Hovedindsirkter fra research: Venn-diagram over explorers og learners med mål for oplevelsen',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription:
+        'Konkluderede en undersøgelse af besøgstyper i Haven baseret på data udtrukket fra research.',
+      personaTitle: 'Persona',
+      personaDescription:
+        'Baseret på research indsnævrede vi vores målgruppe til at være rettet mod “The Learners”.',
+      personaImageAlt:
+        'Personaprofil for Matthias Norsegade, der repræsenterer målgruppen The Learners',
+      topics: [
+        {
+          title: 'Storytelling',
+          description: 'Beskrivelse sættes senere.',
+          imageKey: 'storytelling',
+          imageAlt:
+            'Storytelling og tone of voice: lineær storytelling og fire dimensioner af tone of voice',
+        },
+        { title: 'Purpose', description: 'Beskrivelse sættes senere.' },
+        { title: 'List of Values', description: 'Beskrivelse sættes senere.' },
+        { title: 'OOUX Table', description: 'Beskrivelse sættes senere.' },
+        { title: '4 Key Dimensions', description: 'Beskrivelse sættes senere.' },
+        { title: 'Conventions and Results', description: 'Beskrivelse sættes senere.' },
+      ],
+      metaAria: 'Projektdetaljer',
+      metaLabels: {
+        date: 'Projektdato',
+        team: 'Team',
+        tools: 'Værktøjer',
+        methods: 'Metoder',
+        client: 'Klient',
+      },
+      meta: {
+        date: 'April 2026',
+        team: '5 studerende',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Aarhus Botaniske Have',
+      },
+    },
+    yoga: {
+      title: 'Yoga',
+      description: 'Projektbeskrivelse tilføjes senere.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Klik for at se Figma-prototypen',
+      problemStatement: 'Problemformulering',
+      problemDescription: 'Problembeskrivelse sættes senere.',
+      researchResults: 'Forskningsresultater',
+      researchDescription: 'Forskningsbeskrivelse sættes senere.',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription: 'Affinity diagram-beskrivelse sættes senere.',
+      personaTitle: 'Persona',
+      personaDescription: 'Personabeskrivelse sættes senere.',
+      topics: [
+        { title: 'Storytelling', description: 'Beskrivelse sættes senere.' },
+        { title: 'Purpose', description: 'Beskrivelse sættes senere.' },
+        { title: 'List of Values', description: 'Beskrivelse sættes senere.' },
+        { title: 'OOUX Table', description: 'Beskrivelse sættes senere.' },
+        { title: '4 Key Dimensions', description: 'Beskrivelse sættes senere.' },
+        { title: 'Conventions and Results', description: 'Beskrivelse sættes senere.' },
+      ],
+      metaAria: 'Projektdetaljer',
+      metaLabels: {
+        date: 'Projektdato',
+        team: 'Team',
+        tools: 'Værktøjer',
+        methods: 'Metoder',
+        client: 'Klient',
+      },
+      meta: {
+        date: 'Sættes senere',
+        team: 'Sættes senere',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Sættes senere',
       },
     },
     projects: {
@@ -413,17 +610,108 @@ export const translations = {
     },
     uxUi: {
       title: 'PROJETS UX / UI DESIGN',
-      navCrumb: 'Design UX / UI',
+      navCrumb: 'UX / UI',
       projectsAria: 'Projets UX / UI design',
       mosaics: {
         projectOne: {
-          title: 'Titre du projet',
-          description: 'Description du projet à ajouter.',
+          title: 'Jardin botanique d’Aarhus',
+          description: 'Découvrez des faits amusants sur les plantes',
         },
         projectTwo: {
-          title: 'Titre du projet',
+          title: 'Yoga',
           description: 'Description du projet à ajouter.',
         },
+      },
+    },
+    botanical: {
+      title: 'Jardin botanique d’Aarhus',
+      description:
+        'Des écrans d’information qui relient les gens à la nature, pour apprendre de façon ludique et interactive',
+      navCrumb: 'Jardin',
+      figmaCta: 'Cliquez pour voir le prototype Figma',
+      videoLegend: 'La vidéo synthétise le projet',
+      videoFallback: 'Votre navigateur ne prend pas en charge la vidéo intégrée.',
+      problemStatement: 'Énoncé du problème',
+      problemDescription:
+        'Comment informer et captiver les visiteurs du Jardin botanique d’Aarhus en perturbant le moins possible le paysage vert',
+      researchResults: 'Résultats de recherche',
+      researchDescription:
+        'Recherche documentaire et de terrain, 7 entretiens sur site et étude de marché ciblant un public démographique danois.',
+      researchImageAlt:
+        'Principales insights de recherche : diagramme de Venn explorers / learners et objectifs d’expérience',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription:
+        'Conclusion d’une étude des types de visiteurs du Jardin à partir des données extraites de la recherche.',
+      personaTitle: 'Persona',
+      personaDescription:
+        'Sur la base de la recherche, nous avons ciblé notre audience vers « The Learners ».',
+      personaImageAlt:
+        'Profil persona de Matthias Norsegade, représentant le public cible The Learners',
+      topics: [
+        {
+          title: 'Storytelling',
+          description: 'Description à définir.',
+          imageKey: 'storytelling',
+          imageAlt:
+            'Storytelling et tone of voice : narration linéaire et quatre dimensions du tone of voice',
+        },
+        { title: 'Purpose', description: 'Description à définir.' },
+        { title: 'List of Values', description: 'Description à définir.' },
+        { title: 'OOUX Table', description: 'Description à définir.' },
+        { title: '4 Key Dimensions', description: 'Description à définir.' },
+        { title: 'Conventions and Results', description: 'Description à définir.' },
+      ],
+      metaAria: 'Détails du projet',
+      metaLabels: {
+        date: 'Date du projet',
+        team: 'Équipe',
+        tools: 'Outils',
+        methods: 'Méthodes',
+        client: 'Client',
+      },
+      meta: {
+        date: 'Avril 2026',
+        team: '5 étudiants',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Jardin botanique d’Aarhus',
+      },
+    },
+    yoga: {
+      title: 'Yoga',
+      description: 'Description du projet à ajouter.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Cliquez pour voir le prototype Figma',
+      problemStatement: 'Énoncé du problème',
+      problemDescription: 'Description du problème à définir.',
+      researchResults: 'Résultats de recherche',
+      researchDescription: 'Description de la recherche à définir.',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription: 'Description du diagramme d’affinité à définir.',
+      personaTitle: 'Persona',
+      personaDescription: 'Description de la persona à définir.',
+      topics: [
+        { title: 'Storytelling', description: 'Description à définir.' },
+        { title: 'Purpose', description: 'Description à définir.' },
+        { title: 'List of Values', description: 'Description à définir.' },
+        { title: 'OOUX Table', description: 'Description à définir.' },
+        { title: '4 Key Dimensions', description: 'Description à définir.' },
+        { title: 'Conventions and Results', description: 'Description à définir.' },
+      ],
+      metaAria: 'Détails du projet',
+      metaLabels: {
+        date: 'Date du projet',
+        team: 'Équipe',
+        tools: 'Outils',
+        methods: 'Méthodes',
+        client: 'Client',
+      },
+      meta: {
+        date: 'À définir',
+        team: 'À définir',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'À définir',
       },
     },
     projects: {
@@ -560,17 +848,108 @@ export const translations = {
     },
     uxUi: {
       title: 'UX / UI DESIGN PROJEKTE',
-      navCrumb: 'UX / UI Design',
+      navCrumb: 'UX / UI',
       projectsAria: 'UX / UI Design-Projekte',
       mosaics: {
         projectOne: {
-          title: 'Projekttitel',
-          description: 'Projektbeschreibung folgt später.',
+          title: 'Botanischer Garten Aarhus',
+          description: 'Entdecke spannende Fakten über die Pflanzen',
         },
         projectTwo: {
-          title: 'Projekttitel',
+          title: 'Yoga',
           description: 'Projektbeschreibung folgt später.',
         },
+      },
+    },
+    botanical: {
+      title: 'Botanischer Garten Aarhus',
+      description:
+        'Info-Screens, die Menschen mit der Natur verbinden – Lernen auf spielerische, interaktive Weise',
+      navCrumb: 'Garten',
+      figmaCta: 'Figma-Prototyp ansehen',
+      videoLegend: 'Das Video fasst das Projekt zusammen',
+      videoFallback: 'Dein Browser unterstützt kein eingebettetes Video.',
+      problemStatement: 'Problemstellung',
+      problemDescription:
+        'Wie können wir Besucher des Botanischen Gartens Aarhus informieren und fesseln und dabei die grüne Szenerie möglichst wenig stören',
+      researchResults: 'Forschungsergebnisse',
+      researchDescription:
+        'Desk- und Field-Research, 7 Interviews vor Ort sowie Marktforschung mit Fokus auf dänische Demografie.',
+      researchImageAlt:
+        'Zentrale Research-Insights: Venn-Diagramm von Explorers und Learners mit Erfahrungszielen',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription:
+        'Abschluss einer Studie zu Besuchertypen des Gartens auf Basis der aus der Research gewonnenen Daten.',
+      personaTitle: 'Persona',
+      personaDescription:
+        'Basierend auf der Research haben wir unsere Zielgruppe auf „The Learners“ eingegrenzt.',
+      personaImageAlt:
+        'Persona-Profil von Matthias Norsegade als Vertretung der Zielgruppe The Learners',
+      topics: [
+        {
+          title: 'Storytelling',
+          description: 'Beschreibung folgt später.',
+          imageKey: 'storytelling',
+          imageAlt:
+            'Storytelling und Tone of Voice: lineare Erzählung und vier Dimensionen des Tone of Voice',
+        },
+        { title: 'Purpose', description: 'Beschreibung folgt später.' },
+        { title: 'List of Values', description: 'Beschreibung folgt später.' },
+        { title: 'OOUX Table', description: 'Beschreibung folgt später.' },
+        { title: '4 Key Dimensions', description: 'Beschreibung folgt später.' },
+        { title: 'Conventions and Results', description: 'Beschreibung folgt später.' },
+      ],
+      metaAria: 'Projektdetails',
+      metaLabels: {
+        date: 'Projektdatum',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methoden',
+        client: 'Kunde',
+      },
+      meta: {
+        date: 'April 2026',
+        team: '5 Studierende',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Botanischer Garten Aarhus',
+      },
+    },
+    yoga: {
+      title: 'Yoga',
+      description: 'Projektbeschreibung folgt später.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Figma-Prototyp ansehen',
+      problemStatement: 'Problemstellung',
+      problemDescription: 'Problembeschreibung folgt später.',
+      researchResults: 'Forschungsergebnisse',
+      researchDescription: 'Research-Beschreibung folgt später.',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription: 'Beschreibung des Affinity Diagrams folgt später.',
+      personaTitle: 'Persona',
+      personaDescription: 'Persona-Beschreibung folgt später.',
+      topics: [
+        { title: 'Storytelling', description: 'Beschreibung folgt später.' },
+        { title: 'Purpose', description: 'Beschreibung folgt später.' },
+        { title: 'List of Values', description: 'Beschreibung folgt später.' },
+        { title: 'OOUX Table', description: 'Beschreibung folgt später.' },
+        { title: '4 Key Dimensions', description: 'Beschreibung folgt später.' },
+        { title: 'Conventions and Results', description: 'Beschreibung folgt später.' },
+      ],
+      metaAria: 'Projektdetails',
+      metaLabels: {
+        date: 'Projektdatum',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methoden',
+        client: 'Kunde',
+      },
+      meta: {
+        date: 'Folgt später',
+        team: 'Folgt später',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Folgt später',
       },
     },
     projects: {
@@ -707,17 +1086,108 @@ export const translations = {
     },
     uxUi: {
       title: 'PROYECTOS UX / UI DESIGN',
-      navCrumb: 'Diseño UX / UI',
+      navCrumb: 'UX / UI',
       projectsAria: 'Proyectos de diseño UX / UI',
       mosaics: {
         projectOne: {
-          title: 'Título del proyecto',
-          description: 'Descripción del proyecto por añadir.',
+          title: 'Jardín Botánico de Aarhus',
+          description: 'Descubre datos curiosos sobre las plantas',
         },
         projectTwo: {
-          title: 'Título del proyecto',
+          title: 'Yoga',
           description: 'Descripción del proyecto por añadir.',
         },
+      },
+    },
+    botanical: {
+      title: 'Jardín Botánico de Aarhus',
+      description:
+        'Pantallas informativas que conectan a las personas con la naturaleza, aprendiendo de forma divertida e interactiva',
+      navCrumb: 'Jardín',
+      figmaCta: 'Haz clic para ver el prototipo de Figma',
+      videoLegend: 'El video sintetiza el proyecto',
+      videoFallback: 'Tu navegador no admite video integrado.',
+      problemStatement: 'Planteamiento del problema',
+      problemDescription:
+        'Cómo informar y cautivar a los visitantes del Jardín Botánico de Aarhus con la menor interrupción posible del paisaje verde',
+      researchResults: 'Resultados de investigación',
+      researchDescription:
+        'Investigación de escritorio y de campo, 7 entrevistas en sitio e investigación de mercado orientada a la demografía danesa.',
+      researchImageAlt:
+        'Principales insights de investigación: diagrama de Venn de explorers y learners con objetivos de experiencia',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription:
+        'Concluimos un estudio de los tipos de visitantes del Jardín a partir de los datos extraídos de la investigación.',
+      personaTitle: 'Persona',
+      personaDescription:
+        'Con base en la investigación, acotamos nuestra audiencia objetivo hacia “The Learners”.',
+      personaImageAlt:
+        'Perfil de persona de Matthias Norsegade, representando a la audiencia The Learners',
+      topics: [
+        {
+          title: 'Storytelling',
+          description: 'Descripción por definir.',
+          imageKey: 'storytelling',
+          imageAlt:
+            'Storytelling y tone of voice: narrativa lineal y cuatro dimensiones del tone of voice',
+        },
+        { title: 'Purpose', description: 'Descripción por definir.' },
+        { title: 'List of Values', description: 'Descripción por definir.' },
+        { title: 'OOUX Table', description: 'Descripción por definir.' },
+        { title: '4 Key Dimensions', description: 'Descripción por definir.' },
+        { title: 'Conventions and Results', description: 'Descripción por definir.' },
+      ],
+      metaAria: 'Detalles del proyecto',
+      metaLabels: {
+        date: 'Fecha del proyecto',
+        team: 'Equipo',
+        tools: 'Herramientas',
+        methods: 'Métodos',
+        client: 'Cliente',
+      },
+      meta: {
+        date: 'Abril 2026',
+        team: '5 estudiantes',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Jardín Botánico de Aarhus',
+      },
+    },
+    yoga: {
+      title: 'Yoga',
+      description: 'Descripción del proyecto por añadir.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Haz clic para ver el prototipo de Figma',
+      problemStatement: 'Planteamiento del problema',
+      problemDescription: 'Descripción del problema por definir.',
+      researchResults: 'Resultados de investigación',
+      researchDescription: 'Descripción de la investigación por definir.',
+      affinityTitle: 'Affinity Diagram',
+      affinityDescription: 'Descripción del diagrama de afinidad por definir.',
+      personaTitle: 'Persona',
+      personaDescription: 'Descripción de la persona por definir.',
+      topics: [
+        { title: 'Storytelling', description: 'Descripción por definir.' },
+        { title: 'Purpose', description: 'Descripción por definir.' },
+        { title: 'List of Values', description: 'Descripción por definir.' },
+        { title: 'OOUX Table', description: 'Descripción por definir.' },
+        { title: '4 Key Dimensions', description: 'Descripción por definir.' },
+        { title: 'Conventions and Results', description: 'Descripción por definir.' },
+      ],
+      metaAria: 'Detalles del proyecto',
+      metaLabels: {
+        date: 'Fecha del proyecto',
+        team: 'Equipo',
+        tools: 'Herramientas',
+        methods: 'Métodos',
+        client: 'Cliente',
+      },
+      meta: {
+        date: 'Por definir',
+        team: 'Por definir',
+        tools: 'Figjam, Figma',
+        methods: 'UX/ UI Research, Design Principles',
+        client: 'Por definir',
       },
     },
     projects: {

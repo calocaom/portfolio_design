@@ -3,7 +3,10 @@ import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import { useI18n } from '../i18n/I18nContext'
 
-const MOSAIC_KEYS = ['projectOne', 'projectTwo']
+const MOSAICS = [
+  { key: 'projectOne', route: 'botanical' },
+  { key: 'projectTwo', route: 'yoga' },
+]
 
 export default function UxUiScreen({ onNavigate }) {
   const { t } = useI18n()
@@ -29,24 +32,41 @@ export default function UxUiScreen({ onNavigate }) {
           aria-label={t('uxUi.projectsAria')}
         >
           <ul className="ux-ui-screen__mosaic-grid">
-            {MOSAIC_KEYS.map((key) => (
-              <li key={key} className="ux-ui-screen__mosaic-item">
-                <article className="ux-ui-screen__mosaic">
+            {MOSAICS.map(({ key, route }) => {
+              const title = t(`uxUi.mosaics.${key}.title`)
+              const description = t(`uxUi.mosaics.${key}.description`)
+              const body = (
+                <>
                   <div
                     className="ux-ui-screen__mosaic-panel"
                     aria-hidden="true"
                   />
                   <div className="ux-ui-screen__mosaic-copy">
-                    <h2 className="ux-ui-screen__mosaic-title">
-                      {t(`uxUi.mosaics.${key}.title`)}
-                    </h2>
+                    <h2 className="ux-ui-screen__mosaic-title">{title}</h2>
                     <p className="ux-ui-screen__mosaic-description">
-                      {t(`uxUi.mosaics.${key}.description`)}
+                      {description}
                     </p>
                   </div>
-                </article>
-              </li>
-            ))}
+                </>
+              )
+
+              return (
+                <li key={key} className="ux-ui-screen__mosaic-item">
+                  {route ? (
+                    <button
+                      type="button"
+                      className="ux-ui-screen__mosaic ux-ui-screen__mosaic--link"
+                      onClick={() => onNavigate?.(route)}
+                      aria-label={title}
+                    >
+                      {body}
+                    </button>
+                  ) : (
+                    <article className="ux-ui-screen__mosaic">{body}</article>
+                  )}
+                </li>
+              )
+            })}
           </ul>
         </section>
 

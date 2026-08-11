@@ -1,0 +1,315 @@
+/* Shared layout for UX / UI case-study screens (Botanical, and later projects). */
+
+.ux-case-study {
+  --case-accent: var(--title-purple);
+  background-color: var(--light-violet);
+  color: var(--title-purple);
+}
+
+.ux-case-study__content {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--status-bar-h);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.ux-case-study .site-nav {
+  background-color: var(--light-violet);
+}
+
+.ux-case-study .site-nav__link {
+  color: var(--deep-purple);
+}
+
+.ux-case-study__intro {
+  width: min(100%, 72ch);
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 72px) var(--content-padding) clamp(20px, 3vw, 32px);
+  text-align: center;
+}
+
+.ux-case-study__title {
+  margin: 0 0 clamp(12px, 1.8vw, 18px);
+  font-family: var(--font-title);
+  font-size: clamp(22px, 3.2vw, 40px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.ux-case-study__lede {
+  margin: 0 auto;
+  max-width: 58ch;
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.35vw, 18px);
+  line-height: 1.65;
+  color: rgba(20, 10, 30, 0.68);
+}
+
+.ux-case-study__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(18px, 2.4vw, 28px);
+  padding: 0.8em 2.05em;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--case-accent) 22%, rgba(255, 255, 255, 0.72));
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 0 0 1px color-mix(in srgb, var(--case-accent) 6%, transparent),
+    0 8px 24px color-mix(in srgb, var(--case-accent) 8%, transparent);
+  backdrop-filter: blur(14px) saturate(1.35);
+  -webkit-backdrop-filter: blur(14px) saturate(1.35);
+  font-family: var(--font-title);
+  font-size: clamp(13px, 1.35vw, 16px);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--case-accent, var(--title-purple));
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ux-case-study__cta:hover {
+  background: rgba(255, 255, 255, 0.48);
+  border-color: color-mix(in srgb, var(--case-accent) 30%, rgba(255, 255, 255, 0.8));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 0 0 1px color-mix(in srgb, var(--case-accent) 10%, transparent),
+    0 10px 28px color-mix(in srgb, var(--case-accent) 12%, transparent);
+  transform: translateY(-1px);
+}
+
+.ux-case-study__cta:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--case-accent) 45%, transparent);
+  outline-offset: 3px;
+}
+
+.ux-case-study__body {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  flex: 1;
+  padding: 0 var(--content-padding) clamp(48px, 8vw, 96px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(36px, 5vw, 56px);
+}
+
+.ux-case-study__split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+}
+
+.ux-case-study__video-block {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.4vw, 14px);
+  min-width: 0;
+}
+
+.ux-case-study__video-frame {
+  width: 100%;
+  border-radius: clamp(4px, 0.6vw, 8px);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--deep-purple) 12%, #ffffff);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--deep-purple) 10%, transparent);
+}
+
+.ux-case-study__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  background: #0f0a18;
+}
+
+.ux-case-study__video-legend {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(13px, 1.2vw, 15px);
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  color: rgba(20, 10, 30, 0.62);
+}
+
+.ux-case-study__meta {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid color-mix(in srgb, var(--deep-purple) 18%, transparent);
+}
+
+.ux-case-study__meta-row {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 0.38fr) minmax(0, 1fr);
+  gap: clamp(12px, 2vw, 28px);
+  align-items: baseline;
+  padding: clamp(14px, 1.8vw, 18px) 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--deep-purple) 18%, transparent);
+}
+
+.ux-case-study__meta-label {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(12px, 1.15vw, 14px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.ux-case-study__meta-value {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.45;
+  color: rgba(20, 10, 30, 0.78);
+}
+
+@media (max-width: 900px) {
+  .ux-case-study__split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ux-case-study__meta-row {
+    grid-template-columns: 1fr;
+    gap: 0.35em;
+  }
+}
+
+.ux-case-study__section {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 1.8vw, 18px);
+  padding-top: clamp(28px, 4vw, 44px);
+  border-top: 1px solid color-mix(in srgb, var(--case-accent) 22%, transparent);
+}
+
+.ux-case-study__section:has(.ux-case-study__figure) {
+  gap: clamp(6px, 1vw, 10px);
+}
+
+.ux-case-study__subtitle,
+.ux-case-study__section-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(22px, 2.6vw, 32px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-purple);
+}
+
+.ux-case-study__subtitle {
+  text-align: center;
+  padding-top: clamp(4px, 0.8vw, 8px);
+}
+
+.ux-case-study__section-text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.7;
+  color: rgba(20, 10, 30, 0.72);
+  max-width: 68ch;
+}
+
+.ux-case-study__section-text--center {
+  margin-inline: auto;
+  text-align: center;
+  max-width: 62ch;
+}
+
+.ux-case-study__quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.ux-case-study__quote-mark {
+  display: block;
+  font-family: var(--font-rains);
+  font-size: clamp(72px, 11vw, 132px);
+  font-weight: 700;
+  line-height: 0.55;
+  margin-bottom: -0.08em;
+  color: #b8e0b8;
+  opacity: 0.95;
+  user-select: none;
+  pointer-events: none;
+}
+
+.ux-case-study__quote .ux-case-study__section-text {
+  font-family: var(--font-quote);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(16px, 1.45vw, 19px);
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: rgba(20, 10, 30, 0.78);
+}
+
+.ux-case-study__figure {
+  margin: 0;
+  width: 100%;
+}
+
+.ux-case-study__figure--sm {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.ux-case-study__topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.ux-case-study__topic-list .ux-case-study__section {
+  padding-top: clamp(32px, 4.5vw, 52px);
+  padding-bottom: clamp(8px, 1.5vw, 16px);
+}
+
+.ux-case-study__figure-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.ux-case-study__media {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: clamp(4px, 0.6vw, 8px);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--deep-purple) 12%, #ffffff) 0%,
+    color-mix(in srgb, var(--deep-purple) 28%, var(--light-violet)) 100%
+  );
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--deep-purple) 10%, transparent);
+  overflow: hidden;
+}
+
+.ux-case-study__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

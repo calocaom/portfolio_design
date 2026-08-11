@@ -5,9 +5,16 @@ import { publicUrl } from '../utils/publicUrl'
 
 const LINK_IDS = ['about', 'works', 'contact']
 
+function normalizeTrail(trail) {
+  if (!trail) return []
+  if (typeof trail === 'string') return [{ label: trail }]
+  return trail.filter((segment) => segment?.label)
+}
+
 export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail = null }) {
   const { t } = useI18n()
   const homeActive = activeId === 'home'
+  const trailSegments = normalizeTrail(trail)
 
   function handleClick(id) {
     if (onNavigate) {
@@ -40,7 +47,7 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
           </li>
           {LINK_IDS.map((id) => {
             const isActive = activeId === id
-            const showTrail = id === 'works' && trail
+            const showTrail = id === 'works' && trailSegments.length > 0
 
             return (
               <li key={id}>
@@ -53,15 +60,37 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
                     >
                       {t('nav.works')}
                     </button>
-                    <span className="site-nav__trail-sep" aria-hidden="true">
-                      {'>\u00A0'}
-                    </span>
-                    <span
-                      className="site-nav__trail-current"
-                      aria-current="page"
-                    >
-                      {trail}
-                    </span>
+                    {trailSegments.map((segment, index) => {
+                      const isLast = index === trailSegments.length - 1
+
+                      return (
+                        <span key={`${segment.label}-${index}`} className="site-nav__trail-step">
+                          <span className="site-nav__trail-sep" aria-hidden="true">
+                            {'>\u00A0'}
+                          </span>
+                          {isLast || !segment.to ? (
+                            <span
+                              className={
+                                isLast
+                                  ? 'site-nav__trail-current'
+                                  : 'site-nav__trail-parent'
+                              }
+                              aria-current={isLast ? 'page' : undefined}
+                            >
+                              {segment.label}
+                            </span>
+                          ) : (
+                            <button
+                              type="button"
+                              className="site-nav__link site-nav__link--active site-nav__trail-parent"
+                              onClick={() => handleClick(segment.to)}
+                            >
+                              {segment.label}
+                            </button>
+                          )}
+                        </span>
+                      )
+                    })}
                   </span>
                 ) : (
                   <button

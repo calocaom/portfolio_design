@@ -1,0 +1,18 @@
+/* Botanical theme overrides on shared UxCaseStudy.css */
+
+.botanical {
+  --deep-green: #0d2818;
+  --case-accent: var(--deep-green);
+  background-color: #fbfcfb;
+}
+
+.botanical .site-nav {
+  background-color: var(--light-violet);
+}
+
+.botanical .ux-case-study__title,
+.botanical .ux-case-study__subtitle,
+.botanical .ux-case-study__section-title,
+.botanical .ux-case-study__meta-label {
+  color: var(--deep-green);
+}

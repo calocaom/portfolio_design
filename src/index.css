@@ -30,6 +30,7 @@
      4. 'DM Mono'         → geometric but gentler than Plex
   */
   --font-title: 'Azeret Mono', ui-monospace, monospace;
+  --font-quote: 'Fraunces', 'Times New Roman', serif;
   --font-system: Inter, system-ui, sans-serif;
 
   /* Spacing */

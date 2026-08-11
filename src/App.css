@@ -19,7 +19,9 @@
 .screen.main-page,
 .screen.contact-screen,
 .screen.about-screen,
-.screen.makeup-fx-screen {
+.screen.makeup-fx-screen,
+.screen.ux-ui-screen,
+.screen.ux-case-study {
   height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;

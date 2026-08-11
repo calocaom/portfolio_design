@@ -64,6 +64,26 @@
   flex-direction: column;
   gap: clamp(14px, 2vw, 20px);
   height: 100%;
+  width: 100%;
+  text-align: left;
+  color: inherit;
+}
+
+button.ux-ui-screen__mosaic--link {
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button.ux-ui-screen__mosaic--link:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+button.ux-ui-screen__mosaic--link:focus-visible {
+  outline: 2px solid var(--deep-purple);
+  outline-offset: 4px;
+  border-radius: clamp(4px, 0.6vw, 8px);
 }
 
 .ux-ui-screen__mosaic-panel {
