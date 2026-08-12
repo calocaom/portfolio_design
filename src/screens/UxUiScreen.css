@@ -90,12 +90,26 @@ button.ux-ui-screen__mosaic--link:focus-visible {
   aspect-ratio: 16 / 10;
   width: 100%;
   border-radius: clamp(4px, 0.6vw, 8px);
+  overflow: hidden;
   background: linear-gradient(
     145deg,
     color-mix(in srgb, var(--deep-purple) 12%, #ffffff) 0%,
     color-mix(in srgb, var(--deep-purple) 28%, var(--light-violet)) 100%
   );
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--deep-purple) 10%, transparent);
+}
+
+.ux-ui-screen__mosaic-panel--image {
+  background: #1a1420;
+  box-shadow: none;
+}
+
+.ux-ui-screen__mosaic-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
 }
 
 .ux-ui-screen__mosaic-copy {

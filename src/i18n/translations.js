@@ -124,18 +124,18 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Aarhus Botanical Garden',
-          description: 'Discover fun facts about the plants',
+          description: '"Discover fun facts about the plants"',
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Project description to be added.',
+          description: '"Hidden Outdoor Workout Spaces in Aarhus"',
         },
       },
     },
     botanical: {
       title: 'Aarhus Botanical Garden',
       description:
-        'Info Screens that connect people with nature, learning in a fun, interactive way',
+        'Info-Screens that connect people with nature, learning in a fun, interactive way',
       navCrumb: 'Garden',
       figmaCta: 'Click to see Figma prototype',
       videoLegend: 'Video synthesizes the project',
@@ -145,44 +145,58 @@ export const translations = {
         'How may we inform and captivate the visitors of Aarhus Botanical Garden with the least amount of interruption of the green scenery',
       researchResults: 'Research Results',
       researchDescription:
-        'Conducted Desk and Field research, 7 interviews on site and market research aimed for Danish demographics crowd.',
+        'Conducted Desk and Field research, 7 interviews on site and market research aimed for the Danish demographics crowd.',
       researchImageAlt:
         'Main research insights Venn diagram of explorers and learners, with goals for the experience',
       affinityTitle: 'Affinity Diagram',
       affinityDescription:
-        'Concluded on a study of the types of visitors of the Garden based on the data extracted from the research.',
+        'Concluded on a study of the types of visitors, their interests and needs for the Garden based on the data extracted from the research.',
+      affinityImageAlt:
+        'Affinity diagram with visitor research insights grouped into sticky-note categories',
       personaTitle: 'Persona',
       personaDescription:
-        'Based on research we narrowed down our target audience to be directed to "The Learners".',
+        'Based on research we narrowed down our target audience to "The Learners" group. Contemplated families and a younger crowd 15-25 years old.',
       personaImageAlt:
         'Persona profile for Matthias Norsegade, representing The Learners target audience',
       topics: [
         {
           title: 'Storytelling',
-          description: 'Description to be set.',
+          description: 'Developed a plan for an easy to follow, linear storytelling adjusted to four dimensions of tone of voice.',
           imageKey: 'storytelling',
           imageAlt:
             'Storytelling and tone of voice: linear storytelling notes and four dimensions of tone of voice',
         },
         {
-          title: 'Purpose',
-          description: 'Description to be set.',
-        },
-        {
-          title: 'List of Values',
-          description: 'Description to be set.',
+          title: '4 Key Dimensions',
+          description:
+            'Employed the 4 key dimensions contemplating the user experience and the interaction with the solution',
+          imageKey: '4-key-dimensions',
+          imageAlt:
+            'Four key dimensions of the visitor journey: Emotional, Physical, Intellectual, and Technology',
         },
         {
           title: 'OOUX Table',
-          description: 'Description to be set.',
+          description:
+            'Based on the 4 key dimensions, planned the data type, independent actions and interactions through ORCA OOUX Table',
+          imageKey: 'ooux',
+          imageAlt:
+            'ORCA OOUX table mapping objects, properties, relationships, and call-to-actions',
         },
         {
-          title: '4 Key Dimensions',
-          description: 'Description to be set.',
+          title: 'Design Principles',
+          description:
+            'The planning of content and interactions ought to adhere to design principles.',
+          imageKey: 'principles',
+          imageAlt:
+            'Design principles based on Allen and Gutwill common pitfalls: no overload, no user interference, no disruption, clear focus, no distraction',
         },
         {
-          title: 'Conventions and Results',
-          description: 'Description to be set.',
+          title: 'Results',
+          description:
+            'After the elaboration and planning of the solution content and UI elements, the project is ready to be handed over to the Design development team. In this case our team developed the design. After some testing and feedback, we concluded the project.',
+          imageKey: 'results',
+          imageAlt:
+            'Project result statement: a balanced interactive experience that helps learners engage without leaving their nature escape',
         },
       ],
       metaAria: 'Project details',
@@ -191,6 +205,7 @@ export const translations = {
         team: 'Team',
         tools: 'Tools',
         methods: 'Methods',
+        target: 'Target',
         client: 'Client',
       },
       meta: {
@@ -198,6 +213,7 @@ export const translations = {
         team: '5 students',
         tools: 'Figjam, Figma',
         methods: 'UX/ UI Research, Design Principles',
+        target: 'Danish people ages 15-25 / Families',
         client: 'Aarhus Botanical Garden',
       },
     },
@@ -377,11 +393,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Aarhus Botaniske Have',
-          description: 'Opdag sjove fakta om planterne',
+          description: '"Opdag sjove fakta om planterne"',
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Projektbeskrivelse tilføjes senere.',
+          description: '"Skjulte udendørs træningssteder i Aarhus"',
         },
       },
     },
@@ -398,30 +414,60 @@ export const translations = {
         'Hvordan kan vi informere og fascinere besøgende i Aarhus Botaniske Have med mindst mulig forstyrrelse af den grønne natur',
       researchResults: 'Forskningsresultater',
       researchDescription:
-        'Desk- og field research, 7 interviews on site og markedsresearch rettet mod en dansk demografi.',
+        'Desk- og field research, 7 interviews on site og markedsresearch rettet mod den danske demografi.',
       researchImageAlt:
         'Hovedindsirkter fra research: Venn-diagram over explorers og learners med mål for oplevelsen',
       affinityTitle: 'Affinity Diagram',
       affinityDescription:
-        'Konkluderede en undersøgelse af besøgstyper i Haven baseret på data udtrukket fra research.',
+        'Konkluderede en undersøgelse af besøgstyper, deres interesser og behov for Haven baseret på data udtrukket fra research.',
+      affinityImageAlt:
+        'Affinity diagram med research-indsigter om besøgende grupperet i sticky-note-kategorier',
       personaTitle: 'Persona',
       personaDescription:
-        'Baseret på research indsnævrede vi vores målgruppe til at være rettet mod “The Learners”.',
+        'Baseret på research indsnævrede vi vores målgruppe til “The Learners”-gruppen. Overvejede familier og en yngre målgruppe på 15–25 år.',
       personaImageAlt:
         'Personaprofil for Matthias Norsegade, der repræsenterer målgruppen The Learners',
       topics: [
         {
           title: 'Storytelling',
-          description: 'Beskrivelse sættes senere.',
+          description:
+            'Udviklede en plan for en let at følge, lineær storytelling tilpasset fire dimensioner af tone of voice.',
           imageKey: 'storytelling',
           imageAlt:
             'Storytelling og tone of voice: lineær storytelling og fire dimensioner af tone of voice',
         },
-        { title: 'Purpose', description: 'Beskrivelse sættes senere.' },
-        { title: 'List of Values', description: 'Beskrivelse sættes senere.' },
-        { title: 'OOUX Table', description: 'Beskrivelse sættes senere.' },
-        { title: '4 Key Dimensions', description: 'Beskrivelse sættes senere.' },
-        { title: 'Conventions and Results', description: 'Beskrivelse sættes senere.' },
+        {
+          title: '4 Key Dimensions',
+          description:
+            'Anvendte de 4 nøgle-dimensioner med fokus på brugeroplevelsen og interaktionen med løsningen',
+          imageKey: '4-key-dimensions',
+          imageAlt:
+            'Fire nøgle-dimensioner af besøgsrejsen: Emotional, Physical, Intellectual og Technology',
+        },
+        {
+          title: 'OOUX Table',
+          description:
+            'Baseret på de 4 nøgle-dimensioner planlagde vi datatype, uafhængige handlinger og interaktioner via ORCA OOUX Table',
+          imageKey: 'ooux',
+          imageAlt:
+            'ORCA OOUX-tabel, der mapper objekter, egenskaber, relationer og call-to-actions',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Planlægningen af indhold og interaktioner bør følge designprincipper.',
+          imageKey: 'principles',
+          imageAlt:
+            'Designprincipper baseret på Allen og Gutwills common pitfalls: no overload, no user interference, no disruption, clear focus, no distraction',
+        },
+        {
+          title: 'Results',
+          description:
+            'Efter udarbejdelse og planlægning af løsningens indhold og UI-elementer er projektet klar til at blive overleveret til Design-udviklingsteamet. I dette tilfælde udviklede vores team også designet. Efter test og feedback afsluttede vi projektet.',
+          imageKey: 'results',
+          imageAlt:
+            'Projektresultat: en balanceret interaktiv oplevelse, der hjælper lærende med at engagere sig uden at forlade deres naturflugt',
+        },
       ],
       metaAria: 'Projektdetaljer',
       metaLabels: {
@@ -429,6 +475,7 @@ export const translations = {
         team: 'Team',
         tools: 'Værktøjer',
         methods: 'Metoder',
+        target: 'Målgruppe',
         client: 'Klient',
       },
       meta: {
@@ -436,6 +483,7 @@ export const translations = {
         team: '5 studerende',
         tools: 'Figjam, Figma',
         methods: 'UX/ UI Research, Design Principles',
+        target: 'Danskere i alderen 15–25 / Familier',
         client: 'Aarhus Botaniske Have',
       },
     },
@@ -615,11 +663,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Jardin botanique d’Aarhus',
-          description: 'Découvrez des faits amusants sur les plantes',
+          description: '« Découvrez des faits amusants sur les plantes »',
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Description du projet à ajouter.',
+          description: '« Espaces d’entraînement en plein air cachés à Aarhus »',
         },
       },
     },
@@ -636,30 +684,60 @@ export const translations = {
         'Comment informer et captiver les visiteurs du Jardin botanique d’Aarhus en perturbant le moins possible le paysage vert',
       researchResults: 'Résultats de recherche',
       researchDescription:
-        'Recherche documentaire et de terrain, 7 entretiens sur site et étude de marché ciblant un public démographique danois.',
+        'Recherche documentaire et de terrain, 7 entretiens sur site et étude de marché visant le public démographique danois.',
       researchImageAlt:
         'Principales insights de recherche : diagramme de Venn explorers / learners et objectifs d’expérience',
       affinityTitle: 'Affinity Diagram',
       affinityDescription:
-        'Conclusion d’une étude des types de visiteurs du Jardin à partir des données extraites de la recherche.',
+        'Conclusion d’une étude des types de visiteurs, de leurs intérêts et de leurs besoins pour le Jardin, à partir des données extraites de la recherche.',
+      affinityImageAlt:
+        'Diagramme d’affinité regroupant les insights visiteurs en catégories de sticky notes',
       personaTitle: 'Persona',
       personaDescription:
-        'Sur la base de la recherche, nous avons ciblé notre audience vers « The Learners ».',
+        'Sur la base de la recherche, nous avons ciblé notre audience vers le groupe « The Learners ». Envisagé les familles et un public plus jeune de 15 à 25 ans.',
       personaImageAlt:
         'Profil persona de Matthias Norsegade, représentant le public cible The Learners',
       topics: [
         {
           title: 'Storytelling',
-          description: 'Description à définir.',
+          description:
+            'Développement d’un plan de storytelling linéaire, facile à suivre, ajusté à quatre dimensions du tone of voice.',
           imageKey: 'storytelling',
           imageAlt:
             'Storytelling et tone of voice : narration linéaire et quatre dimensions du tone of voice',
         },
-        { title: 'Purpose', description: 'Description à définir.' },
-        { title: 'List of Values', description: 'Description à définir.' },
-        { title: 'OOUX Table', description: 'Description à définir.' },
-        { title: '4 Key Dimensions', description: 'Description à définir.' },
-        { title: 'Conventions and Results', description: 'Description à définir.' },
+        {
+          title: '4 Key Dimensions',
+          description:
+            'Emploi des 4 dimensions clés en envisageant l’expérience utilisateur et l’interaction avec la solution',
+          imageKey: '4-key-dimensions',
+          imageAlt:
+            'Quatre dimensions clés du parcours visiteur : Emotional, Physical, Intellectual et Technology',
+        },
+        {
+          title: 'OOUX Table',
+          description:
+            'À partir des 4 dimensions clés, planification des types de données, actions indépendantes et interactions via le tableau ORCA OOUX',
+          imageKey: 'ooux',
+          imageAlt:
+            'Tableau ORCA OOUX reliant objets, propriétés, relations et call-to-actions',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'La planification du contenu et des interactions doit respecter les principes de design.',
+          imageKey: 'principles',
+          imageAlt:
+            'Principes de design basés sur les common pitfalls d’Allen et Gutwill : no overload, no user interference, no disruption, clear focus, no distraction',
+        },
+        {
+          title: 'Results',
+          description:
+            'Après l’élaboration et la planification du contenu de la solution et des éléments d’interface, le projet est prêt à être remis à l’équipe de développement design. Dans ce cas, notre équipe a aussi développé le design. Après des tests et des retours, nous avons conclu le projet.',
+          imageKey: 'results',
+          imageAlt:
+            'Résultat du projet : une expérience interactive équilibrée qui aide les apprenants à s’engager sans quitter leur échappée dans la nature',
+        },
       ],
       metaAria: 'Détails du projet',
       metaLabels: {
@@ -667,6 +745,7 @@ export const translations = {
         team: 'Équipe',
         tools: 'Outils',
         methods: 'Méthodes',
+        target: 'Cible',
         client: 'Client',
       },
       meta: {
@@ -674,6 +753,7 @@ export const translations = {
         team: '5 étudiants',
         tools: 'Figjam, Figma',
         methods: 'UX/ UI Research, Design Principles',
+        target: 'Danois de 15 à 25 ans / Familles',
         client: 'Jardin botanique d’Aarhus',
       },
     },
@@ -853,11 +933,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Botanischer Garten Aarhus',
-          description: 'Entdecke spannende Fakten über die Pflanzen',
+          description: '„Entdecke spannende Fakten über die Pflanzen“',
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Projektbeschreibung folgt später.',
+          description: '„Versteckte Outdoor-Workout-Orte in Aarhus“',
         },
       },
     },
@@ -874,30 +954,60 @@ export const translations = {
         'Wie können wir Besucher des Botanischen Gartens Aarhus informieren und fesseln und dabei die grüne Szenerie möglichst wenig stören',
       researchResults: 'Forschungsergebnisse',
       researchDescription:
-        'Desk- und Field-Research, 7 Interviews vor Ort sowie Marktforschung mit Fokus auf dänische Demografie.',
+        'Desk- und Field-Research, 7 Interviews vor Ort sowie Marktforschung mit Fokus auf die dänische Demografie.',
       researchImageAlt:
         'Zentrale Research-Insights: Venn-Diagramm von Explorers und Learners mit Erfahrungszielen',
       affinityTitle: 'Affinity Diagram',
       affinityDescription:
-        'Abschluss einer Studie zu Besuchertypen des Gartens auf Basis der aus der Research gewonnenen Daten.',
+        'Abschluss einer Studie zu Besuchertypen, ihren Interessen und Bedürfnissen für den Garten auf Basis der aus der Research gewonnenen Daten.',
+      affinityImageAlt:
+        'Affinity Diagram mit Besuchenden-Insights in Sticky-Note-Kategorien',
       personaTitle: 'Persona',
       personaDescription:
-        'Basierend auf der Research haben wir unsere Zielgruppe auf „The Learners“ eingegrenzt.',
+        'Basierend auf der Research haben wir unsere Zielgruppe auf die Gruppe „The Learners“ eingegrenzt. Familien und ein jüngeres Publikum von 15–25 Jahren wurden berücksichtigt.',
       personaImageAlt:
         'Persona-Profil von Matthias Norsegade als Vertretung der Zielgruppe The Learners',
       topics: [
         {
           title: 'Storytelling',
-          description: 'Beschreibung folgt später.',
+          description:
+            'Entwicklung eines Plans für ein leicht nachvollziehbares, lineares Storytelling, angepasst an vier Dimensionen des Tone of Voice.',
           imageKey: 'storytelling',
           imageAlt:
             'Storytelling und Tone of Voice: lineare Erzählung und vier Dimensionen des Tone of Voice',
         },
-        { title: 'Purpose', description: 'Beschreibung folgt später.' },
-        { title: 'List of Values', description: 'Beschreibung folgt später.' },
-        { title: 'OOUX Table', description: 'Beschreibung folgt später.' },
-        { title: '4 Key Dimensions', description: 'Beschreibung folgt später.' },
-        { title: 'Conventions and Results', description: 'Beschreibung folgt später.' },
+        {
+          title: '4 Key Dimensions',
+          description:
+            'Anwendung der 4 Schlüsseldimensionen mit Blick auf die User Experience und die Interaktion mit der Lösung',
+          imageKey: '4-key-dimensions',
+          imageAlt:
+            'Vier Schlüsseldimensionen der Besucher-Journey: Emotional, Physical, Intellectual und Technology',
+        },
+        {
+          title: 'OOUX Table',
+          description:
+            'Auf Basis der 4 Schlüsseldimensionen Planung von Datentypen, unabhängigen Aktionen und Interaktionen über die ORCA OOUX Table',
+          imageKey: 'ooux',
+          imageAlt:
+            'ORCA-OOUX-Tabelle mit Objekten, Eigenschaften, Beziehungen und Call-to-Actions',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Die Planung von Inhalten und Interaktionen sollte Designprinzipien folgen.',
+          imageKey: 'principles',
+          imageAlt:
+            'Designprinzipien basierend auf Allen und Gutwills common pitfalls: no overload, no user interference, no disruption, clear focus, no distraction',
+        },
+        {
+          title: 'Results',
+          description:
+            'Nach Ausarbeitung und Planung der Lösungsinhalte und UI-Elemente ist das Projekt bereit zur Übergabe an das Design-Entwicklungsteam. In diesem Fall hat unser Team auch das Design entwickelt. Nach Tests und Feedback haben wir das Projekt abgeschlossen.',
+          imageKey: 'results',
+          imageAlt:
+            'Projektergebnis: eine ausgewogene interaktive Erfahrung, die Lernenden Engagement ermöglicht, ohne ihre Naturflucht zu verlassen',
+        },
       ],
       metaAria: 'Projektdetails',
       metaLabels: {
@@ -905,6 +1015,7 @@ export const translations = {
         team: 'Team',
         tools: 'Tools',
         methods: 'Methoden',
+        target: 'Zielgruppe',
         client: 'Kunde',
       },
       meta: {
@@ -912,6 +1023,7 @@ export const translations = {
         team: '5 Studierende',
         tools: 'Figjam, Figma',
         methods: 'UX/ UI Research, Design Principles',
+        target: 'Dänische Personen 15–25 Jahre / Familien',
         client: 'Botanischer Garten Aarhus',
       },
     },
@@ -1091,11 +1203,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Jardín Botánico de Aarhus',
-          description: 'Descubre datos curiosos sobre las plantas',
+          description: '"Descubre datos curiosos sobre las plantas"',
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Descripción del proyecto por añadir.',
+          description: '"Espacios ocultos de entrenamiento al aire libre en Aarhus"',
         },
       },
     },
@@ -1117,25 +1229,55 @@ export const translations = {
         'Principales insights de investigación: diagrama de Venn de explorers y learners con objetivos de experiencia',
       affinityTitle: 'Affinity Diagram',
       affinityDescription:
-        'Concluimos un estudio de los tipos de visitantes del Jardín a partir de los datos extraídos de la investigación.',
+        'Concluimos un estudio de los tipos de visitantes, sus intereses y necesidades para el Jardín a partir de los datos extraídos de la investigación.',
+      affinityImageAlt:
+        'Diagrama de afinidad con insights de visitantes agrupados en categorías de sticky notes',
       personaTitle: 'Persona',
       personaDescription:
-        'Con base en la investigación, acotamos nuestra audiencia objetivo hacia “The Learners”.',
+        'Con base en la investigación, acotamos nuestra audiencia objetivo al grupo “The Learners”. Se contemplaron familias y un público más joven de 15 a 25 años.',
       personaImageAlt:
         'Perfil de persona de Matthias Norsegade, representando a la audiencia The Learners',
       topics: [
         {
           title: 'Storytelling',
-          description: 'Descripción por definir.',
+          description:
+            'Desarrollamos un plan de storytelling lineal, fácil de seguir, ajustado a cuatro dimensiones del tone of voice.',
           imageKey: 'storytelling',
           imageAlt:
             'Storytelling y tone of voice: narrativa lineal y cuatro dimensiones del tone of voice',
         },
-        { title: 'Purpose', description: 'Descripción por definir.' },
-        { title: 'List of Values', description: 'Descripción por definir.' },
-        { title: 'OOUX Table', description: 'Descripción por definir.' },
-        { title: '4 Key Dimensions', description: 'Descripción por definir.' },
-        { title: 'Conventions and Results', description: 'Descripción por definir.' },
+        {
+          title: '4 Key Dimensions',
+          description:
+            'Se emplearon las 4 dimensiones clave contemplando la experiencia de usuario y la interacción con la solución',
+          imageKey: '4-key-dimensions',
+          imageAlt:
+            'Cuatro dimensiones clave del recorrido del visitante: Emotional, Physical, Intellectual y Technology',
+        },
+        {
+          title: 'OOUX Table',
+          description:
+            'A partir de las 4 dimensiones clave, planificamos el tipo de datos, las acciones independientes y las interacciones mediante la tabla ORCA OOUX',
+          imageKey: 'ooux',
+          imageAlt:
+            'Tabla ORCA OOUX con objetos, propiedades, relaciones y llamadas a la acción',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'La planificación del contenido y las interacciones debe adherirse a los principios de diseño.',
+          imageKey: 'principles',
+          imageAlt:
+            'Principios de diseño basados en los common pitfalls de Allen y Gutwill: no overload, no user interference, no disruption, clear focus, no distraction',
+        },
+        {
+          title: 'Results',
+          description:
+            'Tras la elaboración y planificación del contenido de la solución y los elementos de UI, el proyecto está listo para entregarse al equipo de desarrollo de diseño. En este caso, nuestro equipo también desarrolló el diseño. Tras pruebas y feedback, concluimos el proyecto.',
+          imageKey: 'results',
+          imageAlt:
+            'Resultado del proyecto: una experiencia interactiva equilibrada que ayuda a aprender y participar sin alejarse de la escapada a la naturaleza',
+        },
       ],
       metaAria: 'Detalles del proyecto',
       metaLabels: {
@@ -1143,6 +1285,7 @@ export const translations = {
         team: 'Equipo',
         tools: 'Herramientas',
         methods: 'Métodos',
+        target: 'Público objetivo',
         client: 'Cliente',
       },
       meta: {
@@ -1150,6 +1293,7 @@ export const translations = {
         team: '5 estudiantes',
         tools: 'Figjam, Figma',
         methods: 'UX/ UI Research, Design Principles',
+        target: 'Personas danesas de 15 a 25 años / Familias',
         client: 'Jardín Botánico de Aarhus',
       },
     },

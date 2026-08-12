@@ -1,11 +1,12 @@
 import './UxUiScreen.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
+import { BOTANICAL_COVER } from '../assets'
 import { useI18n } from '../i18n/I18nContext'
 
 const MOSAICS = [
-  { key: 'projectOne', route: 'botanical' },
-  { key: 'projectTwo', route: 'yoga' },
+  { key: 'projectOne', route: 'botanical', cover: BOTANICAL_COVER },
+  { key: 'projectTwo', route: 'yoga', cover: null },
 ]
 
 export default function UxUiScreen({ onNavigate }) {
@@ -32,15 +33,23 @@ export default function UxUiScreen({ onNavigate }) {
           aria-label={t('uxUi.projectsAria')}
         >
           <ul className="ux-ui-screen__mosaic-grid">
-            {MOSAICS.map(({ key, route }) => {
+            {MOSAICS.map(({ key, route, cover }) => {
               const title = t(`uxUi.mosaics.${key}.title`)
               const description = t(`uxUi.mosaics.${key}.description`)
               const body = (
                 <>
                   <div
-                    className="ux-ui-screen__mosaic-panel"
+                    className={`ux-ui-screen__mosaic-panel${cover ? ' ux-ui-screen__mosaic-panel--image' : ''}`}
                     aria-hidden="true"
-                  />
+                  >
+                    {cover ? (
+                      <img
+                        src={cover}
+                        alt=""
+                        className="ux-ui-screen__mosaic-image"
+                      />
+                    ) : null}
+                  </div>
                   <div className="ux-ui-screen__mosaic-copy">
                     <h2 className="ux-ui-screen__mosaic-title">{title}</h2>
                     <p className="ux-ui-screen__mosaic-description">

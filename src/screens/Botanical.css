@@ -16,3 +16,173 @@
 .botanical .ux-case-study__meta-label {
   color: var(--deep-green);
 }
+
+/* Affinity sticky board — same figure width as other case images */
+.botanical-affinity {
+  margin-inline: auto;
+  margin-top: clamp(16px, 2.5vw, 32px);
+  margin-bottom: 0;
+  padding: clamp(10px, 1.4vw, 14px);
+  box-sizing: border-box;
+  background:
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--deep-green) 4%, #f4f7f4) 0%,
+      #eef3ef 100%
+    );
+  border: 1px solid color-mix(in srgb, var(--deep-green) 12%, transparent);
+}
+
+.botanical-affinity__personas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(6px, 1vw, 10px);
+  margin-bottom: clamp(8px, 1.2vw, 12px);
+}
+
+.botanical-affinity__persona {
+  margin: 0;
+  padding: clamp(8px, 1.1vw, 11px) clamp(8px, 1vw, 10px);
+  font-family: var(--font-rains);
+  font-size: clamp(0.72rem, 1.05vw, 0.88rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1a1424;
+  background: #d9c6f0;
+  box-shadow: 1px 2px 0 color-mix(in srgb, var(--deep-purple) 18%, transparent);
+  transform: rotate(-0.4deg);
+}
+
+.botanical-affinity__persona:nth-child(2) {
+  background: #c8e4d4;
+  transform: rotate(0.5deg);
+}
+
+.botanical-affinity__board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(6px, 1vw, 10px);
+  align-items: start;
+}
+
+.botanical-affinity__cluster {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.botanical-affinity__header {
+  padding: clamp(7px, 0.95vw, 10px) clamp(8px, 1vw, 10px);
+  background: #f2e28a;
+  box-shadow: 1px 1px 0 rgba(20, 10, 30, 0.12);
+}
+
+.botanical-affinity__cluster--gains .botanical-affinity__header {
+  background: #f0c9a0;
+}
+
+.botanical-affinity__cluster--habits .botanical-affinity__header {
+  background: #b9d8ef;
+}
+
+.botanical-affinity__cluster--customer .botanical-affinity__header {
+  background: #d7c4f2;
+}
+
+.botanical-affinity__cluster--visitor .botanical-affinity__header {
+  background: #c5e6c8;
+}
+
+.botanical-affinity__cluster--likes .botanical-affinity__header {
+  background: #f5d48a;
+}
+
+.botanical-affinity__cluster--dislike .botanical-affinity__header {
+  background: #f0b4b0;
+}
+
+.botanical-affinity__header-title {
+  margin: 0;
+  font-family: var(--font-rains);
+  font-size: clamp(0.68rem, 0.95vw, 0.8rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1a1424;
+}
+
+.botanical-affinity__header-sub {
+  margin: 0.2em 0 0;
+  font-family: var(--font-rains);
+  font-size: clamp(0.62rem, 0.85vw, 0.72rem);
+  line-height: 1.25;
+  color: rgba(20, 10, 30, 0.62);
+}
+
+.botanical-affinity__notes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.botanical-affinity__note {
+  margin: 0;
+  padding: clamp(6px, 0.85vw, 8px) clamp(7px, 0.9vw, 9px);
+  font-family: var(--font-rains);
+  font-size: clamp(0.68rem, 0.9vw, 0.78rem);
+  line-height: 1.35;
+  color: rgba(20, 10, 30, 0.84);
+  background: #fff8c9;
+  box-shadow: 1px 1px 0 rgba(20, 10, 30, 0.1);
+}
+
+.botanical-affinity__cluster--gains .botanical-affinity__note:nth-child(odd),
+.botanical-affinity__cluster--likes .botanical-affinity__note:nth-child(even) {
+  transform: rotate(-0.35deg);
+}
+
+.botanical-affinity__cluster--habits .botanical-affinity__note:nth-child(even),
+.botanical-affinity__cluster--dislike .botanical-affinity__note:nth-child(odd) {
+  transform: rotate(0.4deg);
+}
+
+@media (max-width: 720px) {
+  .botanical-affinity__personas {
+    grid-template-columns: 1fr;
+  }
+
+  .botanical-affinity__board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .botanical-affinity__persona {
+    transform: none;
+  }
+
+  .botanical-affinity__persona:nth-child(2) {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .botanical-affinity__board {
+    grid-template-columns: 1fr;
+  }
+
+  .botanical-affinity__note {
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  .botanical-affinity__header-title {
+    font-size: 0.8rem;
+  }
+}

@@ -3,20 +3,32 @@ import './Botanical.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import {
+  BOTANICAL_OOUX,
   BOTANICAL_PERSONA,
+  BOTANICAL_PRINCIPLES,
+  BOTANICAL_PURPOSE,
   BOTANICAL_RESEARCH,
+  BOTANICAL_RESULTS,
   BOTANICAL_STORYTELLING,
 } from '../assets'
+import {
+  AFFINITY_CLUSTERS,
+  AFFINITY_PERSONAS,
+} from '../data/botanicalAffinity'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
 
-const META_KEYS = ['date', 'team', 'tools', 'methods', 'client']
+const META_KEYS = ['date', 'team', 'tools', 'methods', 'target', 'client']
 
-/* Replace with the live Figma prototype URL when ready */
-const FIGMA_PROTOTYPE_URL = 'https://www.figma.com/'
+const FIGMA_PROTOTYPE_URL =
+  'https://www.figma.com/proto/gwtmdifB6wyNumSOFHYsLl/Botanical-Garden-DIGI-XP?node-id=323-2104&t=jD3DIhT7u1f6AWZF-0&scaling=min-zoom&content-scaling=fixed&page-id=113%3A73&starting-point-node-id=142%3A330&show-proto-sidebar=1'
 
 const TOPIC_IMAGES = {
   storytelling: BOTANICAL_STORYTELLING,
+  '4-key-dimensions': BOTANICAL_PURPOSE,
+  ooux: BOTANICAL_OOUX,
+  principles: BOTANICAL_PRINCIPLES,
+  results: BOTANICAL_RESULTS,
 }
 
 export default function Botanical({ onNavigate }) {
@@ -53,22 +65,17 @@ export default function Botanical({ onNavigate }) {
 
         <div className="ux-case-study__body">
           <div className="ux-case-study__split">
-            <figure className="ux-case-study__video-block">
-              <div className="ux-case-study__video-frame">
-                <video
-                  className="ux-case-study__video"
-                  controls
-                  playsInline
-                  preload="metadata"
-                  src={publicUrl('videos/botanical.mp4')}
-                >
-                  {t('botanical.videoFallback')}
-                </video>
-              </div>
-              <figcaption className="ux-case-study__video-legend">
-                {t('botanical.videoLegend')}
-              </figcaption>
-            </figure>
+            <div className="ux-case-study__video-frame">
+              <video
+                className="ux-case-study__video"
+                controls
+                playsInline
+                preload="metadata"
+                src={publicUrl('videos/botanical.mp4')}
+              >
+                {t('botanical.videoFallback')}
+              </video>
+            </div>
 
             <dl className="ux-case-study__meta" aria-label={t('botanical.metaAria')}>
               {META_KEYS.map((key) => (
@@ -80,6 +87,10 @@ export default function Botanical({ onNavigate }) {
                 </div>
               ))}
             </dl>
+
+            <p className="ux-case-study__video-legend">
+              {t('botanical.videoLegend')}
+            </p>
           </div>
 
           <section
@@ -134,6 +145,44 @@ export default function Botanical({ onNavigate }) {
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('botanical.affinityDescription')}
             </p>
+            <figure
+              className="ux-case-study__figure ux-case-study__figure--sm botanical-affinity"
+              aria-label={t('botanical.affinityImageAlt')}
+            >
+              <div className="botanical-affinity__personas" aria-hidden="true">
+                {AFFINITY_PERSONAS.map((persona) => (
+                  <p key={persona} className="botanical-affinity__persona">
+                    {persona}
+                  </p>
+                ))}
+              </div>
+              <div className="botanical-affinity__board">
+                {AFFINITY_CLUSTERS.map((cluster) => (
+                  <div
+                    key={cluster.id}
+                    className={`botanical-affinity__cluster botanical-affinity__cluster--${cluster.id}`}
+                  >
+                    <div className="botanical-affinity__header">
+                      <p className="botanical-affinity__header-title">
+                        {cluster.title}
+                      </p>
+                      {cluster.subtitle ? (
+                        <p className="botanical-affinity__header-sub">
+                          {cluster.subtitle}
+                        </p>
+                      ) : null}
+                    </div>
+                    <ul className="botanical-affinity__notes">
+                      {cluster.notes.map((note) => (
+                        <li key={note} className="botanical-affinity__note">
+                          {note}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </figure>
           </section>
 
           <section
@@ -160,6 +209,7 @@ export default function Botanical({ onNavigate }) {
               const image = topic.imageKey
                 ? TOPIC_IMAGES[topic.imageKey]
                 : null
+              const showPrototypeCta = topic.imageKey === 'results'
 
               return (
                 <section
@@ -179,6 +229,16 @@ export default function Botanical({ onNavigate }) {
                         className="ux-case-study__figure-image"
                       />
                     </figure>
+                  ) : null}
+                  {showPrototypeCta ? (
+                    <a
+                      className="ux-case-study__cta"
+                      href={FIGMA_PROTOTYPE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t('botanical.figmaCta')}
+                    </a>
                   ) : null}
                 </section>
               )
