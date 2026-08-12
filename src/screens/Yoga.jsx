@@ -3,6 +3,7 @@ import './UxCaseStudy.css'
 import './Yoga.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
+import AnimatedTitle from '../components/AnimatedTitle'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
 import {
@@ -133,12 +134,12 @@ export default function Yoga({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="yoga-problem-statement"
           >
-            <h2
+            <AnimatedTitle
               id="yoga-problem-statement"
               className="ux-case-study__subtitle"
             >
               {t('yoga.problemStatement')}
-            </h2>
+            </AnimatedTitle>
             <div className="ux-case-study__quote">
               <span className="ux-case-study__quote-mark" aria-hidden="true">
                 “
@@ -153,12 +154,12 @@ export default function Yoga({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="yoga-research-results"
           >
-            <h2
+            <AnimatedTitle
               id="yoga-research-results"
               className="ux-case-study__subtitle"
             >
               {t('yoga.researchResults')}
-            </h2>
+            </AnimatedTitle>
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('yoga.researchDescription')}
             </p>
@@ -168,9 +169,9 @@ export default function Yoga({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="yoga-affinity"
           >
-            <h2 id="yoga-affinity" className="ux-case-study__subtitle">
+            <AnimatedTitle id="yoga-affinity" className="ux-case-study__subtitle">
               {t('yoga.affinityTitle')}
-            </h2>
+            </AnimatedTitle>
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('yoga.affinityDescription')}
             </p>
@@ -188,9 +189,9 @@ export default function Yoga({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="yoga-persona"
           >
-            <h2 id="yoga-persona" className="ux-case-study__subtitle">
+            <AnimatedTitle id="yoga-persona" className="ux-case-study__subtitle">
               {t('yoga.personaTitle')}
-            </h2>
+            </AnimatedTitle>
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('yoga.personaDescription')}
             </p>
@@ -216,7 +217,9 @@ export default function Yoga({ onNavigate }) {
                   className="ux-case-study__section"
                   aria-label={topic.title}
                 >
-                  <h2 className="ux-case-study__subtitle">{topic.title}</h2>
+                  <AnimatedTitle className="ux-case-study__subtitle">
+                    {topic.title}
+                  </AnimatedTitle>
                   <p className="ux-case-study__section-text ux-case-study__section-text--center">
                     {topic.description}
                   </p>

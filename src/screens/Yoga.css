@@ -8,6 +8,7 @@
 
 .yoga .site-nav {
   background-color: var(--deep-purple);
+  color: var(--light-violet);
 }
 
 .yoga .site-nav__link,
@@ -19,6 +20,10 @@
 
 .yoga .site-nav__trail-current {
   color: color-mix(in srgb, var(--light-violet) 72%, white);
+}
+
+.yoga .site-nav__burger {
+  color: var(--light-violet);
 }
 
 .yoga .site-nav__home {
@@ -35,7 +40,8 @@
   gap: clamp(8px, 1vw, 12px);
 }
 
-.yoga .lang-filter__btn {
+.yoga .lang-filter__btn,
+.yoga .lang-filter__trigger {
   color: var(--light-violet);
   font-size: clamp(12px, 1.15vw, 14px);
   font-weight: 600;
@@ -43,7 +49,8 @@
   opacity: 0.72;
 }
 
-.yoga .lang-filter__btn:hover {
+.yoga .lang-filter__btn:hover,
+.yoga .lang-filter__trigger:hover {
   opacity: 0.92;
 }
 
@@ -104,6 +111,7 @@
 .yoga .ux-case-study__meta {
   grid-column: 1;
   grid-row: auto;
+  margin-top: clamp(20px, 3.5vw, 40px);
 }
 
 .yoga .ux-case-study__video-legend {

@@ -1,7 +1,7 @@
 import './AnimatedTitle.css'
 import { useEffect, useRef, useState } from 'react'
 
-export default function AnimatedTitle({ children, className = '' }) {
+export default function AnimatedTitle({ children, className = '', id }) {
   const ref = useRef(null)
   const [active, setActive] = useState(false)
   const [playId, setPlayId] = useState(0)
@@ -13,7 +13,9 @@ export default function AnimatedTitle({ children, className = '' }) {
     const el = ref.current
     if (!el) return
 
-    const root = el.closest('.main-page, .about-screen, .makeup-fx-screen')
+    const root = el.closest(
+      '.main-page, .about-screen, .makeup-fx-screen, .ux-case-study',
+    )
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -39,6 +41,7 @@ export default function AnimatedTitle({ children, className = '' }) {
 
   return (
     <h2
+      id={id}
       ref={ref}
       className={`project-row__title${active ? ' project-row__title--in' : ''}${className ? ` ${className}` : ''}`}
       aria-label={ariaLabel}

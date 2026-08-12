@@ -256,6 +256,24 @@
   max-width: 22ch;
 }
 
+.ux-case-study__subtitle.project-row__title {
+  width: 100%;
+  max-width: 22ch;
+  margin-inline: auto;
+  align-items: center;
+  font-family: var(--font-rains);
+  font-size: clamp(1.65rem, 3.4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-transform: none;
+  color: var(--title-purple);
+}
+
+.ux-case-study__subtitle .project-row__line {
+  justify-content: center;
+}
+
 .ux-case-study__section-text {
   margin: 0;
   font-family: var(--font-rains);

@@ -3,6 +3,7 @@ import './UxCaseStudy.css'
 import './Botanical.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
+import AnimatedTitle from '../components/AnimatedTitle'
 import {
   BOTANICAL_PERSONA_PHOTO,
   BOTANICAL_PERSONA_SCENE,
@@ -139,12 +140,12 @@ export default function Botanical({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="botanical-problem-statement"
           >
-            <h2
+            <AnimatedTitle
               id="botanical-problem-statement"
               className="ux-case-study__subtitle"
             >
               {t('botanical.problemStatement')}
-            </h2>
+            </AnimatedTitle>
             <div className="ux-case-study__quote">
               <span className="ux-case-study__quote-mark" aria-hidden="true">
                 “
@@ -159,12 +160,12 @@ export default function Botanical({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="botanical-research-results"
           >
-            <h2
+            <AnimatedTitle
               id="botanical-research-results"
               className="ux-case-study__subtitle"
             >
               {t('botanical.researchResults')}
-            </h2>
+            </AnimatedTitle>
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('botanical.researchDescription')}
             </p>
@@ -182,9 +183,12 @@ export default function Botanical({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="botanical-affinity"
           >
-            <h2 id="botanical-affinity" className="ux-case-study__subtitle">
+            <AnimatedTitle
+              id="botanical-affinity"
+              className="ux-case-study__subtitle"
+            >
               {t('botanical.affinityTitle')}
-            </h2>
+            </AnimatedTitle>
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('botanical.affinityDescription')}
             </p>
@@ -232,9 +236,12 @@ export default function Botanical({ onNavigate }) {
             className="ux-case-study__section"
             aria-labelledby="botanical-persona"
           >
-            <h2 id="botanical-persona" className="ux-case-study__subtitle">
+            <AnimatedTitle
+              id="botanical-persona"
+              className="ux-case-study__subtitle"
+            >
               {t('botanical.personaTitle')}
-            </h2>
+            </AnimatedTitle>
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('botanical.personaDescription')}
             </p>
@@ -319,7 +326,9 @@ export default function Botanical({ onNavigate }) {
                   className="ux-case-study__section"
                   aria-label={topic.title}
                 >
-                  <h2 className="ux-case-study__subtitle">{topic.title}</h2>
+                  <AnimatedTitle className="ux-case-study__subtitle">
+                    {topic.title}
+                  </AnimatedTitle>
                   <p className="ux-case-study__section-text ux-case-study__section-text--center">
                     {topic.description}
                   </p>
