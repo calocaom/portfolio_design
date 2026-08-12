@@ -1,0 +1,137 @@
+/**
+ * List of Requirements chart content extracted from list-of-requirements.pdf
+ */
+export const YOGA_REQUIREMENTS_CHART = {
+  title: 'LIST OF REQUIREMENTS',
+  groups: [
+    {
+      id: 'device',
+      title: 'Device Requirements',
+      items: [
+        'Website Desktop screen size',
+        'Mobile version',
+        'English language',
+      ],
+    },
+    {
+      id: 'accessibility',
+      title: 'Accessibility Requirements',
+      items: [
+        'Descriptive links',
+        'Autoplay on hero motion picture',
+        'User control on playing videos',
+        'Clear readable fonts',
+        'Perceivable contrast',
+      ],
+    },
+    {
+      id: 'navigation',
+      title: 'Navigation',
+      items: [
+        'Home page with 3 objects to click',
+        '5 objects on menu',
+        'Logo',
+        'Expandable sections',
+        'Link Buttons',
+        'Consistent Menu',
+        'Buttons to links',
+      ],
+    },
+    {
+      id: 'customization',
+      title: 'Customization / personalization',
+      items: [
+        'Dark theme',
+        'Responsive design, fit to various screens',
+      ],
+    },
+    {
+      id: 'menu',
+      title: 'Menu',
+      items: ['Place 1', 'Place 2', 'Place 3', 'Learn more'],
+    },
+    {
+      id: 'footer',
+      title: 'Footer',
+      items: ['Emergency contacts', 'Learn more'],
+    },
+    {
+      id: 'page-a',
+      title: 'Page A Requirements',
+      subtitle: 'HOME',
+      items: [
+        '3 clickable objects for place 1, place 2, place 3',
+        '3 images on each object',
+        '1 Heading for each object',
+        '1 Subheading for each object',
+      ],
+    },
+    {
+      id: 'page-b',
+      title: 'Page B Requirements',
+      subtitle: 'PLACE 1: Shelter in True Skov',
+      items: [
+        '1 Clickable Logo icon',
+        '1 Menu with 5 objects',
+        'Hero image',
+        'Heading text 1',
+        'Subheading text 1',
+        'Text',
+        'Pictures',
+        'Levels of privacy illustrated with icons',
+        'Maximum amount of people with illustrated icons',
+        'Expandable section with more details - Ready to go?',
+        'Footer',
+      ],
+    },
+    {
+      id: 'page-c',
+      title: 'Page C Requirements',
+      subtitle: 'PLACE 2: Ballehage beach',
+      items: [
+        '1 Clickable Logo icon',
+        '1 Menu with 5 objects',
+        'Hero image',
+        'Heading text 1',
+        'Subheading text 1',
+        'Text',
+        'Pictures',
+        'Levels of privacy illustrated with icons',
+        'Maximum amount of people with illustrated icons',
+        'Expandable section with more details - Ready to go?',
+        'Footer',
+      ],
+    },
+    {
+      id: 'page-d',
+      title: 'Page D Requirements',
+      subtitle: 'PLACE 3: Observation Deck at Egå',
+      items: [
+        '1 Clickable Logo icon',
+        '1 Menu with 5 objects',
+        'Hero image',
+        'Heading text 1',
+        'Subheading text 1',
+        'Text',
+        'Pictures',
+        'Levels of privacy illustrated with icons',
+        'Maximum amount of people with illustrated icons',
+        'Expandable section with more details - Ready to go?',
+        'Footer',
+      ],
+    },
+    {
+      id: 'page-e',
+      title: 'Page E Requirements',
+      subtitle: 'TIPS / ADVICE: Learn more',
+      items: [
+        '1 Clickable Logo icon',
+        '1 Menu with 5 objects',
+        'Row 1 Thumbnails with how-to-videos',
+        'Row 2: Thumbnails with routine videos',
+        'Row 3: Source recommendations of yoga theory. (Books, articles)',
+        'Footer',
+      ],
+    },
+  ],
+}

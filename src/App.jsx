@@ -3,7 +3,7 @@
  *
  * Portfolio website: routes nav targets to pages.
  * home / works open MainPage and scroll to section.
- * about, contact, makeup-fx, ux-ui, botanical, and yoga open their pages.
+ * about, contact, makeup-fx, digital-solutions, ux-ui, botanical, and yoga open their pages.
  */
 
 import { useState } from 'react'
@@ -12,6 +12,7 @@ import MainPage from './screens/MainPage'
 import AboutScreen from './screens/AboutScreen'
 import ContactScreen from './screens/ContactScreen'
 import MakeupFxScreen from './screens/MakeupFxScreen'
+import DigitalSolutionsScreen from './screens/DigitalSolutionsScreen'
 import UxUiScreen from './screens/UxUiScreen'
 import Botanical from './screens/Botanical'
 import Yoga from './screens/Yoga'
@@ -37,6 +38,12 @@ export default function App() {
 
     if (target === 'makeup-fx') {
       setPage('makeup-fx')
+      setPendingScroll(null)
+      return
+    }
+
+    if (target === 'digital-solutions') {
+      setPage('digital-solutions')
       setPendingScroll(null)
       return
     }
@@ -88,6 +95,10 @@ export default function App() {
 
       {page === 'makeup-fx' && (
         <MakeupFxScreen onNavigate={handleNavigate} />
+      )}
+
+      {page === 'digital-solutions' && (
+        <DigitalSolutionsScreen onNavigate={handleNavigate} />
       )}
 
       {page === 'ux-ui' && (

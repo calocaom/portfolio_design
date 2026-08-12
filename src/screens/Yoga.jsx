@@ -12,12 +12,15 @@ import {
   HmwChart,
   OouxChart,
   PersonaChart,
+  RequirementsChart,
+  ResearchChart,
   ValuesChart,
 } from './YogaCharts'
 
 const META_KEYS = ['date', 'team', 'tools', 'methods', 'target', 'client']
 const CHART_DESIGN_WIDTH = 832
 const AFFINITY_DESIGN_WIDTH = 1100
+const REQUIREMENTS_DESIGN_WIDTH = 1100
 
 /* Replace with the live Figma prototype URL when ready */
 const FIGMA_PROTOTYPE_URL = 'https://www.figma.com/'
@@ -26,6 +29,7 @@ const TOPIC_CHARTS = {
   hmw: HmwChart,
   values: ValuesChart,
   ooux: OouxChart,
+  requirements: RequirementsChart,
   conventions: ConventionsChart,
 }
 
@@ -165,6 +169,14 @@ export default function Yoga({ onNavigate }) {
             <p className="ux-case-study__section-text ux-case-study__section-text--center">
               {t('yoga.researchDescription')}
             </p>
+            <figure
+              className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
+              aria-label={t('yoga.researchImageAlt')}
+            >
+              <ScaleToFit>
+                <ResearchChart />
+              </ScaleToFit>
+            </figure>
           </section>
 
           <section
@@ -233,7 +245,13 @@ export default function Yoga({ onNavigate }) {
                       {topic.imageKey === 'conventions' ? (
                         <Chart />
                       ) : (
-                        <ScaleToFit>
+                        <ScaleToFit
+                          designWidth={
+                            topic.imageKey === 'requirements'
+                              ? REQUIREMENTS_DESIGN_WIDTH
+                              : CHART_DESIGN_WIDTH
+                          }
+                        >
                           <Chart />
                         </ScaleToFit>
                       )}

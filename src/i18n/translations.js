@@ -140,6 +140,21 @@ export const translations = {
         },
       },
     },
+    digitalSolutions: {
+      title: 'Design for Digital Solutions',
+      navCrumb: 'Digital Solutions',
+      projectsAria: 'Design for Digital Solutions Projects',
+      mosaics: {
+        projectOne: {
+          title: 'Project One',
+          description: 'Description to be set.',
+        },
+        projectTwo: {
+          title: 'Project Two',
+          description: 'Description to be set.',
+        },
+      },
+    },
     botanical: {
       title: 'Aarhus Botanical Garden',
       description:
@@ -235,7 +250,10 @@ export const translations = {
       problemDescription:
         'How can I introduce the people living or visiting Aarhus with inexpensive areas to exercise and relax and help them prepare what they need to know in order to visit?',
       researchResults: 'Research Results',
-      researchDescription: 'Research description to be set.',
+      researchDescription:
+        'Conducted Desk and Field Research that consisted on web research, reading the book “The Perfection of Yoga” by A. C. Bhaktivedanta, drawing observations from the outdoor places and 11 interviews at yoga schools.',
+      researchImageAlt:
+        'Research results list with twelve numbered interview findings about yoga practice, places, and motivations',
       affinityTitle: 'Affinity Diagram',
       affinityDescription: 'Affinity diagram description to be set.',
       affinityImageAlt:
@@ -269,7 +287,7 @@ export const translations = {
           imageAlt:
             'ORCA OOUX table mapping Place, Learn more, and Preparations objects with properties, relationships, and calls-to-action',
         },
-        { title: '4 Key Dimensions', description: 'Description to be set.' },
+        { title: 'List of Requirements', description: 'Description to be set.', imageKey: 'requirements', imageAlt: 'List of requirements board covering device, accessibility, navigation, customization, menu, footer, and page A–E requirements' },
         {
           title: 'Conventions',
           description:
@@ -454,6 +472,21 @@ export const translations = {
         },
       },
     },
+    digitalSolutions: {
+      title: 'Design til Digitale Løsninger',
+      navCrumb: 'Digitale Løsninger',
+      projectsAria: 'Design til Digitale Løsninger Projekter',
+      mosaics: {
+        projectOne: {
+          title: 'Projekt Et',
+          description: 'Beskrivelse sættes senere.',
+        },
+        projectTwo: {
+          title: 'Projekt To',
+          description: 'Beskrivelse sættes senere.',
+        },
+      },
+    },
     botanical: {
       title: 'Aarhus Botaniske Have',
       description:
@@ -550,7 +583,10 @@ export const translations = {
       problemDescription:
         'Hvordan kan jeg præsentere folk, der bor i eller besøger Aarhus, for billige områder til motion og afslapning og hjælpe dem med at forberede det, de har brug for at vide, før de besøger?',
       researchResults: 'Forskningsresultater',
-      researchDescription: 'Forskningsbeskrivelse sættes senere.',
+      researchDescription:
+        'Gennemført desk- og field research bestående af webresearch, læsning af bogen “The Perfection of Yoga” af A. C. Bhaktivedanta, observationer fra de udendørs steder og 11 interviews på yogaskoler.',
+      researchImageAlt:
+        'Forskningsresultater med tolv nummererede interviewfund om yogapraksis, steder og motivationer',
       affinityTitle: 'Affinity Diagram',
       affinityDescription: 'Affinity diagram-beskrivelse sættes senere.',
       affinityImageAlt:
@@ -589,7 +625,7 @@ export const translations = {
           imageAlt:
             'ORCA OOUX-tabel der mapper Place, Learn more og Preparations med egenskaber, relationer og call-to-actions',
         },
-        { title: '4 Key Dimensions', description: 'Beskrivelse sættes senere.' },
+        { title: 'Liste over Krav', description: 'Beskrivelse sættes senere.', imageKey: 'requirements', imageAlt: 'Kravliste med device, accessibility, navigation, customization, menu, footer og side A–E-krav' },
         {
           title: 'Conventions',
           description:
@@ -779,6 +815,21 @@ export const translations = {
         },
       },
     },
+    digitalSolutions: {
+      title: 'Design pour Solutions Numériques',
+      navCrumb: 'Solutions Numériques',
+      projectsAria: 'Projets Design pour Solutions Numériques',
+      mosaics: {
+        projectOne: {
+          title: 'Projet Un',
+          description: 'Description à définir.',
+        },
+        projectTwo: {
+          title: 'Projet Deux',
+          description: 'Description à définir.',
+        },
+      },
+    },
     botanical: {
       title: 'Jardin botanique d’Aarhus',
       description:
@@ -875,7 +926,10 @@ export const translations = {
       problemDescription:
         'Comment puis-je présenter aux personnes qui vivent à Aarhus ou qui la visitent des espaces peu coûteux pour faire de l’exercice et se détendre, et les aider à préparer ce qu’ils doivent savoir avant de s’y rendre ?',
       researchResults: 'Résultats de recherche',
-      researchDescription: 'Description de la recherche à définir.',
+      researchDescription:
+        'Recherche documentaire et de terrain réalisée, comprenant une recherche web, la lecture du livre « The Perfection of Yoga » d’A. C. Bhaktivedanta, des observations sur les lieux en plein air et 11 entretiens dans des écoles de yoga.',
+      researchImageAlt:
+        'Résultats de recherche avec douze conclusions d’entretiens numérotées sur la pratique du yoga, les lieux et les motivations',
       affinityTitle: 'Affinity Diagram',
       affinityDescription: 'Description du diagramme d’affinité à définir.',
       affinityImageAlt:
@@ -914,7 +968,7 @@ export const translations = {
           imageAlt:
             'Tableau ORCA OOUX reliant Place, Learn more et Preparations aux propriétés, relations et call-to-actions',
         },
-        { title: '4 Key Dimensions', description: 'Description à définir.' },
+        { title: 'Liste des Exigences', description: 'Description à définir.', imageKey: 'requirements', imageAlt: 'Liste des exigences couvrant device, accessibilité, navigation, personnalisation, menu, footer et pages A–E' },
         {
           title: 'Conventions',
           description:
@@ -1104,6 +1158,21 @@ export const translations = {
         },
       },
     },
+    digitalSolutions: {
+      title: 'Design für Digitale Lösungen',
+      navCrumb: 'Digitale Lösungen',
+      projectsAria: 'Design für Digitale Lösungen Projekte',
+      mosaics: {
+        projectOne: {
+          title: 'Projekt Eins',
+          description: 'Beschreibung folgt später.',
+        },
+        projectTwo: {
+          title: 'Projekt Zwei',
+          description: 'Beschreibung folgt später.',
+        },
+      },
+    },
     botanical: {
       title: 'Botanischer Garten Aarhus',
       description:
@@ -1200,7 +1269,10 @@ export const translations = {
       problemDescription:
         'Wie kann ich Menschen, die in Aarhus leben oder die Stadt besuchen, kostengünstige Orte zum Sporttreiben und Entspannen vorstellen und ihnen helfen, sich auf das vorzubereiten, was sie für den Besuch wissen müssen?',
       researchResults: 'Forschungsergebnisse',
-      researchDescription: 'Research-Beschreibung folgt später.',
+      researchDescription:
+        'Desk- und Field Research durchgeführt, bestehend aus Webrecherche, der Lektüre des Buches „The Perfection of Yoga“ von A. C. Bhaktivedanta, Beobachtungen an den Outdoor-Orten und 11 Interviews in Yogaschulen.',
+      researchImageAlt:
+        'Research-Ergebnisse mit zwölf nummerierten Interview-Findings zu Yoga-Praxis, Orten und Motivationen',
       affinityTitle: 'Affinity Diagram',
       affinityDescription: 'Beschreibung des Affinity Diagrams folgt später.',
       affinityImageAlt:
@@ -1239,7 +1311,7 @@ export const translations = {
           imageAlt:
             'ORCA-OOUX-Tabelle mit Place, Learn more und Preparations sowie Eigenschaften, Beziehungen und Call-to-Actions',
         },
-        { title: '4 Key Dimensions', description: 'Beschreibung folgt später.' },
+        { title: 'Liste der Anforderungen', description: 'Beschreibung folgt später.', imageKey: 'requirements', imageAlt: 'Anforderungsliste zu Device, Accessibility, Navigation, Customization, Menu, Footer und Seiten A–E' },
         {
           title: 'Conventions',
           description:
@@ -1429,6 +1501,21 @@ export const translations = {
         },
       },
     },
+    digitalSolutions: {
+      title: 'Diseño para Soluciones Digitales',
+      navCrumb: 'Soluciones Digitales',
+      projectsAria: 'Proyectos de Diseño para Soluciones Digitales',
+      mosaics: {
+        projectOne: {
+          title: 'Proyecto Uno',
+          description: 'Descripción por definir.',
+        },
+        projectTwo: {
+          title: 'Proyecto Dos',
+          description: 'Descripción por definir.',
+        },
+      },
+    },
     botanical: {
       title: 'Jardín Botánico de Aarhus',
       description:
@@ -1525,7 +1612,10 @@ export const translations = {
       problemDescription:
         '¿Cómo puedo presentar a las personas que viven en Aarhus o la visitan zonas económicas para hacer ejercicio y relajarse, y ayudarles a preparar lo que necesitan saber para ir?',
       researchResults: 'Resultados de investigación',
-      researchDescription: 'Descripción de la investigación por definir.',
+      researchDescription:
+        'Se realizó Desk y Field Research que consistió en investigación web, la lectura del libro “The Perfection of Yoga” de A. C. Bhaktivedanta, observaciones en los lugares al aire libre y 11 entrevistas en escuelas de yoga.',
+      researchImageAlt:
+        'Resultados de investigación con doce hallazgos numerados de entrevistas sobre práctica de yoga, lugares y motivaciones',
       affinityTitle: 'Affinity Diagram',
       affinityDescription: 'Descripción del diagrama de afinidad por definir.',
       affinityImageAlt:
@@ -1564,7 +1654,7 @@ export const translations = {
           imageAlt:
             'Tabla ORCA OOUX con Place, Learn more y Preparations, propiedades, relaciones y llamadas a la acción',
         },
-        { title: '4 Key Dimensions', description: 'Descripción por definir.' },
+        { title: 'Lista de Requisitos', description: 'Descripción por definir.', imageKey: 'requirements', imageAlt: 'Lista de requisitos de dispositivo, accesibilidad, navegación, personalización, menú, footer y páginas A–E' },
         {
           title: 'Conventions',
           description:

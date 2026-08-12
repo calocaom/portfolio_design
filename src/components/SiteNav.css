@@ -12,7 +12,7 @@
 
 .main-page--light .site-nav,
 .makeup-fx-screen .site-nav,
-.ux-ui-screen .site-nav,
+.projects-hub .site-nav,
 .ux-case-study .site-nav {
   color: var(--deep-purple);
 }
@@ -86,7 +86,7 @@
 /* Light nav: black logo already contrasts — drop the light veil */
 .main-page--light .site-nav__home,
 .makeup-fx-screen .site-nav__home,
-.ux-ui-screen .site-nav__home,
+.projects-hub .site-nav__home,
 .ux-case-study .site-nav__home {
   background: color-mix(in srgb, var(--deep-purple) 10%, transparent);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--deep-purple) 12%, transparent);
@@ -94,7 +94,7 @@
 
 .main-page--light .site-nav__home--active,
 .makeup-fx-screen .site-nav__home--active,
-.ux-ui-screen .site-nav__home--active,
+.projects-hub .site-nav__home--active,
 .ux-case-study .site-nav__home--active {
   background: color-mix(in srgb, var(--deep-purple) 16%, transparent);
   box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--deep-purple) 28%, transparent);
@@ -167,9 +167,9 @@
 .makeup-fx-screen .site-nav__trail,
 .makeup-fx-screen .site-nav__trail-parent,
 .makeup-fx-screen .site-nav__trail-sep,
-.ux-ui-screen .site-nav__trail,
-.ux-ui-screen .site-nav__trail-parent,
-.ux-ui-screen .site-nav__trail-sep,
+.projects-hub .site-nav__trail,
+.projects-hub .site-nav__trail-parent,
+.projects-hub .site-nav__trail-sep,
 .ux-case-study .site-nav__trail,
 .ux-case-study .site-nav__trail-parent,
 .ux-case-study .site-nav__trail-sep {
@@ -177,7 +177,7 @@
 }
 
 .makeup-fx-screen .site-nav__trail-current,
-.ux-ui-screen .site-nav__trail-current,
+.projects-hub .site-nav__trail-current,
 .ux-case-study .site-nav__trail-current {
   color: color-mix(in srgb, var(--deep-purple) 48%, var(--light-violet));
 }
@@ -203,7 +203,7 @@
 
 .main-page--light .site-nav__burger,
 .makeup-fx-screen .site-nav__burger,
-.ux-ui-screen .site-nav__burger,
+.projects-hub .site-nav__burger,
 .ux-case-study .site-nav__burger {
   color: var(--deep-purple);
 }

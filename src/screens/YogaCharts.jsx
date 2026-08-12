@@ -2,6 +2,8 @@ import { YOGA_CONVENTIONS, YOGA_PERSONA_PHOTO } from '../assets'
 import { YOGA_AFFINITY_CLUSTERS } from '../data/yogaAffinity'
 import { YOGA_HMW_CHART, YOGA_OOUX_CHART } from '../data/yogaCharts'
 import { YOGA_PERSONA_DATA } from '../data/yogaPersona'
+import { YOGA_REQUIREMENTS_CHART } from '../data/yogaRequirements'
+import { YOGA_RESEARCH_CHART } from '../data/yogaResearch'
 import { YOGA_VALUES_CHART } from '../data/yogaValues'
 
 export function ValuesChart() {
@@ -21,6 +23,34 @@ export function ValuesChart() {
             ))}
           </tbody>
         </table>
+      </div>
+    </div>
+  )
+}
+
+export function ResearchChart() {
+  const data = YOGA_RESEARCH_CHART
+
+  return (
+    <div className="yoga-research">
+      <div className="yoga-research__header">{data.title}</div>
+      <div className="yoga-research__board">
+        <ol className="yoga-research__list">
+          {data.items.map((item, index) => (
+            <li key={item.text || item.lines?.[0]} className="yoga-research__row">
+              <span className="yoga-research__num" aria-hidden="true">
+                {index + 1}
+              </span>
+              <div className="yoga-research__body">
+                {item.lines ? (
+                  item.lines.map((line) => <p key={line}>{line}</p>)
+                ) : (
+                  <p>{item.text}</p>
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </div>
   )
@@ -225,5 +255,35 @@ export function ConventionsChart() {
       alt=""
       className="yoga-conventions-img"
     />
+  )
+}
+
+export function RequirementsChart() {
+  const data = YOGA_REQUIREMENTS_CHART
+
+  return (
+    <div className="yoga-requirements">
+      <div className="yoga-requirements__header">{data.title}</div>
+      <div className="yoga-requirements__board">
+        {data.groups.map((group) => (
+          <section
+            key={group.id}
+            className={`yoga-requirements__card${
+              group.id === 'page-a' ? ' yoga-requirements__card--page-a' : ''
+            }`}
+          >
+            <h3 className="yoga-requirements__card-title">{group.title}</h3>
+            {group.subtitle ? (
+              <p className="yoga-requirements__card-subtitle">{group.subtitle}</p>
+            ) : null}
+            <ul className="yoga-requirements__list">
+              {group.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
   )
 }

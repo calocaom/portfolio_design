@@ -19,6 +19,7 @@ export const PROJECT_LINKS = {
 
 /** Internal app screens opened when a project row / hex is clicked */
 export const PROJECT_ROUTES = {
+  1: 'digital-solutions',
   2: 'ux-ui',
   4: 'makeup-fx',
 }
