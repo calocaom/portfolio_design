@@ -68,8 +68,470 @@
 
 .yoga .ux-case-study__meta {
   border-top-color: color-mix(in srgb, var(--deep-blue) 18%, transparent);
+  height: auto;
 }
 
 .yoga .ux-case-study__meta-row {
   border-bottom-color: color-mix(in srgb, var(--deep-blue) 18%, transparent);
 }
+
+/* Full rectangular video, meta stacked underneath */
+.yoga .ux-case-study__split {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: clamp(16px, 2vw, 24px);
+  align-items: stretch;
+}
+
+.yoga .ux-case-study__video-frame {
+  grid-column: 1;
+  grid-row: auto;
+  align-self: start;
+  height: auto;
+  aspect-ratio: auto;
+  background: #0b1520;
+}
+
+.yoga .ux-case-study__video {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #0b1520;
+}
+
+.yoga .ux-case-study__meta {
+  grid-column: 1;
+  grid-row: auto;
+}
+
+.yoga .ux-case-study__video-legend {
+  grid-column: 1;
+  grid-row: auto;
+}
+
+@media (max-width: 900px) {
+  .yoga .ux-case-study__video-frame {
+    aspect-ratio: auto;
+  }
+}
+
+/* Chart scale (same approach as Botanical) */
+.yoga-chart-scale {
+  width: 100%;
+  overflow: hidden;
+}
+
+.yoga-chart-scale__content {
+  will-change: transform;
+}
+
+.yoga-chart {
+  width: 100%;
+  margin: clamp(20px, 3vw, 32px) 0 0;
+}
+
+/* List of Values — layout from yoga_values.pdf */
+.yoga-values {
+  --yoga-values-teal: #5f9ea8;
+  --yoga-values-board: #e8f4f6;
+  --yoga-values-ink: #1a2a32;
+  --yoga-values-rule: color-mix(in srgb, #5f9ea8 28%, transparent);
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--yoga-values-ink);
+  font-family: var(--font-rains);
+}
+
+.yoga-values__header {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 14px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--yoga-values-teal);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
+
+.yoga-values__board {
+  padding: 6px 18px 10px;
+  border-radius: 18px;
+  background: var(--yoga-values-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-values-teal) 35%, transparent);
+  box-sizing: border-box;
+}
+
+.yoga-values__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.yoga-values__table th,
+.yoga-values__table td {
+  padding: 14px 12px;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid var(--yoga-values-rule);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.yoga-values__table tr:last-child th,
+.yoga-values__table tr:last-child td {
+  border-bottom: none;
+}
+
+.yoga-values__table th {
+  width: 7.5rem;
+  padding-right: 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--yoga-values-ink);
+}
+
+/* Shared yoga chart tokens */
+.yoga {
+  --yoga-teal: #5f9ea8;
+  --yoga-board: #e8f4f6;
+  --yoga-sticky: #cfe8ec;
+  --yoga-sticky-header: #9ec8d0;
+  --yoga-ink: #1a2a32;
+  --yoga-accent: #c45c3e;
+}
+
+/* HMW table — yoga_hmw.pdf */
+.yoga-hmw {
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--yoga-ink);
+  font-family: var(--font-rains);
+}
+
+.yoga-hmw__header {
+  display: inline-flex;
+  margin: 0 0 14px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--yoga-sticky);
+  color: var(--yoga-ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.yoga-hmw__board {
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--yoga-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 30%, transparent);
+}
+
+.yoga-hmw__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #ffffff;
+}
+
+.yoga-hmw__table th,
+.yoga-hmw__table td {
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 22%, transparent);
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.yoga-hmw__table thead th {
+  text-align: center;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.yoga-hmw__col-label {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 40%, transparent);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.yoga-hmw__table td:first-child {
+  width: 42%;
+}
+
+/* Affinity — yoga_affinity.pdf */
+.yoga-affinity {
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--yoga-ink);
+  font-family: var(--font-rains);
+}
+
+.yoga-affinity__header {
+  display: inline-flex;
+  margin: 0 0 12px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--yoga-sticky);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.yoga-affinity__board {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  padding: 12px;
+  background: var(--yoga-board);
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 28%, transparent);
+}
+
+.yoga-affinity__cluster {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yoga-affinity__notes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yoga-affinity__sticky {
+  margin: 0;
+  padding: 8px 9px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.yoga-affinity__sticky--header {
+  background: var(--yoga-sticky-header);
+  min-height: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.yoga-affinity__sticky-title {
+  margin: 0;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.yoga-affinity__sticky--note {
+  background: var(--yoga-sticky);
+  font-size: 0.58rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+/* Persona — yoga_persona.pdf */
+.yoga-persona {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 22%, transparent);
+  border-radius: 8px;
+  color: var(--yoga-ink);
+  font-family: var(--font-rains);
+}
+
+.yoga-persona__top {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.yoga-persona__identity {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.42fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.yoga-persona__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #dfe8ea;
+}
+
+.yoga-persona__name {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.yoga-persona__subtitle {
+  margin: 4px 0 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--yoga-ink) 72%, transparent);
+}
+
+.yoga-persona__details {
+  margin: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+}
+
+.yoga-persona__detail {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.4em;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.yoga-persona__detail dt {
+  margin: 0;
+  font-weight: 700;
+}
+
+.yoga-persona__detail dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+.yoga-persona__scales {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yoga-persona__scale {
+  display: grid;
+  grid-template-columns: minmax(4.5rem, 0.9fr) minmax(0, 1.4fr) minmax(4.5rem, 0.9fr);
+  gap: 8px;
+  align-items: center;
+  font-size: 0.62rem;
+  font-weight: 600;
+}
+
+.yoga-persona__scale-track {
+  position: relative;
+  height: 4px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--yoga-teal) 28%, #ffffff);
+}
+
+.yoga-persona__scale-thumb {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--yoga-teal);
+  transform: translate(-50%, -50%);
+}
+
+.yoga-persona__quote {
+  margin: 0;
+  padding: 12px 14px;
+  background: var(--yoga-board);
+  border-radius: 8px;
+}
+
+.yoga-persona__quote p {
+  margin: 0;
+  font-family: var(--font-quote);
+  font-style: italic;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.yoga-persona__summary {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.yoga-persona__panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.yoga-persona__panel {
+  padding: 12px;
+  background: var(--yoga-board);
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.yoga-persona__panel-title {
+  margin: 0 0 0.45em;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.yoga-persona__panel-intro,
+.yoga-persona__panel-sub {
+  margin: 0 0 0.45em;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.yoga-persona__panel-sub {
+  font-weight: 700;
+}
+
+.yoga-persona__panel-list {
+  margin: 0 0 0.6em;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28em;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.yoga-persona__panel-list:last-child {
+  margin-bottom: 0;
+}
+
+/* Conventions diagram image */
+.yoga-conventions-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+
+

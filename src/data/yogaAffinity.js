@@ -1,0 +1,83 @@
+/**
+ * Affinity diagram content extracted from yoga_affinity.pdf
+ */
+export const YOGA_AFFINITY_CLUSTERS = [
+  {
+    id: 'awareness',
+    title: 'SELF DISCOVERY/ AWARENESS',
+    notes: [
+      'I found yoga or I tried it out for a few times and I was like, I kind of like this. There was something about the technique and the postures',
+      'took me a lot of years to learn to listen to myself and listen to my body and what it needed and what I didn’t need on that particular day and not be mad about it',
+      'Specifically found out that I liked vinyasa and also yin, actually, the more restorative practice',
+      'flow classes were something that spoke to me and spoke to my body.',
+      'What I found is when I landed on the mat, it was more about me and what I was feeling like on the specific day.',
+      'I found classes very interesting but also it’s nice to do it alone because you don’t compare yourself with anyone else',
+    ],
+  },
+  {
+    id: 'habits',
+    title: 'HABITS / ROUTINE',
+    notes: [
+      'I grew up with movement, so I don’t feel well if I don’t move',
+      'I practice mostly vinyasa and yin.',
+      'So I’m just trying to listen to the voice guiding and not thinking about what’s outside of the room.',
+      'I’ve done yoga retreats a couple of times that are placed in a beautiful location, maybe next to the water, next to a forest or something that’s really tranquil and nice.',
+      'I don’t have to do all of the, you know, 75 minutes or 60 minutes and I can do 20 minutes',
+      'It’s good for me to have a place where you can come regularly and try yoga',
+      'I practice Hatha yoga, the traditional from India, the pure form from Sadh Guru.',
+      'It is also important to learn to practice yoga anywhere, even meditate at a mall or on the train when you don’t have the time.',
+      'I go sometimes if I find free yoga',
+    ],
+  },
+  {
+    id: 'struggles',
+    title: 'STRUGGLES',
+    notes: [
+      'Ashtanga… I almost feel restricted. You have to be in this posture. You cannot move. You cannot do modifications.',
+      'Yoga nidra… almost aches sometimes… you’re laying in the same posture for maybe 45 minutes.',
+      'where am I at in my head or in my body? I didn’t sleep very well last night or I feel really stressed at work or whatever. And that affects us and it affects the body and what it’s capable of.',
+      'Difficult to create your own path and create your own version',
+      'Gone back and forth to yoga whenever I felt it was possible, you know, economically',
+      'Tried some yoga in Copenhagen and in Frederiksberg, also around Copenhagen, and that was… I don’t think it was like a pure kind',
+      'Taking the time to do it.',
+      'Comparing one-self to others during practice.',
+      'If it is in a group you should avoid physical human touch - contact because your energy is open during practice.',
+      'If you have a job or an occupation where you sit down a lot it’s hard on the hips I feel it’s hard on my hips so doing yoga poses or flows that opens up the hips.',
+    ],
+  },
+  {
+    id: 'motivations',
+    title: 'COMPENSATIONS/ MOTIVATIONS',
+    notes: [
+      'When I do yoga, I feel better and I feel like I’m aligned in a way.',
+      'I felt was really nice, what I needed. So sometimes upbeat and, um, sweat and other times more calming practices',
+      'The connection between mind and body',
+      'I’m starting to listen and not just do, but to be in my body.',
+      'I could roll out of my mat and the view was stunning… that was like a core memory',
+      'You have the view of the ocean, and the forest in the back so the backdrop is really nice',
+      'When not attending a class it’s like more freedom. And I can do the same flow one time or five times if that feels for me',
+      'After this yoga class you feel so much more relaxed so much more at peace',
+      'It’s a method for me to make me relax and think less, feel less anxiety',
+      'You can discover the life inside of you',
+      'My body feels alive and ready for everything.',
+      'Maintain my physical mental health stay close with the nature',
+    ],
+  },
+  {
+    id: 'interests',
+    title: 'INTERESTS/ PREFERENCE',
+    notes: [
+      'I like it when it’s outside, but in a calm place',
+      'I like twists, warriors and restorative postures',
+      'I like to do yoga at home and in nature.',
+      'I like to be in a room where we breathe together, but sometimes it’s really nice to just listen to my body and that’s easier if I’m not in a room with a lot of other people',
+      'It would be nice if you could have a nice setting. Like you see some nature. Or you see some trees. Maybe it’s next to the water. That would be nice. To do yoga and look to the sunset',
+      'Ashtanga… I really liked it. It’s not that easy. And you really also get your pulse. You get the blood flowing.',
+      'I really like when the postures that stretch my hips like the lotus flower',
+      'The meditation is my favourite',
+      'To live this life in the most profound way possible and by this way it is possible to create a better world for everyone including all types of life.',
+      'The most important is when you feel power in your body',
+      'I would like to choose places more like inside the forest or next to the sea, but still when it’s kind of hidden from human eye.',
+    ],
+  },
+]

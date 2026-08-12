@@ -41,3 +41,118 @@
 .about-screen .lang-filter__btn {
   color: var(--contact-violet);
 }
+
+.lang-filter--compact {
+  position: relative;
+  display: block;
+}
+
+.lang-filter__trigger {
+  position: relative;
+  z-index: 31;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 6px 2px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.lang-filter__trigger:hover {
+  opacity: 0.7;
+}
+
+.lang-filter__drawer {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .lang-filter__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 24;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: default;
+  }
+
+  .lang-filter__drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 25;
+    width: 25vw;
+    min-width: 7.5rem;
+    max-width: 12rem;
+    padding:
+      calc(72px + env(safe-area-inset-top, 0px))
+      clamp(12px, 3vw, 20px)
+      calc(24px + env(safe-area-inset-bottom, 0px));
+    background: #f7f4fb;
+    box-shadow: 4px 0 24px rgba(22, 13, 40, 0.12);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(-100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      transform 0.32s ease,
+      visibility 0.32s ease;
+  }
+
+  .lang-filter--open .lang-filter__drawer {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .lang-filter__drawer[hidden] {
+    display: flex;
+  }
+
+  .lang-filter__drawer-list {
+    list-style: none;
+    margin: 0;
+    padding: clamp(12px, 3vh, 28px) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 2.5vh, 18px);
+  }
+
+  .lang-filter__drawer-option {
+    font-family: var(--font-mono);
+    font-size: clamp(0.95rem, 3.2vw, 1.15rem);
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    line-height: 1.15;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--deep-purple);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .lang-filter__drawer-option--active {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1.5px;
+  }
+
+  .lang-filter__drawer-option:hover {
+    opacity: 0.65;
+  }
+}

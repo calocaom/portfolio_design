@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import './ContactScreen.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
@@ -90,6 +90,73 @@ function CopyButton({ value, labelKey }) {
   )
 }
 
+function FitPrimaryLink({
+  href,
+  children,
+  className = '',
+  maxPx = 96,
+  minPx = 14,
+  ...props
+}) {
+  const ref = useRef(null)
+
+  useLayoutEffect(() => {
+    const el = ref.current
+    const row = el?.parentElement
+    if (!el || !row) return undefined
+
+    function fit() {
+      const styles = getComputedStyle(row)
+      const gap = Number.parseFloat(styles.columnGap || styles.gap) || 0
+      const siblings = [...row.children].filter((child) => child !== el)
+      const used = siblings.reduce(
+        (sum, child) => sum + child.getBoundingClientRect().width,
+        0,
+      )
+      const available = Math.max(0, row.clientWidth - used - gap * siblings.length)
+
+      let low = minPx
+      let high = maxPx
+      let best = minPx
+
+      while (low <= high) {
+        const mid = Math.floor((low + high) / 2)
+        el.style.fontSize = `${mid}px`
+        if (el.scrollWidth <= available + 0.5) {
+          best = mid
+          low = mid + 1
+        } else {
+          high = mid - 1
+        }
+      }
+
+      el.style.fontSize = `${best}px`
+    }
+
+    fit()
+
+    const observer = new ResizeObserver(fit)
+    observer.observe(row)
+    window.addEventListener('resize', fit)
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('resize', fit)
+    }
+  }, [children, maxPx, minPx])
+
+  return (
+    <a
+      ref={ref}
+      href={href}
+      className={`contact-screen__primary${className ? ` ${className}` : ''}`}
+      {...props}
+    >
+      {children}
+    </a>
+  )
+}
+
 export default function ContactScreen({ onNavigate }) {
   const screenRef = useRef(null)
   const { t } = useI18n()
@@ -118,9 +185,9 @@ export default function ContactScreen({ onNavigate }) {
             >
               <EmailIcon />
             </a>
-            <a href={`mailto:${EMAIL}`} className="contact-screen__primary">
+            <FitPrimaryLink href={`mailto:${EMAIL}`} maxPx={96} minPx={16}>
               {EMAIL}
-            </a>
+            </FitPrimaryLink>
             <CopyButton value={EMAIL} labelKey="contact.copyEmail" />
           </div>
 
@@ -132,9 +199,9 @@ export default function ContactScreen({ onNavigate }) {
             >
               <PhoneIcon />
             </a>
-            <a href={`tel:${PHONE_HREF}`} className="contact-screen__primary">
+            <FitPrimaryLink href={`tel:${PHONE_HREF}`} maxPx={96} minPx={16}>
               {PHONE}
-            </a>
+            </FitPrimaryLink>
             <CopyButton value={PHONE} labelKey="contact.copyPhone" />
           </div>
 
@@ -148,14 +215,16 @@ export default function ContactScreen({ onNavigate }) {
             >
               <LinkedInIcon />
             </a>
-            <a
+            <FitPrimaryLink
               href={LINKEDIN_URL}
-              className="contact-screen__primary contact-screen__primary--link"
+              className="contact-screen__primary--link"
+              maxPx={52}
+              minPx={12}
               target="_blank"
               rel="noopener noreferrer"
             >
               {LINKEDIN_URL}
-            </a>
+            </FitPrimaryLink>
             <CopyButton value={LINKEDIN_URL} labelKey="contact.copyLinkedin" />
           </div>
         </section>

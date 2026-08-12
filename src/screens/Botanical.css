@@ -3,6 +3,10 @@
 .botanical {
   --deep-green: #0d2818;
   --case-accent: var(--deep-green);
+  --affinity-board: #dce8dc;
+  --affinity-sticky: #c5dbc5;
+  --affinity-sticky-header: #a8c9a8;
+  --affinity-ink: #142418;
   background-color: #fbfcfb;
 }
 
@@ -17,54 +21,37 @@
   color: var(--deep-green);
 }
 
-/* Affinity sticky board — same figure width as other case images */
-.botanical-affinity {
+/* Scale charts like a JPEG — layout stays horizontal, whole board shrinks/expands */
+.botanical-chart {
   margin-inline: auto;
   margin-top: clamp(16px, 2.5vw, 32px);
   margin-bottom: 0;
-  padding: clamp(10px, 1.4vw, 14px);
+  width: min(100%, 52rem);
+}
+
+.botanical-chart-scale {
+  width: 100%;
+  overflow: hidden;
+}
+
+.botanical-chart-scale__content {
+  transform-origin: top left;
+  will-change: transform;
+}
+
+/* Affinity sticky board — fixed design layout */
+.botanical-affinity {
+  width: 100%;
+  padding: 14px;
   box-sizing: border-box;
-  background:
-    linear-gradient(
-      160deg,
-      color-mix(in srgb, var(--deep-green) 4%, #f4f7f4) 0%,
-      #eef3ef 100%
-    );
-  border: 1px solid color-mix(in srgb, var(--deep-green) 12%, transparent);
-}
-
-.botanical-affinity__personas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(6px, 1vw, 10px);
-  margin-bottom: clamp(8px, 1.2vw, 12px);
-}
-
-.botanical-affinity__persona {
-  margin: 0;
-  padding: clamp(8px, 1.1vw, 11px) clamp(8px, 1vw, 10px);
-  font-family: var(--font-rains);
-  font-size: clamp(0.72rem, 1.05vw, 0.88rem);
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #1a1424;
-  background: #d9c6f0;
-  box-shadow: 1px 2px 0 color-mix(in srgb, var(--deep-purple) 18%, transparent);
-  transform: rotate(-0.4deg);
-}
-
-.botanical-affinity__persona:nth-child(2) {
-  background: #c8e4d4;
-  transform: rotate(0.5deg);
+  background: var(--affinity-board);
+  border: 1px solid color-mix(in srgb, var(--deep-green) 14%, transparent);
 }
 
 .botanical-affinity__board {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(6px, 1vw, 10px);
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px;
   align-items: start;
 }
 
@@ -75,114 +62,637 @@
   min-width: 0;
 }
 
-.botanical-affinity__header {
-  padding: clamp(7px, 0.95vw, 10px) clamp(8px, 1vw, 10px);
-  background: #f2e28a;
-  box-shadow: 1px 1px 0 rgba(20, 10, 30, 0.12);
-}
-
-.botanical-affinity__cluster--gains .botanical-affinity__header {
-  background: #f0c9a0;
-}
-
-.botanical-affinity__cluster--habits .botanical-affinity__header {
-  background: #b9d8ef;
-}
-
-.botanical-affinity__cluster--customer .botanical-affinity__header {
-  background: #d7c4f2;
-}
-
-.botanical-affinity__cluster--visitor .botanical-affinity__header {
-  background: #c5e6c8;
-}
-
-.botanical-affinity__cluster--likes .botanical-affinity__header {
-  background: #f5d48a;
-}
-
-.botanical-affinity__cluster--dislike .botanical-affinity__header {
-  background: #f0b4b0;
-}
-
-.botanical-affinity__header-title {
-  margin: 0;
-  font-family: var(--font-rains);
-  font-size: clamp(0.68rem, 0.95vw, 0.8rem);
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #1a1424;
-}
-
-.botanical-affinity__header-sub {
-  margin: 0.2em 0 0;
-  font-family: var(--font-rains);
-  font-size: clamp(0.62rem, 0.85vw, 0.72rem);
-  line-height: 1.25;
-  color: rgba(20, 10, 30, 0.62);
-}
-
 .botanical-affinity__notes {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 
-.botanical-affinity__note {
+.botanical-affinity__sticky {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: min-content;
   margin: 0;
-  padding: clamp(6px, 0.85vw, 8px) clamp(7px, 0.9vw, 9px);
+  padding: 8px;
   font-family: var(--font-rains);
-  font-size: clamp(0.68rem, 0.9vw, 0.78rem);
+  color: var(--affinity-ink);
+  background: var(--affinity-sticky);
+  box-shadow: 1px 1px 0 rgba(13, 40, 24, 0.12);
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.botanical-affinity__sticky--header {
+  background: var(--affinity-sticky-header);
+  justify-content: center;
+}
+
+.botanical-affinity__sticky-title {
+  margin: 0;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.botanical-affinity__sticky-sub {
+  margin: 0.25em 0 0;
+  font-size: 0.54rem;
+  line-height: 1.25;
+  opacity: 0.78;
+}
+
+.botanical-affinity__sticky--note {
+  font-size: 0.58rem;
+  line-height: 1.28;
+  font-weight: 500;
+}
+
+/* Persona board — fixed 3-column horizontal layout */
+.botanical-persona {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background: var(--affinity-board);
+  border: 1px solid color-mix(in srgb, var(--deep-green) 14%, transparent);
+  color: var(--affinity-ink);
+}
+
+.botanical-persona__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(7.5rem, 0.72fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.botanical-persona__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.botanical-persona__eyebrow {
+  margin: 0;
+  font-family: var(--font-quote);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--affinity-ink);
+}
+
+.botanical-persona__identity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.botanical-persona__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--deep-green) 12%, transparent);
+  background: #ffffff;
+}
+
+.botanical-persona__details {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  min-width: 0;
+}
+
+.botanical-persona__detail {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.35em;
+  align-items: baseline;
+  font-family: var(--font-rains);
+  font-size: 0.78rem;
   line-height: 1.35;
-  color: rgba(20, 10, 30, 0.84);
-  background: #fff8c9;
-  box-shadow: 1px 1px 0 rgba(20, 10, 30, 0.1);
 }
 
-.botanical-affinity__cluster--gains .botanical-affinity__note:nth-child(odd),
-.botanical-affinity__cluster--likes .botanical-affinity__note:nth-child(even) {
-  transform: rotate(-0.35deg);
+.botanical-persona__detail dt {
+  margin: 0;
+  font-weight: 700;
 }
 
-.botanical-affinity__cluster--habits .botanical-affinity__note:nth-child(even),
-.botanical-affinity__cluster--dislike .botanical-affinity__note:nth-child(odd) {
-  transform: rotate(0.4deg);
+.botanical-persona__detail dd {
+  margin: 0;
+  font-weight: 500;
 }
 
-@media (max-width: 720px) {
-  .botanical-affinity__personas {
-    grid-template-columns: 1fr;
-  }
-
-  .botanical-affinity__board {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .botanical-affinity__persona {
-    transform: none;
-  }
-
-  .botanical-affinity__persona:nth-child(2) {
-    transform: none;
-  }
+.botanical-persona__name {
+  margin: 0;
+  font-family: var(--font-rains);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--affinity-ink);
 }
 
-@media (max-width: 480px) {
-  .botanical-affinity__board {
-    grid-template-columns: 1fr;
-  }
+.botanical-persona__quote {
+  margin: 0;
+  padding: 12px;
+  background: var(--affinity-sticky);
+  border-radius: 8px;
+}
 
-  .botanical-affinity__note {
-    font-size: 0.78rem;
-    line-height: 1.4;
-  }
+.botanical-persona__quote p {
+  margin: 0;
+  font-family: var(--font-quote);
+  font-style: italic;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
 
-  .botanical-affinity__header-title {
-    font-size: 0.8rem;
-  }
+.botanical-persona__summary {
+  margin: 0;
+  font-family: var(--font-rains);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.botanical-persona__panels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.botanical-persona__panel {
+  padding: 10px 12px;
+  background: var(--affinity-sticky);
+  border-radius: 8px;
+}
+
+.botanical-persona__panel-title {
+  margin: 0 0 0.4em;
+  font-family: var(--font-rains);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.botanical-persona__panel-list {
+  margin: 0;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28em;
+  font-family: var(--font-rains);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.botanical-persona__panel-list li::marker {
+  color: color-mix(in srgb, var(--deep-green) 55%, transparent);
+}
+
+.botanical-persona__scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Shared chart surface */
+.bot-research,
+.bot-story,
+.bot-purpose,
+.bot-ooux,
+.bot-principles {
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--affinity-ink);
+  font-family: var(--font-rains);
+  background: var(--affinity-board);
+  border: 1px solid color-mix(in srgb, var(--deep-green) 14%, transparent);
+}
+
+/* Research Venn */
+.bot-research {
+  padding: 16px 18px 18px;
+}
+
+.bot-research__heads {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.bot-research__heads h3 {
+  margin: 0;
+  font-family: var(--font-quote);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.bot-research__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) auto minmax(0, 0.9fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.bot-research__venn {
+  position: relative;
+  height: 280px;
+}
+
+.bot-research__circle {
+  position: absolute;
+  top: 8px;
+  width: 58%;
+  height: 92%;
+  border: 2px dashed color-mix(in srgb, var(--deep-green) 55%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--affinity-sticky) 70%, transparent);
+  box-sizing: border-box;
+  padding: 28px 18px 16px;
+  overflow: hidden;
+}
+
+.bot-research__circle--left {
+  left: 0;
+  padding-right: 22%;
+}
+
+.bot-research__circle--right {
+  right: 0;
+  padding-left: 22%;
+}
+
+.bot-research__circle-title {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.bot-research__circle-title--accent {
+  text-decoration: underline;
+  text-decoration-color: #c45c5c;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.bot-research__overlap {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: 34%;
+  z-index: 2;
+}
+
+.bot-research__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bot-research__list li {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr);
+  gap: 5px;
+  align-items: start;
+  font-size: 0.58rem;
+  line-height: 1.25;
+}
+
+.bot-research__icon {
+  display: grid;
+  place-items: center;
+  width: 14px;
+  height: 14px;
+  color: var(--deep-green);
+}
+
+.bot-research__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bot-research__arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 18px solid var(--affinity-ink);
+}
+
+.bot-research__goals {
+  margin: 0;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+/* Storytelling */
+.bot-story {
+  padding: 16px 18px 18px;
+}
+
+.bot-story__title {
+  margin: 0 0 12px;
+  font-family: var(--font-quote);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bot-story__layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.bot-story__left h4,
+.bot-story__right h4 {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.bot-story__left ul,
+.bot-story__right > ul {
+  margin: 0;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.bot-story__butterfly {
+  display: block;
+  width: auto;
+  height: 160px;
+  margin-top: 14px;
+  object-fit: contain;
+}
+
+.bot-story__tone-card {
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--deep-green) 12%, transparent);
+}
+
+.bot-story__tone-card-title {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.bot-story__scales {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bot-story__scale {
+  display: grid;
+  grid-template-columns: 5.8rem minmax(0, 1fr) 5.8rem;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.62rem;
+  font-weight: 600;
+}
+
+.bot-story__track {
+  position: relative;
+  height: 2px;
+  background: color-mix(in srgb, #6b4f9a 55%, #cbb8e8);
+}
+
+.bot-story__marker {
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+}
+
+.bot-story__marker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 4 Key Dimensions */
+.bot-purpose {
+  padding: 16px 18px 14px;
+  text-align: center;
+}
+
+.bot-purpose__title {
+  margin: 0 0 8px;
+  font-family: var(--font-quote);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.bot-purpose__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  min-height: 280px;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.bot-purpose__dim {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px;
+  max-width: 13rem;
+}
+
+.bot-purpose__dim--emotional {
+  justify-self: start;
+  align-self: start;
+  text-align: left;
+}
+
+.bot-purpose__dim--physical {
+  justify-self: end;
+  align-self: start;
+  text-align: right;
+}
+
+.bot-purpose__dim--intellectual {
+  justify-self: start;
+  align-self: end;
+  text-align: left;
+}
+
+.bot-purpose__dim--technology {
+  justify-self: end;
+  align-self: end;
+  text-align: right;
+}
+
+.bot-purpose__dim h4 {
+  margin: 0;
+  font-family: var(--font-quote);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.bot-purpose__dim p {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.bot-purpose__scientist {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: 210px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  object-fit: contain;
+}
+
+.bot-purpose__caption {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* OOUX table */
+.bot-ooux {
+  padding: 12px;
+  background: #ffffff;
+}
+
+.bot-ooux__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.bot-ooux__table th,
+.bot-ooux__table td {
+  border: 1px solid color-mix(in srgb, var(--deep-green) 18%, transparent);
+  padding: 8px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.bot-ooux__table thead th {
+  background: var(--affinity-sticky-header);
+  font-weight: 700;
+}
+
+.bot-ooux__table tbody th {
+  background: #f7faf5;
+  font-weight: 700;
+}
+
+.bot-ooux__table ul {
+  margin: 0;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Principles */
+.bot-principles {
+  display: grid;
+  grid-template-columns: 0.85fr 1.25fr;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.bot-principles__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 18px;
+  background: var(--affinity-board);
+}
+
+.bot-principles__butterfly {
+  display: block;
+  width: auto;
+  height: 150px;
+  object-fit: contain;
+}
+
+.bot-principles__title {
+  margin: 0;
+  font-family: var(--font-quote);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--deep-green);
+}
+
+.bot-principles__right {
+  list-style: none;
+  margin: 0;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  background: var(--deep-green);
+  color: #f0f5e8;
+}
+
+.bot-principles__label {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+.bot-principles__text {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-quote);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
