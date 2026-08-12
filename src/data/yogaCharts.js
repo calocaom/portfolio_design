@@ -64,3 +64,52 @@ export const YOGA_HMW_CHART = {
     },
   ],
 }
+
+export const YOGA_OOUX_CHART = {
+  title: 'OOUX',
+  headers: ['OBJECT', 'PROPERTIES', 'RELATIONSHIPS', 'CALLS-TO-ACTION'],
+  rows: [
+    {
+      object: 'Place 1',
+      properties: [
+        'Hero image',
+        'Title',
+        'Subheading',
+        'Info about the place',
+        'Brief info about yoga',
+        'Quotes from yogis',
+        'Level of privacy',
+        'Maximum number of people',
+        'Preparations expandable section',
+        'Emergency contacts',
+      ],
+      relationships: ['Preparations', 'Learn more'],
+      cta: [
+        'Scroll to see pictures of the place, read about and find yogi phrases',
+        'Scroll to find expandable section of preparations',
+        'Click link to reserve',
+      ],
+    },
+    {
+      object: 'Learn more',
+      properties: [
+        'Tutorials → How to/ videos',
+        'About yoga → books and articles',
+        'Videos → 2-3 workout routine intros',
+      ],
+      relationships: ['Place 1', 'Place 2', 'Place 3', 'Preparations'],
+      cta: [
+        'click to check show related info',
+        'click to zoom in new collection / clothes pictures',
+      ],
+    },
+    {
+      object: 'Preparations',
+      properties: ['List of must bring with icons or video'],
+      relationships: ['Place 1', 'Place 2', 'Place 3'],
+      cta: [
+        'click to expand to find out info about how to prepare for the place',
+      ],
+    },
+  ],
+}

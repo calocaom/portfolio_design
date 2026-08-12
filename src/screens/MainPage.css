@@ -157,21 +157,23 @@ button.project-row:focus-visible .project-row__veil {
 .project-row__cta {
   display: none;
   align-self: flex-start;
-  margin-top: clamp(8px, 2vw, 14px);
-  padding: 0.68em 1.55em;
+  margin: 0;
+  margin-top: clamp(2px, 0.6vw, 6px);
+  padding: 0.5em 1.15em;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.55);
   background: rgba(255, 255, 255, 0.38);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  font-family: var(--font-title);
-  font-size: clamp(12px, 3.2vw, 14px);
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 1.15vw, 13px);
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
   color: var(--title-purple);
+  white-space: nowrap;
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(6px);
   transition:
     opacity 0.35s ease,
     transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
@@ -185,10 +187,8 @@ button.project-row:focus-visible .project-row__veil {
 @media (min-width: 1025px) {
   .project-row__cta {
     display: inline-flex;
-    margin-top: clamp(12px, 1.4vw, 18px);
-    padding: 0.8em 2.05em;
-    font-size: clamp(14px, 1.45vw, 18px);
-    transform: translateY(6px);
+    padding: 0.58em 1.35em;
+    font-size: clamp(12px, 1.2vw, 14px);
   }
 
   .project-row:hover .project-row__cta,
@@ -201,11 +201,6 @@ button.project-row:focus-visible .project-row__veil {
 @media (max-width: 1024px) {
   .project-row__cta {
     display: inline-flex;
-    align-self: center;
-  }
-
-  .project-row--reverse .project-row__cta {
-    align-self: center;
   }
 
   .project-row--in-view .project-row__cta {
@@ -216,6 +211,8 @@ button.project-row:focus-visible .project-row__veil {
 
 .project-row__veil .project-row__title {
   color: var(--title-purple);
+  font-family: var(--font-mono);
+  text-transform: none;
 }
 
 .project-row--reverse .project-row__copy {
@@ -239,6 +236,7 @@ button.project-row:focus-visible .project-row__veil {
   color: rgba(20, 10, 30, 0.72);
   max-width: 42ch;
   margin: 0;
+  text-transform: none;
 }
 
 .main-page--light .project-row__description {
@@ -279,5 +277,10 @@ button.project-row:focus-visible .project-row__veil {
     text-align: center;
     margin-left: 0;
     margin-inline: auto;
+  }
+
+  .project-row__cta,
+  .project-row--reverse .project-row__cta {
+    align-self: center;
   }
 }

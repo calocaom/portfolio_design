@@ -94,11 +94,11 @@
   background: color-mix(in srgb, #ffffff 42%, transparent);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  font-family: var(--font-title);
+  font-family: var(--font-mono);
   font-size: clamp(18px, 2.2vw, 26px);
   font-weight: 700;
   letter-spacing: 0.22em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: var(--title-purple);
   cursor: pointer;
   transition:
@@ -155,11 +155,11 @@
   background: color-mix(in srgb, #ffffff 38%, transparent);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  font-family: var(--font-title);
+  font-family: var(--font-mono);
   font-size: clamp(10px, 1.05vw, 12px);
   font-weight: 600;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: var(--title-purple);
   cursor: pointer;
   transition:

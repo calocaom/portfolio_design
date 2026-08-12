@@ -439,7 +439,7 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
   color: var(--title-violet);
   pointer-events: none;

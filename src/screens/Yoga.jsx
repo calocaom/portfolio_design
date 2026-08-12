@@ -10,6 +10,7 @@ import {
   AffinityChart,
   ConventionsChart,
   HmwChart,
+  OouxChart,
   PersonaChart,
   ValuesChart,
 } from './YogaCharts'
@@ -24,6 +25,7 @@ const FIGMA_PROTOTYPE_URL = 'https://www.figma.com/'
 const TOPIC_CHARTS = {
   hmw: HmwChart,
   values: ValuesChart,
+  ooux: OouxChart,
   conventions: ConventionsChart,
 }
 

@@ -279,6 +279,74 @@
   width: 42%;
 }
 
+/* OOUX table — Yoga final project.pdf */
+.yoga-ooux {
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--yoga-ink);
+  font-family: var(--font-rains);
+}
+
+.yoga-ooux__header {
+  display: inline-flex;
+  margin: 0 0 14px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--yoga-sticky);
+  color: var(--yoga-ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.yoga-ooux__board {
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--yoga-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 30%, transparent);
+}
+
+.yoga-ooux__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #ffffff;
+}
+
+.yoga-ooux__table th,
+.yoga-ooux__table td {
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 22%, transparent);
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.yoga-ooux__table thead th {
+  background: #3b82b8;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.yoga-ooux__table tbody th {
+  width: 7.5rem;
+  background: #f7fbfd;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.yoga-ooux__table ul {
+  margin: 0;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 /* Affinity — yoga_affinity.pdf */
 .yoga-affinity {
   width: 100%;

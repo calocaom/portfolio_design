@@ -5,6 +5,7 @@ import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
 
 const LINK_IDS = ['about', 'works', 'contact']
+const DRAWER_LINK_IDS = ['home', 'about', 'works', 'contact']
 const COMPACT_MQ = '(max-width: 1024px)'
 
 function normalizeTrail(trail) {
@@ -74,8 +75,9 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
       variant === 'drawer'
         ? ' site-nav__drawer-link--active'
         : ' site-nav__link--active'
+    const ids = variant === 'drawer' ? DRAWER_LINK_IDS : LINK_IDS
 
-    return LINK_IDS.map((id) => {
+    return ids.map((id) => {
       const isActive = activeId === id
       const showTrail = id === 'works' && trailSegments.length > 0
 

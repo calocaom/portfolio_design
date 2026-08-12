@@ -262,7 +262,13 @@ export const translations = {
           imageAlt:
             'List of values table: Mindfulness, Alive, Natural, Symbolic, Connection, Balance, and Soothing with design implications',
         },
-        { title: 'OOUX Table', description: 'Related the data type with interactions and content through the ORCA OOUX Table.' },
+        {
+          title: 'OOUX Table',
+          description: 'Related the data type with interactions and content through the ORCA OOUX Table.',
+          imageKey: 'ooux',
+          imageAlt:
+            'ORCA OOUX table mapping Place, Learn more, and Preparations objects with properties, relationships, and calls-to-action',
+        },
         { title: '4 Key Dimensions', description: 'Description to be set.' },
         {
           title: 'Conventions',
@@ -295,20 +301,20 @@ export const translations = {
     },
     projects: {
       1: {
-        title: 'DESIGN FOR\nDIGITAL SOLUTIONS',
+        title: 'Design for\nDigital Solutions',
         description: 'Figma, Content Creation, Photoshop, Video Editing, Graphics',
       },
       2: {
-        title: 'UX / UI DESIGN',
+        title: 'UX / UI Design',
         description: 'Research, Analysis and Mapping',
       },
       4: {
-        title: 'DESIGN FOR MAKEUP FX',
+        title: 'Design for Makeup FX',
         description:
           'Character Design, Prosthetics, Fashion Makeup, Beauty Makeup, SFX Makeup, Airbrush and Bodypainting, Editorial Photography and Editing, 3D Modeling and Props Fabrication',
       },
       5: {
-        title: 'ART',
+        title: 'Art',
         description:
           'Painting, Drawing, Digital Painting, Sculpture and Analog Photography',
       },
@@ -579,6 +585,9 @@ export const translations = {
           title: 'OOUX Table',
           description:
             'Relaterede datatyper med interaktioner og indhold gennem ORCA OOUX-tabellen.',
+          imageKey: 'ooux',
+          imageAlt:
+            'ORCA OOUX-tabel der mapper Place, Learn more og Preparations med egenskaber, relationer og call-to-actions',
         },
         { title: '4 Key Dimensions', description: 'Beskrivelse sættes senere.' },
         {
@@ -617,22 +626,22 @@ export const translations = {
     },
     projects: {
       1: {
-        title: 'DESIGN TIL\nDIGITALE LØSNINGER',
-        description: 'Figma, indholdsproduktion, Photoshop, videoredigering, grafik',
+        title: 'Design til\nDigitale Løsninger',
+        description: 'Figma, Indholdsproduktion, Photoshop, Videoredigering, Grafik',
       },
       2: {
-        title: 'UX / UI DESIGN',
-        description: 'Research, analyse og mapping',
+        title: 'UX / UI Design',
+        description: 'Research, Analyse og Mapping',
       },
       4: {
-        title: 'DESIGN TIL MAKEUP FX',
+        title: 'Design til Makeup FX',
         description:
-          'Karakterdesign, proteser, fashion makeup, beauty makeup, SFX makeup, airbrush og bodypainting, editorial fotografi og redigering, 3D-modellering og prop-fremstilling',
+          'Karakterdesign, Proteser, Fashion Makeup, Beauty Makeup, SFX Makeup, Airbrush og Bodypainting, Editorial Fotografi og Redigering, 3D-Modellering og Prop-Fremstilling',
       },
       5: {
-        title: 'KUNST',
+        title: 'Kunst',
         description:
-          'Maleri, tegning, digital painting, skulptur og analog fotografi',
+          'Maleri, Tegning, Digital Painting, Skulptur og Analog Fotografi',
       },
     },
   },
@@ -901,6 +910,9 @@ export const translations = {
           title: 'OOUX Table',
           description:
             'Mise en relation des types de données avec les interactions et le contenu via le tableau ORCA OOUX.',
+          imageKey: 'ooux',
+          imageAlt:
+            'Tableau ORCA OOUX reliant Place, Learn more et Preparations aux propriétés, relations et call-to-actions',
         },
         { title: '4 Key Dimensions', description: 'Description à définir.' },
         {
@@ -939,22 +951,22 @@ export const translations = {
     },
     projects: {
       1: {
-        title: 'DESIGN POUR\nSOLUTIONS NUMÉRIQUES',
-        description: 'Figma, création de contenu, Photoshop, montage vidéo, graphisme',
+        title: 'Design pour\nSolutions Numériques',
+        description: 'Figma, Création de Contenu, Photoshop, Montage Vidéo, Graphisme',
       },
       2: {
-        title: 'DESIGN UX / UI',
-        description: 'Recherche, analyse et cartographie',
+        title: 'Design UX / UI',
+        description: 'Recherche, Analyse et Cartographie',
       },
       4: {
-        title: 'DESIGN POUR MAKEUP FX',
+        title: 'Design pour Makeup FX',
         description:
-          'Character design, prothèses, makeup mode, makeup beauté, makeup SFX, aérographe et bodypainting, photographie éditoriale et retouche, modélisation 3D et fabrication d’accessoires',
+          'Character Design, Prothèses, Makeup Mode, Makeup Beauté, Makeup SFX, Aérographe et Bodypainting, Photographie Éditoriale et Retouche, Modélisation 3D et Fabrication d’Accessoires',
       },
       5: {
-        title: 'ART',
+        title: 'Art',
         description:
-          'Peinture, dessin, peinture numérique, sculpture et photographie analogique',
+          'Peinture, Dessin, Peinture Numérique, Sculpture et Photographie Analogique',
       },
     },
   },
@@ -1223,6 +1235,9 @@ export const translations = {
           title: 'OOUX Table',
           description:
             'Datentypen mit Interaktionen und Inhalten über die ORCA-OOUX-Tabelle verknüpft.',
+          imageKey: 'ooux',
+          imageAlt:
+            'ORCA-OOUX-Tabelle mit Place, Learn more und Preparations sowie Eigenschaften, Beziehungen und Call-to-Actions',
         },
         { title: '4 Key Dimensions', description: 'Beschreibung folgt später.' },
         {
@@ -1261,22 +1276,22 @@ export const translations = {
     },
     projects: {
       1: {
-        title: 'DESIGN FÜR\nDIGITALE LÖSUNGEN',
+        title: 'Design für\nDigitale Lösungen',
         description: 'Figma, Content Creation, Photoshop, Videobearbeitung, Grafik',
       },
       2: {
-        title: 'UX / UI DESIGN',
+        title: 'UX / UI Design',
         description: 'Research, Analyse und Mapping',
       },
       4: {
-        title: 'DESIGN FÜR MAKEUP FX',
+        title: 'Design für Makeup FX',
         description:
           'Character Design, Prothetik, Fashion Makeup, Beauty Makeup, SFX Makeup, Airbrush und Bodypainting, Editorial-Fotografie und Retusche, 3D-Modellierung und Props-Herstellung',
       },
       5: {
-        title: 'KUNST',
+        title: 'Kunst',
         description:
-          'Malerei, Zeichnung, digitale Malerei, Skulptur und analoge Fotografie',
+          'Malerei, Zeichnung, Digitale Malerei, Skulptur und Analoge Fotografie',
       },
     },
   },
@@ -1545,6 +1560,9 @@ export const translations = {
           title: 'OOUX Table',
           description:
             'Se relacionaron los tipos de datos con las interacciones y el contenido mediante la tabla ORCA OOUX.',
+          imageKey: 'ooux',
+          imageAlt:
+            'Tabla ORCA OOUX con Place, Learn more y Preparations, propiedades, relaciones y llamadas a la acción',
         },
         { title: '4 Key Dimensions', description: 'Descripción por definir.' },
         {
@@ -1583,22 +1601,22 @@ export const translations = {
     },
     projects: {
       1: {
-        title: 'DISEÑO PARA\nSOLUCIONES DIGITALES',
-        description: 'Figma, creación de contenido, Photoshop, edición de video, gráficos',
+        title: 'Diseño para\nSoluciones Digitales',
+        description: 'Figma, Creación de Contenido, Photoshop, Edición de Video, Gráficos',
       },
       2: {
-        title: 'DISEÑO UX / UI',
-        description: 'Investigación, análisis y mapeo',
+        title: 'Diseño UX / UI',
+        description: 'Investigación, Análisis y Mapeo',
       },
       4: {
-        title: 'DISEÑO PARA MAKEUP FX',
+        title: 'Diseño para Makeup FX',
         description:
-          'Diseño de personajes, prótesis, makeup de moda, makeup de belleza, makeup SFX, aerógrafo y bodypainting, fotografía editorial y edición, modelado 3D y fabricación de props',
+          'Diseño de Personajes, Prótesis, Makeup de Moda, Makeup de Belleza, Makeup SFX, Aerógrafo y Bodypainting, Fotografía Editorial y Edición, Modelado 3D y Fabricación de Props',
       },
       5: {
-        title: 'ARTE',
+        title: 'Arte',
         description:
-          'Pintura, dibujo, pintura digital, escultura y fotografía analógica',
+          'Pintura, Dibujo, Pintura Digital, Escultura y Fotografía Analógica',
       },
     },
   },

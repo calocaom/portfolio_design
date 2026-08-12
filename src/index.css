@@ -87,7 +87,8 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  font-family: inherit;
+  font-family: var(--font-mono);
+  text-transform: lowercase;
 }
 
 a {

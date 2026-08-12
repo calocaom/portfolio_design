@@ -71,11 +71,11 @@
     0 8px 24px color-mix(in srgb, var(--case-accent) 8%, transparent);
   backdrop-filter: blur(14px) saturate(1.35);
   -webkit-backdrop-filter: blur(14px) saturate(1.35);
-  font-family: var(--font-rains);
+  font-family: var(--font-mono);
   font-size: clamp(0.8rem, 1.1vw, 0.95rem);
   font-weight: 600;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
   color: var(--case-accent, var(--title-purple));
   transition:

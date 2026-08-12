@@ -1,6 +1,6 @@
 import { YOGA_CONVENTIONS, YOGA_PERSONA_PHOTO } from '../assets'
 import { YOGA_AFFINITY_CLUSTERS } from '../data/yogaAffinity'
-import { YOGA_HMW_CHART } from '../data/yogaCharts'
+import { YOGA_HMW_CHART, YOGA_OOUX_CHART } from '../data/yogaCharts'
 import { YOGA_PERSONA_DATA } from '../data/yogaPersona'
 import { YOGA_VALUES_CHART } from '../data/yogaValues'
 
@@ -48,6 +48,55 @@ export function HmwChart() {
               <tr key={row.question}>
                 <td>{row.question}</td>
                 <td>{row.answer}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+
+export function OouxChart() {
+  const data = YOGA_OOUX_CHART
+
+  return (
+    <div className="yoga-ooux">
+      <div className="yoga-ooux__header">{data.title}</div>
+      <div className="yoga-ooux__board">
+        <table className="yoga-ooux__table">
+          <thead>
+            <tr>
+              {data.headers.map((header) => (
+                <th key={header}>{header}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.rows.map((row) => (
+              <tr key={row.object}>
+                <th scope="row">{row.object}</th>
+                <td>
+                  <ul>
+                    {row.properties.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    {row.relationships.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    {row.cta.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </td>
               </tr>
             ))}
           </tbody>
