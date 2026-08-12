@@ -275,7 +275,6 @@
 }
 
 /* Shared chart surface */
-.bot-research,
 .bot-story,
 .bot-purpose,
 .bot-ooux,
@@ -288,129 +287,13 @@
   border: 1px solid color-mix(in srgb, var(--deep-green) 14%, transparent);
 }
 
-/* Research Venn */
-.bot-research {
-  padding: 16px 18px 18px;
-}
-
-.bot-research__heads {
-  display: grid;
-  grid-template-columns: 1.35fr 0.9fr;
-  gap: 16px;
-  margin-bottom: 10px;
-}
-
-.bot-research__heads h3 {
-  margin: 0;
-  font-family: var(--font-quote);
-  font-size: 1.15rem;
-  font-weight: 600;
-}
-
-.bot-research__body {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) auto minmax(0, 0.9fr);
-  gap: 14px;
-  align-items: center;
-}
-
-.bot-research__venn {
-  position: relative;
-  height: 280px;
-}
-
-.bot-research__circle {
-  position: absolute;
-  top: 8px;
-  width: 58%;
-  height: 92%;
-  border: 2px dashed color-mix(in srgb, var(--deep-green) 55%, transparent);
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--affinity-sticky) 70%, transparent);
-  box-sizing: border-box;
-  padding: 28px 18px 16px;
-  overflow: hidden;
-}
-
-.bot-research__circle--left {
-  left: 0;
-  padding-right: 22%;
-}
-
-.bot-research__circle--right {
-  right: 0;
-  padding-left: 22%;
-}
-
-.bot-research__circle-title {
-  margin: 0 0 8px;
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-.bot-research__circle-title--accent {
-  text-decoration: underline;
-  text-decoration-color: #c45c5c;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-.bot-research__overlap {
-  position: absolute;
-  left: 50%;
-  top: 42%;
-  transform: translate(-50%, -50%);
-  width: 34%;
-  z-index: 2;
-}
-
-.bot-research__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.bot-research__list li {
-  display: grid;
-  grid-template-columns: 14px minmax(0, 1fr);
-  gap: 5px;
-  align-items: start;
-  font-size: 0.58rem;
-  line-height: 1.25;
-}
-
-.bot-research__icon {
-  display: grid;
-  place-items: center;
-  width: 14px;
-  height: 14px;
-  color: var(--deep-green);
-}
-
-.bot-research__icon svg {
+.bot-research-img {
+  display: block;
   width: 100%;
-  height: 100%;
-}
-
-.bot-research__arrow {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 18px solid var(--affinity-ink);
-}
-
-.bot-research__goals {
-  margin: 0;
-  padding-left: 1.1em;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 0.72rem;
-  line-height: 1.35;
+  height: auto;
+  background: var(--affinity-board);
+  border: 1px solid color-mix(in srgb, var(--deep-green) 14%, transparent);
+  border-radius: 4px;
 }
 
 /* Storytelling */

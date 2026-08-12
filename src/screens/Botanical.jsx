@@ -173,9 +173,7 @@ export default function Botanical({ onNavigate }) {
               className="ux-case-study__figure ux-case-study__figure--sm botanical-chart"
               aria-label={t('botanical.researchImageAlt')}
             >
-              <ScaleToFit>
-                <ResearchChart />
-              </ScaleToFit>
+              <ResearchChart />
             </figure>
           </section>
 

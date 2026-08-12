@@ -126,13 +126,13 @@ export const translations = {
       magazineCounter: 'Pages {current} of {total}',
     },
     uxUi: {
-      title: 'UX / UI DESIGN PROJECTS',
+      title: 'UX / UI Design Projects',
       navCrumb: 'UX / UI',
-      projectsAria: 'UX / UI design projects',
+      projectsAria: 'UX / UI Design Projects',
       mosaics: {
         projectOne: {
           title: 'Aarhus Botanical Garden',
-          description: '"Discover fun facts about the plants"',
+          description: '"Discover Fun Facts about the Plants"',
         },
         projectTwo: {
           title: 'Yoga',
@@ -440,17 +440,17 @@ export const translations = {
       magazineCounter: 'Side {current} af {total}',
     },
     uxUi: {
-      title: 'UX / UI DESIGN PROJEKTER',
+      title: 'UX / UI Design Projekter',
       navCrumb: 'UX / UI',
-      projectsAria: 'UX / UI designprojekter',
+      projectsAria: 'UX / UI Designprojekter',
       mosaics: {
         projectOne: {
           title: 'Aarhus Botaniske Have',
-          description: '"Opdag sjove fakta om planterne"',
+          description: '"Opdag Sjove Fakta om Planterne"',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '"Skjulte udendørs træningssteder i Aarhus"',
+          description: '"Skjulte Udendørs Træningssteder i Aarhus"',
         },
       },
     },
@@ -765,17 +765,17 @@ export const translations = {
       magazineCounter: 'Pages {current} sur {total}',
     },
     uxUi: {
-      title: 'PROJETS UX / UI DESIGN',
+      title: 'Projets UX / UI Design',
       navCrumb: 'UX / UI',
-      projectsAria: 'Projets UX / UI design',
+      projectsAria: 'Projets UX / UI Design',
       mosaics: {
         projectOne: {
-          title: 'Jardin botanique d’Aarhus',
-          description: '« Découvrez des faits amusants sur les plantes »',
+          title: 'Jardin Botanique d’Aarhus',
+          description: '« Découvrez des Faits amusants sur les Plantes »',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '« Espaces d’entraînement en plein air cachés à Aarhus »',
+          description: '« Espaces d’Entraînement en plein air cachés à Aarhus »',
         },
       },
     },
@@ -1090,7 +1090,7 @@ export const translations = {
       magazineCounter: 'Seiten {current} von {total}',
     },
     uxUi: {
-      title: 'UX / UI DESIGN PROJEKTE',
+      title: 'UX / UI Design Projekte',
       navCrumb: 'UX / UI',
       projectsAria: 'UX / UI Design-Projekte',
       mosaics: {
@@ -1415,17 +1415,17 @@ export const translations = {
       magazineCounter: 'Páginas {current} de {total}',
     },
     uxUi: {
-      title: 'PROYECTOS UX / UI DESIGN',
+      title: 'Proyectos UX / UI Design',
       navCrumb: 'UX / UI',
-      projectsAria: 'Proyectos de diseño UX / UI',
+      projectsAria: 'Proyectos de Diseño UX / UI',
       mosaics: {
         projectOne: {
           title: 'Jardín Botánico de Aarhus',
-          description: '"Descubre datos curiosos sobre las plantas"',
+          description: '"Descubre Datos curiosos sobre las Plantas"',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '"Espacios ocultos de entrenamiento al aire libre en Aarhus"',
+          description: '"Espacios ocultos de Entrenamiento al Aire libre en Aarhus"',
         },
       },
     },

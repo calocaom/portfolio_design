@@ -1,43 +1,5 @@
 /** Chart content extracted from Botanical case-study images */
 
-export const RESEARCH_CHART = {
-  titleLeft: 'Main research insights',
-  titleRight: 'How did we...?',
-  explorers: {
-    title: 'The explorers',
-    items: [
-      { icon: 'walk', text: 'enjoy a walk' },
-      { icon: 'phone', text: 'disconnect from the digital world' },
-      { icon: 'trees', text: 'there only for the scenery / other hobbies' },
-      { icon: 'heart', text: 'go on a date' },
-    ],
-  },
-  shared: {
-    items: [
-      { icon: 'people', text: 'have fun with friends / family' },
-      { icon: 'phone', text: 'off the phone!' },
-      { icon: 'audio', text: 'audio would be ideal' },
-      { icon: 'leaf', text: 'connect with nature' },
-    ],
-  },
-  learners: {
-    title: 'The learners',
-    items: [
-      { icon: 'leaf', text: 'discover plants natural habitat' },
-      { icon: 'plant', text: 'take care of plants' },
-      { icon: 'info', text: 'retain information' },
-      { icon: 'plant', text: 'learn facts about plants' },
-    ],
-  },
-  goals: [
-    { text: 'not interrupt the scenery but ', emph: 'adding to the experience' },
-    {
-      text: 'minimize potential for errors > efficient / automated > captivating',
-    },
-    { text: 'make it a memorable experience and give something to the user' },
-  ],
-}
-
 export const STORYTELLING_CHART = {
   title: 'Storytelling and tone of voice',
   linearTitle: 'Linear storytelling',
