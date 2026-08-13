@@ -1,12 +1,12 @@
 import {
-  CAROUSEL_1,
   CAROUSEL_10,
+  DIGITAL_SOLUTIONS_COVER,
   PROJECT_ART,
 } from '../assets'
 import { publicUrl } from '../utils/publicUrl'
 
 export const PROJECT_IMAGES = {
-  1: CAROUSEL_1,
+  1: DIGITAL_SOLUTIONS_COVER,
   2: CAROUSEL_10,
   4: publicUrl('portfolios/mua/06.png'),
   5: PROJECT_ART,
