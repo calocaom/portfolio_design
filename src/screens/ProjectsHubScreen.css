@@ -112,6 +112,14 @@ button.projects-hub__mosaic--link:focus-visible {
   object-position: center 45%;
 }
 
+.projects-hub__mosaic-image--top {
+  object-position: center top;
+}
+
+.projects-hub__mosaic-image--left-top {
+  object-position: left top;
+}
+
 .projects-hub__mosaic-copy {
   display: flex;
   flex-direction: column;

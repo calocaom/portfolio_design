@@ -125,6 +125,86 @@
   }
 }
 
+/* CPHFW wireframes — two boards side by side */
+.cphfw-wireframes {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(10px, 1.4vw, 16px);
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--yoga-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 30%, transparent);
+}
+
+.cphfw-wireframes__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .cphfw-wireframes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CPHFW hi-fi testing — before / after with down arrow */
+.cphfw-hifi {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.4vw, 16px);
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--yoga-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 30%, transparent);
+}
+
+.cphfw-hifi__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.cphfw-hifi__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: color-mix(in srgb, var(--yoga-teal) 70%, #1a1a1a);
+}
+
+.cphfw-hifi__arrow svg {
+  width: clamp(22px, 3vw, 28px);
+  height: clamp(36px, 5vw, 44px);
+  display: block;
+}
+
+/* Digital Yoga logo animation under Logo topic */
+.yoga-logo-video {
+  width: min(100%, 36rem);
+  margin-inline: auto;
+  border-radius: clamp(4px, 0.6vw, 8px);
+  overflow: hidden;
+  background: #0b1520;
+}
+
+.yoga-logo-video__player {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 854 / 480;
+  object-fit: contain;
+  background: #0b1520;
+}
+
 /* Chart scale (same approach as Botanical) */
 .yoga-chart-scale {
   width: 100%;
@@ -694,6 +774,176 @@
 }
 
 .yoga-ux-writing__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+/* Digital Yoga mind map — cleaner remake of Yoga final project PDF */
+.yoga-mindmap {
+  --mindmap-coral: #e8b4b8;
+  --mindmap-coral-bg: #faf0f1;
+  --mindmap-teal: #7eb8c4;
+  --mindmap-teal-bg: #eef7f9;
+  --mindmap-ink: #1a2a32;
+  --mindmap-arrow: #c47a4a;
+  width: min(100%, 52rem);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding: clamp(16px, 2vw, 24px);
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--yoga-teal, #5f9ea8) 28%, transparent);
+  color: var(--mindmap-ink);
+  font-family: var(--font-rains);
+}
+
+.yoga-mindmap__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) 56px minmax(0, 1.35fr);
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.yoga-mindmap__col-title {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  text-align: center;
+  padding: 0.55em 0.75em;
+  border-radius: 8px;
+}
+
+.yoga-mindmap__col-title--left {
+  color: #5a2f38;
+  background: var(--mindmap-coral-bg);
+  border: 1px solid color-mix(in srgb, var(--mindmap-coral) 55%, transparent);
+}
+
+.yoga-mindmap__col-title--right {
+  color: #1f4a52;
+  background: var(--mindmap-teal-bg);
+  border: 1px solid color-mix(in srgb, var(--mindmap-teal) 50%, transparent);
+}
+
+.yoga-mindmap__col-spacer {
+  display: block;
+}
+
+.yoga-mindmap__branches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.yoga-mindmap__branch {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) 56px minmax(0, 1.35fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.yoga-mindmap__concern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  background: var(--mindmap-coral-bg);
+  border: 1px solid color-mix(in srgb, var(--mindmap-coral) 70%, #8a4a52);
+  box-sizing: border-box;
+}
+
+.yoga-mindmap__concern p {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.yoga-mindmap__arrow {
+  width: 100%;
+  height: 100%;
+  min-height: 7.5rem;
+  color: var(--mindmap-arrow);
+  display: block;
+  align-self: stretch;
+}
+
+.yoga-mindmap__solutions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yoga-mindmap__solutions li {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  background: var(--mindmap-teal-bg);
+  border: 1px solid color-mix(in srgb, var(--mindmap-teal) 55%, #3f6d76);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .yoga-mindmap__columns,
+  .yoga-mindmap__branch {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .yoga-mindmap__col-spacer,
+  .yoga-mindmap__arrow {
+    display: none;
+  }
+
+  .yoga-mindmap__concern {
+    min-height: 0;
+  }
+
+  .yoga-mindmap__solutions {
+    position: relative;
+    padding-left: 14px;
+  }
+
+  .yoga-mindmap__solutions::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    bottom: 4px;
+    width: 1px;
+    background: color-mix(in srgb, var(--mindmap-arrow) 55%, transparent);
+  }
+}
+
+/* Digital Yoga portrait boards (site map, style tile) */
+.yoga-portrait-chart {
+  width: min(100%, 28rem);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--yoga-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 30%, transparent);
+}
+
+.yoga-portrait-chart__img {
   display: block;
   width: 100%;
   height: auto;

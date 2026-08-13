@@ -5,17 +5,64 @@ import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
-import { UxWritingChart } from './YogaCharts'
+import {
+  ContentCreationChart,
+  HifiTestingChart,
+  MindmapChart,
+  MoodboardChart,
+  SiteMapChart,
+  StyleTileChart,
+  UxWritingChart,
+  WireframesChart,
+} from './YogaCharts'
 
 const META_KEYS = ['date', 'team', 'tools', 'methods', 'target', 'client']
 
 const TOPIC_CHARTS = {
+  mindmap: MindmapChart,
+  sitemap: SiteMapChart,
+  wireframes: WireframesChart,
+  moodboard: MoodboardChart,
+  'style-tile': StyleTileChart,
+  'content-creation': ContentCreationChart,
   'ux-writing': UxWritingChart,
+  'hifi-testing': HifiTestingChart,
 }
 
 /* Same prototype as the UX/UI Yoga case study until a Digital Solutions link is set */
 const FIGMA_PROTOTYPE_URL =
   'https://www.figma.com/proto/EiIQiXYFnZOnF26AiyeLt0/Yoga-exam-project?node-id=125-215&t=IwUGC8agC7ZJBZNg-0&scaling=scale-down-width&content-scaling=fixed&page-id=125%3A214&starting-point-node-id=135%3A557&show-proto-sidebar=1'
+
+function topicPageHref(page, section) {
+  const url = new URL(import.meta.env.BASE_URL, window.location.origin)
+  url.hash = section ? `${page}/${section}` : page
+  return url.href
+}
+
+function TopicDescription({ topic }) {
+  if (topic.descriptionBefore != null && topic.descriptionLink != null) {
+    return (
+      <p className="ux-case-study__section-text ux-case-study__section-text--center">
+        {topic.descriptionBefore}
+        <a
+          className="ux-case-study__inline-link"
+          href={topicPageHref(topic.linkTo || 'yoga', topic.linkSection)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {topic.descriptionLink}
+        </a>
+        {topic.descriptionAfter}
+      </p>
+    )
+  }
+
+  return (
+    <p className="ux-case-study__section-text ux-case-study__section-text--center">
+      {topic.description}
+    </p>
+  )
+}
 
 export default function DigitalYoga({ onNavigate }) {
   const { dict, t } = useI18n()
@@ -107,6 +154,7 @@ export default function DigitalYoga({ onNavigate }) {
               const Chart = topic.imageKey
                 ? TOPIC_CHARTS[topic.imageKey]
                 : null
+              const showPrototypeCta = topic.title === 'Results'
 
               return (
                 <section
@@ -117,9 +165,7 @@ export default function DigitalYoga({ onNavigate }) {
                   <AnimatedTitle className="ux-case-study__subtitle">
                     {topic.title}
                   </AnimatedTitle>
-                  <p className="ux-case-study__section-text ux-case-study__section-text--center">
-                    {topic.description}
-                  </p>
+                  <TopicDescription topic={topic} />
                   {Chart ? (
                     <figure
                       className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
@@ -127,6 +173,34 @@ export default function DigitalYoga({ onNavigate }) {
                     >
                       <Chart />
                     </figure>
+                  ) : null}
+                  {topic.videoSrc ? (
+                    <figure
+                      className="ux-case-study__figure yoga-logo-video"
+                      aria-label={topic.videoAlt}
+                    >
+                      <video
+                        className="yoga-logo-video__player"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
+                        src={publicUrl(topic.videoSrc)}
+                      >
+                        {t('digitalYoga.videoFallback')}
+                      </video>
+                    </figure>
+                  ) : null}
+                  {showPrototypeCta ? (
+                    <a
+                      className="ux-case-study__cta"
+                      href={FIGMA_PROTOTYPE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t('digitalYoga.figmaCta')}
+                    </a>
                   ) : null}
                 </section>
               )

@@ -146,8 +146,8 @@ export const translations = {
       projectsAria: 'Design for Digital Solutions Projects',
       mosaics: {
         projectOne: {
-          title: 'Blå Sol',
-          description: 'Description to be set.',
+          title: 'CPHFW',
+          description: 'A digital runway to network in Copenhagen Fashion Week',
         },
         projectTwo: {
           title: 'Yoga',
@@ -155,40 +155,107 @@ export const translations = {
         },
       },
     },
-    digitalBlaSol: {
-      title: 'Blå Sol',
-      description: 'To be written.',
-      navCrumb: 'Blå Sol',
+    digitalCphfw: {
+      title: 'CPHFW',
+      description: 'A digital runway to network in Copenhagen Fashion Week',
+      navCrumb: 'CPHFW',
       figmaCta: 'Click to see the project prototype',
+      codedSolutionCta: 'Link to coded solution',
       problemStatement: 'Problem Statement',
-      problemDescription: 'To be written.',
+      problemDescription:
+        'How can we connect people attending the CPHFW 2026 to connect with people in the industry while keeping the company identity?',
+      researchSummaryTitle: 'Summary of UX / UI Research\nand Mapping findings',
+      researchIssuesLabel: 'Main issues:',
+      researchIssues: [
+        'It is tough to connect with people at CPHFW',
+        'The shows are very hard to get in',
+        'The main point is not the runway but the trade fair (CIFF, 2025)',
+      ],
+      researchConclusionsLabel: 'After mapping the main conclusions were:',
+      researchConclusions: [
+        'Solution will offer ways for users to find network opportunities on CPHFW.',
+        'Solution is to display more accessible events.',
+        'Main values are connection, inclusion and inspiration.',
+      ],
       topics: [
-        { title: 'Site Map', description: 'To be written.' },
-        { title: 'Prioritisation Table', description: 'To be written.' },
-        { title: 'Wireframes', description: 'To be written.' },
-        { title: 'Style Tile', description: 'To be written.' },
-        { title: 'Logo', description: 'To be written.' },
-        { title: 'Design Principles', description: 'To be written.' },
-        { title: 'UX Writing', description: 'To be written.' },
-        { title: 'Hi-fi testing', description: 'To be written.' },
-        { title: 'Results', description: 'To be written.' },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'After obtaining results from the ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', the fabrication of the site navigation starts with a conceptual map.',
+          linkAnchor: 'digital-cphfw-research-summary',
+          imageKey: 'sitemap',
+          imageAlt:
+            'CPHFW site map with Screensaver, Homepage, Discover, Events, Brands, and error flows',
+        },
+        {
+          title: 'Wireframes',
+          description:
+            'This is the planning for the display of the brands of CPHFW and individual brand page.',
+          imageKey: 'wireframes',
+          imageAlt: 'CPHFW Brands and Events wireframe screens side by side',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'A recollection of fashion inspiration to guide the palette and visual content in relation to the conducted research.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'CPHFW moodboard with fashion, Copenhagen, sustainability, and inclusion imagery',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Based on research for CPHFW 2026 and to remain with the company identity, these are the suggested palettes, fonts and UI elements.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'CPHFW style tile with color palette, typography, logos, and UI components',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Employed the photo cropping principles to adjust the images and employed the Proximity, Enclosure and Similarity Gestalt principles to indicate sections on most of the pages.',
+        },
+        {
+          title: 'UX Writing',
+          description:
+            'Keeping the simplicity from previous versions of CPHFW website, elaborated on direct but friendly and creative advertising.',
+          imageKey: 'ux-writing',
+          imageAlt: 'CPHFW 404 page with hanger graphic and Hang on UX writing',
+        },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Through testing at different stages of our prototype (Usability Testing), we learned to prioritize, discard, add and simplify elements, such as the filters menu on the calendar page, reduce the amount of text and the shape of certain indicators. We followed the conventions, and the Scandinavian aesthetics.',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'CPHFW Brands and Events screens before and after usability testing',
+        },
+        {
+          title: 'Results',
+          description:
+            'We concluded with user-friendly platforms updating the colors based on future fashion trends and ensuring the visual content aligned with each brand standards and CPHFW identity. The info-screen solutions will help our users to follow information about the brands and find events where they can connect and network with other people.',
+        },
       ],
       metaAria: 'Project details',
       metaLabels: {
         date: 'Project date',
         team: 'Team',
+        role: 'Role',
         tools: 'Tools',
         methods: 'Methods',
         target: 'Target',
         client: 'Client',
       },
       meta: {
-        date: 'To be written.',
-        team: 'To be written.',
-        tools: 'To be written.',
-        methods: 'To be written.',
-        target: 'To be written.',
-        client: 'To be written.',
+        date: 'November 2025',
+        team: '4 students',
+        role: 'Design developer for the Brands Pages, content research and gathering.',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'People ages 20-30, who look to network in the fashion industry',
+        client: 'Copenhagen Fashion Week 2026',
       },
     },
     digitalYoga: {
@@ -203,12 +270,68 @@ export const translations = {
       problemDescription:
         'How can I introduce the people living or visiting Aarhus with inexpensive areas to exercise and relax and help them prepare what they need to know in order to visit?',
       topics: [
-        { title: 'Site Map', description: 'To be written.' },
-        { title: 'Prioritisation Table', description: 'To be written.' },
-        { title: 'Wireframes', description: 'To be written.' },
-        { title: 'Style Tile', description: 'To be written.' },
-        { title: 'Logo', description: 'To be written.' },
-        { title: 'Design Principles', description: 'To be written.' },
+        {
+          title: 'Mindmap',
+          description:
+            'Persona concerns and interests mapped to content solutions for the platform.',
+          imageKey: 'mindmap',
+          imageAlt:
+            'Mind map linking persona concerns to illustrated potential solutions',
+        },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'After obtaining results from the ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', the fabrication of the site navigation starts with a conceptual map.',
+          linkTo: 'yoga',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Site map diagram of Home, Place pages, Learn more, menu, footer, and section relationships',
+        },
+        {
+          title: 'Wireframes',
+          descriptionBefore:
+            'Analog versions of the wireframe gave origin to the Lo-Fi wireframe prototypes, after contemplating the ',
+          descriptionLink: 'list of requirements',
+          descriptionAfter: '.',
+          linkTo: 'yoga',
+          linkSection: 'requirements',
+          imageKey: 'wireframes',
+          imageAlt:
+            'Desktop and mobile wireframes for Home, Place 1, and Learn more pages',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Conceptual research and inspiration for the palette, contents and imagery for the project.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Yoga moodboard with chakras, mudras, yantras, asanas, and spiritual symbolism',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'This is a proposition of color, sizes and visuals for the elements and components. Each place is linked to an element. On its own page, Koglen has brown elements for earth, Ballehage has blue for water, Egå Marina has light blue for air and Learn More page has orange, representing motion.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Kaivalya style tile with earth, water, and air color palettes, typography, and logo',
+        },
+        {
+          title: 'Logo',
+          description:
+            'I applied the Gestalt Psychology Principle of Similarity and Connectedness (Laura Busche, 2025). The logo lines are similar in length and connected, perceived as a whole, the logo center figure simulates letter Y. The overall triangle theme is inspired by the Sri Yantra traditional symbol in Yoga.',
+          videoSrc: 'videos/digital-yoga-logo.mp4',
+          videoAlt: 'Animated Kaivalya logo reveal',
+        },
+        {
+          title: 'Content Creation',
+          description:
+            'I made most of the visual content including photography, editing and cropping as well as the drawings posted on the final prototype. I created them while visiting the sites, gathering more observations.',
+          imageKey: 'content-creation',
+          imageAlt:
+            'Field sketches and photography of Egå Marina, Koglen, and Ballehage shelters',
+        },
         {
           title: 'UX Writing',
           description:
@@ -217,11 +340,18 @@ export const translations = {
           imageAlt:
             'UX writing example from the Egå Marina place page with sensorial copy, weather and map widgets',
         },
-        { title: 'Hi-fi testing', description: 'To be written.' },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'I tested with 5 users matching the target group (young and active outdoors). They navigated the Lo-fi prototype while using the “thinking out loud” method (Nielsen, Jakob, 2012).',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Lo-fi to Hi-fi comparison of the Koglen page before and after testing',
+        },
         {
           title: 'Results',
           description:
-            'Altough there is coding to be improved, the solution provides necessary information and content for the user to be self-sufficient in their exercise journey, while allowing them use the free sheltered areas that the city of Aarhus has to offer all year long.',
+            'Altough there is coding to be improved, the solution provides sensorial visual content and necessary information for the user to be self-sufficient in their exercise journey. The elements were distributed to make a simple navigation similar to other city platforms aimed for a 25/ 35 demographic with medium digital fluency. The website invites them to use the free sheltered areas that the city of Aarhus has to offer all year long.',
         },
       ],
       metaAria: 'Project details',
@@ -575,8 +705,8 @@ export const translations = {
       projectsAria: 'Design til Digitale Løsninger Projekter',
       mosaics: {
         projectOne: {
-          title: 'Blå Sol',
-          description: 'Beskrivelse sættes senere.',
+          title: 'CPHFW',
+          description: 'En digital runway til networking under Copenhagen Fashion Week',
         },
         projectTwo: {
           title: 'Yoga',
@@ -584,40 +714,109 @@ export const translations = {
         },
       },
     },
-    digitalBlaSol: {
-      title: 'Blå Sol',
-      description: 'Skrives senere.',
-      navCrumb: 'Blå Sol',
+    digitalCphfw: {
+      title: 'CPHFW',
+      description: 'En digital runway til networking under Copenhagen Fashion Week',
+      navCrumb: 'CPHFW',
       figmaCta: 'Klik for at se projektprototypen',
+      codedSolutionCta: 'Link til kodet løsning',
       problemStatement: 'Problemformulering',
-      problemDescription: 'Skrives senere.',
+      problemDescription:
+        'Hvordan kan vi forbinde folk, der deltager i CPHFW 2026, med mennesker i branchen, samtidig med at virksomhedsidentiteten bevares?',
+      researchSummaryTitle: 'Opsummering af UX / UI Research\nog Mapping-fund',
+      researchIssuesLabel: 'Hovedproblemer:',
+      researchIssues: [
+        'Det er svært at komme i kontakt med folk til CPHFW',
+        'Det er meget svært at komme ind til shows',
+        'Hovedpunktet er ikke catwalken, men messerne (CIFF, 2025)',
+      ],
+      researchConclusionsLabel: 'Efter mapping var hovedkonklusionerne:',
+      researchConclusions: [
+        'Løsningen skal tilbyde måder for brugere at finde netværksmuligheder på CPHFW.',
+        'Løsningen er at vise mere tilgængelige events.',
+        'Hovedværdierne er connection, inclusion og inspiration.',
+      ],
       topics: [
-        { title: 'Site Map', description: 'Skrives senere.' },
-        { title: 'Prioritisation Table', description: 'Skrives senere.' },
-        { title: 'Wireframes', description: 'Skrives senere.' },
-        { title: 'Style Tile', description: 'Skrives senere.' },
-        { title: 'Logo', description: 'Skrives senere.' },
-        { title: 'Design Principles', description: 'Skrives senere.' },
-        { title: 'UX Writing', description: 'Skrives senere.' },
-        { title: 'Hi-fi testing', description: 'Skrives senere.' },
-        { title: 'Results', description: 'Skrives senere.' },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Efter at have fået resultater fra ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', begynder udarbejdelsen af sitenavigationen med et konceptuelt kort.',
+          linkAnchor: 'digital-cphfw-research-summary',
+          imageKey: 'sitemap',
+          imageAlt:
+            'CPHFW site map med Screensaver, Homepage, Discover, Events, Brands og fejlflows',
+        },
+        {
+          title: 'Wireframes',
+          description:
+            'Dette er planlægningen for visningen af CPHFW-brands og den individuelle brandside.',
+          imageKey: 'wireframes',
+          imageAlt: 'CPHFW Brands- og Events-wireframes side om side',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'En samling af modeinspiration, der guider paletten og det visuelle indhold i forhold til den gennemførte research.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'CPHFW-moodboard med mode, København, bæredygtighed og inklusion',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Baseret på research til CPHFW 2026 og for at bevare virksomhedsidentiteten er dette de foreslåede paletter, fonte og UI-elementer.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'CPHFW style tile med farvepalet, typografi, logoer og UI-komponenter',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Anvendte foto-beskæringsprincipper til at justere billederne og anvendte Gestalt-principperne Proximity, Enclosure og Similarity til at angive sektioner på de fleste sider.',
+        },
+        {
+          title: 'UX Writing',
+          description:
+            'Med den samme enkelhed som tidligere versioner af CPHFW-websitet udviklede jeg direkte, men venlig og kreativ advertising.',
+          imageKey: 'ux-writing',
+          imageAlt: 'CPHFW 404-side med bøjlegrafik og Hang on UX writing',
+        },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Gennem test på forskellige stadier af vores prototype (Usability Testing) lærte vi at prioritere, frasortere, tilføje og forenkle elementer — fx filtermenuen på kalendersiden, mængden af tekst og formen på visse indikatorer. Vi fulgte konventionerne og den skandinaviske æstetik.',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'CPHFW Brands- og Events-skærme før og efter usability-test',
+        },
+        {
+          title: 'Results',
+          description:
+            'Vi afsluttede med brugervenlige platforme, der opdaterer farverne ud fra fremtidige modetrends og sikrer, at det visuelle indhold flugter med hver brands standarder og CPHFW-identiteten. Info-screen-løsningerne hjælper brugerne med at følge information om brands og finde events, hvor de kan forbinde og netværke med andre.',
+        },
       ],
       metaAria: 'Projektdetaljer',
       metaLabels: {
         date: 'Projektdato',
         team: 'Team',
+        role: 'Rolle',
         tools: 'Værktøjer',
         methods: 'Metoder',
         target: 'Målgruppe',
         client: 'Klient',
       },
       meta: {
-        date: 'Skrives senere.',
-        team: 'Skrives senere.',
-        tools: 'Skrives senere.',
-        methods: 'Skrives senere.',
-        target: 'Skrives senere.',
-        client: 'Skrives senere.',
+        date: 'November 2025',
+        team: '4 studerende',
+        role: 'Design developer for Brands Pages, content research og indsamling.',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'Personer i alderen 20–30, der ønsker at netværke i modebranchen',
+        client: 'Copenhagen Fashion Week 2026',
       },
     },
     digitalYoga: {
@@ -632,12 +831,68 @@ export const translations = {
       problemDescription:
         'Hvordan kan jeg præsentere folk, der bor i eller besøger Aarhus, for billige områder til motion og afslapning og hjælpe dem med at forberede det, de har brug for at vide, før de besøger?',
       topics: [
-        { title: 'Site Map', description: 'Skrives senere.' },
-        { title: 'Prioritisation Table', description: 'Skrives senere.' },
-        { title: 'Wireframes', description: 'Skrives senere.' },
-        { title: 'Style Tile', description: 'Skrives senere.' },
-        { title: 'Logo', description: 'Skrives senere.' },
-        { title: 'Design Principles', description: 'Skrives senere.' },
+        {
+          title: 'Mindmap',
+          description:
+            'Personaens bekymringer og interesser kortlagt til indholdsløsninger for platformen.',
+          imageKey: 'mindmap',
+          imageAlt:
+            'Mindmap der forbinder personaens bekymringer med mulige indholdsløsninger',
+        },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Efter at have fået resultater fra ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', begynder udarbejdelsen af sitenavigationen med et konceptuelt kort.',
+          linkTo: 'yoga',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Site map-diagram over Home, Place-sider, Learn more, menu, footer og sektionsrelationer',
+        },
+        {
+          title: 'Wireframes',
+          descriptionBefore:
+            'Analoge versioner af wireframen gav ophav til Lo-Fi wireframe-prototyperne, efter at have overvejet ',
+          descriptionLink: 'listen over krav',
+          descriptionAfter: '.',
+          linkTo: 'yoga',
+          linkSection: 'requirements',
+          imageKey: 'wireframes',
+          imageAlt:
+            'Desktop- og mobil-wireframes for Home, Place 1 og Learn more',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Konceptuel research og inspiration til paletten, indholdet og billedmaterialet i projektet.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Yoga-moodboard med chakras, mudras, yantras, asanas og spirituel symbolik',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Dette er et forslag til farver, størrelser og visuals for elementerne og komponenterne. Hvert sted er knyttet til et element. På sin egen side har Koglen brune elementer for jord, Ballehage blå for vand, Egå Marina lyseblå for luft, og Learn More-siden har orange, der repræsenterer bevægelse.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Kaivalya style tile med earth-, water- og air-farvepaletter, typografi og logo',
+        },
+        {
+          title: 'Logo',
+          description:
+            'Jeg anvendte Gestalt-psykologiens principper om Similarity og Connectedness (Laura Busche, 2025). Logoets linjer har ens længde og er forbundet, så de opfattes som en helhed; midterfiguren simulerer bogstavet Y. Det overordnede trekanttema er inspireret af det traditionelle Sri Yantra-symbol i yoga.',
+          videoSrc: 'videos/digital-yoga-logo.mp4',
+          videoAlt: 'Animeret Kaivalya-logo',
+        },
+        {
+          title: 'Content Creation',
+          description:
+            'Jeg lavede det meste af det visuelle indhold, herunder fotografi, redigering og beskæring samt tegningerne på den endelige prototype. Jeg skabte dem under besøg på stederne, hvor jeg indsamlede flere observationer.',
+          imageKey: 'content-creation',
+          imageAlt:
+            'Feltskitser og fotografi af Egå Marina, Koglen og Ballehage-shelterne',
+        },
         {
           title: 'UX Writing',
           description:
@@ -646,11 +901,18 @@ export const translations = {
           imageAlt:
             'UX writing-eksempel fra Egå Marina-siden med sensorisk tekst, vejr- og kortwidgets',
         },
-        { title: 'Hi-fi testing', description: 'Skrives senere.' },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Jeg testede med 5 brugere, der matcher målgruppen (unge og aktive udendørs). De navigerede Lo-fi-prototypen med “thinking out loud”-metoden (Nielsen, Jakob, 2012).',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Lo-fi til Hi-fi-sammenligning af Koglen-siden før og efter test',
+        },
         {
           title: 'Results',
           description:
-            'Selvom der er kode, der kan forbedres, giver løsningen nødvendig information og indhold, så brugeren kan være selvhjulpen i sin træningsrejse, samtidig med at de kan bruge byen Aarhus’ gratis overdækkede områder hele året.',
+            'Selvom der er kode, der kan forbedres, giver løsningen sensorisk visuelt indhold og den nødvendige information, så brugeren kan være selvhjulpen i sin træningsrejse. Elementerne er fordelt, så navigationen er enkel, ligesom andre byplatforme rettet mod en 25/35-demografi med middel digital færdighed. Hjemmesiden inviterer dem til at bruge de gratis overdækkede områder, Aarhus har at byde på hele året.',
         },
       ],
       metaAria: 'Projektdetaljer',
@@ -1013,8 +1275,8 @@ export const translations = {
       projectsAria: 'Projets Design pour Solutions Numériques',
       mosaics: {
         projectOne: {
-          title: 'Blå Sol',
-          description: 'Description à définir.',
+          title: 'CPHFW',
+          description: 'Un runway numérique pour réseauter pendant la Copenhagen Fashion Week',
         },
         projectTwo: {
           title: 'Yoga',
@@ -1022,40 +1284,110 @@ export const translations = {
         },
       },
     },
-    digitalBlaSol: {
-      title: 'Blå Sol',
-      description: 'À rédiger.',
-      navCrumb: 'Blå Sol',
+    digitalCphfw: {
+      title: 'CPHFW',
+      description: 'Un runway numérique pour réseauter pendant la Copenhagen Fashion Week',
+      navCrumb: 'CPHFW',
       figmaCta: 'Cliquez pour voir le prototype du projet',
+      codedSolutionCta: 'Lien vers la solution codée',
       problemStatement: 'Énoncé du problème',
-      problemDescription: 'À rédiger.',
+      problemDescription:
+        'Comment connecter les personnes présentes à la CPHFW 2026 avec des acteurs de l’industrie tout en préservant l’identité de l’entreprise ?',
+      researchSummaryTitle: 'Résumé des résultats de UX / UI Research\net Mapping',
+      researchIssuesLabel: 'Problèmes principaux :',
+      researchIssues: [
+        'Il est difficile de se connecter avec des personnes à la CPHFW',
+        'Les défilés sont très difficiles d’accès',
+        'Le point central n’est pas le runway mais le salon professionnel (CIFF, 2025)',
+      ],
+      researchConclusionsLabel: 'Après le mapping, les principales conclusions étaient :',
+      researchConclusions: [
+        'La solution offrira des moyens de trouver des opportunités de networking pendant la CPHFW.',
+        'La solution consiste à afficher des événements plus accessibles.',
+        'Les valeurs principales sont connection, inclusion et inspiration.',
+      ],
       topics: [
-        { title: 'Site Map', description: 'À rédiger.' },
-        { title: 'Prioritisation Table', description: 'À rédiger.' },
-        { title: 'Wireframes', description: 'À rédiger.' },
-        { title: 'Style Tile', description: 'À rédiger.' },
-        { title: 'Logo', description: 'À rédiger.' },
-        { title: 'Design Principles', description: 'À rédiger.' },
-        { title: 'UX Writing', description: 'À rédiger.' },
-        { title: 'Hi-fi testing', description: 'À rédiger.' },
-        { title: 'Results', description: 'À rédiger.' },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Après avoir obtenu des résultats de la ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', la fabrication de la navigation du site commence par une carte conceptuelle.',
+          linkAnchor: 'digital-cphfw-research-summary',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Plan du site CPHFW avec Screensaver, Homepage, Discover, Events, Brands et flux d’erreur',
+        },
+        {
+          title: 'Wireframes',
+          description:
+            'Voici la planification de l’affichage des marques de la CPHFW et de la page de marque individuelle.',
+          imageKey: 'wireframes',
+          imageAlt: 'Wireframes Brands et Events CPHFW côte à côte',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Un recueil d’inspirations mode pour guider la palette et le contenu visuel en lien avec la recherche menée.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Moodboard CPHFW avec mode, Copenhague, durabilité et inclusion',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Sur la base de la recherche pour la CPHFW 2026 et pour rester fidèle à l’identité de l’entreprise, voici les palettes, polices et éléments UI suggérés.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Style tile CPHFW avec palette, typographie, logos et composants UI',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Application des principes de recadrage photo pour ajuster les images, et des principes de Gestalt de proximité, d’enclosure et de similarité pour indiquer les sections sur la plupart des pages.',
+        },
+        {
+          title: 'UX Writing',
+          description:
+            'En conservant la simplicité des versions précédentes du site CPHFW, j’ai développé une publicité directe, mais amicale et créative.',
+          imageKey: 'ux-writing',
+          imageAlt: 'Page 404 CPHFW avec cintre graphique et texte Hang on',
+        },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'En testant à différentes étapes de notre prototype (Usability Testing), nous avons appris à prioriser, écarter, ajouter et simplifier des éléments — comme le menu de filtres sur la page calendrier, la quantité de texte et la forme de certains indicateurs. Nous avons suivi les conventions et l’esthétique scandinave.',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Écrans Brands et Events CPHFW avant et après les tests d’utilisabilité',
+        },
+        {
+          title: 'Results',
+          description:
+            'Nous avons abouti à des plateformes conviviales, mettant à jour les couleurs selon les tendances mode à venir et alignant le contenu visuel sur les standards de chaque marque et l’identité CPHFW. Les solutions d’écrans d’information aident les utilisateurs à suivre les infos sur les marques et à trouver des événements pour se connecter et réseauter.',
+        },
       ],
       metaAria: 'Détails du projet',
       metaLabels: {
         date: 'Date du projet',
         team: 'Équipe',
+        role: 'Rôle',
         tools: 'Outils',
         methods: 'Méthodes',
         target: 'Cible',
         client: 'Client',
       },
       meta: {
-        date: 'À rédiger.',
-        team: 'À rédiger.',
-        tools: 'À rédiger.',
-        methods: 'À rédiger.',
-        target: 'À rédiger.',
-        client: 'À rédiger.',
+        date: 'Novembre 2025',
+        team: '4 étudiants',
+        role: 'Design developer pour les pages Brands, recherche et collecte de contenu.',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target:
+          'Personnes de 20 à 30 ans qui cherchent à réseauter dans l’industrie de la mode',
+        client: 'Copenhagen Fashion Week 2026',
       },
     },
     digitalYoga: {
@@ -1070,12 +1402,68 @@ export const translations = {
       problemDescription:
         'Comment puis-je présenter aux personnes qui vivent à Aarhus ou qui la visitent des espaces peu coûteux pour faire de l’exercice et se détendre, et les aider à préparer ce qu’ils doivent savoir avant de s’y rendre ?',
       topics: [
-        { title: 'Site Map', description: 'À rédiger.' },
-        { title: 'Prioritisation Table', description: 'À rédiger.' },
-        { title: 'Wireframes', description: 'À rédiger.' },
-        { title: 'Style Tile', description: 'À rédiger.' },
-        { title: 'Logo', description: 'À rédiger.' },
-        { title: 'Design Principles', description: 'À rédiger.' },
+        {
+          title: 'Mindmap',
+          description:
+            'Préoccupations et intérêts de la persona reliés aux solutions de contenu pour la plateforme.',
+          imageKey: 'mindmap',
+          imageAlt:
+            'Carte mentale reliant les préoccupations de la persona aux solutions de contenu possibles',
+        },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Après avoir obtenu des résultats de la ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', la fabrication de la navigation du site commence par une carte conceptuelle.',
+          linkTo: 'yoga',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Diagramme de plan du site avec Home, pages Place, Learn more, menu, pied de page et relations entre sections',
+        },
+        {
+          title: 'Wireframes',
+          descriptionBefore:
+            'Les versions analogiques du wireframe ont donné naissance aux prototypes Lo-Fi, après avoir envisagé la ',
+          descriptionLink: 'liste des exigences',
+          descriptionAfter: '.',
+          linkTo: 'yoga',
+          linkSection: 'requirements',
+          imageKey: 'wireframes',
+          imageAlt:
+            'Wireframes desktop et mobile pour Home, Place 1 et Learn more',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Recherche conceptuelle et inspiration pour la palette, les contenus et l’imagerie du projet.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Moodboard yoga avec chakras, mudras, yantras, asanas et symbolisme spirituel',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Voici une proposition de couleurs, de tailles et de visuels pour les éléments et les composants. Chaque lieu est lié à un élément. Sur sa propre page, Koglen a des éléments bruns pour la terre, Ballehage du bleu pour l’eau, Egå Marina du bleu clair pour l’air, et la page Learn More a de l’orange, représentant le mouvement.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Style tile Kaivalya avec palettes earth, water et air, typographie et logo',
+        },
+        {
+          title: 'Logo',
+          description:
+            'J’ai appliqué les principes de similarité et de connexité de la psychologie de la Gestalt (Laura Busche, 2025). Les lignes du logo ont une longueur similaire et sont connectées, perçues comme un tout ; la figure centrale simule la lettre Y. Le thème triangulaire s’inspire du symbole traditionnel Sri Yantra en yoga.',
+          videoSrc: 'videos/digital-yoga-logo.mp4',
+          videoAlt: 'Animation du logo Kaivalya',
+        },
+        {
+          title: 'Content Creation',
+          description:
+            'J’ai réalisé la plupart du contenu visuel, y compris la photographie, le montage et le recadrage, ainsi que les dessins du prototype final. Je les ai créés lors de visites sur les sites, en recueillant davantage d’observations.',
+          imageKey: 'content-creation',
+          imageAlt:
+            'Croquis de terrain et photographies des abris Egå Marina, Koglen et Ballehage',
+        },
         {
           title: 'UX Writing',
           description:
@@ -1084,11 +1472,18 @@ export const translations = {
           imageAlt:
             'Exemple d’UX writing de la page Egå Marina avec texte sensoriel, widgets météo et carte',
         },
-        { title: 'Hi-fi testing', description: 'À rédiger.' },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'J’ai testé avec 5 utilisateurs correspondant au groupe cible (jeunes et actifs en extérieur). Ils ont navigué le prototype Lo-fi en utilisant la méthode du « thinking out loud » (Nielsen, Jakob, 2012).',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Comparaison Lo-fi / Hi-fi de la page Koglen avant et après les tests',
+        },
         {
           title: 'Results',
           description:
-            'Bien que le code puisse encore être amélioré, la solution fournit l’information et le contenu nécessaires pour que l’utilisateur soit autonome dans son parcours d’exercice, tout en lui permettant d’utiliser les espaces abrités gratuits qu’Aarhus propose toute l’année.',
+            'Bien que le code puisse encore être amélioré, la solution offre un contenu visuel sensoriel et les informations nécessaires pour que l’utilisateur soit autonome dans son parcours d’exercice. Les éléments ont été répartis pour une navigation simple, similaire à d’autres plateformes municipales destinées à une démographie 25/35 avec une aisance numérique moyenne. Le site les invite à utiliser les espaces abrités gratuits qu’Aarhus propose toute l’année.',
         },
       ],
       metaAria: 'Détails du projet',
@@ -1451,8 +1846,8 @@ export const translations = {
       projectsAria: 'Design für Digitale Lösungen Projekte',
       mosaics: {
         projectOne: {
-          title: 'Blå Sol',
-          description: 'Beschreibung folgt später.',
+          title: 'CPHFW',
+          description: 'Ein digitaler Runway zum Netzwerken während der Copenhagen Fashion Week',
         },
         projectTwo: {
           title: 'Yoga',
@@ -1460,40 +1855,110 @@ export const translations = {
         },
       },
     },
-    digitalBlaSol: {
-      title: 'Blå Sol',
-      description: 'Noch zu schreiben.',
-      navCrumb: 'Blå Sol',
+    digitalCphfw: {
+      title: 'CPHFW',
+      description: 'Ein digitaler Runway zum Netzwerken während der Copenhagen Fashion Week',
+      navCrumb: 'CPHFW',
       figmaCta: 'Klicken Sie, um den Projektprototyp zu sehen',
+      codedSolutionCta: 'Link zur kodierten Lösung',
       problemStatement: 'Problemstellung',
-      problemDescription: 'Noch zu schreiben.',
+      problemDescription:
+        'Wie können wir Menschen, die die CPHFW 2026 besuchen, mit Akteuren der Branche vernetzen und dabei die Unternehmensidentität wahren?',
+      researchSummaryTitle: 'Zusammenfassung der UX / UI Research\nand Mapping Findings',
+      researchIssuesLabel: 'Hauptprobleme:',
+      researchIssues: [
+        'Es ist schwer, auf der CPHFW mit Menschen in Kontakt zu kommen',
+        'Die Shows sind sehr schwer zugänglich',
+        'Der Hauptpunkt ist nicht die Runway, sondern die Fachmesse (CIFF, 2025)',
+      ],
+      researchConclusionsLabel: 'Nach dem Mapping waren die wichtigsten Schlussfolgerungen:',
+      researchConclusions: [
+        'Die Lösung bietet Nutzer:innen Wege, Netzwerkchancen auf der CPHFW zu finden.',
+        'Die Lösung zeigt zugänglichere Events.',
+        'Die Hauptwerte sind Connection, Inclusion und Inspiration.',
+      ],
       topics: [
-        { title: 'Site Map', description: 'Noch zu schreiben.' },
-        { title: 'Prioritisation Table', description: 'Noch zu schreiben.' },
-        { title: 'Wireframes', description: 'Noch zu schreiben.' },
-        { title: 'Style Tile', description: 'Noch zu schreiben.' },
-        { title: 'Logo', description: 'Noch zu schreiben.' },
-        { title: 'Design Principles', description: 'Noch zu schreiben.' },
-        { title: 'UX Writing', description: 'Noch zu schreiben.' },
-        { title: 'Hi-fi testing', description: 'Noch zu schreiben.' },
-        { title: 'Results', description: 'Noch zu schreiben.' },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Nach Ergebnissen aus der ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ' beginnt die Ausarbeitung der Seitennavigation mit einer konzeptionellen Karte.',
+          linkAnchor: 'digital-cphfw-research-summary',
+          imageKey: 'sitemap',
+          imageAlt:
+            'CPHFW-Sitemap mit Screensaver, Homepage, Discover, Events, Brands und Fehlerflows',
+        },
+        {
+          title: 'Wireframes',
+          description:
+            'Dies ist die Planung für die Darstellung der CPHFW-Brands und der einzelnen Brand-Seite.',
+          imageKey: 'wireframes',
+          imageAlt: 'CPHFW Brands- und Events-Wireframes nebeneinander',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Eine Sammlung von Modeinspirationen, die Palette und visuelle Inhalte im Bezug zur durchgeführten Recherche leiten.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'CPHFW-Moodboard mit Mode, Kopenhagen, Nachhaltigkeit und Inklusion',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Basierend auf der Recherche für CPHFW 2026 und um die Unternehmensidentität zu wahren, sind dies die vorgeschlagenen Paletten, Schriften und UI-Elemente.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'CPHFW Style Tile mit Farbpalette, Typografie, Logos und UI-Komponenten',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Anwendung von Foto-Zuschneideprinzipien zur Anpassung der Bilder sowie der Gestalt-Prinzipien Nähe, Einschließung und Ähnlichkeit, um Abschnitte auf den meisten Seiten zu kennzeichnen.',
+        },
+        {
+          title: 'UX Writing',
+          description:
+            'Unter Beibehaltung der Einfachheit früherer Versionen der CPHFW-Website wurde eine direkte, aber freundliche und kreative Ansprache ausgearbeitet.',
+          imageKey: 'ux-writing',
+          imageAlt: 'CPHFW-404-Seite mit Bügelgrafik und Hang-on-UX-Writing',
+        },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Durch Tests in verschiedenen Phasen unseres Prototyps (Usability Testing) lernten wir, Elemente zu priorisieren, zu verwerfen, hinzuzufügen und zu vereinfachen — etwa das Filtermenü auf der Kalenderseite, die Textmenge und die Form bestimmter Indikatoren. Wir folgten den Konventionen und der skandinavischen Ästhetik.',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'CPHFW Brands- und Events-Bildschirme vor und nach dem Usability-Testing',
+        },
+        {
+          title: 'Results',
+          description:
+            'Wir kamen zu nutzerfreundlichen Plattformen, die Farben anhand künftiger Modetrends aktualisieren und visuelle Inhalte an Markenstandards und die CPHFW-Identität anpassen. Die Info-Screen-Lösungen helfen Nutzer:innen, Markeninfos zu verfolgen und Events zu finden, um sich zu vernetzen.',
+        },
       ],
       metaAria: 'Projektdetails',
       metaLabels: {
         date: 'Projektdatum',
         team: 'Team',
+        role: 'Rolle',
         tools: 'Tools',
         methods: 'Methoden',
         target: 'Zielgruppe',
         client: 'Kunde',
       },
       meta: {
-        date: 'Noch zu schreiben.',
-        team: 'Noch zu schreiben.',
-        tools: 'Noch zu schreiben.',
-        methods: 'Noch zu schreiben.',
-        target: 'Noch zu schreiben.',
-        client: 'Noch zu schreiben.',
+        date: 'November 2025',
+        team: '4 Studierende',
+        role: 'Design developer für die Brands Pages, Content-Recherche und -Sammlung.',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target:
+          'Menschen zwischen 20 und 30 Jahren, die in der Modebranche Netzwerken möchten',
+        client: 'Copenhagen Fashion Week 2026',
       },
     },
     digitalYoga: {
@@ -1508,12 +1973,68 @@ export const translations = {
       problemDescription:
         'Wie kann ich Menschen, die in Aarhus leben oder die Stadt besuchen, kostengünstige Orte zum Sporttreiben und Entspannen vorstellen und ihnen helfen, sich auf das vorzubereiten, was sie für den Besuch wissen müssen?',
       topics: [
-        { title: 'Site Map', description: 'Noch zu schreiben.' },
-        { title: 'Prioritisation Table', description: 'Noch zu schreiben.' },
-        { title: 'Wireframes', description: 'Noch zu schreiben.' },
-        { title: 'Style Tile', description: 'Noch zu schreiben.' },
-        { title: 'Logo', description: 'Noch zu schreiben.' },
-        { title: 'Design Principles', description: 'Noch zu schreiben.' },
+        {
+          title: 'Mindmap',
+          description:
+            'Persona-Anliegen und Interessen, die auf Inhaltslösungen für die Plattform abgebildet sind.',
+          imageKey: 'mindmap',
+          imageAlt:
+            'Mindmap, die Persona-Anliegen mit möglichen Inhaltslösungen verbindet',
+        },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Nach Ergebnissen aus der ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ' beginnt die Ausarbeitung der Seitennavigation mit einer konzeptionellen Karte.',
+          linkTo: 'yoga',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Sitemap-Diagramm mit Home, Place-Seiten, Learn more, Menü, Footer und Abschnittsbeziehungen',
+        },
+        {
+          title: 'Wireframes',
+          descriptionBefore:
+            'Analoge Versionen des Wireframes führten zu den Lo-Fi-Wireframe-Prototypen, nachdem die ',
+          descriptionLink: 'Liste der Anforderungen',
+          descriptionAfter: ' betrachtet wurde.',
+          linkTo: 'yoga',
+          linkSection: 'requirements',
+          imageKey: 'wireframes',
+          imageAlt:
+            'Desktop- und Mobile-Wireframes für Home, Place 1 und Learn more',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Konzeptuelle Recherche und Inspiration für Palette, Inhalte und Bildsprache des Projekts.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Yoga-Moodboard mit Chakras, Mudras, Yantras, Asanas und spiritueller Symbolik',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Dies ist ein Vorschlag für Farben, Größen und Visuals der Elemente und Komponenten. Jeder Ort ist mit einem Element verknüpft. Auf der eigenen Seite hat Koglen braune Elemente für Erde, Ballehage Blau für Wasser, Egå Marina Hellblau für Luft, und die Learn-More-Seite Orange für Bewegung.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Kaivalya Style Tile mit Earth-, Water- und Air-Farbpaletten, Typografie und Logo',
+        },
+        {
+          title: 'Logo',
+          description:
+            'Ich habe die Gestalt-Psychologie-Prinzipien Similarity und Connectedness angewendet (Laura Busche, 2025). Die Linien des Logos sind ähnlich lang und verbunden, werden als Ganzes wahrgenommen; die mittlere Figur simuliert den Buchstaben Y. Das dreieckige Gesamtthema ist vom traditionellen Sri-Yantra-Symbol im Yoga inspiriert.',
+          videoSrc: 'videos/digital-yoga-logo.mp4',
+          videoAlt: 'Animiertes Kaivalya-Logo',
+        },
+        {
+          title: 'Content Creation',
+          description:
+            'Ich habe den Großteil der visuellen Inhalte erstellt, einschließlich Fotografie, Bearbeitung und Zuschneiden sowie der Zeichnungen im finalen Prototyp. Ich habe sie bei Ortsbesuchen angefertigt und dabei weitere Beobachtungen gesammelt.',
+          imageKey: 'content-creation',
+          imageAlt:
+            'Feldskizzen und Fotografie der Unterstände Egå Marina, Koglen und Ballehage',
+        },
         {
           title: 'UX Writing',
           description:
@@ -1522,11 +2043,18 @@ export const translations = {
           imageAlt:
             'UX-Writing-Beispiel der Egå-Marina-Seite mit sensorischem Text, Wetter- und Karten-Widgets',
         },
-        { title: 'Hi-fi testing', description: 'Noch zu schreiben.' },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Ich habe mit 5 Nutzer:innen getestet, die der Zielgruppe entsprechen (jung und aktiv im Freien). Sie navigierten den Lo-Fi-Prototyp mit der „Thinking out loud“-Methode (Nielsen, Jakob, 2012).',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Lo-fi-zu-Hi-fi-Vergleich der Koglen-Seite vor und nach dem Testing',
+        },
         {
           title: 'Results',
           description:
-            'Auch wenn der Code noch verbessert werden kann, liefert die Lösung die nötigen Informationen und Inhalte, damit Nutzer:innen auf ihrer Bewegungsreise selbstständig sind und die kostenlosen überdachten Flächen der Stadt Aarhus das ganze Jahr nutzen können.',
+            'Auch wenn der Code noch verbessert werden kann, liefert die Lösung sensorische visuelle Inhalte und die nötigen Informationen, damit Nutzer:innen auf ihrer Bewegungsreise selbstständig sind. Die Elemente wurden so verteilt, dass die Navigation einfach bleibt – ähnlich anderer städtischer Plattformen für eine 25/35-Zielgruppe mit mittlerer digitaler Kompetenz. Die Website lädt ein, die kostenlosen überdachten Flächen der Stadt Aarhus das ganze Jahr zu nutzen.',
         },
       ],
       metaAria: 'Projektdetails',
@@ -1889,8 +2417,8 @@ export const translations = {
       projectsAria: 'Proyectos de Diseño para Soluciones Digitales',
       mosaics: {
         projectOne: {
-          title: 'Blå Sol',
-          description: 'Descripción por definir.',
+          title: 'CPHFW',
+          description: 'Una pasarela digital para hacer networking en Copenhagen Fashion Week',
         },
         projectTwo: {
           title: 'Yoga',
@@ -1898,40 +2426,110 @@ export const translations = {
         },
       },
     },
-    digitalBlaSol: {
-      title: 'Blå Sol',
-      description: 'Por escribir.',
-      navCrumb: 'Blå Sol',
+    digitalCphfw: {
+      title: 'CPHFW',
+      description: 'Una pasarela digital para hacer networking en Copenhagen Fashion Week',
+      navCrumb: 'CPHFW',
       figmaCta: 'Haz clic para ver el prototipo del proyecto',
+      codedSolutionCta: 'Enlace a la solución programada',
       problemStatement: 'Planteamiento del problema',
-      problemDescription: 'Por escribir.',
+      problemDescription:
+        '¿Cómo podemos conectar a las personas que asisten a CPHFW 2026 con gente de la industria manteniendo la identidad de la empresa?',
+      researchSummaryTitle: 'Resumen de hallazgos de UX / UI Research\nand Mapping',
+      researchIssuesLabel: 'Problemas principales:',
+      researchIssues: [
+        'Es difícil conectar con personas en CPHFW',
+        'Los desfiles son muy difíciles de conseguir',
+        'El punto principal no es la pasarela sino la feria comercial (CIFF, 2025)',
+      ],
+      researchConclusionsLabel: 'Tras el mapping, las principales conclusiones fueron:',
+      researchConclusions: [
+        'La solución ofrecerá formas de encontrar oportunidades de networking en CPHFW.',
+        'La solución es mostrar eventos más accesibles.',
+        'Los valores principales son connection, inclusion e inspiration.',
+      ],
       topics: [
-        { title: 'Site Map', description: 'Por escribir.' },
-        { title: 'Prioritisation Table', description: 'Por escribir.' },
-        { title: 'Wireframes', description: 'Por escribir.' },
-        { title: 'Style Tile', description: 'Por escribir.' },
-        { title: 'Logo', description: 'Por escribir.' },
-        { title: 'Design Principles', description: 'Por escribir.' },
-        { title: 'UX Writing', description: 'Por escribir.' },
-        { title: 'Hi-fi testing', description: 'Por escribir.' },
-        { title: 'Results', description: 'Por escribir.' },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Tras obtener resultados de la ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', la fabricación de la navegación del sitio comienza con un mapa conceptual.',
+          linkAnchor: 'digital-cphfw-research-summary',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Mapa del sitio CPHFW con Screensaver, Homepage, Discover, Events, Brands y flujos de error',
+        },
+        {
+          title: 'Wireframes',
+          description:
+            'Esta es la planificación de la visualización de las marcas de CPHFW y de la página de marca individual.',
+          imageKey: 'wireframes',
+          imageAlt: 'Wireframes de Brands y Events de CPHFW lado a lado',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Una recopilación de inspiración de moda para guiar la paleta y el contenido visual en relación con la investigación realizada.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Moodboard de CPHFW con moda, Copenhague, sostenibilidad e inclusión',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Con base en la investigación para CPHFW 2026 y para mantener la identidad de la empresa, estas son las paletas, tipografías y elementos de UI sugeridos.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Style tile de CPHFW con paleta, tipografía, logos y componentes UI',
+        },
+        {
+          title: 'Design Principles',
+          description:
+            'Apliqué los principios de recorte fotográfico para ajustar las imágenes y los principios Gestalt de Proximidad, Enclosure y Similitud para indicar secciones en la mayoría de las páginas.',
+        },
+        {
+          title: 'UX Writing',
+          description:
+            'Manteniendo la sencillez de versiones anteriores del sitio de CPHFW, elaboré una publicidad directa pero amable y creativa.',
+          imageKey: 'ux-writing',
+          imageAlt: 'Página 404 de CPHFW con percha gráfica y texto Hang on',
+        },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Al probar en distintas etapas de nuestro prototipo (Usability Testing), aprendimos a priorizar, descartar, añadir y simplificar elementos — como el menú de filtros en la página del calendario, la cantidad de texto y la forma de ciertos indicadores. Seguimos las convenciones y la estética escandinava.',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Pantallas Brands y Events de CPHFW antes y después de las pruebas de usabilidad',
+        },
+        {
+          title: 'Results',
+          description:
+            'Concluimos con plataformas fáciles de usar que actualizan los colores según tendencias de moda futuras y alinean el contenido visual con los estándares de cada marca y la identidad de CPHFW. Las soluciones de pantallas informativas ayudan a seguir información de marcas y encontrar eventos para conectar y hacer networking.',
+        },
       ],
       metaAria: 'Detalles del proyecto',
       metaLabels: {
         date: 'Fecha del proyecto',
         team: 'Equipo',
+        role: 'Rol',
         tools: 'Herramientas',
         methods: 'Métodos',
         target: 'Público objetivo',
         client: 'Cliente',
       },
       meta: {
-        date: 'Por escribir.',
-        team: 'Por escribir.',
-        tools: 'Por escribir.',
-        methods: 'Por escribir.',
-        target: 'Por escribir.',
-        client: 'Por escribir.',
+        date: 'Noviembre 2025',
+        team: '4 estudiantes',
+        role: 'Design developer para las páginas Brands, investigación y recopilación de contenido.',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target:
+          'Personas de 20 a 30 años que buscan hacer networking en la industria de la moda',
+        client: 'Copenhagen Fashion Week 2026',
       },
     },
     digitalYoga: {
@@ -1946,12 +2544,68 @@ export const translations = {
       problemDescription:
         '¿Cómo puedo presentar a las personas que viven en Aarhus o la visitan zonas económicas para hacer ejercicio y relajarse, y ayudarles a preparar lo que necesitan saber para ir?',
       topics: [
-        { title: 'Site Map', description: 'Por escribir.' },
-        { title: 'Prioritisation Table', description: 'Por escribir.' },
-        { title: 'Wireframes', description: 'Por escribir.' },
-        { title: 'Style Tile', description: 'Por escribir.' },
-        { title: 'Logo', description: 'Por escribir.' },
-        { title: 'Design Principles', description: 'Por escribir.' },
+        {
+          title: 'Mindmap',
+          description:
+            'Preocupaciones e intereses de la persona mapeados a soluciones de contenido para la plataforma.',
+          imageKey: 'mindmap',
+          imageAlt:
+            'Mapa mental que vincula las preocupaciones de la persona con posibles soluciones de contenido',
+        },
+        {
+          title: 'Site Map',
+          descriptionBefore: 'Tras obtener resultados de la ',
+          descriptionLink: 'UX / UI research and mapping',
+          descriptionAfter:
+            ', la fabricación de la navegación del sitio comienza con un mapa conceptual.',
+          linkTo: 'yoga',
+          imageKey: 'sitemap',
+          imageAlt:
+            'Diagrama del mapa del sitio con Home, páginas Place, Learn more, menú, pie de página y relaciones entre secciones',
+        },
+        {
+          title: 'Wireframes',
+          descriptionBefore:
+            'Las versiones analógicas del wireframe dieron origen a los prototipos Lo-Fi, tras contemplar la ',
+          descriptionLink: 'lista de requisitos',
+          descriptionAfter: '.',
+          linkTo: 'yoga',
+          linkSection: 'requirements',
+          imageKey: 'wireframes',
+          imageAlt:
+            'Wireframes de escritorio y móvil para Home, Place 1 y Learn more',
+        },
+        {
+          title: 'Moodboard',
+          description:
+            'Investigación conceptual e inspiración para la paleta, los contenidos y las imágenes del proyecto.',
+          imageKey: 'moodboard',
+          imageAlt:
+            'Moodboard de yoga con chakras, mudras, yantras, asanas y simbolismo espiritual',
+        },
+        {
+          title: 'Style Tile',
+          description:
+            'Esta es una propuesta de color, tamaños y visuales para los elementos y componentes. Cada lugar está vinculado a un elemento. En su propia página, Koglen tiene elementos marrones para la tierra, Ballehage azul para el agua, Egå Marina azul claro para el aire y la página Learn More tiene naranja, que representa el movimiento.',
+          imageKey: 'style-tile',
+          imageAlt:
+            'Style tile de Kaivalya con paletas earth, water y air, tipografía y logo',
+        },
+        {
+          title: 'Logo',
+          description:
+            'Apliqué el principio de psicología Gestalt de Similarity y Connectedness (Laura Busche, 2025). Las líneas del logo son similares en longitud y están conectadas, percibidas como un todo; la figura central simula la letra Y. El tema triangular general se inspira en el símbolo tradicional Sri Yantra del yoga.',
+          videoSrc: 'videos/digital-yoga-logo.mp4',
+          videoAlt: 'Animación del logo Kaivalya',
+        },
+        {
+          title: 'Content Creation',
+          description:
+            'Hice la mayor parte del contenido visual, incluyendo fotografía, edición y recorte, así como los dibujos del prototipo final. Los creé al visitar los sitios, reuniendo más observaciones.',
+          imageKey: 'content-creation',
+          imageAlt:
+            'Bocetos de campo y fotografía de los refugios Egå Marina, Koglen y Ballehage',
+        },
         {
           title: 'UX Writing',
           description:
@@ -1960,11 +2614,18 @@ export const translations = {
           imageAlt:
             'Ejemplo de UX writing de la página Egå Marina con texto sensorial, widgets de clima y mapa',
         },
-        { title: 'Hi-fi testing', description: 'Por escribir.' },
+        {
+          title: 'Hi-fi testing',
+          description:
+            'Probé con 5 usuarios del grupo objetivo (jóvenes y activos al aire libre). Navegaron el prototipo Lo-fi con el método de “thinking out loud” (Nielsen, Jakob, 2012).',
+          imageKey: 'hifi-testing',
+          imageAlt:
+            'Comparación Lo-fi a Hi-fi de la página Koglen antes y después de las pruebas',
+        },
         {
           title: 'Results',
           description:
-            'Aunque hay código por mejorar, la solución ofrece la información y el contenido necesarios para que el usuario sea autosuficiente en su recorrido de ejercicio, y pueda usar las zonas cubiertas gratuitas que Aarhus ofrece durante todo el año.',
+            'Aunque hay código por mejorar, la solución ofrece contenido visual sensorial e información necesaria para que el usuario sea autosuficiente en su recorrido de ejercicio. Los elementos se distribuyeron para una navegación sencilla, similar a otras plataformas municipales orientadas a un público de 25/35 con fluidez digital media. El sitio los invita a usar las zonas cubiertas gratuitas que Aarhus ofrece durante todo el año.',
         },
       ],
       metaAria: 'Detalles del proyecto',

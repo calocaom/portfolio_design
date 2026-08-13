@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useEffect, useLayoutEffect, useRef } from 'react'
 import './UxCaseStudy.css'
 import './Yoga.css'
 import SiteNav from '../components/SiteNav'
@@ -80,6 +80,20 @@ function ScaleToFit({ children, designWidth = CHART_DESIGN_WIDTH }) {
 export default function Yoga({ onNavigate }) {
   const { dict, t } = useI18n()
   const meta = dict.yoga.meta
+
+  useEffect(() => {
+    const raw = window.location.hash.replace(/^#\/?/, '')
+    const section = raw.split('/')[1]
+    if (!section) return undefined
+
+    const timer = window.setTimeout(() => {
+      document
+        .getElementById(`yoga-topic-${section}`)
+        ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 80)
+
+    return () => window.clearTimeout(timer)
+  }, [])
 
   return (
     <div className="screen ux-case-study yoga">
@@ -232,6 +246,7 @@ export default function Yoga({ onNavigate }) {
               return (
                 <section
                   key={topic.title}
+                  id={topic.imageKey ? `yoga-topic-${topic.imageKey}` : undefined}
                   className="ux-case-study__section"
                   aria-label={topic.title}
                 >

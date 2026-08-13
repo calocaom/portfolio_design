@@ -1,6 +1,25 @@
-import { YOGA_CONVENTIONS, YOGA_PERSONA_PHOTO, YOGA_UX_WRITING } from '../assets'
+import {
+  DIGITAL_CPHFW_HIFI_AFTER,
+  DIGITAL_CPHFW_HIFI_BEFORE,
+  DIGITAL_CPHFW_MOODBOARD,
+  DIGITAL_CPHFW_SITEMAP,
+  DIGITAL_CPHFW_STYLE_TILE,
+  DIGITAL_CPHFW_WIREFRAMES_BRANDS,
+  DIGITAL_CPHFW_WIREFRAMES_EVENTS,
+  DIGITAL_CPHFW_UX_WRITING,
+  DIGITAL_YOGA_CONTENT_CREATION,
+  DIGITAL_YOGA_HIFI_TESTING,
+  DIGITAL_YOGA_MOODBOARD,
+  DIGITAL_YOGA_SITEMAP,
+  DIGITAL_YOGA_STYLE_TILE,
+  DIGITAL_YOGA_WIREFRAMES,
+  YOGA_CONVENTIONS,
+  YOGA_PERSONA_PHOTO,
+  YOGA_UX_WRITING,
+} from '../assets'
 import { YOGA_AFFINITY_CLUSTERS } from '../data/yogaAffinity'
 import { YOGA_HMW_CHART, YOGA_OOUX_CHART } from '../data/yogaCharts'
+import { YOGA_MINDMAP } from '../data/yogaMindmap'
 import { YOGA_PERSONA_DATA } from '../data/yogaPersona'
 import { YOGA_REQUIREMENTS_CHART } from '../data/yogaRequirements'
 import { YOGA_RESEARCH_CHART } from '../data/yogaResearch'
@@ -266,6 +285,242 @@ export function UxWritingChart() {
         alt=""
         className="yoga-ux-writing__img"
       />
+    </div>
+  )
+}
+
+export function SiteMapChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={DIGITAL_YOGA_SITEMAP}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+export function CphfwSiteMapChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={DIGITAL_CPHFW_SITEMAP}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+export function CphfwMoodboardChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={DIGITAL_CPHFW_MOODBOARD}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function CphfwStyleTileChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={DIGITAL_CPHFW_STYLE_TILE}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+export function CphfwWireframesChart() {
+  return (
+    <div className="cphfw-wireframes">
+      <img
+        src={DIGITAL_CPHFW_WIREFRAMES_BRANDS}
+        alt=""
+        className="cphfw-wireframes__img"
+      />
+      <img
+        src={DIGITAL_CPHFW_WIREFRAMES_EVENTS}
+        alt=""
+        className="cphfw-wireframes__img"
+      />
+    </div>
+  )
+}
+
+export function CphfwUxWritingChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={DIGITAL_CPHFW_UX_WRITING}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function CphfwHifiTestingChart() {
+  return (
+    <div className="cphfw-hifi" aria-hidden="true">
+      <img
+        src={DIGITAL_CPHFW_HIFI_BEFORE}
+        alt=""
+        className="cphfw-hifi__img"
+      />
+      <div className="cphfw-hifi__arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 40" focusable="false">
+          <path
+            d="M12 4v28M6 26l6 8 6-8"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.75"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+      <img
+        src={DIGITAL_CPHFW_HIFI_AFTER}
+        alt=""
+        className="cphfw-hifi__img"
+      />
+    </div>
+  )
+}
+
+export function StyleTileChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={DIGITAL_YOGA_STYLE_TILE}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+export function WireframesChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={DIGITAL_YOGA_WIREFRAMES}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function ContentCreationChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={DIGITAL_YOGA_CONTENT_CREATION}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function MoodboardChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={DIGITAL_YOGA_MOODBOARD}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+export function HifiTestingChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={DIGITAL_YOGA_HIFI_TESTING}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+function MindmapBranchArrow() {
+  return (
+    <svg
+      className="yoga-mindmap__arrow"
+      viewBox="0 0 72 120"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M4 60 H28 C40 60 44 20 58 20 H66"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M4 60 H28 C40 60 44 60 58 60 H66"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M4 60 H28 C40 60 44 100 58 100 H66"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path d="M62 16 L68 20 L62 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M62 56 L68 60 L62 64" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M62 96 L68 100 L62 104" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+export function MindmapChart() {
+  const data = YOGA_MINDMAP
+
+  return (
+    <div className="yoga-mindmap">
+      <div className="yoga-mindmap__columns">
+        <p className="yoga-mindmap__col-title yoga-mindmap__col-title--left">
+          {data.leftTitle}
+        </p>
+        <span className="yoga-mindmap__col-spacer" aria-hidden="true" />
+        <p className="yoga-mindmap__col-title yoga-mindmap__col-title--right">
+          {data.rightTitle}
+        </p>
+      </div>
+
+      <ul className="yoga-mindmap__branches">
+        {data.branches.map((branch) => (
+          <li key={branch.concern} className="yoga-mindmap__branch">
+            <div className="yoga-mindmap__concern">
+              <p>{branch.concern}</p>
+            </div>
+            <MindmapBranchArrow />
+            <ul className="yoga-mindmap__solutions">
+              {branch.solutions.map((solution) => (
+                <li key={solution}>{solution}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

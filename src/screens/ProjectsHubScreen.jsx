@@ -31,7 +31,7 @@ export default function ProjectsHubScreen({
           aria-label={t(`${i18nKey}.projectsAria`)}
         >
           <ul className="projects-hub__mosaic-grid">
-            {mosaics.map(({ key, route, cover }) => {
+            {mosaics.map(({ key, route, cover, coverPosition }) => {
               const title = t(`${i18nKey}.mosaics.${key}.title`)
               const description = t(`${i18nKey}.mosaics.${key}.description`)
               const body = (
@@ -44,7 +44,11 @@ export default function ProjectsHubScreen({
                       <img
                         src={cover}
                         alt=""
-                        className="projects-hub__mosaic-image"
+                        className={`projects-hub__mosaic-image${
+                          coverPosition
+                            ? ` projects-hub__mosaic-image--${coverPosition}`
+                            : ''
+                        }`}
                       />
                     ) : null}
                   </div>
