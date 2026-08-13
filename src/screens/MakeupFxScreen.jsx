@@ -139,6 +139,7 @@ export default function MakeupFxScreen({ onNavigate }) {
                 controls
                 playsInline
                 preload="metadata"
+                poster={publicUrl('videos/testimonials-poster.jpg')}
                 src={publicUrl('videos/testimonials.mp4')}
               >
                 {t('about.videoFallback')}

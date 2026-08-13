@@ -108,6 +108,7 @@ export const translations = {
       'will never end',
     ],
     seeMyProjects: 'See my projects',
+    seeMoreArtProjects: 'See more projects at\nomarcaloca.com',
     makeupFx: {
       title: 'Design for\nMakeup Effects',
       body:
@@ -675,6 +676,7 @@ export const translations = {
       'vil aldrig ende',
     ],
     seeMyProjects: 'Se mine projekter',
+    seeMoreArtProjects: 'Se flere projekter på\nomarcaloca.com',
     makeupFx: {
       title: 'Design til\nMakeup Effects',
       body:
@@ -1253,6 +1255,7 @@ export const translations = {
       'ne finira jamais',
     ],
     seeMyProjects: 'Voir mes projets',
+    seeMoreArtProjects: 'Voir plus de projets sur\nomarcaloca.com',
     makeupFx: {
       title: 'Design pour\nMakeup Effects',
       body:
@@ -1832,6 +1835,7 @@ export const translations = {
       'wird nie enden',
     ],
     seeMyProjects: 'Meine Projekte ansehen',
+    seeMoreArtProjects: 'Mehr Projekte auf\nomarcaloca.com',
     makeupFx: {
       title: 'Design für\nMakeup Effects',
       body:
@@ -2411,6 +2415,7 @@ export const translations = {
       'nunca terminará',
     ],
     seeMyProjects: 'Ver mis proyectos',
+    seeMoreArtProjects: 'Ver más proyectos en\nomarcaloca.com',
     makeupFx: {
       title: 'Diseño para\nMakeup Effects',
       body:

@@ -59,3 +59,7 @@
   right: auto;
   margin-top: clamp(48px, 8vw, 120px);
 }
+
+.ux-cross-promote + .footer--in-flow {
+  margin-top: 0;
+}

@@ -2,7 +2,7 @@
 
 .ux-case-study {
   --case-accent: var(--title-purple);
-  background-color: var(--light-violet);
+  background-color: var(--page-bg);
   color: var(--title-purple);
 }
 

@@ -60,8 +60,11 @@ function ProjectRow({ id, index, project, href, route, titleLabel, pageRef, onNa
       <div className="project-row__copy">
         <AnimatedTitle>{project.title}</AnimatedTitle>
         <p className="project-row__description">{project.description}</p>
-        <span className="project-row__cta" aria-hidden="true">
-          {t('seeMyProjects')}
+        <span
+          className={`project-row__cta${id === 5 ? ' project-row__cta--art' : ''}`}
+          aria-hidden="true"
+        >
+          {id === 5 ? t('seeMoreArtProjects') : t('seeMyProjects')}
         </span>
       </div>
     </div>

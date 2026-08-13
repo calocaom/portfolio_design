@@ -1,12 +1,13 @@
 .ux-cross-promote {
   width: 100%;
   margin-top: clamp(28px, 4vw, 48px);
+  margin-bottom: 0;
   padding: clamp(36px, 5.5vw, 64px) var(--content-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: clamp(18px, 2.5vw, 28px);
-  background-color: var(--light-violet);
+  background-color: var(--page-bg);
   color: var(--title-purple);
   box-shadow: inset 0 1px 0 color-mix(in srgb, var(--deep-purple) 12%, transparent);
 }

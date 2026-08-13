@@ -15,6 +15,8 @@
   --deep-purple: #160d28;
   --title-purple: #3a2454;
   --light-violet: #d9d2e0;
+  /* Screen page backgrounds — same value as light-violet, nudged toward grey */
+  --page-bg: color-mix(in srgb, var(--light-violet) 58%, #cfcfcf);
   --title-violet: #f0eaf7;
   --contact-violet: #e8dff0;
 
