@@ -24,6 +24,8 @@ export const translations = {
       role: 'Artist and Designer',
       emailAria: 'Email Omar Caloca',
       linkedinAria: 'LinkedIn profile',
+      backToTop: 'Back to top',
+      backToTopAria: 'Back to top',
     },
     contact: {
       label: 'For inquiries contact:',
@@ -36,6 +38,8 @@ export const translations = {
       phoneAria: 'Call Omar Caloca',
       linkedinAria: 'LinkedIn profile',
       infoAria: 'Contact information',
+      resume: 'Resume',
+      resumeAria: 'Download resume PDF',
     },
     about: {
       introAria: 'About introduction',
@@ -592,6 +596,8 @@ export const translations = {
       role: 'Kunstner og designer',
       emailAria: 'Email Omar Caloca',
       linkedinAria: 'LinkedIn-profil',
+      backToTop: 'Tilbage til toppen',
+      backToTopAria: 'Tilbage til toppen',
     },
     contact: {
       label: 'Ved forespørgsler kontakt:',
@@ -604,6 +610,8 @@ export const translations = {
       phoneAria: 'Ring til Omar Caloca',
       linkedinAria: 'LinkedIn-profil',
       infoAria: 'Kontaktoplysninger',
+      resume: 'CV',
+      resumeAria: 'Download CV som PDF',
     },
     about: {
       introAria: 'Om-introduktion',
@@ -1171,6 +1179,8 @@ export const translations = {
       role: 'Artiste et designer',
       emailAria: 'Envoyer un email à Omar Caloca',
       linkedinAria: 'Profil LinkedIn',
+      backToTop: 'Retour en haut',
+      backToTopAria: 'Retour en haut',
     },
     contact: {
       label: 'Pour toute demande, contactez :',
@@ -1183,6 +1193,8 @@ export const translations = {
       phoneAria: 'Appeler Omar Caloca',
       linkedinAria: 'Profil LinkedIn',
       infoAria: 'Coordonnées',
+      resume: 'CV',
+      resumeAria: 'Télécharger le CV en PDF',
     },
     about: {
       introAria: 'Introduction À propos',
@@ -1751,6 +1763,8 @@ export const translations = {
       role: 'Künstler und Designer',
       emailAria: 'Omar Caloca per E-Mail kontaktieren',
       linkedinAria: 'LinkedIn-Profil',
+      backToTop: 'Nach oben',
+      backToTopAria: 'Nach oben',
     },
     contact: {
       label: 'Für Anfragen kontaktieren:',
@@ -1763,6 +1777,8 @@ export const translations = {
       phoneAria: 'Omar Caloca anrufen',
       linkedinAria: 'LinkedIn-Profil',
       infoAria: 'Kontaktinformationen',
+      resume: 'Lebenslauf',
+      resumeAria: 'Lebenslauf als PDF herunterladen',
     },
     about: {
       introAria: 'Über-mich-Einführung',
@@ -2331,6 +2347,8 @@ export const translations = {
       role: 'Artista y diseñador',
       emailAria: 'Enviar correo a Omar Caloca',
       linkedinAria: 'Perfil de LinkedIn',
+      backToTop: 'Volver arriba',
+      backToTopAria: 'Volver arriba',
     },
     contact: {
       label: 'Para consultas contactar:',
@@ -2343,6 +2361,8 @@ export const translations = {
       phoneAria: 'Llamar a Omar Caloca',
       linkedinAria: 'Perfil de LinkedIn',
       infoAria: 'Información de contacto',
+      resume: 'Currículum',
+      resumeAria: 'Descargar currículum en PDF',
     },
     about: {
       introAria: 'Introducción Acerca de',

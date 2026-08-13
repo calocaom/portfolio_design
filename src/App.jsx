@@ -4,7 +4,7 @@
  * Portfolio website: routes nav targets to pages.
  * home / works open MainPage and scroll to section.
  * about, contact, makeup-fx, digital-solutions, digital-cphfw, digital-yoga, ux-ui, botanical, and yoga open their pages.
- * Hash routes (e.g. #yoga) open a page on load / new tab.
+ * Hash routes (e.g. #yoga) open a page on load / new tab and drive browser history (back / forward).
  */
 
 import { useEffect, useState } from 'react'
@@ -33,22 +33,31 @@ const HASH_PAGES = new Set([
   'yoga',
 ])
 
+function currentHashPage() {
+  return window.location.hash.replace(/^#\/?/, '').split('/')[0] || ''
+}
+
 function pageFromHash() {
-  const hash = window.location.hash.replace(/^#\/?/, '')
-  const page = hash.split('/')[0]
+  const page = currentHashPage()
   if (!page || page === 'home' || page === 'works' || page === 'main') return 'main'
   if (HASH_PAGES.has(page)) return page
   return 'main'
 }
 
+function scrollTargetFromHash() {
+  const page = currentHashPage()
+  if (page === 'home' || page === 'works') return page
+  return null
+}
+
 export default function App() {
   const [page, setPage] = useState(() => pageFromHash())
-  const [pendingScroll, setPendingScroll] = useState(null)
+  const [pendingScroll, setPendingScroll] = useState(() => scrollTargetFromHash())
 
   useEffect(() => {
     function onHashChange() {
       setPage(pageFromHash())
-      setPendingScroll(null)
+      setPendingScroll(scrollTargetFromHash())
     }
 
     window.addEventListener('hashchange', onHashChange)
@@ -56,67 +65,26 @@ export default function App() {
   }, [])
 
   function handleNavigate(target) {
-    if (target === 'contact') {
-      setPage('contact')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'about') {
-      setPage('about')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'makeup-fx') {
-      setPage('makeup-fx')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'digital-solutions') {
-      setPage('digital-solutions')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'digital-cphfw') {
-      setPage('digital-cphfw')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'digital-yoga') {
-      setPage('digital-yoga')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'ux-ui') {
-      setPage('ux-ui')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'botanical') {
-      setPage('botanical')
-      setPendingScroll(null)
-      return
-    }
-
-    if (target === 'yoga') {
-      setPage('yoga')
-      setPendingScroll(null)
-      return
-    }
+    const nextHash = MAIN_SECTION_IDS.has(target)
+      ? target
+      : HASH_PAGES.has(target)
+        ? target
+        : target
 
     if (MAIN_SECTION_IDS.has(target)) {
-      setPage('main')
       setPendingScroll(target)
+    } else {
+      setPendingScroll(null)
+    }
+
+    // Same hash: hashchange will not fire — update state directly (e.g. re-click Works).
+    if (currentHashPage() === nextHash) {
+      setPage(pageFromHash())
       return
     }
 
-    setPage(target)
+    // Assigning location.hash pushes a history entry in Chrome, Safari, Firefox, etc.
+    window.location.hash = nextHash
   }
 
   return (

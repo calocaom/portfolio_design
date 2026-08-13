@@ -7,11 +7,45 @@ import { publicUrl } from '../utils/publicUrl'
 const LINK_IDS = ['about', 'works', 'contact']
 const DRAWER_LINK_IDS = ['home', 'about', 'works', 'contact']
 const COMPACT_MQ = '(max-width: 1024px)'
+const RESUME_HREF = 'Omar-Caloca-Resume.pdf'
 
 function normalizeTrail(trail) {
   if (!trail) return []
   if (typeof trail === 'string') return [{ label: trail }]
   return trail.filter((segment) => segment?.label)
+}
+
+function PdfDownloadIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-6Z"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14 2v6h5"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 11v6.5M9.5 15.5 12 18l2.5-2.5"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
 }
 
 export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail = null }) {
@@ -184,6 +218,28 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
     })
   }
 
+  function renderResume(variant) {
+    const isDrawer = variant === 'drawer'
+    return (
+      <li key="resume" className={isDrawer ? 'site-nav__drawer-item' : undefined}>
+        <a
+          className={
+            isDrawer
+              ? 'site-nav__drawer-link site-nav__resume site-nav__resume--drawer'
+              : 'site-nav__link site-nav__resume'
+          }
+          href={publicUrl(RESUME_HREF)}
+          download="Omar-Caloca-Resume.pdf"
+          aria-label={t('contact.resumeAria')}
+          onClick={() => setPanel(null)}
+        >
+          <PdfDownloadIcon className="site-nav__resume-icon" />
+          <span>{t('contact.resume')}</span>
+        </a>
+      </li>
+    )
+  }
+
   return (
     <nav
       className={`site-nav${menuOpen ? ' site-nav--menu-open' : ''}${langOpen ? ' site-nav--lang-open' : ''}`}
@@ -248,6 +304,7 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
             </button>
           </li>
           {renderLinks('desktop')}
+          {renderResume('desktop')}
         </ul>
       </div>
 
@@ -257,7 +314,10 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
         hidden={!menuOpen}
         aria-hidden={!menuOpen}
       >
-        <ul className="site-nav__drawer-list">{renderLinks('drawer')}</ul>
+        <ul className="site-nav__drawer-list">
+          {renderLinks('drawer')}
+          {renderResume('drawer')}
+        </ul>
       </div>
     </nav>
   )

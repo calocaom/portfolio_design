@@ -229,7 +229,7 @@ export default function ContactScreen({ onNavigate }) {
           </div>
         </section>
 
-        <Footer className="footer--in-flow" />
+        <Footer className="footer--in-flow" showBackToTop={false} />
       </main>
     </div>
   )
