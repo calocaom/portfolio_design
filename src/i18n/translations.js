@@ -146,11 +146,11 @@ export const translations = {
       projectsAria: 'Design for Digital Solutions Projects',
       mosaics: {
         projectOne: {
-          title: 'Project One',
+          title: 'Blå Sol',
           description: 'Description to be set.',
         },
         projectTwo: {
-          title: 'Project Two',
+          title: 'Yoga',
           description: 'Description to be set.',
         },
       },
@@ -488,11 +488,11 @@ export const translations = {
       projectsAria: 'Design til Digitale Løsninger Projekter',
       mosaics: {
         projectOne: {
-          title: 'Projekt Et',
+          title: 'Blå Sol',
           description: 'Beskrivelse sættes senere.',
         },
         projectTwo: {
-          title: 'Projekt To',
+          title: 'Yoga',
           description: 'Beskrivelse sættes senere.',
         },
       },
@@ -837,11 +837,11 @@ export const translations = {
       projectsAria: 'Projets Design pour Solutions Numériques',
       mosaics: {
         projectOne: {
-          title: 'Projet Un',
+          title: 'Blå Sol',
           description: 'Description à définir.',
         },
         projectTwo: {
-          title: 'Projet Deux',
+          title: 'Yoga',
           description: 'Description à définir.',
         },
       },
@@ -1186,11 +1186,11 @@ export const translations = {
       projectsAria: 'Design für Digitale Lösungen Projekte',
       mosaics: {
         projectOne: {
-          title: 'Projekt Eins',
+          title: 'Blå Sol',
           description: 'Beschreibung folgt später.',
         },
         projectTwo: {
-          title: 'Projekt Zwei',
+          title: 'Yoga',
           description: 'Beschreibung folgt später.',
         },
       },
@@ -1535,11 +1535,11 @@ export const translations = {
       projectsAria: 'Proyectos de Diseño para Soluciones Digitales',
       mosaics: {
         projectOne: {
-          title: 'Proyecto Uno',
+          title: 'Blå Sol',
           description: 'Descripción por definir.',
         },
         projectTwo: {
-          title: 'Proyecto Dos',
+          title: 'Yoga',
           description: 'Descripción por definir.',
         },
       },
