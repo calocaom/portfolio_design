@@ -1,8 +1,8 @@
 import ProjectsHubScreen from './ProjectsHubScreen'
 
 const MOSAICS = [
-  { key: 'projectOne', route: null, cover: null },
-  { key: 'projectTwo', route: null, cover: null },
+  { key: 'projectOne', route: 'digital-bla-sol', cover: null },
+  { key: 'projectTwo', route: 'digital-yoga', cover: null },
 ]
 
 export default function DigitalSolutionsScreen({ onNavigate }) {

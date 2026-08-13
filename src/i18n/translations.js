@@ -155,6 +155,93 @@ export const translations = {
         },
       },
     },
+    digitalBlaSol: {
+      title: 'Blå Sol',
+      description: 'To be written.',
+      navCrumb: 'Blå Sol',
+      figmaCta: 'Click to see the project prototype',
+      problemStatement: 'Problem Statement',
+      problemDescription: 'To be written.',
+      topics: [
+        { title: 'Site Map', description: 'To be written.' },
+        { title: 'Prioritisation Table', description: 'To be written.' },
+        { title: 'Wireframes', description: 'To be written.' },
+        { title: 'Style Tile', description: 'To be written.' },
+        { title: 'Logo', description: 'To be written.' },
+        { title: 'Design Principles', description: 'To be written.' },
+        { title: 'UX Writing', description: 'To be written.' },
+        { title: 'Hi-fi testing', description: 'To be written.' },
+        { title: 'Results', description: 'To be written.' },
+      ],
+      metaAria: 'Project details',
+      metaLabels: {
+        date: 'Project date',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methods',
+        target: 'Target',
+        client: 'Client',
+      },
+      meta: {
+        date: 'To be written.',
+        team: 'To be written.',
+        tools: 'To be written.',
+        methods: 'To be written.',
+        target: 'To be written.',
+        client: 'To be written.',
+      },
+    },
+    digitalYoga: {
+      title: 'Yoga',
+      description:
+        'A platform to invite and inspire people in the city of Aarhus to find ways to exercise outdoors all year long.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Click to see the project prototype',
+      videoLegend: 'Video synthesizes the project',
+      videoFallback: 'Your browser does not support embedded video.',
+      problemStatement: 'Problem Statement',
+      problemDescription:
+        'How can I introduce the people living or visiting Aarhus with inexpensive areas to exercise and relax and help them prepare what they need to know in order to visit?',
+      topics: [
+        { title: 'Site Map', description: 'To be written.' },
+        { title: 'Prioritisation Table', description: 'To be written.' },
+        { title: 'Wireframes', description: 'To be written.' },
+        { title: 'Style Tile', description: 'To be written.' },
+        { title: 'Logo', description: 'To be written.' },
+        { title: 'Design Principles', description: 'To be written.' },
+        {
+          title: 'UX Writing',
+          description:
+            'I wrote descriptions of the hidden places driving a sensorial and inviting experience to the users.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'UX writing example from the Egå Marina place page with sensorial copy, weather and map widgets',
+        },
+        { title: 'Hi-fi testing', description: 'To be written.' },
+        {
+          title: 'Results',
+          description:
+            'Altough there is coding to be improved, the solution provides necessary information and content for the user to be self-sufficient in their exercise journey, while allowing them use the free sheltered areas that the city of Aarhus has to offer all year long.',
+        },
+      ],
+      metaAria: 'Project details',
+      metaLabels: {
+        date: 'Project date',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methods',
+        target: 'Target',
+        client: 'Client',
+      },
+      meta: {
+        date: 'December 2015',
+        team: 'Individual project',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'People visiting/living in Aarhus ages 25-35',
+        client: 'City of Aarhus',
+      },
+    },
     botanical: {
       title: 'Aarhus Botanical Garden',
       description:
@@ -319,10 +406,10 @@ export const translations = {
         client: 'Client',
       },
       meta: {
-        date: 'December 2015',
+        date: 'December 2025',
         team: 'Individual project',
         tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
-        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, HTML, CSS and Javascript',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
         target: 'People visiting/living in Aarhus ages 25-35',
         client: 'City of Aarhus',
       },
@@ -495,6 +582,95 @@ export const translations = {
           title: 'Yoga',
           description: 'Beskrivelse sættes senere.',
         },
+      },
+    },
+    digitalBlaSol: {
+      title: 'Blå Sol',
+      description: 'Skrives senere.',
+      navCrumb: 'Blå Sol',
+      figmaCta: 'Klik for at se projektprototypen',
+      problemStatement: 'Problemformulering',
+      problemDescription: 'Skrives senere.',
+      topics: [
+        { title: 'Site Map', description: 'Skrives senere.' },
+        { title: 'Prioritisation Table', description: 'Skrives senere.' },
+        { title: 'Wireframes', description: 'Skrives senere.' },
+        { title: 'Style Tile', description: 'Skrives senere.' },
+        { title: 'Logo', description: 'Skrives senere.' },
+        { title: 'Design Principles', description: 'Skrives senere.' },
+        { title: 'UX Writing', description: 'Skrives senere.' },
+        { title: 'Hi-fi testing', description: 'Skrives senere.' },
+        { title: 'Results', description: 'Skrives senere.' },
+      ],
+      metaAria: 'Projektdetaljer',
+      metaLabels: {
+        date: 'Projektdato',
+        team: 'Team',
+        tools: 'Værktøjer',
+        methods: 'Metoder',
+        target: 'Målgruppe',
+        client: 'Klient',
+      },
+      meta: {
+        date: 'Skrives senere.',
+        team: 'Skrives senere.',
+        tools: 'Skrives senere.',
+        methods: 'Skrives senere.',
+        target: 'Skrives senere.',
+        client: 'Skrives senere.',
+      },
+    },
+    digitalYoga: {
+      title: 'Yoga',
+      description:
+        'En platform der inviterer og inspirerer folk i Aarhus til at finde måder at motionere udendørs hele året.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Klik for at se projektprototypen',
+      videoLegend: 'Videoen opsummerer projektet',
+      videoFallback: 'Din browser understøtter ikke indlejret video.',
+      problemStatement: 'Problemformulering',
+      problemDescription:
+        'Hvordan kan jeg præsentere folk, der bor i eller besøger Aarhus, for billige områder til motion og afslapning og hjælpe dem med at forberede det, de har brug for at vide, før de besøger?',
+      topics: [
+        { title: 'Site Map', description: 'Skrives senere.' },
+        { title: 'Prioritisation Table', description: 'Skrives senere.' },
+        { title: 'Wireframes', description: 'Skrives senere.' },
+        { title: 'Style Tile', description: 'Skrives senere.' },
+        { title: 'Logo', description: 'Skrives senere.' },
+        { title: 'Design Principles', description: 'Skrives senere.' },
+        {
+          title: 'UX Writing',
+          description:
+            'Jeg skrev beskrivelser af de skjulte steder, der skaber en sensorisk og indbydende oplevelse for brugerne.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'UX writing-eksempel fra Egå Marina-siden med sensorisk tekst, vejr- og kortwidgets',
+        },
+        { title: 'Hi-fi testing', description: 'Skrives senere.' },
+        {
+          title: 'Results',
+          description:
+            'Selvom der er kode, der kan forbedres, giver løsningen nødvendig information og indhold, så brugeren kan være selvhjulpen i sin træningsrejse, samtidig med at de kan bruge byen Aarhus’ gratis overdækkede områder hele året.',
+        },
+      ],
+      metaAria: 'Projektdetaljer',
+      metaLabels: {
+        date: 'Projektdato',
+        team: 'Team',
+        tools: 'Værktøjer',
+        methods: 'Metoder',
+        target: 'Målgruppe',
+        client: 'Klient',
+      },
+      meta: {
+        date: 'December 2015',
+        team: 'Individuelt projekt',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'Folk der besøger/bor i Aarhus i alderen 25–35',
+        client: 'Aarhus Kommune',
       },
     },
     botanical: {
@@ -671,7 +847,7 @@ export const translations = {
         tools:
           'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
         methods:
-          'UX/ UI Research and Mapping, Design Theory and Principles, HTML, CSS and Javascript',
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
         target: 'Folk der besøger/bor i Aarhus i alderen 25–35',
         client: 'Aarhus Kommune',
       },
@@ -844,6 +1020,95 @@ export const translations = {
           title: 'Yoga',
           description: 'Description à définir.',
         },
+      },
+    },
+    digitalBlaSol: {
+      title: 'Blå Sol',
+      description: 'À rédiger.',
+      navCrumb: 'Blå Sol',
+      figmaCta: 'Cliquez pour voir le prototype du projet',
+      problemStatement: 'Énoncé du problème',
+      problemDescription: 'À rédiger.',
+      topics: [
+        { title: 'Site Map', description: 'À rédiger.' },
+        { title: 'Prioritisation Table', description: 'À rédiger.' },
+        { title: 'Wireframes', description: 'À rédiger.' },
+        { title: 'Style Tile', description: 'À rédiger.' },
+        { title: 'Logo', description: 'À rédiger.' },
+        { title: 'Design Principles', description: 'À rédiger.' },
+        { title: 'UX Writing', description: 'À rédiger.' },
+        { title: 'Hi-fi testing', description: 'À rédiger.' },
+        { title: 'Results', description: 'À rédiger.' },
+      ],
+      metaAria: 'Détails du projet',
+      metaLabels: {
+        date: 'Date du projet',
+        team: 'Équipe',
+        tools: 'Outils',
+        methods: 'Méthodes',
+        target: 'Cible',
+        client: 'Client',
+      },
+      meta: {
+        date: 'À rédiger.',
+        team: 'À rédiger.',
+        tools: 'À rédiger.',
+        methods: 'À rédiger.',
+        target: 'À rédiger.',
+        client: 'À rédiger.',
+      },
+    },
+    digitalYoga: {
+      title: 'Yoga',
+      description:
+        'Une plateforme pour inviter et inspirer les habitants d’Aarhus à trouver des façons de faire de l’exercice en plein air toute l’année.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Cliquez pour voir le prototype du projet',
+      videoLegend: 'La vidéo synthétise le projet',
+      videoFallback: 'Votre navigateur ne prend pas en charge la vidéo intégrée.',
+      problemStatement: 'Énoncé du problème',
+      problemDescription:
+        'Comment puis-je présenter aux personnes qui vivent à Aarhus ou qui la visitent des espaces peu coûteux pour faire de l’exercice et se détendre, et les aider à préparer ce qu’ils doivent savoir avant de s’y rendre ?',
+      topics: [
+        { title: 'Site Map', description: 'À rédiger.' },
+        { title: 'Prioritisation Table', description: 'À rédiger.' },
+        { title: 'Wireframes', description: 'À rédiger.' },
+        { title: 'Style Tile', description: 'À rédiger.' },
+        { title: 'Logo', description: 'À rédiger.' },
+        { title: 'Design Principles', description: 'À rédiger.' },
+        {
+          title: 'UX Writing',
+          description:
+            'J’ai rédigé les descriptions des lieux cachés pour offrir une expérience sensorielle et accueillante aux utilisateurs.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'Exemple d’UX writing de la page Egå Marina avec texte sensoriel, widgets météo et carte',
+        },
+        { title: 'Hi-fi testing', description: 'À rédiger.' },
+        {
+          title: 'Results',
+          description:
+            'Bien que le code puisse encore être amélioré, la solution fournit l’information et le contenu nécessaires pour que l’utilisateur soit autonome dans son parcours d’exercice, tout en lui permettant d’utiliser les espaces abrités gratuits qu’Aarhus propose toute l’année.',
+        },
+      ],
+      metaAria: 'Détails du projet',
+      metaLabels: {
+        date: 'Date du projet',
+        team: 'Équipe',
+        tools: 'Outils',
+        methods: 'Méthodes',
+        target: 'Cible',
+        client: 'Client',
+      },
+      meta: {
+        date: 'Décembre 2015',
+        team: 'Projet individuel',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'Personnes visitant/vivant à Aarhus, 25–35 ans',
+        client: 'Ville d’Aarhus',
       },
     },
     botanical: {
@@ -1020,7 +1285,7 @@ export const translations = {
         tools:
           'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
         methods:
-          'UX/ UI Research and Mapping, Design Theory and Principles, HTML, CSS and Javascript',
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
         target: 'Personnes visitant/vivant à Aarhus, 25–35 ans',
         client: 'Ville d’Aarhus',
       },
@@ -1193,6 +1458,95 @@ export const translations = {
           title: 'Yoga',
           description: 'Beschreibung folgt später.',
         },
+      },
+    },
+    digitalBlaSol: {
+      title: 'Blå Sol',
+      description: 'Noch zu schreiben.',
+      navCrumb: 'Blå Sol',
+      figmaCta: 'Klicken Sie, um den Projektprototyp zu sehen',
+      problemStatement: 'Problemstellung',
+      problemDescription: 'Noch zu schreiben.',
+      topics: [
+        { title: 'Site Map', description: 'Noch zu schreiben.' },
+        { title: 'Prioritisation Table', description: 'Noch zu schreiben.' },
+        { title: 'Wireframes', description: 'Noch zu schreiben.' },
+        { title: 'Style Tile', description: 'Noch zu schreiben.' },
+        { title: 'Logo', description: 'Noch zu schreiben.' },
+        { title: 'Design Principles', description: 'Noch zu schreiben.' },
+        { title: 'UX Writing', description: 'Noch zu schreiben.' },
+        { title: 'Hi-fi testing', description: 'Noch zu schreiben.' },
+        { title: 'Results', description: 'Noch zu schreiben.' },
+      ],
+      metaAria: 'Projektdetails',
+      metaLabels: {
+        date: 'Projektdatum',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methoden',
+        target: 'Zielgruppe',
+        client: 'Kunde',
+      },
+      meta: {
+        date: 'Noch zu schreiben.',
+        team: 'Noch zu schreiben.',
+        tools: 'Noch zu schreiben.',
+        methods: 'Noch zu schreiben.',
+        target: 'Noch zu schreiben.',
+        client: 'Noch zu schreiben.',
+      },
+    },
+    digitalYoga: {
+      title: 'Yoga',
+      description:
+        'Eine Plattform, um Menschen in Aarhus einzuladen und zu inspirieren, das ganze Jahr über Möglichkeiten für Outdoor-Bewegung zu finden.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Klicken Sie, um den Projektprototyp zu sehen',
+      videoLegend: 'Das Video fasst das Projekt zusammen',
+      videoFallback: 'Dein Browser unterstützt kein eingebettetes Video.',
+      problemStatement: 'Problemstellung',
+      problemDescription:
+        'Wie kann ich Menschen, die in Aarhus leben oder die Stadt besuchen, kostengünstige Orte zum Sporttreiben und Entspannen vorstellen und ihnen helfen, sich auf das vorzubereiten, was sie für den Besuch wissen müssen?',
+      topics: [
+        { title: 'Site Map', description: 'Noch zu schreiben.' },
+        { title: 'Prioritisation Table', description: 'Noch zu schreiben.' },
+        { title: 'Wireframes', description: 'Noch zu schreiben.' },
+        { title: 'Style Tile', description: 'Noch zu schreiben.' },
+        { title: 'Logo', description: 'Noch zu schreiben.' },
+        { title: 'Design Principles', description: 'Noch zu schreiben.' },
+        {
+          title: 'UX Writing',
+          description:
+            'Ich habe Beschreibungen der versteckten Orte geschrieben, die eine sinnliche und einladende Erfahrung für die Nutzer:innen schaffen.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'UX-Writing-Beispiel der Egå-Marina-Seite mit sensorischem Text, Wetter- und Karten-Widgets',
+        },
+        { title: 'Hi-fi testing', description: 'Noch zu schreiben.' },
+        {
+          title: 'Results',
+          description:
+            'Auch wenn der Code noch verbessert werden kann, liefert die Lösung die nötigen Informationen und Inhalte, damit Nutzer:innen auf ihrer Bewegungsreise selbstständig sind und die kostenlosen überdachten Flächen der Stadt Aarhus das ganze Jahr nutzen können.',
+        },
+      ],
+      metaAria: 'Projektdetails',
+      metaLabels: {
+        date: 'Projektdatum',
+        team: 'Team',
+        tools: 'Tools',
+        methods: 'Methoden',
+        target: 'Zielgruppe',
+        client: 'Kunde',
+      },
+      meta: {
+        date: 'Dezember 2015',
+        team: 'Einzelprojekt',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'Menschen, die Aarhus besuchen/dort leben, 25–35 Jahre',
+        client: 'Stadt Aarhus',
       },
     },
     botanical: {
@@ -1369,7 +1723,7 @@ export const translations = {
         tools:
           'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
         methods:
-          'UX/ UI Research and Mapping, Design Theory and Principles, HTML, CSS and Javascript',
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
         target: 'Menschen, die Aarhus besuchen/dort leben, 25–35 Jahre',
         client: 'Stadt Aarhus',
       },
@@ -1542,6 +1896,95 @@ export const translations = {
           title: 'Yoga',
           description: 'Descripción por definir.',
         },
+      },
+    },
+    digitalBlaSol: {
+      title: 'Blå Sol',
+      description: 'Por escribir.',
+      navCrumb: 'Blå Sol',
+      figmaCta: 'Haz clic para ver el prototipo del proyecto',
+      problemStatement: 'Planteamiento del problema',
+      problemDescription: 'Por escribir.',
+      topics: [
+        { title: 'Site Map', description: 'Por escribir.' },
+        { title: 'Prioritisation Table', description: 'Por escribir.' },
+        { title: 'Wireframes', description: 'Por escribir.' },
+        { title: 'Style Tile', description: 'Por escribir.' },
+        { title: 'Logo', description: 'Por escribir.' },
+        { title: 'Design Principles', description: 'Por escribir.' },
+        { title: 'UX Writing', description: 'Por escribir.' },
+        { title: 'Hi-fi testing', description: 'Por escribir.' },
+        { title: 'Results', description: 'Por escribir.' },
+      ],
+      metaAria: 'Detalles del proyecto',
+      metaLabels: {
+        date: 'Fecha del proyecto',
+        team: 'Equipo',
+        tools: 'Herramientas',
+        methods: 'Métodos',
+        target: 'Público objetivo',
+        client: 'Cliente',
+      },
+      meta: {
+        date: 'Por escribir.',
+        team: 'Por escribir.',
+        tools: 'Por escribir.',
+        methods: 'Por escribir.',
+        target: 'Por escribir.',
+        client: 'Por escribir.',
+      },
+    },
+    digitalYoga: {
+      title: 'Yoga',
+      description:
+        'Una plataforma para invitar e inspirar a las personas en Aarhus a encontrar formas de ejercitarse al aire libre durante todo el año.',
+      navCrumb: 'Yoga',
+      figmaCta: 'Haz clic para ver el prototipo del proyecto',
+      videoLegend: 'El video sintetiza el proyecto',
+      videoFallback: 'Tu navegador no admite video integrado.',
+      problemStatement: 'Planteamiento del problema',
+      problemDescription:
+        '¿Cómo puedo presentar a las personas que viven en Aarhus o la visitan zonas económicas para hacer ejercicio y relajarse, y ayudarles a preparar lo que necesitan saber para ir?',
+      topics: [
+        { title: 'Site Map', description: 'Por escribir.' },
+        { title: 'Prioritisation Table', description: 'Por escribir.' },
+        { title: 'Wireframes', description: 'Por escribir.' },
+        { title: 'Style Tile', description: 'Por escribir.' },
+        { title: 'Logo', description: 'Por escribir.' },
+        { title: 'Design Principles', description: 'Por escribir.' },
+        {
+          title: 'UX Writing',
+          description:
+            'Escribí descripciones de los lugares ocultos que impulsan una experiencia sensorial e invitadora para los usuarios.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'Ejemplo de UX writing de la página Egå Marina con texto sensorial, widgets de clima y mapa',
+        },
+        { title: 'Hi-fi testing', description: 'Por escribir.' },
+        {
+          title: 'Results',
+          description:
+            'Aunque hay código por mejorar, la solución ofrece la información y el contenido necesarios para que el usuario sea autosuficiente en su recorrido de ejercicio, y pueda usar las zonas cubiertas gratuitas que Aarhus ofrece durante todo el año.',
+        },
+      ],
+      metaAria: 'Detalles del proyecto',
+      metaLabels: {
+        date: 'Fecha del proyecto',
+        team: 'Equipo',
+        tools: 'Herramientas',
+        methods: 'Métodos',
+        target: 'Público objetivo',
+        client: 'Cliente',
+      },
+      meta: {
+        date: 'Diciembre 2015',
+        team: 'Proyecto individual',
+        tools:
+          'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods:
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
+        target: 'Personas que visitan/viven en Aarhus, de 25 a 35 años',
+        client: 'Ciudad de Aarhus',
       },
     },
     botanical: {
@@ -1718,7 +2161,7 @@ export const translations = {
         tools:
           'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
         methods:
-          'UX/ UI Research and Mapping, Design Theory and Principles, HTML, CSS and Javascript',
+          'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
         target: 'Personas que visitan/viven en Aarhus, de 25 a 35 años',
         client: 'Ciudad de Aarhus',
       },

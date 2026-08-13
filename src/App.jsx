@@ -3,7 +3,7 @@
  *
  * Portfolio website: routes nav targets to pages.
  * home / works open MainPage and scroll to section.
- * about, contact, makeup-fx, digital-solutions, ux-ui, botanical, and yoga open their pages.
+ * about, contact, makeup-fx, digital-solutions, digital-bla-sol, digital-yoga, ux-ui, botanical, and yoga open their pages.
  */
 
 import { useState } from 'react'
@@ -13,6 +13,8 @@ import AboutScreen from './screens/AboutScreen'
 import ContactScreen from './screens/ContactScreen'
 import MakeupFxScreen from './screens/MakeupFxScreen'
 import DigitalSolutionsScreen from './screens/DigitalSolutionsScreen'
+import DigitalBlaSol from './screens/DigitalBlaSol'
+import DigitalYoga from './screens/DigitalYoga'
 import UxUiScreen from './screens/UxUiScreen'
 import Botanical from './screens/Botanical'
 import Yoga from './screens/Yoga'
@@ -44,6 +46,18 @@ export default function App() {
 
     if (target === 'digital-solutions') {
       setPage('digital-solutions')
+      setPendingScroll(null)
+      return
+    }
+
+    if (target === 'digital-bla-sol') {
+      setPage('digital-bla-sol')
+      setPendingScroll(null)
+      return
+    }
+
+    if (target === 'digital-yoga') {
+      setPage('digital-yoga')
       setPendingScroll(null)
       return
     }
@@ -99,6 +113,14 @@ export default function App() {
 
       {page === 'digital-solutions' && (
         <DigitalSolutionsScreen onNavigate={handleNavigate} />
+      )}
+
+      {page === 'digital-bla-sol' && (
+        <DigitalBlaSol onNavigate={handleNavigate} />
+      )}
+
+      {page === 'digital-yoga' && (
+        <DigitalYoga onNavigate={handleNavigate} />
       )}
 
       {page === 'ux-ui' && (
