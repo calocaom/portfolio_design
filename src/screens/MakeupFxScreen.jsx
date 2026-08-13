@@ -125,6 +125,31 @@ export default function MakeupFxScreen({ onNavigate }) {
           </ul>
         </section>
 
+        <section
+          className="makeup-fx-screen__testimonials"
+          aria-label={t('about.testimonialsAria')}
+        >
+          <h2 className="makeup-fx-screen__subtitle">
+            {t('about.testimonialsTitle')}
+          </h2>
+          <figure className="makeup-fx-screen__testimonials-media">
+            <div className="makeup-fx-screen__testimonials-frame">
+              <video
+                className="makeup-fx-screen__testimonials-video"
+                controls
+                playsInline
+                preload="metadata"
+                src={publicUrl('videos/testimonials.mp4')}
+              >
+                {t('about.videoFallback')}
+              </video>
+            </div>
+            <figcaption className="makeup-fx-screen__testimonials-legend">
+              {t('about.testimonialsLegend')}
+            </figcaption>
+          </figure>
+        </section>
+
         <Footer className="footer--in-flow" />
       </main>
 

@@ -9,6 +9,7 @@ import LogoLava from '../components/LogoLava'
 import { HERO_LOGO } from '../assets'
 import { PROJECT_IDS, PROJECT_IMAGES, PROJECT_LINKS, PROJECT_ROUTES } from '../data/projects'
 import { useI18n } from '../i18n/I18nContext'
+import { publicUrl } from '../utils/publicUrl'
 
 function clamp(value, min = 0, max = 1) {
   return Math.min(max, Math.max(min, value))
@@ -217,6 +218,31 @@ export default function AboutScreen({ onNavigate }) {
                 </li>
               ))}
             </ul>
+          </section>
+
+          <section
+            className="about-screen__testimonials"
+            aria-label={t('about.testimonialsAria')}
+          >
+            <div className="about-screen__testimonials-heading">
+              <AnimatedTitle>{t('about.testimonialsTitle')}</AnimatedTitle>
+            </div>
+            <figure className="about-screen__testimonials-media">
+              <div className="about-screen__testimonials-frame">
+                <video
+                  className="about-screen__testimonials-video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  src={publicUrl('videos/testimonials.mp4')}
+                >
+                  {t('about.videoFallback')}
+                </video>
+              </div>
+              <figcaption className="about-screen__testimonials-legend">
+                {t('about.testimonialsLegend')}
+              </figcaption>
+            </figure>
           </section>
 
           <section

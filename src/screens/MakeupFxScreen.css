@@ -74,7 +74,49 @@
 
 .makeup-fx-screen__portfolios {
   width: 100%;
+  padding: 0 var(--content-padding) clamp(28px, 4vw, 48px);
+}
+
+.makeup-fx-screen__testimonials {
+  width: 100%;
   padding: 0 var(--content-padding) clamp(48px, 8vw, 96px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.makeup-fx-screen__testimonials-media {
+  margin: 0;
+  width: min(920px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.4vw, 14px);
+}
+
+.makeup-fx-screen__testimonials-frame {
+  width: 100%;
+  border-radius: clamp(10px, 1.4vw, 16px);
+  overflow: hidden;
+  background: #0b1520;
+}
+
+.makeup-fx-screen__testimonials-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #0b1520;
+}
+
+.makeup-fx-screen__testimonials-legend {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(13px, 1.25vw, 16px);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: rgba(20, 10, 30, 0.72);
+  text-align: center;
 }
 
 .makeup-fx-screen__reel-wrap {
