@@ -4,6 +4,8 @@ import './Yoga.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
+import UxCrossPromote from '../components/UxCrossPromote'
+import { BOTANICAL_COVER } from '../assets'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
 import {
@@ -292,6 +294,13 @@ export default function Yoga({ onNavigate }) {
             })}
           </div>
         </div>
+
+        <UxCrossPromote
+          onNavigate={onNavigate}
+          route="botanical"
+          cover={BOTANICAL_COVER}
+          title={t('uxUi.mosaics.projectOne.title')}
+        />
 
         <Footer className="footer--in-flow" />
       </main>

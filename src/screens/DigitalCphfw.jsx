@@ -3,6 +3,8 @@ import './Yoga.css'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
+import UxCrossPromote from '../components/UxCrossPromote'
+import { DIGITAL_YOGA_COVER } from '../assets'
 import { useI18n } from '../i18n/I18nContext'
 import {
   CphfwHifiTestingChart,
@@ -192,6 +194,13 @@ export default function DigitalCphfw({ onNavigate }) {
             })}
           </div>
         </div>
+
+        <UxCrossPromote
+          onNavigate={onNavigate}
+          route="digital-yoga"
+          cover={DIGITAL_YOGA_COVER}
+          title={t('digitalSolutions.mosaics.projectTwo.title')}
+        />
 
         <Footer className="footer--in-flow" />
       </main>

@@ -7,9 +7,11 @@ import AnimatedTitle from '../components/AnimatedTitle'
 import {
   BOTANICAL_PERSONA_PHOTO,
   BOTANICAL_PERSONA_SCENE,
+  YOGA_COVER,
 } from '../assets'
 import { AFFINITY_CLUSTERS } from '../data/botanicalAffinity'
 import { BOTANICAL_PERSONA_DATA } from '../data/botanicalPersona'
+import UxCrossPromote from '../components/UxCrossPromote'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
 import {
@@ -355,6 +357,13 @@ export default function Botanical({ onNavigate }) {
             })}
           </div>
         </div>
+
+        <UxCrossPromote
+          onNavigate={onNavigate}
+          route="yoga"
+          cover={YOGA_COVER}
+          title={t('uxUi.mosaics.projectTwo.title')}
+        />
 
         <Footer className="footer--in-flow" />
       </main>

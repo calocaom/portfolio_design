@@ -159,6 +159,10 @@ export const translations = {
         },
       },
     },
+    uxCrossPromote: {
+      heading: 'Check my other UX / UI Project',
+      aria: 'Other UX / UI project',
+    },
     digitalCphfw: {
       title: 'CPHFW',
       description: 'A digital runway to network in Copenhagen Fashion Week',
@@ -721,6 +725,10 @@ export const translations = {
           description: 'Beskrivelse sættes senere.',
         },
       },
+    },
+    uxCrossPromote: {
+      heading: 'Se mit andet UX / UI-projekt',
+      aria: 'Andet UX / UI-projekt',
     },
     digitalCphfw: {
       title: 'CPHFW',
@@ -1295,6 +1303,10 @@ export const translations = {
           description: 'Description à définir.',
         },
       },
+    },
+    uxCrossPromote: {
+      heading: 'Découvrez mon autre projet UX / UI',
+      aria: 'Autre projet UX / UI',
     },
     digitalCphfw: {
       title: 'CPHFW',
@@ -1871,6 +1883,10 @@ export const translations = {
         },
       },
     },
+    uxCrossPromote: {
+      heading: 'Mein anderes UX / UI-Projekt ansehen',
+      aria: 'Anderes UX / UI-Projekt',
+    },
     digitalCphfw: {
       title: 'CPHFW',
       description: 'Ein digitaler Runway zum Netzwerken während der Copenhagen Fashion Week',
@@ -2445,6 +2461,10 @@ export const translations = {
           description: 'Descripción por definir.',
         },
       },
+    },
+    uxCrossPromote: {
+      heading: 'Mira mi otro proyecto UX / UI',
+      aria: 'Otro proyecto UX / UI',
     },
     digitalCphfw: {
       title: 'CPHFW',
