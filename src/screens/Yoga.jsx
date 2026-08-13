@@ -14,6 +14,7 @@ import {
   PersonaChart,
   RequirementsChart,
   ResearchChart,
+  UxWritingChart,
   ValuesChart,
 } from './YogaCharts'
 
@@ -23,9 +24,11 @@ const AFFINITY_DESIGN_WIDTH = 1100
 const REQUIREMENTS_DESIGN_WIDTH = 1100
 
 /* Replace with the live Figma prototype URL when ready */
-const FIGMA_PROTOTYPE_URL = 'https://www.figma.com/'
+const FIGMA_PROTOTYPE_URL =
+  'https://www.figma.com/proto/EiIQiXYFnZOnF26AiyeLt0/Yoga-exam-project?node-id=125-215&t=IwUGC8agC7ZJBZNg-0&scaling=scale-down-width&content-scaling=fixed&page-id=125%3A214&starting-point-node-id=135%3A557&show-proto-sidebar=1'
 
 const TOPIC_CHARTS = {
+  'ux-writing': UxWritingChart,
   hmw: HmwChart,
   values: ValuesChart,
   ooux: OouxChart,
@@ -224,6 +227,7 @@ export default function Yoga({ onNavigate }) {
               const Chart = topic.imageKey
                 ? TOPIC_CHARTS[topic.imageKey]
                 : null
+              const showPrototypeCta = topic.title === 'Results'
 
               return (
                 <section
@@ -242,7 +246,8 @@ export default function Yoga({ onNavigate }) {
                       className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
                       aria-label={topic.imageAlt}
                     >
-                      {topic.imageKey === 'conventions' ? (
+                      {topic.imageKey === 'conventions' ||
+                      topic.imageKey === 'ux-writing' ? (
                         <Chart />
                       ) : (
                         <ScaleToFit
@@ -256,6 +261,16 @@ export default function Yoga({ onNavigate }) {
                         </ScaleToFit>
                       )}
                     </figure>
+                  ) : null}
+                  {showPrototypeCta ? (
+                    <a
+                      className="ux-case-study__cta"
+                      href={FIGMA_PROTOTYPE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t('yoga.figmaCta')}
+                    </a>
                   ) : null}
                 </section>
               )

@@ -1,4 +1,4 @@
-import { YOGA_CONVENTIONS, YOGA_PERSONA_PHOTO } from '../assets'
+import { YOGA_CONVENTIONS, YOGA_PERSONA_PHOTO, YOGA_UX_WRITING } from '../assets'
 import { YOGA_AFFINITY_CLUSTERS } from '../data/yogaAffinity'
 import { YOGA_HMW_CHART, YOGA_OOUX_CHART } from '../data/yogaCharts'
 import { YOGA_PERSONA_DATA } from '../data/yogaPersona'
@@ -255,6 +255,18 @@ export function ConventionsChart() {
       alt=""
       className="yoga-conventions-img"
     />
+  )
+}
+
+export function UxWritingChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={YOGA_UX_WRITING}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
   )
 }
 

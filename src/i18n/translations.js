@@ -94,14 +94,14 @@ export const translations = {
     ],
     subheadlineHome: [
       'I am an artist and designer',
-      'I design for digital media',
-      'I design for UX / UI',
-      'I am a programmer',
+      'I tell stories through my works',
       'I teach art',
-      'I do Makeup FX',
-      'I paint',
-      'I tell stories through my work',
-      'I create art',
+      'I am your next...',
+      'UX / UI Designer',
+      'Content Creator',
+      'Makeup FX artist',
+      'My passion for art and design...',
+      'will never end',
     ],
     seeMyProjects: 'See my projects',
     makeupFx: {
@@ -160,7 +160,7 @@ export const translations = {
       description:
         'Info-Screens that connect people with nature, learning in a fun, interactive way',
       navCrumb: 'Garden',
-      figmaCta: 'Click to see Figma prototype',
+      figmaCta: 'Click to see the project prototype',
       videoLegend: 'Video synthesizes the project',
       videoFallback: 'Your browser does not support embedded video.',
       problemStatement: 'Problem Statement',
@@ -241,9 +241,10 @@ export const translations = {
     },
     yoga: {
       title: 'Yoga',
-      description: 'Project description to be added.',
+      description:
+        'A platform to invite and inspire people in the city of Aarhus to find ways to exercise outdoors all year long.',
       navCrumb: 'Yoga',
-      figmaCta: 'Click to see Figma prototype',
+      figmaCta: 'Click to see the project prototype',
       videoLegend: 'Video synthesizes the project',
       videoFallback: 'Your browser does not support embedded video.',
       problemStatement: 'Problem Statement',
@@ -255,19 +256,28 @@ export const translations = {
       researchImageAlt:
         'Research results list with twelve numbered interview findings about yoga practice, places, and motivations',
       affinityTitle: 'Affinity Diagram',
-      affinityDescription: 'Affinity diagram description to be set.',
+      affinityDescription:
+        'Finding of patterns from the data extracted from the research, then arranging them into categories to finally give a name to those.',
       affinityImageAlt:
         'Affinity diagram with five columns: self discovery, habits, struggles, motivations, and interests',
       personaTitle: 'Persona',
-      personaDescription: 'Persona description to be set.',
+      personaDescription:
+        'Created the following persona based on the research and defining the target group, 25-35 people visiting or living in Aarhus.',
       personaImageAlt:
         'Persona profile of Solvej, advanced yogi with goals, behavior, and solution strategy',
       topics: [
-        { title: 'UX Writing', description: 'Incorporated self-written descriptions of the hidden places, driving a sensorial, inviting experience for the user.' },
+        {
+          title: 'UX Writing',
+          description:
+            'I wrote descriptions of the hidden places driving a sensorial and inviting experience to the users.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'UX writing example from the Egå Marina place page with sensorial copy, weather and map widgets',
+        },
         {
           title: 'HMW Table',
           description:
-            'The general problem found through the research were broken down to individual ones to gather a clearer understanding of each solution.',
+            'The general problem found through the research was broken down to individual ones to gather a clearer understanding of each possible solution.',
           imageKey: 'hmw',
           imageAlt:
             'How Might We questions and answers table for the yoga outdoor places solution',
@@ -287,7 +297,7 @@ export const translations = {
           imageAlt:
             'ORCA OOUX table mapping Place, Learn more, and Preparations objects with properties, relationships, and calls-to-action',
         },
-        { title: 'List of Requirements', description: 'Description to be set.', imageKey: 'requirements', imageAlt: 'List of requirements board covering device, accessibility, navigation, customization, menu, footer, and page A–E requirements' },
+        { title: 'List of Requirements', description: 'Defining the UI objects needed per component device and screen to plan the functionality according to the mapping findings.', imageKey: 'requirements', imageAlt: 'List of requirements board covering device, accessibility, navigation, customization, menu, footer, and page A–E requirements' },
         {
           title: 'Conventions',
           description:
@@ -296,7 +306,7 @@ export const translations = {
           imageAlt:
             'Venn diagram of digital, company, and persona objectives and shared conventions',
         },
-        { title: 'Results', description: 'Altough there is coding to be improved, the solution provides necessary information and content for the user to be self-sufficient in their exercise journey, while allowing them use the free sheltered areas that the city of Aarhus has to offer all year long..' },
+        { title: 'Results', description: 'Altough there is coding to be improved, the solution provides necessary information and content for the user to be self-sufficient in their exercise journey, while allowing them use the free sheltered areas that the city of Aarhus has to offer all year long.' },
 
       ],
       metaAria: 'Project details',
@@ -426,14 +436,14 @@ export const translations = {
     ],
     subheadlineHome: [
       'Jeg er kunstner og designer',
-      'Jeg designer til digitale medier',
-      'Jeg designer til UX / UI',
-      'Jeg er programmør',
-      'Jeg har undervist i kunst',
-      'Jeg har arbejdet med Makeup FX',
-      'Jeg maler i olie og akvarel',
-      'Jeg fortæller historier gennem mit arbejde',
-      'Jeg skaber kunst',
+      'Jeg fortæller historier gennem mine værker',
+      'Jeg underviser i kunst',
+      'Jeg er din næste...',
+      'UX / UI Designer',
+      'Content Creator',
+      'Makeup FX artist',
+      'Min passion for kunst og design...',
+      'vil aldrig ende',
     ],
     seeMyProjects: 'Se mine projekter',
     makeupFx: {
@@ -492,7 +502,7 @@ export const translations = {
       description:
         'Infoskærme, der forbinder mennesker med naturen gennem sjov, interaktiv læring',
       navCrumb: 'Have',
-      figmaCta: 'Klik for at se Figma-prototypen',
+      figmaCta: 'Klik for at se projektprototypen',
       videoLegend: 'Videoen opsummerer projektet',
       videoFallback: 'Din browser understøtter ikke indlejret video.',
       problemStatement: 'Problemformulering',
@@ -574,9 +584,10 @@ export const translations = {
     },
     yoga: {
       title: 'Yoga',
-      description: 'Projektbeskrivelse tilføjes senere.',
+      description:
+        'En platform der inviterer og inspirerer folk i Aarhus til at finde måder at motionere udendørs hele året.',
       navCrumb: 'Yoga',
-      figmaCta: 'Klik for at se Figma-prototypen',
+      figmaCta: 'Klik for at se projektprototypen',
       videoLegend: 'Videoen opsummerer projektet',
       videoFallback: 'Din browser understøtter ikke indlejret video.',
       problemStatement: 'Problemformulering',
@@ -588,23 +599,28 @@ export const translations = {
       researchImageAlt:
         'Forskningsresultater med tolv nummererede interviewfund om yogapraksis, steder og motivationer',
       affinityTitle: 'Affinity Diagram',
-      affinityDescription: 'Affinity diagram-beskrivelse sættes senere.',
+      affinityDescription:
+        'Fund af mønstre i data udtrukket fra research, derefter sorteret i kategorier og til sidst navngivet.',
       affinityImageAlt:
         'Affinity diagram med fem kolonner: self discovery, habits, struggles, motivations og interests',
       personaTitle: 'Persona',
-      personaDescription: 'Personabeskrivelse sættes senere.',
+      personaDescription:
+        'Oprettede følgende persona baseret på research og definitionen af målgruppen, 25–35-årige der besøger eller bor i Aarhus.',
       personaImageAlt:
         'Personaprofil af Solvej, avanceret yogi med mål, adfærd og løsningsstrategi',
       topics: [
         {
           title: 'UX Writing',
           description:
-            'Inkorporerede egenforfattede beskrivelser af de skjulte steder for at skabe en sensorisk, indbydende oplevelse for brugeren.',
+            'Jeg skrev beskrivelser af de skjulte steder, der skaber en sensorisk og indbydende oplevelse for brugerne.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'UX writing-eksempel fra Egå Marina-siden med sensorisk tekst, vejr- og kortwidgets',
         },
         {
           title: 'HMW Table',
           description:
-            'Det overordnede problem fra researchen blev brudt ned i enkelte problemer for at få en klarere forståelse af hver løsning.',
+            'Det overordnede problem fra researchen blev brudt ned i enkelte problemer for at få en klarere forståelse af hver mulig løsning.',
           imageKey: 'hmw',
           imageAlt:
             'How Might We spørgsmål-og-svar-tabel for yoga outdoor places-løsningen',
@@ -625,7 +641,7 @@ export const translations = {
           imageAlt:
             'ORCA OOUX-tabel der mapper Place, Learn more og Preparations med egenskaber, relationer og call-to-actions',
         },
-        { title: 'Liste over Krav', description: 'Beskrivelse sættes senere.', imageKey: 'requirements', imageAlt: 'Kravliste med device, accessibility, navigation, customization, menu, footer og side A–E-krav' },
+        { title: 'Liste over Krav', description: 'Definition af de UI-objekter, der behøves pr. komponent, device og skærm, for at planlægge funktionaliteten ud fra mapping-fundene.', imageKey: 'requirements', imageAlt: 'Kravliste med device, accessibility, navigation, customization, menu, footer og side A–E-krav' },
         {
           title: 'Conventions',
           description:
@@ -769,14 +785,14 @@ export const translations = {
     ],
     subheadlineHome: [
       'Je suis artiste et designer',
-      'Je conçois pour les médias numériques',
-      'Je conçois pour l’UX / UI',
-      'Je suis programmeur',
-      'J’ai enseigné l’art',
-      'J’ai fait du Makeup FX',
-      'Je peins à l’huile et à l’aquarelle',
-      'Je raconte des histoires à travers mon travail',
-      'Je crée de l’art',
+      'Je raconte des histoires à travers mes œuvres',
+      'J’enseigne l’art',
+      'Je suis votre prochain...',
+      'UX / UI Designer',
+      'Content Creator',
+      'Makeup FX artist',
+      'Ma passion pour l’art et le design...',
+      'ne finira jamais',
     ],
     seeMyProjects: 'Voir mes projets',
     makeupFx: {
@@ -835,7 +851,7 @@ export const translations = {
       description:
         'Des écrans d’information qui relient les gens à la nature, pour apprendre de façon ludique et interactive',
       navCrumb: 'Jardin',
-      figmaCta: 'Cliquez pour voir le prototype Figma',
+      figmaCta: 'Cliquez pour voir le prototype du projet',
       videoLegend: 'La vidéo synthétise le projet',
       videoFallback: 'Votre navigateur ne prend pas en charge la vidéo intégrée.',
       problemStatement: 'Énoncé du problème',
@@ -917,9 +933,10 @@ export const translations = {
     },
     yoga: {
       title: 'Yoga',
-      description: 'Description du projet à ajouter.',
+      description:
+        'Une plateforme pour inviter et inspirer les habitants d’Aarhus à trouver des façons de faire de l’exercice en plein air toute l’année.',
       navCrumb: 'Yoga',
-      figmaCta: 'Cliquez pour voir le prototype Figma',
+      figmaCta: 'Cliquez pour voir le prototype du projet',
       videoLegend: 'La vidéo synthétise le projet',
       videoFallback: 'Votre navigateur ne prend pas en charge la vidéo intégrée.',
       problemStatement: 'Énoncé du problème',
@@ -931,23 +948,28 @@ export const translations = {
       researchImageAlt:
         'Résultats de recherche avec douze conclusions d’entretiens numérotées sur la pratique du yoga, les lieux et les motivations',
       affinityTitle: 'Affinity Diagram',
-      affinityDescription: 'Description du diagramme d’affinité à définir.',
+      affinityDescription:
+        'Repérage de motifs dans les données extraites de la recherche, puis organisation en catégories pour enfin les nommer.',
       affinityImageAlt:
         'Diagramme d’affinité en cinq colonnes : self discovery, habits, struggles, motivations et interests',
       personaTitle: 'Persona',
-      personaDescription: 'Description de la persona à définir.',
+      personaDescription:
+        'Persona suivante créée à partir de la recherche et de la définition du groupe cible, personnes de 25 à 35 ans visitant ou vivant à Aarhus.',
       personaImageAlt:
         'Profil persona de Solvej, yogi avancée avec objectifs, comportement et stratégie de solution',
       topics: [
         {
           title: 'UX Writing',
           description:
-            'Intégration de descriptions rédigées pour les lieux cachés, afin d’offrir une expérience sensorielle et accueillante à l’utilisateur.',
+            'J’ai rédigé les descriptions des lieux cachés pour offrir une expérience sensorielle et accueillante aux utilisateurs.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'Exemple d’UX writing de la page Egå Marina avec texte sensoriel, widgets météo et carte',
         },
         {
           title: 'HMW Table',
           description:
-            'Le problème général identifié par la recherche a été décomposé en problèmes individuels pour mieux comprendre chaque solution.',
+            'Le problème général identifié par la recherche a été décomposé en problèmes individuels pour mieux comprendre chaque solution possible.',
           imageKey: 'hmw',
           imageAlt:
             'Tableau questions-réponses How Might We pour la solution des lieux de yoga en extérieur',
@@ -968,7 +990,7 @@ export const translations = {
           imageAlt:
             'Tableau ORCA OOUX reliant Place, Learn more et Preparations aux propriétés, relations et call-to-actions',
         },
-        { title: 'Liste des Exigences', description: 'Description à définir.', imageKey: 'requirements', imageAlt: 'Liste des exigences couvrant device, accessibilité, navigation, personnalisation, menu, footer et pages A–E' },
+        { title: 'Liste des Exigences', description: 'Définition des objets UI nécessaires par composant, appareil et écran pour planifier les fonctionnalités selon les résultats du mapping.', imageKey: 'requirements', imageAlt: 'Liste des exigences couvrant device, accessibilité, navigation, personnalisation, menu, footer et pages A–E' },
         {
           title: 'Conventions',
           description:
@@ -1112,14 +1134,14 @@ export const translations = {
     ],
     subheadlineHome: [
       'Ich bin Künstler und Designer',
-      'Ich gestalte für digitale Medien',
-      'Ich gestalte für UX / UI',
-      'Ich bin Programmierer',
-      'Ich habe Kunst unterrichtet',
-      'Ich habe Makeup FX gemacht',
-      'Ich male in Öl und Aquarell',
-      'Ich erzähle Geschichten durch meine Arbeit',
-      'Ich schaffe Kunst',
+      'Ich erzähle Geschichten durch meine Werke',
+      'Ich unterrichte Kunst',
+      'Ich bin Ihr nächster...',
+      'UX / UI Designer',
+      'Content Creator',
+      'Makeup FX artist',
+      'Meine Leidenschaft für Kunst und Design...',
+      'wird nie enden',
     ],
     seeMyProjects: 'Meine Projekte ansehen',
     makeupFx: {
@@ -1178,7 +1200,7 @@ export const translations = {
       description:
         'Info-Screens, die Menschen mit der Natur verbinden – Lernen auf spielerische, interaktive Weise',
       navCrumb: 'Garten',
-      figmaCta: 'Figma-Prototyp ansehen',
+      figmaCta: 'Klicken Sie, um den Projektprototyp zu sehen',
       videoLegend: 'Das Video fasst das Projekt zusammen',
       videoFallback: 'Dein Browser unterstützt kein eingebettetes Video.',
       problemStatement: 'Problemstellung',
@@ -1260,9 +1282,10 @@ export const translations = {
     },
     yoga: {
       title: 'Yoga',
-      description: 'Projektbeschreibung folgt später.',
+      description:
+        'Eine Plattform, um Menschen in Aarhus einzuladen und zu inspirieren, das ganze Jahr über Möglichkeiten für Outdoor-Bewegung zu finden.',
       navCrumb: 'Yoga',
-      figmaCta: 'Figma-Prototyp ansehen',
+      figmaCta: 'Klicken Sie, um den Projektprototyp zu sehen',
       videoLegend: 'Das Video fasst das Projekt zusammen',
       videoFallback: 'Dein Browser unterstützt kein eingebettetes Video.',
       problemStatement: 'Problemstellung',
@@ -1274,23 +1297,28 @@ export const translations = {
       researchImageAlt:
         'Research-Ergebnisse mit zwölf nummerierten Interview-Findings zu Yoga-Praxis, Orten und Motivationen',
       affinityTitle: 'Affinity Diagram',
-      affinityDescription: 'Beschreibung des Affinity Diagrams folgt später.',
+      affinityDescription:
+        'Muster in den aus der Research gewonnenen Daten finden, sie in Kategorien ordnen und diesen schließlich einen Namen geben.',
       affinityImageAlt:
         'Affinity Diagram mit fünf Spalten: self discovery, habits, struggles, motivations und interests',
       personaTitle: 'Persona',
-      personaDescription: 'Persona-Beschreibung folgt später.',
+      personaDescription:
+        'Folgende Persona auf Basis der Research und der definierten Zielgruppe erstellt: 25–35-Jährige, die Aarhus besuchen oder dort leben.',
       personaImageAlt:
         'Persona-Profil von Solvej, fortgeschrittene Yogi mit Zielen, Verhalten und Lösungsstrategie',
       topics: [
         {
           title: 'UX Writing',
           description:
-            'Selbst verfasste Beschreibungen der versteckten Orte eingebunden, um eine sinnliche, einladende Erfahrung für die Nutzer:innen zu schaffen.',
+            'Ich habe Beschreibungen der versteckten Orte geschrieben, die eine sinnliche und einladende Erfahrung für die Nutzer:innen schaffen.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'UX-Writing-Beispiel der Egå-Marina-Seite mit sensorischem Text, Wetter- und Karten-Widgets',
         },
         {
           title: 'HMW Table',
           description:
-            'Das aus der Research abgeleitete Gesamtproblem wurde in Einzelprobleme zerlegt, um jede Lösung klarer zu verstehen.',
+            'Das aus der Research abgeleitete Gesamtproblem wurde in Einzelprobleme zerlegt, um jede mögliche Lösung klarer zu verstehen.',
           imageKey: 'hmw',
           imageAlt:
             'How-Might-We-Fragen-und-Antworten-Tabelle für die Outdoor-Yoga-Lösung',
@@ -1311,7 +1339,7 @@ export const translations = {
           imageAlt:
             'ORCA-OOUX-Tabelle mit Place, Learn more und Preparations sowie Eigenschaften, Beziehungen und Call-to-Actions',
         },
-        { title: 'Liste der Anforderungen', description: 'Beschreibung folgt später.', imageKey: 'requirements', imageAlt: 'Anforderungsliste zu Device, Accessibility, Navigation, Customization, Menu, Footer und Seiten A–E' },
+        { title: 'Liste der Anforderungen', description: 'Definition der benötigten UI-Objekte pro Komponente, Device und Screen, um die Funktionalität anhand der Mapping-Findings zu planen.', imageKey: 'requirements', imageAlt: 'Anforderungsliste zu Device, Accessibility, Navigation, Customization, Menu, Footer und Seiten A–E' },
         {
           title: 'Conventions',
           description:
@@ -1455,14 +1483,14 @@ export const translations = {
     ],
     subheadlineHome: [
       'Soy artista y diseñador',
-      'Diseño para medios digitales',
-      'Diseño para UX / UI',
-      'Soy programador',
-      'He enseñado arte',
-      'He hecho Makeup FX',
-      'Pinto al óleo y a la acuarela',
-      'Cuento historias a través de mi trabajo',
-      'Creo arte',
+      'Cuento historias a través de mis obras',
+      'Enseño arte',
+      'Soy tu próximo...',
+      'UX / UI Designer',
+      'Content Creator',
+      'Makeup FX artist',
+      'Mi pasión por el arte y el diseño...',
+      'nunca terminará',
     ],
     seeMyProjects: 'Ver mis proyectos',
     makeupFx: {
@@ -1521,7 +1549,7 @@ export const translations = {
       description:
         'Pantallas informativas que conectan a las personas con la naturaleza, aprendiendo de forma divertida e interactiva',
       navCrumb: 'Jardín',
-      figmaCta: 'Haz clic para ver el prototipo de Figma',
+      figmaCta: 'Haz clic para ver el prototipo del proyecto',
       videoLegend: 'El video sintetiza el proyecto',
       videoFallback: 'Tu navegador no admite video integrado.',
       problemStatement: 'Planteamiento del problema',
@@ -1603,9 +1631,10 @@ export const translations = {
     },
     yoga: {
       title: 'Yoga',
-      description: 'Descripción del proyecto por añadir.',
+      description:
+        'Una plataforma para invitar e inspirar a las personas en Aarhus a encontrar formas de ejercitarse al aire libre durante todo el año.',
       navCrumb: 'Yoga',
-      figmaCta: 'Haz clic para ver el prototipo de Figma',
+      figmaCta: 'Haz clic para ver el prototipo del proyecto',
       videoLegend: 'El video sintetiza el proyecto',
       videoFallback: 'Tu navegador no admite video integrado.',
       problemStatement: 'Planteamiento del problema',
@@ -1617,23 +1646,28 @@ export const translations = {
       researchImageAlt:
         'Resultados de investigación con doce hallazgos numerados de entrevistas sobre práctica de yoga, lugares y motivaciones',
       affinityTitle: 'Affinity Diagram',
-      affinityDescription: 'Descripción del diagrama de afinidad por definir.',
+      affinityDescription:
+        'Hallazgo de patrones en los datos extraídos de la investigación, luego organizarlos en categorías para finalmente darles un nombre.',
       affinityImageAlt:
         'Diagrama de afinidad con cinco columnas: self discovery, habits, struggles, motivations e interests',
       personaTitle: 'Persona',
-      personaDescription: 'Descripción de la persona por definir.',
+      personaDescription:
+        'Se creó la siguiente persona a partir de la investigación y la definición del grupo objetivo, personas de 25 a 35 años que visitan o viven en Aarhus.',
       personaImageAlt:
         'Perfil de persona de Solvej, yogui avanzada con objetivos, comportamiento y estrategia de solución',
       topics: [
         {
           title: 'UX Writing',
           description:
-            'Se incorporaron descripciones propias de los lugares ocultos para crear una experiencia sensorial e invitadora para el usuario.',
+            'Escribí descripciones de los lugares ocultos que impulsan una experiencia sensorial e invitadora para los usuarios.',
+          imageKey: 'ux-writing',
+          imageAlt:
+            'Ejemplo de UX writing de la página Egå Marina con texto sensorial, widgets de clima y mapa',
         },
         {
           title: 'HMW Table',
           description:
-            'El problema general hallado en la investigación se desglosó en problemas individuales para comprender mejor cada solución.',
+            'El problema general hallado en la investigación se desglosó en problemas individuales para comprender mejor cada posible solución.',
           imageKey: 'hmw',
           imageAlt:
             'Tabla de preguntas y respuestas How Might We para la solución de lugares de yoga al aire libre',
@@ -1654,7 +1688,7 @@ export const translations = {
           imageAlt:
             'Tabla ORCA OOUX con Place, Learn more y Preparations, propiedades, relaciones y llamadas a la acción',
         },
-        { title: 'Lista de Requisitos', description: 'Descripción por definir.', imageKey: 'requirements', imageAlt: 'Lista de requisitos de dispositivo, accesibilidad, navegación, personalización, menú, footer y páginas A–E' },
+        { title: 'Lista de Requisitos', description: 'Definición de los objetos de UI necesarios por componente, dispositivo y pantalla para planificar la funcionalidad según los hallazgos del mapping.', imageKey: 'requirements', imageAlt: 'Lista de requisitos de dispositivo, accesibilidad, navegación, personalización, menú, footer y páginas A–E' },
         {
           title: 'Conventions',
           description:

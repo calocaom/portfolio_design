@@ -169,9 +169,7 @@ button.project-row:focus-visible .project-row__veil {
   font-size: clamp(11px, 1.15vw, 13px);
   font-weight: 600;
   letter-spacing: 0.05em;
-  text-transform: lowercase;
-  color: var(--title-purple);
-  white-space: nowrap;
+  text-transform: none;
   opacity: 0;
   transform: translateY(6px);
   transition:

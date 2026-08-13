@@ -683,6 +683,24 @@
   background: #ffffff;
 }
 
+/* UX Writing screenshot */
+.yoga-ux-writing {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--yoga-board);
+  border: 1px solid color-mix(in srgb, var(--yoga-teal) 30%, transparent);
+}
+
+.yoga-ux-writing__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
 /* List of Requirements — list-of-requirements.pdf */
 .yoga-requirements {
   width: 1100px;

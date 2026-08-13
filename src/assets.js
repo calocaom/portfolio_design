@@ -37,5 +37,7 @@ export { default as BOTANICAL_SCIENTIST } from './assets/ux-ui/botanical-scienti
 export { default as BOTANICAL_PRINCIPLES } from './assets/ux-ui/principles.png'
 export { default as BOTANICAL_OOUX } from './assets/ux-ui/ooux.png'
 export { default as BOTANICAL_COVER } from './assets/ux-ui/botanical-cover.png'
+export { default as YOGA_COVER } from './assets/ux-ui/yoga-cover.png'
 export { default as YOGA_PERSONA_PHOTO } from './assets/ux-ui/yoga-persona.jpg'
 export { default as YOGA_CONVENTIONS } from './assets/ux-ui/yoga-conventions.png'
+export { default as YOGA_UX_WRITING } from './assets/ux-ui/yoga-ux-writing.png'

@@ -1,8 +1,8 @@
 import ProjectsHubScreen from './ProjectsHubScreen'
-import { BOTANICAL_COVER } from '../assets'
+import { BOTANICAL_COVER, YOGA_COVER } from '../assets'
 
 const MOSAICS = [
-  { key: 'projectTwo', route: 'yoga', cover: null },
+  { key: 'projectTwo', route: 'yoga', cover: YOGA_COVER },
   { key: 'projectOne', route: 'botanical', cover: BOTANICAL_COVER },
 ]
 
