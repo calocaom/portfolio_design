@@ -121,10 +121,18 @@ export default function AboutScreen({ onNavigate }) {
   const savedTimeRef = useRef(0)
   const autoResumeRef = useRef(true)
   const soundOnRef = useRef(true)
+  const soundZoneRef = useRef(null)
   const [lava, setLava] = useState(LAVA_IDLE)
   const [heroScale, setHeroScale] = useState(1)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isMuted, setIsMuted] = useState(false)
+
+  const setVideoMuted = (muted) => {
+    const video = videoRef.current
+    if (!video) return
+    video.muted = muted
+    setIsMuted(muted)
+  }
 
   const playVideo = (opts = {}) => {
     const video = videoRef.current
@@ -140,8 +148,7 @@ export default function AboutScreen({ onNavigate }) {
       }
     }
 
-    video.muted = !withSound
-    setIsMuted(!withSound)
+    setVideoMuted(!withSound)
 
     const attempt = video.play()
     if (attempt?.then) {
@@ -150,8 +157,7 @@ export default function AboutScreen({ onNavigate }) {
         .catch(() => {
           // Browsers may block unmuted autoplay — fall back to muted.
           if (!video.muted) {
-            video.muted = true
-            setIsMuted(true)
+            setVideoMuted(true)
             video.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false))
             return
           }
@@ -194,14 +200,12 @@ export default function AboutScreen({ onNavigate }) {
 
     if (soundOnRef.current && !video.muted) {
       soundOnRef.current = false
-      video.muted = true
-      setIsMuted(true)
+      setVideoMuted(true)
       return
     }
 
     soundOnRef.current = true
-    video.muted = false
-    setIsMuted(false)
+    setVideoMuted(false)
     if (video.paused && autoResumeRef.current) {
       playVideo({ fromSaved: true, withSound: true })
     }
@@ -235,14 +239,16 @@ export default function AboutScreen({ onNavigate }) {
       playVideo({ fromSaved: false, withSound: true })
     }
 
-    const observer = new IntersectionObserver(
+    // Keep playback tied to overall hero visibility.
+    const playObserver = new IntersectionObserver(
       ([entry]) => {
-        const visible = entry.isIntersecting && entry.intersectionRatio >= 0.45
+        const visible = entry.isIntersecting && entry.intersectionRatio >= 0.2
         if (visible) {
           if (autoResumeRef.current && video.paused) {
-            // Resume from last position; try with sound (falls back to muted if blocked).
-            soundOnRef.current = true
-            playVideo({ fromSaved: true, withSound: true })
+            playVideo({
+              fromSaved: true,
+              withSound: soundOnRef.current && !video.muted,
+            })
           }
         } else if (!video.paused) {
           savedTimeRef.current = video.currentTime
@@ -250,12 +256,12 @@ export default function AboutScreen({ onNavigate }) {
           setIsPlaying(false)
         }
       },
-      { root, threshold: [0, 0.25, 0.45, 0.7, 1] },
+      { root, threshold: [0, 0.2, 0.5, 1] },
     )
-    observer.observe(hero)
+    playObserver.observe(hero)
 
     return () => {
-      observer.disconnect()
+      playObserver.disconnect()
       video.removeEventListener('play', onPlay)
       video.removeEventListener('pause', onPause)
       video.removeEventListener('ended', onEnded)
@@ -275,6 +281,28 @@ export default function AboutScreen({ onNavigate }) {
       const rootRect = root.getBoundingClientRect()
       const elRect = el.getBoundingClientRect()
       return elRect.top - rootRect.top + root.scrollTop
+    }
+
+    const bottomHalfMostlyVisible = () => {
+      const zone = soundZoneRef.current
+      if (!zone) return false
+      const rootRect = root.getBoundingClientRect()
+      const zoneRect = zone.getBoundingClientRect()
+      const visible = Math.min(zoneRect.bottom, rootRect.bottom) - Math.max(zoneRect.top, rootRect.top)
+      return visible >= zoneRect.height * 0.5
+    }
+
+    const syncScrollAudio = (scale) => {
+      const video = videoRef.current
+      if (!video) return
+
+      // Smaller / scrolled away → mute. Near-full + bottom half back in view → unmute.
+      const wantSound =
+        soundOnRef.current && scale >= 0.88 && bottomHalfMostlyVisible()
+
+      if (video.muted !== !wantSound) {
+        setVideoMuted(!wantSound)
+      }
     }
 
     const update = () => {
@@ -315,6 +343,7 @@ export default function AboutScreen({ onNavigate }) {
           : { sun, fill },
       )
       setHeroScale((prev) => (Math.abs(prev - nextScale) < 0.002 ? prev : nextScale))
+      syncScrollAudio(nextScale)
     }
 
     const onScroll = () => {
@@ -363,8 +392,13 @@ export default function AboutScreen({ onNavigate }) {
                   <button
                     type="button"
                     className="about-screen__hero-hit"
-                    onClick={handleTogglePlay}
-                    aria-label={isPlaying ? t('about.reelPause') : t('about.reelPlay')}
+                    onClick={handleToggleSound}
+                    aria-label={isMuted ? t('about.reelSound') : t('about.reelMute')}
+                  />
+                  <div
+                    ref={soundZoneRef}
+                    className="about-screen__hero-sound-zone"
+                    aria-hidden="true"
                   />
                   <video
                     ref={videoRef}
