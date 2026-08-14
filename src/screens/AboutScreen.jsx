@@ -121,7 +121,6 @@ export default function AboutScreen({ onNavigate }) {
   const savedTimeRef = useRef(0)
   const autoResumeRef = useRef(true)
   const soundOnRef = useRef(true)
-  const soundZoneRef = useRef(null)
   const [lava, setLava] = useState(LAVA_IDLE)
   const [heroScale, setHeroScale] = useState(1)
   const [isPlaying, setIsPlaying] = useState(false)
@@ -283,22 +282,13 @@ export default function AboutScreen({ onNavigate }) {
       return elRect.top - rootRect.top + root.scrollTop
     }
 
-    const bottomHalfMostlyVisible = () => {
-      const zone = soundZoneRef.current
-      if (!zone) return false
-      const rootRect = root.getBoundingClientRect()
-      const zoneRect = zone.getBoundingClientRect()
-      const visible = Math.min(zoneRect.bottom, rootRect.bottom) - Math.max(zoneRect.top, rootRect.top)
-      return visible >= zoneRect.height * 0.5
-    }
-
     const syncScrollAudio = (scale) => {
       const video = videoRef.current
       if (!video) return
 
-      // Smaller / scrolled away → mute. Near-full + bottom half back in view → unmute.
-      const wantSound =
-        soundOnRef.current && scale >= 0.88 && bottomHalfMostlyVisible()
+      // Mute only once the reel reaches its smallest scroll size.
+      const atSmallest = scale <= HERO_SCALE_MIN + 0.01
+      const wantSound = soundOnRef.current && !atSmallest
 
       if (video.muted !== !wantSound) {
         setVideoMuted(!wantSound)
@@ -394,11 +384,6 @@ export default function AboutScreen({ onNavigate }) {
                     className="about-screen__hero-hit"
                     onClick={handleToggleSound}
                     aria-label={isMuted ? t('about.reelSound') : t('about.reelMute')}
-                  />
-                  <div
-                    ref={soundZoneRef}
-                    className="about-screen__hero-sound-zone"
-                    aria-hidden="true"
                   />
                   <video
                     ref={videoRef}

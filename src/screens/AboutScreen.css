@@ -123,16 +123,6 @@
   outline-offset: -4px;
 }
 
-.about-screen__hero-sound-zone {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  height: 50%;
-  pointer-events: none;
-}
-
 .about-screen__hero-media {
   display: block;
   width: 100%;
