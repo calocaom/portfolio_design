@@ -42,10 +42,36 @@
 }
 
 .makeup-fx-screen__intro {
-  width: min(100%, 68ch);
+  width: min(100%, 1100px);
   margin: 0 auto;
   padding: clamp(36px, 6vw, 72px) var(--content-padding) clamp(28px, 4vw, 40px);
-  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+}
+
+.makeup-fx-screen__portrait {
+  margin: 0;
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+}
+
+.makeup-fx-screen__portrait-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 682 / 1024;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: clamp(10px, 1.4vw, 16px);
+  background: color-mix(in srgb, var(--light-violet) 55%, white);
+}
+
+.makeup-fx-screen__bio {
+  min-width: 0;
+  text-align: left;
 }
 
 .makeup-fx-screen__title {
@@ -72,6 +98,22 @@
   margin-top: clamp(16px, 2.2vw, 22px);
 }
 
+@media (max-width: 760px) {
+  .makeup-fx-screen__intro {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .makeup-fx-screen__portrait {
+    max-width: min(320px, 78vw);
+  }
+
+  .makeup-fx-screen__bio {
+    text-align: center;
+  }
+}
+
 .makeup-fx-screen__portfolios {
   width: 100%;
   padding: 0 var(--content-padding) clamp(28px, 4vw, 48px);
@@ -95,6 +137,7 @@
 }
 
 .makeup-fx-screen__testimonials-frame {
+  position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: clamp(10px, 1.4vw, 16px);
@@ -103,10 +146,13 @@
 }
 
 .makeup-fx-screen__testimonials-video {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   background: #0b1520;
 }
 

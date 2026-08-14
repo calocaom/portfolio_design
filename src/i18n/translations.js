@@ -120,6 +120,8 @@ export const translations = {
       expertise:
         'Areas of expertise: Prosthetics, Airbrush, Beauty Makeup, Fashion Makeup, Special Effects for Film and Theatre, Photography Editing, Prop making, Basics on Editorial Photography and Hair-styling.',
       navCrumb: 'Design for Makeup FX',
+      portraitAlt:
+        'Omar Caloca standing between two special effects makeup characters in a studio portrait',
       reel: 'REEL',
       portfolios: 'Portfolios',
       explore: 'Explore portfolio',
@@ -692,6 +694,8 @@ export const translations = {
       expertise:
         'Ekspertiseområder: Proteser, airbrush, beauty makeup, fashion makeup, special effects til film og teater, fotoredigering, prop-fremstilling, grundlæggende editorial fotografi og frisering.',
       navCrumb: 'Design til Makeup FX',
+      portraitAlt:
+        'Omar Caloca stående mellem to special effects makeup-karakterer i et studieportræt',
       reel: 'REEL',
       portfolios: 'Porteføljer',
       explore: 'Udforsk portefølje',
@@ -1275,6 +1279,8 @@ export const translations = {
       expertise:
         'Domaines d’expertise : prothèses, aérographe, makeup beauté, makeup mode, effets spéciaux pour le cinéma et le théâtre, retouche photo, fabrication d’accessoires, bases de photographie éditoriale et coiffure.',
       navCrumb: 'Design pour Makeup FX',
+      portraitAlt:
+        'Omar Caloca entre deux personnages de makeup effets spéciaux dans un portrait studio',
       reel: 'REEL',
       portfolios: 'Portfolios',
       explore: 'Explorer le portfolio',
@@ -1859,6 +1865,8 @@ export const translations = {
       expertise:
         'Expertise: Prothetik, Airbrush, Beauty Makeup, Fashion Makeup, Special Effects für Film und Theater, Fotobearbeitung, Props-Herstellung, Grundlagen der Editorial-Fotografie und Frisurengestaltung.',
       navCrumb: 'Design für Makeup FX',
+      portraitAlt:
+        'Omar Caloca zwischen zwei Special-Effects-Makeup-Charakteren in einem Studioporträt',
       reel: 'REEL',
       portfolios: 'Portfolios',
       explore: 'Portfolio erkunden',
@@ -2443,6 +2451,8 @@ export const translations = {
       expertise:
         'Áreas de expertise: prótesis, aerógrafo, beauty makeup, makeup de moda, efectos especiales para cine y teatro, edición fotográfica, fabricación de props, bases de fotografía editorial y peinado.',
       navCrumb: 'Diseño para Makeup FX',
+      portraitAlt:
+        'Omar Caloca entre dos personajes de makeup de efectos especiales en un retrato de estudio',
       reel: 'REEL',
       portfolios: 'Portafolios',
       explore: 'Explorar portafolio',

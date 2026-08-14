@@ -58,11 +58,22 @@ export default function MakeupFxScreen({ onNavigate }) {
           className="makeup-fx-screen__intro"
           aria-label={t('makeupFx.title').replace(/\n/g, ' ')}
         >
-          <h1 className="makeup-fx-screen__title">{t('makeupFx.title')}</h1>
-          <p className="makeup-fx-screen__body">{t('makeupFx.body')}</p>
-          <p className="makeup-fx-screen__body makeup-fx-screen__body--expertise">
-            {t('makeupFx.expertise')}
-          </p>
+          <figure className="makeup-fx-screen__portrait">
+            <img
+              className="makeup-fx-screen__portrait-image"
+              src={publicUrl('portraits/makeup-fx-bio.png')}
+              alt={t('makeupFx.portraitAlt')}
+              width={682}
+              height={1024}
+            />
+          </figure>
+          <div className="makeup-fx-screen__bio">
+            <h1 className="makeup-fx-screen__title">{t('makeupFx.title')}</h1>
+            <p className="makeup-fx-screen__body">{t('makeupFx.body')}</p>
+            <p className="makeup-fx-screen__body makeup-fx-screen__body--expertise">
+              {t('makeupFx.expertise')}
+            </p>
+          </div>
         </section>
 
         <section
