@@ -360,6 +360,12 @@ export default function AboutScreen({ onNavigate }) {
             <div className="about-screen__hero-pin">
               <div className="about-screen__hero" ref={heroRef}>
                 <div className="about-screen__hero-frame">
+                  <button
+                    type="button"
+                    className="about-screen__hero-hit"
+                    onClick={handleTogglePlay}
+                    aria-label={isPlaying ? t('about.reelPause') : t('about.reelPlay')}
+                  />
                   <video
                     ref={videoRef}
                     className="about-screen__hero-media"
@@ -368,7 +374,7 @@ export default function AboutScreen({ onNavigate }) {
                     muted={isMuted}
                     playsInline
                     preload="auto"
-                    aria-label={t('about.introAria')}
+                    aria-hidden="true"
                   >
                     {t('about.videoFallback')}
                   </video>
