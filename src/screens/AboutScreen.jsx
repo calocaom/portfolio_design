@@ -6,7 +6,6 @@ import ImageCarousel from '../components/ImageCarousel'
 import AnimatedSubheadline from '../components/AnimatedSubheadline'
 import AnimatedTitle from '../components/AnimatedTitle'
 import LogoLava from '../components/LogoLava'
-import { HERO_LOGO } from '../assets'
 import { PROJECT_IDS, PROJECT_IMAGES, PROJECT_LINKS, PROJECT_ROUTES } from '../data/projects'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
@@ -20,6 +19,59 @@ function easeInOut(t) {
 }
 
 const LAVA_IDLE = { sun: 0, fill: 0 }
+const HERO_SCALE_MIN = 0.42
+const REEL_SRC = 'videos/reel_portfolio.mp4'
+const REEL_POSTER = 'videos/reel_portfolio-poster.jpg'
+
+function PlayIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M8 5.14v13.72L19 12 8 5.14Z" />
+    </svg>
+  )
+}
+
+function StopIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <rect x="6.5" y="6.5" width="11" height="11" rx="1.2" />
+    </svg>
+  )
+}
+
+function MuteIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M4 10.5v3h3.2L11 17V7L7.2 10.5H4Z"
+        fill="currentColor"
+      />
+      <path
+        d="m15.2 9.2 4.6 4.6M19.8 9.2l-4.6 4.6"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+function SoundIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M4 10.5v3h3.2L11 17V7L7.2 10.5H4Z"
+        fill="currentColor"
+      />
+      <path
+        d="M14.2 9.4a3.6 3.6 0 0 1 0 5.2M16.6 7.2a6.4 6.4 0 0 1 0 9.6"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
 
 function BookContourIcon() {
   return (
@@ -53,9 +105,147 @@ export default function AboutScreen({ onNavigate }) {
 
   const screenRef = useRef(null)
   const introRef = useRef(null)
+  const heroRef = useRef(null)
+  const videoRef = useRef(null)
   const worksRef = useRef(null)
   const sixthParaRef = useRef(null)
+  const savedTimeRef = useRef(0)
+  const autoResumeRef = useRef(true)
+  const soundOnRef = useRef(true)
   const [lava, setLava] = useState(LAVA_IDLE)
+  const [heroScale, setHeroScale] = useState(1)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [isMuted, setIsMuted] = useState(false)
+
+  const playVideo = (opts = {}) => {
+    const video = videoRef.current
+    if (!video) return
+
+    const { fromSaved = false, withSound = soundOnRef.current } = opts
+    if (fromSaved) {
+      const resumeAt = savedTimeRef.current
+      if (video.ended || resumeAt >= (video.duration || Infinity) - 0.05) {
+        video.currentTime = 0
+      } else if (Math.abs(video.currentTime - resumeAt) > 0.08) {
+        video.currentTime = resumeAt
+      }
+    }
+
+    video.muted = !withSound
+    setIsMuted(!withSound)
+
+    const attempt = video.play()
+    if (attempt?.then) {
+      attempt
+        .then(() => setIsPlaying(true))
+        .catch(() => {
+          // Browsers may block unmuted autoplay — fall back to muted.
+          if (!video.muted) {
+            video.muted = true
+            setIsMuted(true)
+            video.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false))
+            return
+          }
+          setIsPlaying(false)
+        })
+    }
+  }
+
+  const pauseVideo = ({ reset = false } = {}) => {
+    const video = videoRef.current
+    if (!video) return
+    savedTimeRef.current = reset ? 0 : video.currentTime
+    video.pause()
+    if (reset) video.currentTime = 0
+    setIsPlaying(false)
+  }
+
+  const handlePlay = () => {
+    autoResumeRef.current = true
+    playVideo({ fromSaved: true, withSound: soundOnRef.current })
+  }
+
+  const handleStop = () => {
+    autoResumeRef.current = false
+    pauseVideo({ reset: true })
+  }
+
+  const handleToggleSound = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    if (soundOnRef.current && !video.muted) {
+      soundOnRef.current = false
+      video.muted = true
+      setIsMuted(true)
+      return
+    }
+
+    soundOnRef.current = true
+    video.muted = false
+    setIsMuted(false)
+    if (video.paused && autoResumeRef.current) {
+      playVideo({ fromSaved: true, withSound: true })
+    }
+  }
+
+  useEffect(() => {
+    const video = videoRef.current
+    const hero = heroRef.current
+    const root = screenRef.current
+    if (!video || !hero || !root) return undefined
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    const onPlay = () => setIsPlaying(true)
+    const onPause = () => setIsPlaying(false)
+    const onEnded = () => {
+      savedTimeRef.current = 0
+      setIsPlaying(false)
+    }
+    const onTimeUpdate = () => {
+      if (!video.paused) savedTimeRef.current = video.currentTime
+    }
+
+    video.addEventListener('play', onPlay)
+    video.addEventListener('pause', onPause)
+    video.addEventListener('ended', onEnded)
+    video.addEventListener('timeupdate', onTimeUpdate)
+
+    if (!reduced) {
+      // Prefer sound on; playVideo falls back to muted if the browser blocks unmuted autoplay.
+      playVideo({ fromSaved: false, withSound: true })
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const visible = entry.isIntersecting && entry.intersectionRatio >= 0.45
+        if (visible) {
+          if (autoResumeRef.current && video.paused) {
+            // Resume from last position; try with sound (falls back to muted if blocked).
+            soundOnRef.current = true
+            playVideo({ fromSaved: true, withSound: true })
+          }
+        } else if (!video.paused) {
+          savedTimeRef.current = video.currentTime
+          video.pause()
+          setIsPlaying(false)
+        }
+      },
+      { root, threshold: [0, 0.25, 0.45, 0.7, 1] },
+    )
+    observer.observe(hero)
+
+    return () => {
+      observer.disconnect()
+      video.removeEventListener('play', onPlay)
+      video.removeEventListener('pause', onPause)
+      video.removeEventListener('ended', onEnded)
+      video.removeEventListener('timeupdate', onTimeUpdate)
+      video.pause()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-only media wiring
+  }, [])
 
   useEffect(() => {
     const root = screenRef.current
@@ -88,20 +278,25 @@ export default function AboutScreen({ onNavigate }) {
       // Solid violet fully on by mid-works; never into footer
       const worksFillEnd = worksTop + Math.min(works.offsetHeight * 0.55, viewH * 0.45)
 
-      // 1) Bright sun behind GIF, then shrinks to zero (fully gone through early bio)
+      // Bright sun behind hero, then fades through early bio
       const sunRise = clamp((focusY - introTop) / Math.max(1, heroDepth - introTop))
       const sunFade = clamp((focusY - heroDepth) / Math.max(1, introBottom - heroDepth))
       const sun = easeInOut(sunRise * (1 - sunFade))
 
-      // 2) From 6th paragraph: light returns and brightens into works (capped before footer)
+      // From 6th paragraph: light returns and brightens into works (capped before footer)
       const fillRaw = clamp((focusY - sixthTop) / Math.max(1, worksFillEnd - sixthTop))
       const fill = easeInOut(fillRaw)
+
+      // Full-bleed at top; shrink as the user scrolls down the intro pin
+      const shrink = clamp(scrollY / Math.max(1, viewH * 0.95))
+      const nextScale = 1 - easeInOut(shrink) * (1 - HERO_SCALE_MIN)
 
       setLava((prev) =>
         Math.abs(prev.sun - sun) < 0.004 && Math.abs(prev.fill - fill) < 0.004
           ? prev
           : { sun, fill },
       )
+      setHeroScale((prev) => (Math.abs(prev - nextScale) < 0.002 ? prev : nextScale))
     }
 
     const onScroll = () => {
@@ -130,11 +325,10 @@ export default function AboutScreen({ onNavigate }) {
       style={{
         '--lava-sun': lava.sun,
         '--lava-fill': lava.fill,
+        '--hero-scale': heroScale,
       }}
     >
       <main className="about-screen__content">
-        <SiteNav activeId="about" onNavigate={onNavigate} />
-
         <div className="about-screen__lava-range">
           <div className="about-screen__lava-sticky">
             <LogoLava sun={lava.sun} fill={lava.fill} />
@@ -145,15 +339,56 @@ export default function AboutScreen({ onNavigate }) {
             className="about-screen__intro"
             aria-label={t('about.introAria')}
           >
-            <div className="about-screen__hero">
-              <img
-                src={HERO_LOGO}
-                alt=""
-                className="about-screen__hero-media"
-              />
+            <div className="about-screen__hero-pin">
+              <div className="about-screen__hero" ref={heroRef}>
+                <div className="about-screen__hero-frame">
+                  <video
+                    ref={videoRef}
+                    className="about-screen__hero-media"
+                    poster={publicUrl(REEL_POSTER)}
+                    src={publicUrl(REEL_SRC)}
+                    muted={isMuted}
+                    playsInline
+                    preload="auto"
+                    aria-label={t('about.introAria')}
+                  >
+                    {t('about.videoFallback')}
+                  </video>
+                  <div className="about-screen__hero-controls" role="group" aria-label={t('about.reelControls')}>
+                    <button
+                      type="button"
+                      className="about-screen__hero-control"
+                      onClick={handlePlay}
+                      aria-label={t('about.reelPlay')}
+                      aria-pressed={isPlaying}
+                    >
+                      <PlayIcon />
+                    </button>
+                    <button
+                      type="button"
+                      className="about-screen__hero-control"
+                      onClick={handleStop}
+                      aria-label={t('about.reelStop')}
+                    >
+                      <StopIcon />
+                    </button>
+                    <button
+                      type="button"
+                      className="about-screen__hero-control"
+                      onClick={handleToggleSound}
+                      aria-label={isMuted ? t('about.reelSound') : t('about.reelMute')}
+                      aria-pressed={!isMuted}
+                    >
+                      {isMuted ? <MuteIcon /> : <SoundIcon />}
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <h1 className="about-screen__title">{t('header.name')}</h1>
           </section>
+
+          <SiteNav activeId="about" onNavigate={onNavigate} />
 
           <section className="about-screen__split" aria-label={t('about.bioAria')}>
             <div className="about-screen__bio">
