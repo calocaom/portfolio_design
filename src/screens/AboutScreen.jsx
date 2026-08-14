@@ -31,6 +31,15 @@ function PlayIcon() {
   )
 }
 
+function PauseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <rect x="6.5" y="5.5" width="3.75" height="13" rx="1" />
+      <rect x="13.75" y="5.5" width="3.75" height="13" rx="1" />
+    </svg>
+  )
+}
+
 function StopIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -160,7 +169,16 @@ export default function AboutScreen({ onNavigate }) {
     setIsPlaying(false)
   }
 
-  const handlePlay = () => {
+  const handleTogglePlay = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    if (!video.paused && !video.ended) {
+      autoResumeRef.current = false
+      pauseVideo({ reset: false })
+      return
+    }
+
     autoResumeRef.current = true
     playVideo({ fromSaved: true, withSound: soundOnRef.current })
   }
@@ -358,11 +376,11 @@ export default function AboutScreen({ onNavigate }) {
                     <button
                       type="button"
                       className="about-screen__hero-control"
-                      onClick={handlePlay}
-                      aria-label={t('about.reelPlay')}
+                      onClick={handleTogglePlay}
+                      aria-label={isPlaying ? t('about.reelPause') : t('about.reelPlay')}
                       aria-pressed={isPlaying}
                     >
-                      <PlayIcon />
+                      {isPlaying ? <PauseIcon /> : <PlayIcon />}
                     </button>
                     <button
                       type="button"
