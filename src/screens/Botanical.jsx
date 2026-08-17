@@ -122,6 +122,10 @@ export default function Botanical({ onNavigate }) {
               </video>
             </div>
 
+            <p className="ux-case-study__video-legend">
+              {t('botanical.videoLegend')}
+            </p>
+
             <dl className="ux-case-study__meta" aria-label={t('botanical.metaAria')}>
               {META_KEYS.map((key) => (
                 <div key={key} className="ux-case-study__meta-row">
@@ -132,10 +136,6 @@ export default function Botanical({ onNavigate }) {
                 </div>
               ))}
             </dl>
-
-            <p className="ux-case-study__video-legend">
-              {t('botanical.videoLegend')}
-            </p>
           </div>
 
           <section

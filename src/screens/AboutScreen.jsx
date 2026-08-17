@@ -107,6 +107,14 @@ function BookContourIcon() {
   )
 }
 
+function DownArrowIcon() {
+  return (
+    <span className="about-screen__jump-arrow" aria-hidden="true">
+      &gt;
+    </span>
+  )
+}
+
 export default function AboutScreen({ onNavigate }) {
   const { dict, t } = useI18n()
   const bioBefore = dict.about.bioBefore
@@ -115,6 +123,7 @@ export default function AboutScreen({ onNavigate }) {
   const screenRef = useRef(null)
   const introRef = useRef(null)
   const heroRef = useRef(null)
+  const titleRef = useRef(null)
   const videoRef = useRef(null)
   const worksRef = useRef(null)
   const sixthParaRef = useRef(null)
@@ -355,6 +364,17 @@ export default function AboutScreen({ onNavigate }) {
   // bioBefore (3) + bioAfter (3) → 6th paragraph is the last bioAfter entry
   const sixthAfterIndex = bioAfter.length - 1
 
+  function scrollTitleToTop() {
+    const root = screenRef.current
+    const title = titleRef.current
+    if (!root || !title) return
+
+    const rootRect = root.getBoundingClientRect()
+    const titleRect = title.getBoundingClientRect()
+    const nextTop = root.scrollTop + (titleRect.top - rootRect.top)
+    root.scrollTo({ top: Math.max(0, nextTop), behavior: 'smooth' })
+  }
+
   return (
     <div
       ref={screenRef}
@@ -426,9 +446,21 @@ export default function AboutScreen({ onNavigate }) {
                     </button>
                   </div>
                 </div>
+                <button
+                  type="button"
+                  className="about-screen__jump about-screen__jump--desktop"
+                  onClick={scrollTitleToTop}
+                  aria-label={t('about.scrollToTitle')}
+                >
+                  <DownArrowIcon />
+                </button>
               </div>
             </div>
-            <h1 className="about-screen__title">{t('header.name')}</h1>
+            <div className="about-screen__title-row">
+              <h1 ref={titleRef} className="about-screen__title">
+                {t('header.name')}
+              </h1>
+            </div>
           </section>
 
           <SiteNav activeId="about" onNavigate={onNavigate} />

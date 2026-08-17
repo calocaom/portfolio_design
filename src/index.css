@@ -33,6 +33,7 @@
   */
   --font-title: 'Azeret Mono', ui-monospace, monospace;
   --font-quote: 'Fraunces', 'Times New Roman', serif;
+  --font-scribble: 'Caveat', 'Segoe Print', 'Comic Sans MS', cursive;
   --font-system: Inter, system-ui, sans-serif;
 
   /* Spacing */

@@ -22,7 +22,7 @@
   line-height: 1.35;
   text-align: center;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--orange) 78%, #5a1e08);
+  color: #9b6b9e;
 }
 
 .ux-cross-promote__card {

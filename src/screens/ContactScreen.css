@@ -76,7 +76,7 @@
   font-weight: 700;
   line-height: 1.35;
   color: inherit;
-  opacity: 0.28;
+  opacity: 0.42;
   margin: 0;
   max-width: 100%;
   padding-left: calc(var(--icon-size) + clamp(14px, 2vw, 22px));
@@ -101,7 +101,7 @@
   line-height: 1.02;
   letter-spacing: -0.025em;
   color: inherit;
-  opacity: 0.42;
+  opacity: 0.62;
   flex: 0 1 auto;
   min-width: 0;
   max-width: 100%;
@@ -111,7 +111,7 @@
 }
 
 .contact-screen__primary:hover {
-  opacity: 0.7;
+  opacity: 0.92;
 }
 
 .contact-screen__primary--link {
@@ -126,12 +126,12 @@
   width: var(--icon-size);
   height: var(--icon-size);
   color: inherit;
-  opacity: 0.42;
+  opacity: 0.62;
   transition: opacity 0.2s ease;
 }
 
 .contact-screen__icon-link:hover {
-  opacity: 0.7;
+  opacity: 0.92;
 }
 
 .contact-screen__icon {
@@ -152,14 +152,14 @@
   border: 0;
   background: transparent;
   color: inherit;
-  opacity: 0.38;
+  opacity: 0.55;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
 .contact-screen__copy:hover,
 .contact-screen__copy--done {
-  opacity: 0.75;
+  opacity: 0.92;
 }
 
 /* Desktop: copy icon only on row hover / keyboard focus */
@@ -172,14 +172,14 @@
   .contact-screen__row:hover .contact-screen__copy,
   .contact-screen__copy:focus-visible,
   .contact-screen__copy--done {
-    opacity: 0.38;
+    opacity: 0.55;
     pointer-events: auto;
   }
 
   .contact-screen__row:hover .contact-screen__copy:hover,
   .contact-screen__copy:focus-visible,
   .contact-screen__copy--done {
-    opacity: 0.75;
+    opacity: 0.92;
   }
 }
 

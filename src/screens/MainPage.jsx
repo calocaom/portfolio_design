@@ -131,8 +131,10 @@ export default function MainPage({
       const navTop = nav.getBoundingClientRect().top
       const navHeight = nav.offsetHeight
       const worksTop = works.getBoundingClientRect().top
+      // Start the light fade while the nav is still below the top
+      const lightLead = Math.min(280, Math.max(140, window.innerHeight * 0.3))
 
-      setLightBg(navTop <= pageTop + 2)
+      setLightBg(navTop <= pageTop + lightLead)
       setActiveId(worksTop <= pageTop + navHeight + 12 ? 'works' : 'home')
     }
 

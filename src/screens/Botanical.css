@@ -21,6 +21,49 @@
   color: var(--deep-green);
 }
 
+/* Full rectangular video, meta stacked underneath — same as Yoga */
+.botanical .ux-case-study__split {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: clamp(16px, 2vw, 24px);
+  align-items: stretch;
+}
+
+.botanical .ux-case-study__video-frame {
+  grid-column: 1;
+  grid-row: auto;
+  align-self: start;
+  height: auto;
+  aspect-ratio: auto;
+  background: #0b1520;
+}
+
+.botanical .ux-case-study__video {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #0b1520;
+}
+
+.botanical .ux-case-study__meta {
+  grid-column: 1;
+  grid-row: auto;
+  margin-top: clamp(20px, 3.5vw, 40px);
+}
+
+.botanical .ux-case-study__video-legend {
+  grid-column: 1;
+  grid-row: auto;
+}
+
+@media (max-width: 900px) {
+  .botanical .ux-case-study__video-frame {
+    aspect-ratio: auto;
+  }
+}
+
 /* Scale charts like a JPEG — layout stays horizontal, whole board shrinks/expands */
 .botanical-chart {
   margin-inline: auto;

@@ -26,6 +26,7 @@ export const translations = {
       linkedinAria: 'LinkedIn profile',
       backToTop: 'Back to top',
       backToTopAria: 'Back to top',
+      createTogether: "Let's create together",
     },
     contact: {
       label: 'For inquiries contact:',
@@ -76,8 +77,9 @@ export const translations = {
       reelStop: 'Stop reel',
       reelMute: 'Mute reel',
       reelSound: 'Turn sound on',
+      scrollToTitle: 'Jump to O. Y. Caloca title',
       bioBefore: [
-        'I am currently a student of the Multimedia and Design Program at Aarhus Business Academy in Denmark.',
+        'I am currently a student of the Multimedia and Design Program at Aarhus Business Academy in Denmark. I am looking for jobs in the field and internship opportunities for January 2027.',
         'Born and raised in Mexico, I hold a Global Makeup Co-Op Diploma from the Canadian institution Blanche Macdonald Centre and a Certificate of Digital Painting from Synn Studio.',
         'I have over 10 years of experience working on different creative fields such as art exhibitions, independent films, fashion shows and art commissions. I have also combined that work along with retail and tutoring. My most recent position before moving to Denmark was as an Art Instructor on board cruise ships, where I created and directed various artistic events, guiding a multicultural crowd in English, Spanish and French.',
       ],
@@ -605,6 +607,7 @@ export const translations = {
       linkedinAria: 'LinkedIn-profil',
       backToTop: 'Tilbage til toppen',
       backToTopAria: 'Tilbage til toppen',
+      createTogether: 'Lad os skabe sammen',
     },
     contact: {
       label: 'Ved forespørgsler kontakt:',
@@ -655,8 +658,9 @@ export const translations = {
       reelStop: 'Stop reel',
       reelMute: 'Slå lyden fra',
       reelSound: 'Slå lyden til',
+      scrollToTitle: 'Hop til O. Y. Caloca-titlen',
       bioBefore: [
-        'Jeg er i øjeblikket studerende på Multimedia and Design-programmet på Erhvervsakademi Aarhus i Danmark.',
+        'Jeg er i øjeblikket studerende på Multimedia and Design-programmet på Erhvervsakademi Aarhus i Danmark. Jeg søger jobs inden for feltet og praktikmuligheder fra januar 2027.',
         'Født og opvokset i Mexico har jeg et Global Makeup Co-Op Diploma fra den canadiske institution Blanche Macdonald Centre og et Certificate of Digital Painting fra Synn Studio.',
         'Jeg har over 10 års erfaring inden for forskellige kreative felter som kunstudstillinger, uafhængige film, modeshows og kunstkommissioner. Jeg har også kombineret det arbejde med detailhandel og undervisning. Min seneste stilling før flytningen til Danmark var som kunstinstruktør ombord på krydstogtskibe, hvor jeg skabte og ledede forskellige kunstneriske events og vejledte et multikulturelt publikum på engelsk, spansk og fransk.',
       ],
@@ -1195,6 +1199,7 @@ export const translations = {
       linkedinAria: 'Profil LinkedIn',
       backToTop: 'Retour en haut',
       backToTopAria: 'Retour en haut',
+      createTogether: 'Créons ensemble',
     },
     contact: {
       label: 'Pour toute demande, contactez :',
@@ -1245,8 +1250,9 @@ export const translations = {
       reelStop: 'Arrêter le reel',
       reelMute: 'Couper le son',
       reelSound: 'Activer le son',
+      scrollToTitle: 'Aller au titre O. Y. Caloca',
       bioBefore: [
-        'Je suis actuellement étudiant du programme Multimedia and Design à Aarhus Business Academy au Danemark.',
+        'Je suis actuellement étudiant du programme Multimedia and Design à Aarhus Business Academy au Danemark. Je recherche des emplois dans le domaine ainsi que des stages pour janvier 2027.',
         'Né et élevé au Mexique, je détiens un Global Makeup Co-Op Diploma de l’institution canadienne Blanche Macdonald Centre ainsi qu’un Certificate of Digital Painting de Synn Studio.',
         'J’ai plus de 10 ans d’expérience dans différents domaines créatifs tels que les expositions d’art, les films indépendants, les défilés de mode et les commandes artistiques. J’ai aussi combiné ce travail avec le commerce de détail et le tutorat. Mon dernier poste avant de m’installer au Danemark était celui d’instructeur d’art à bord de navires de croisière, où j’ai créé et dirigé divers événements artistiques, guidant un public multiculturel en anglais, espagnol et français.',
       ],
@@ -1786,6 +1792,7 @@ export const translations = {
       linkedinAria: 'LinkedIn-Profil',
       backToTop: 'Nach oben',
       backToTopAria: 'Nach oben',
+      createTogether: 'Lass uns gemeinsam schaffen',
     },
     contact: {
       label: 'Für Anfragen kontaktieren:',
@@ -1836,8 +1843,9 @@ export const translations = {
       reelStop: 'Reel stoppen',
       reelMute: 'Ton aus',
       reelSound: 'Ton einschalten',
+      scrollToTitle: 'Zur Überschrift O. Y. Caloca springen',
       bioBefore: [
-        'Ich bin derzeit Student des Multimedia-and-Design-Programms an der Aarhus Business Academy in Dänemark.',
+        'Ich bin derzeit Student des Multimedia-and-Design-Programms an der Aarhus Business Academy in Dänemark. Ich suche Stellen in diesem Bereich sowie Praktikumsmöglichkeiten ab Januar 2027.',
         'In Mexiko geboren und aufgewachsen, besitze ich ein Global Makeup Co-Op Diploma der kanadischen Institution Blanche Macdonald Centre sowie ein Certificate of Digital Painting von Synn Studio.',
         'Ich habe über 10 Jahre Erfahrung in verschiedenen kreativen Bereichen wie Kunstausstellungen, Independent-Filmen, Modeschauen und Kunstaufträgen. Ich habe diese Arbeit auch mit Einzelhandel und Nachhilfe kombiniert. Meine letzte Position vor dem Umzug nach Dänemark war die eines Kunstinstructors an Bord von Kreuzfahrtschiffen, wo ich verschiedene künstlerische Events konzipierte und leitete und ein multikulturelles Publikum auf Englisch, Spanisch und Französisch begleitete.',
       ],
@@ -2377,6 +2385,7 @@ export const translations = {
       linkedinAria: 'Perfil de LinkedIn',
       backToTop: 'Volver arriba',
       backToTopAria: 'Volver arriba',
+      createTogether: 'Creemos juntos',
     },
     contact: {
       label: 'Para consultas contactar:',
@@ -2427,8 +2436,9 @@ export const translations = {
       reelStop: 'Detener reel',
       reelMute: 'Silenciar',
       reelSound: 'Activar sonido',
+      scrollToTitle: 'Ir al título O. Y. Caloca',
       bioBefore: [
-        'Actualmente soy estudiante del programa Multimedia and Design en Aarhus Business Academy en Dinamarca.',
+        'Actualmente soy estudiante del programa Multimedia and Design en Aarhus Business Academy en Dinamarca. Busco empleos en el área y oportunidades de prácticas para enero de 2027.',
         'Nacido y criado en México, cuento con un Global Makeup Co-Op Diploma de la institución canadiense Blanche Macdonald Centre y un Certificate of Digital Painting de Synn Studio.',
         'Tengo más de 10 años de experiencia en distintos campos creativos como exposiciones de arte, cine independiente, desfiles de moda y encargos artísticos. También he combinado ese trabajo con retail y tutoría. Mi puesto más reciente antes de mudarme a Dinamarca fue como instructor de arte a bordo de cruceros, donde creé y dirigí diversos eventos artísticos, guiando a un público multicultural en inglés, español y francés.',
       ],
