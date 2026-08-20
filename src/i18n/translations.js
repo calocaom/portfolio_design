@@ -18,7 +18,7 @@ export const translations = {
       closeMenu: 'Close menu',
     },
     lang: { label: 'Language', open: 'Choose language', close: 'Close language menu' },
-    header: { name: 'O. Y. Caloca' },
+    header: { name: 'O. Y. Caloca', skipDown: 'Skip down', skipDownAria: 'Skip to navigation' },
     footer: {
       name: 'Omar Yahir Caloca',
       role: 'Artist and Designer',
@@ -599,7 +599,7 @@ export const translations = {
       closeMenu: 'Luk menu',
     },
     lang: { label: 'Sprog', open: 'Vælg sprog', close: 'Luk sprogmenu' },
-    header: { name: 'O. Y. Caloca' },
+    header: { name: 'O. Y. Caloca', skipDown: 'Hop ned', skipDownAria: 'Hop til navigation' },
     footer: {
       name: 'Omar Yahir Caloca',
       role: 'Kunstner og designer',
@@ -1191,7 +1191,7 @@ export const translations = {
       closeMenu: 'Fermer le menu',
     },
     lang: { label: 'Langue', open: 'Choisir la langue', close: 'Fermer le menu des langues' },
-    header: { name: 'O. Y. Caloca' },
+    header: { name: 'O. Y. Caloca', skipDown: 'Descendre', skipDownAria: 'Aller à la navigation' },
     footer: {
       name: 'Omar Yahir Caloca',
       role: 'Artiste et designer',
@@ -1784,7 +1784,7 @@ export const translations = {
       closeMenu: 'Menü schließen',
     },
     lang: { label: 'Sprache', open: 'Sprache wählen', close: 'Sprachmenü schließen' },
-    header: { name: 'O. Y. Caloca' },
+    header: { name: 'O. Y. Caloca', skipDown: 'Nach unten', skipDownAria: 'Zur Navigation springen' },
     footer: {
       name: 'Omar Yahir Caloca',
       role: 'Künstler und Designer',
@@ -2377,7 +2377,7 @@ export const translations = {
       closeMenu: 'Cerrar menú',
     },
     lang: { label: 'Idioma', open: 'Elegir idioma', close: 'Cerrar menú de idiomas' },
-    header: { name: 'O. Y. Caloca' },
+    header: { name: 'O. Y. Caloca', skipDown: 'Bajar', skipDownAria: 'Ir a la navegación' },
     footer: {
       name: 'Omar Yahir Caloca',
       role: 'Artista y diseñador',

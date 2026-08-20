@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
-import { HERO_LOGO } from '../assets'
+import { HERO_LOGO, HERO_LOGO_MOBILE } from '../assets'
 import { PROJECT_IDS, PROJECT_IMAGES, PROJECT_LINKS, PROJECT_ROUTES } from '../data/projects'
 import { useI18n } from '../i18n/I18nContext'
 
@@ -226,22 +226,48 @@ export default function MainPage({
       className={`screen main-page${lightBg ? ' main-page--light' : ''}`}
     >
       <main className="main-page__content">
-        <div id="home">
-          <Header />
-        </div>
+        <div className="main-page__hero-stage">
+          <div id="home">
+            <Header />
+          </div>
 
-        <section
-          id="about"
-          ref={heroRef}
-          className="main-page__hero"
-          aria-label={t('nav.about')}
-        >
-          <img
-            src={HERO_LOGO}
-            alt=""
-            className="main-page__hero-media"
-          />
-        </section>
+          <section
+            id="about"
+            ref={heroRef}
+            className="main-page__hero"
+            aria-label={t('nav.about')}
+          >
+            <img
+              src={HERO_LOGO}
+              alt=""
+              className="main-page__hero-media main-page__hero-media--desktop"
+            />
+            <img
+              src={HERO_LOGO_MOBILE}
+              alt=""
+              className="main-page__hero-media main-page__hero-media--mobile"
+            />
+          </section>
+
+          <button
+            type="button"
+            className="main-page__skip"
+            onClick={() => {
+              const page = pageRef.current
+              const nav = navRef.current
+              if (!page || !nav) return
+              const pageRect = page.getBoundingClientRect()
+              const navRect = nav.getBoundingClientRect()
+              const nextTop = page.scrollTop + (navRect.top - pageRect.top)
+              page.scrollTo({ top: Math.max(0, nextTop), behavior: 'smooth' })
+            }}
+            aria-label={t('header.skipDownAria')}
+          >
+            <span className="main-page__skip-arrow" aria-hidden="true">
+              &gt;
+            </span>
+          </button>
+        </div>
 
         <SiteNav
           navRef={navRef}

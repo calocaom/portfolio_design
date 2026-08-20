@@ -23,7 +23,24 @@
   paint-order: stroke fill;
   margin: 0;
   text-align: center;
-  padding: 0 var(--content-padding);
+  padding: 0.28em 0.75em;
+  border-radius: 999px;
+  background: color-mix(in srgb, #5a5a5a 32%, transparent);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.header .subheadline {
+  display: inline-flex;
+  width: fit-content;
+  max-width: calc(100% - 2 * var(--content-padding));
+  margin-inline: auto;
+  padding: 0.4em 1em;
+  border-radius: 999px;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-sizing: border-box;
 }
 
 @media (max-width: 640px) {
