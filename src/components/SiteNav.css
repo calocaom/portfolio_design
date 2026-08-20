@@ -264,6 +264,10 @@
     padding: 12px var(--content-padding);
   }
 
+  .site-nav--menu-open {
+    z-index: 40;
+  }
+
   .site-nav__bar--desktop {
     display: none;
   }
@@ -277,6 +281,40 @@
     gap: 12px;
     width: 100%;
   }
+
+  .site-nav--menu-open .site-nav__compact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 45;
+    width: auto;
+    padding:
+      calc(12px + env(safe-area-inset-top, 0px))
+      var(--content-padding)
+      12px;
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .site-nav--menu-open .site-nav__compact-lang,
+  .site-nav--menu-open .site-nav__home--compact {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+.site-nav--menu-open .site-nav__burger {
+  pointer-events: auto;
+  justify-self: end;
+  color: var(--deep-purple);
+}
+
+.main-page--light .site-nav--menu-open .site-nav__burger,
+.makeup-fx-screen .site-nav--menu-open .site-nav__burger,
+.projects-hub .site-nav--menu-open .site-nav__burger,
+.ux-case-study .site-nav--menu-open .site-nav__burger {
+  color: var(--deep-purple);
+}
 
   .site-nav__home--compact {
     justify-self: center;
@@ -299,7 +337,7 @@
     z-index: 25;
     width: 100%;
     padding:
-      calc(72px + env(safe-area-inset-top, 0px))
+      calc(88px + env(safe-area-inset-top, 0px))
       var(--content-padding)
       clamp(24px, 4vw, 40px);
     background: #f7f4fb;
@@ -311,6 +349,7 @@
     transition:
       transform 0.32s ease,
       visibility 0.32s ease;
+    cursor: pointer;
   }
 
   .site-nav--menu-open .site-nav__drawer {
@@ -334,6 +373,7 @@
     gap: clamp(18px, 4vh, 28px);
     width: min(100%, 22rem);
     text-align: right;
+    cursor: default;
   }
 
   .site-nav__drawer-item {

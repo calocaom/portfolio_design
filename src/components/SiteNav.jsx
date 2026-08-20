@@ -313,8 +313,12 @@ export default function SiteNav({ navRef, activeId = 'home', onNavigate, trail =
         className="site-nav__drawer"
         hidden={!menuOpen}
         aria-hidden={!menuOpen}
+        onClick={() => setPanel(null)}
       >
-        <ul className="site-nav__drawer-list">
+        <ul
+          className="site-nav__drawer-list"
+          onClick={(event) => event.stopPropagation()}
+        >
           {renderLinks('drawer')}
           {renderResume('drawer')}
         </ul>
