@@ -89,7 +89,7 @@ export const translations = {
         'I have the skills to negotiate and be persuasive while maintaining myself at all times true to my main values that are respect and working with transparency.',
       ],
       mission:
-        'I am convinced that we can create a harmonious link with technology advance while maintaining balance with nature, in that sense I think of the art and design as another language, where Programming is the script, UX/ UI is the interpretation and Design is the deliverance.',
+        'I am convinced that we can create a harmonious link with technology advance while maintaining balance with nature. In that sense I think of the art and design as another language, where Programming is the script, UX/ UI is the interpretation and Design is the deliverance.',
     },
     subheadline: [
       'Who am I?',

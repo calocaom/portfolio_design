@@ -43,6 +43,16 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: clamp(34px, 9vw, 52px);
+  }
+
+  .header .subheadline {
+    font-size: clamp(15px, 3.8vw, 18px);
+  }
+}
+
 @media (max-width: 640px) {
   .header__title {
     letter-spacing: 0.12em;
