@@ -50,6 +50,8 @@ export const translations = {
       worksAria: 'Works',
       educationTitle: 'Education',
       educationAria: 'Education',
+      downloadResume: 'Download my resume',
+      downloadResumeAria: 'Download resume PDF',
       education: [
         {
           program: 'Multimedia and Design Program',
@@ -631,6 +633,8 @@ export const translations = {
       worksAria: 'Arbejde',
       educationTitle: 'Uddannelse',
       educationAria: 'Uddannelse',
+      downloadResume: 'Download mit CV',
+      downloadResumeAria: 'Download CV som PDF',
       education: [
         {
           program: 'Multimedia and Design-programmet',
@@ -1223,6 +1227,8 @@ export const translations = {
       worksAria: 'Travaux',
       educationTitle: 'Formation',
       educationAria: 'Formation',
+      downloadResume: 'Télécharger mon CV',
+      downloadResumeAria: 'Télécharger le CV en PDF',
       education: [
         {
           program: 'Programme Multimedia and Design',
@@ -1816,6 +1822,8 @@ export const translations = {
       worksAria: 'Arbeiten',
       educationTitle: 'Ausbildung',
       educationAria: 'Ausbildung',
+      downloadResume: 'Lebenslauf herunterladen',
+      downloadResumeAria: 'Lebenslauf als PDF herunterladen',
       education: [
         {
           program: 'Multimedia-and-Design-Programm',
@@ -2409,6 +2417,8 @@ export const translations = {
       worksAria: 'Trabajos',
       educationTitle: 'Educación',
       educationAria: 'Educación',
+      downloadResume: 'Descargar mi currículum',
+      downloadResumeAria: 'Descargar currículum en PDF',
       education: [
         {
           program: 'Programa Multimedia and Design',

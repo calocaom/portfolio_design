@@ -528,6 +528,14 @@ export default function AboutScreen({ onNavigate }) {
                 </li>
               ))}
             </ul>
+            <a
+              className="about-screen__resume-download"
+              href={publicUrl('Omar-Caloca-Resume.pdf')}
+              download="Omar-Caloca-Resume.pdf"
+              aria-label={t('about.downloadResumeAria')}
+            >
+              {t('about.downloadResume')}
+            </a>
           </section>
 
           <section
