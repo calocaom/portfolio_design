@@ -100,22 +100,6 @@ export default function DigitalYoga({ onNavigate }) {
 
         <div className="ux-case-study__body">
           <div className="ux-case-study__split">
-            <div className="ux-case-study__video-frame">
-              <video
-                className="ux-case-study__video"
-                controls
-                playsInline
-                preload="metadata"
-                src={publicUrl('videos/yoga.mp4')}
-              >
-                {t('digitalYoga.videoFallback')}
-              </video>
-            </div>
-
-            <p className="ux-case-study__video-legend">
-              {t('digitalYoga.videoLegend')}
-            </p>
-
             <dl
               className="ux-case-study__meta"
               aria-label={t('digitalYoga.metaAria')}

@@ -569,11 +569,11 @@ export const translations = {
     projects: {
       1: {
         title: 'Design for\nDigital Solutions',
-        description: 'Figma, Content Creation, Photoshop, Video Editing, Graphics',
+        description: 'Figma, Content Creation, Graphic and Video Editing, E-Commerce, Testing, Brand Design',
       },
       2: {
         title: 'UX / UI Design',
-        description: 'Research, Analysis and Mapping',
+        description: 'Research, Analysis, UI definition, UX Mapping, Storytelling & Tone of Voice, UX Writing, Testing',
       },
       4: {
         title: 'Design for Makeup FX',
@@ -1161,11 +1161,11 @@ export const translations = {
     projects: {
       1: {
         title: 'Design til\nDigitale Løsninger',
-        description: 'Figma, Indholdsproduktion, Photoshop, Videoredigering, Grafik',
+        description: 'Figma, Indholdsproduktion, Grafisk og videoredigering, E-commerce, Testing, Branddesign',
       },
       2: {
         title: 'UX / UI Design',
-        description: 'Research, Analyse og Mapping',
+        description: 'Research, Analyse, UI-definition, UX Mapping, Storytelling & Tone of Voice, UX Writing, Testing',
       },
       4: {
         title: 'Design til Makeup FX',
@@ -1754,11 +1754,11 @@ export const translations = {
     projects: {
       1: {
         title: 'Design pour\nSolutions Numériques',
-        description: 'Figma, Création de Contenu, Photoshop, Montage Vidéo, Graphisme',
+        description: 'Figma, Création de contenu, Édition graphique et vidéo, E-commerce, Tests, Design de marque',
       },
       2: {
         title: 'Design UX / UI',
-        description: 'Recherche, Analyse et Cartographie',
+        description: 'Recherche, Analyse, Définition UI, UX Mapping, Storytelling & Tone of Voice, UX Writing, Tests',
       },
       4: {
         title: 'Design pour Makeup FX',
@@ -2347,11 +2347,11 @@ export const translations = {
     projects: {
       1: {
         title: 'Design für\nDigitale Lösungen',
-        description: 'Figma, Content Creation, Photoshop, Videobearbeitung, Grafik',
+        description: 'Figma, Content Creation, Grafik- und Videobearbeitung, E-Commerce, Testing, Brand Design',
       },
       2: {
         title: 'UX / UI Design',
-        description: 'Research, Analyse und Mapping',
+        description: 'Research, Analyse, UI-Definition, UX Mapping, Storytelling & Tone of Voice, UX Writing, Testing',
       },
       4: {
         title: 'Design für Makeup FX',
@@ -2940,11 +2940,11 @@ export const translations = {
     projects: {
       1: {
         title: 'Diseño para\nSoluciones Digitales',
-        description: 'Figma, Creación de Contenido, Photoshop, Edición de Video, Gráficos',
+        description: 'Figma, Creación de contenido, Edición gráfica y de vídeo, E-Commerce, Testing, Diseño de marca',
       },
       2: {
         title: 'Diseño UX / UI',
-        description: 'Investigación, Análisis y Mapeo',
+        description: 'Investigación, Análisis, Definición de UI, UX Mapping, Storytelling y Tone of Voice, UX Writing, Testing',
       },
       4: {
         title: 'Diseño para Makeup FX',
