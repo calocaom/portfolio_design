@@ -152,11 +152,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Aarhus Botanical Garden',
-          description: '"Discover Fun Facts about the Plants"',
+          description: 'Discover Fun Facts about the Plants',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '"Hidden Outdoor Workout Spaces in Aarhus"',
+          description: 'Hidden Outdoor Workout Spaces in Aarhus',
         },
       },
     },
@@ -171,7 +171,11 @@ export const translations = {
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Description to be set.',
+          description: 'Hidden Outdoor Workout Spaces in Aarhus',
+        },
+        projectThree: {
+          title: 'Blå Sol',
+          description: 'Expanding navigation and linking people at the festival.',
         },
       },
     },
@@ -568,6 +572,25 @@ export const translations = {
         client: 'City of Aarhus',
       },
     },
+    uxProject: {
+      title: 'Blå Sol',
+      description: '',
+      navCrumb: 'Blå Sol',
+      problemDescription:
+        'How may we create a feature for Blå Sol Festival that facilitates the attendees’ navigation around the area, reduces the struggle of finding their friends, and addresses their frustrations about crowded areas and long queues?',
+      researchSummary: [
+        'While conducting desk research and interviewing people who match Blå Sol target audience and frequent music festival attenders, we identified some key issues they experience: They struggle to navigate the big festival areas and find relevant locations like stages, bars and toilets, they feel frustrated about long queues and crowded areas, and they spend too much time trying to find their friends around the festival after they split.',
+        'A solution is needed to facilitate the navigation and help finding main locations while reducing frustrations finding the people they attend with.',
+      ],
+      meta: {
+        date: '27th April - 22nd May 2026',
+        team: '4 students',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        target: 'People ages 18 - 25',
+        client: 'Blå Sol Festival',
+      },
+    },
     projects: {
       1: {
         title: 'Design for\nDigital Solutions',
@@ -735,11 +758,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Aarhus Botaniske Have',
-          description: '"Opdag Sjove Fakta om Planterne"',
+          description: 'Opdag Sjove Fakta om Planterne',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '"Skjulte Udendørs Træningssteder i Aarhus"',
+          description: 'Skjulte Udendørs Træningssteder i Aarhus',
         },
       },
     },
@@ -754,7 +777,11 @@ export const translations = {
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Beskrivelse sættes senere.',
+          description: 'Skjulte Udendørs Træningssteder i Aarhus',
+        },
+        projectThree: {
+          title: 'Blå Sol',
+          description: 'Udvider navigation og forbinder mennesker på festivalen.',
         },
       },
     },
@@ -1162,6 +1189,25 @@ export const translations = {
         client: 'Aarhus Kommune',
       },
     },
+    uxProject: {
+      title: 'Blå Sol',
+      description: '',
+      navCrumb: 'Blå Sol',
+      problemDescription:
+        'Hvordan kan vi skabe en funktion til Blå Sol Festival, der gør det lettere for gæsterne at finde rundt i området, reducerer besværet med at finde deres venner, og imødekommer deres frustrationer over overfyldte områder og lange køer?',
+      researchSummary: [
+        'Mens vi gennemførte desk research og interviewede personer, der matcher Blå Sols målgruppe og ofte går til musikfestivaler, identificerede vi nogle centrale problemer: De har svært ved at finde rundt på de store festivalområder og finde relevante steder som scener, barer og toiletter, de er frustrerede over lange køer og overfyldte områder, og de bruger for meget tid på at finde deres venner på festivalen, efter de har splittet op.',
+        'Der er brug for en løsning, der letter navigationen og hjælper med at finde de vigtigste steder, samtidig med at frustrationerne ved at finde dem, man er til festival med, reduceres.',
+      ],
+      meta: {
+        date: '27. april - 22. maj 2026',
+        team: '4 studerende',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        target: 'Personer i alderen 18–25',
+        client: 'Blå Sol Festival',
+      },
+    },
     projects: {
       1: {
         title: 'Design til\nDigitale Løsninger',
@@ -1329,11 +1375,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Jardin Botanique d’Aarhus',
-          description: '« Découvrez des Faits amusants sur les Plantes »',
+          description: 'Découvrez des Faits amusants sur les Plantes',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '« Espaces d’Entraînement en plein air cachés à Aarhus »',
+          description: 'Espaces d’Entraînement en plein air cachés à Aarhus',
         },
       },
     },
@@ -1348,7 +1394,11 @@ export const translations = {
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Description à définir.',
+          description: 'Espaces d’Entraînement en plein air cachés à Aarhus',
+        },
+        projectThree: {
+          title: 'Blå Sol',
+          description: 'Étendre la navigation et relier les personnes au festival.',
         },
       },
     },
@@ -1757,6 +1807,25 @@ export const translations = {
         client: 'Ville d’Aarhus',
       },
     },
+    uxProject: {
+      title: 'Blå Sol',
+      description: '',
+      navCrumb: 'Blå Sol',
+      problemDescription:
+        'Comment créer une fonctionnalité pour le Blå Sol Festival qui facilite la navigation des festivaliers dans l’espace, réduit la difficulté à retrouver leurs amis, et répond à leurs frustrations liées aux zones bondées et aux longues files d’attente ?',
+      researchSummary: [
+        'En menant une desk research et en interviewant des personnes qui correspondent au public cible de Blå Sol et fréquentent souvent des festivals de musique, nous avons identifié plusieurs problèmes clés : elles ont du mal à s’orienter dans les grands espaces du festival et à trouver des lieux pertinents comme les scènes, les bars et les toilettes, elles sont frustrées par les longues files d’attente et les zones bondées, et elles passent trop de temps à retrouver leurs amis autour du festival après s’être séparées.',
+        'Une solution est nécessaire pour faciliter la navigation et aider à trouver les lieux principaux, tout en réduisant les frustrations liées à la recherche des personnes avec lesquelles elles viennent.',
+      ],
+      meta: {
+        date: '27 avril - 22 mai 2026',
+        team: '4 étudiants',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        target: 'Personnes de 18 à 25 ans',
+        client: 'Blå Sol Festival',
+      },
+    },
     projects: {
       1: {
         title: 'Design pour\nSolutions Numériques',
@@ -1924,11 +1993,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Botanischer Garten Aarhus',
-          description: '„Entdecke spannende Fakten über die Pflanzen“',
+          description: 'Entdecke spannende Fakten über die Pflanzen',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '„Versteckte Outdoor-Workout-Orte in Aarhus“',
+          description: 'Versteckte Outdoor-Workout-Orte in Aarhus',
         },
       },
     },
@@ -1943,7 +2012,11 @@ export const translations = {
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Beschreibung folgt später.',
+          description: 'Versteckte Outdoor-Workout-Orte in Aarhus',
+        },
+        projectThree: {
+          title: 'Blå Sol',
+          description: 'Navigation erweitern und Menschen auf dem Festival verbinden.',
         },
       },
     },
@@ -2352,6 +2425,25 @@ export const translations = {
         client: 'Stadt Aarhus',
       },
     },
+    uxProject: {
+      title: 'Blå Sol',
+      description: '',
+      navCrumb: 'Blå Sol',
+      problemDescription:
+        'Wie können wir eine Funktion für das Blå Sol Festival schaffen, die den Besucher:innen die Navigation auf dem Gelände erleichtert, die Suche nach Freund:innen vereinfacht und Frustrationen über überfüllte Bereiche und lange Warteschlangen adressiert?',
+      researchSummary: [
+        'Bei Desk Research und Interviews mit Personen, die zur Zielgruppe von Blå Sol passen und regelmäßig Musikfestivals besuchen, haben wir zentrale Probleme identifiziert: Sie tun sich schwer, sich auf den großen Festivalgeländen zurechtzufinden und relevante Orte wie Bühnen, Bars und Toiletten zu finden, sie sind frustriert über lange Warteschlangen und überfüllte Bereiche, und sie verbringen zu viel Zeit damit, ihre Freund:innen auf dem Festival wiederzufinden, nachdem sie sich getrennt haben.',
+        'Es braucht eine Lösung, die die Navigation erleichtert, beim Finden der wichtigsten Orte hilft und Frustrationen beim Wiederfinden der Menschen, mit denen man das Festival besucht, verringert.',
+      ],
+      meta: {
+        date: '27. April - 22. Mai 2026',
+        team: '4 Studierende',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        target: 'Menschen zwischen 18 und 25 Jahren',
+        client: 'Blå Sol Festival',
+      },
+    },
     projects: {
       1: {
         title: 'Design für\nDigitale Lösungen',
@@ -2519,11 +2611,11 @@ export const translations = {
       mosaics: {
         projectOne: {
           title: 'Jardín Botánico de Aarhus',
-          description: '"Descubre Datos curiosos sobre las Plantas"',
+          description: 'Descubre Datos curiosos sobre las Plantas',
         },
         projectTwo: {
           title: 'Yoga',
-          description: '"Espacios ocultos de Entrenamiento al Aire libre en Aarhus"',
+          description: 'Espacios ocultos de Entrenamiento al Aire libre en Aarhus',
         },
       },
     },
@@ -2538,7 +2630,11 @@ export const translations = {
         },
         projectTwo: {
           title: 'Yoga',
-          description: 'Descripción por definir.',
+          description: 'Espacios ocultos de Entrenamiento al Aire libre en Aarhus',
+        },
+        projectThree: {
+          title: 'Blå Sol',
+          description: 'Expandir la navegación y conectar a las personas en el festival.',
         },
       },
     },
@@ -2945,6 +3041,25 @@ export const translations = {
           'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript',
         target: 'Personas que visitan/viven en Aarhus, de 25 a 35 años',
         client: 'Ciudad de Aarhus',
+      },
+    },
+    uxProject: {
+      title: 'Blå Sol',
+      description: '',
+      navCrumb: 'Blå Sol',
+      problemDescription:
+        '¿Cómo podemos crear una función para Blå Sol Festival que facilite la navegación de los asistentes por el recinto, reduzca la dificultad de encontrar a sus amigos y atienda sus frustraciones por las zonas abarrotadas y las colas largas?',
+      researchSummary: [
+        'Al realizar desk research y entrevistar a personas que coinciden con el público objetivo de Blå Sol y asisten con frecuencia a festivales de música, identificamos algunos problemas clave: les cuesta orientarse en las grandes áreas del festival y encontrar ubicaciones relevantes como escenarios, bares y baños, se sienten frustradas por las colas largas y las zonas abarrotadas, y pasan demasiado tiempo buscando a sus amigos por el festival después de separarse.',
+        'Se necesita una solución que facilite la navegación y ayude a encontrar las ubicaciones principales, al tiempo que reduzca las frustraciones de encontrar a las personas con las que asisten.',
+      ],
+      meta: {
+        date: '27 de abril - 22 de mayo de 2026',
+        team: '4 estudiantes',
+        tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        target: 'Personas de 18 a 25 años',
+        client: 'Blå Sol Festival',
       },
     },
     projects: {

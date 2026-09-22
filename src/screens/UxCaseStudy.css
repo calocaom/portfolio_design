@@ -45,6 +45,10 @@
   color: var(--title-purple);
 }
 
+.ux-case-study__title--caps {
+  text-transform: uppercase;
+}
+
 .ux-case-study__lede {
   margin: 0 auto;
   max-width: 36rem;
@@ -111,6 +115,11 @@
 .ux-case-study__cta:focus-visible {
   outline: 2px solid color-mix(in srgb, var(--case-accent) 45%, transparent);
   outline-offset: 3px;
+}
+
+span.ux-case-study__cta {
+  cursor: default;
+  pointer-events: none;
 }
 
 .ux-case-study__body {

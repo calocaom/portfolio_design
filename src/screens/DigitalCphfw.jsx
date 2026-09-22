@@ -91,7 +91,9 @@ export default function DigitalCphfw({ onNavigate }) {
           className="ux-case-study__intro"
           aria-label={t('digitalCphfw.title')}
         >
-          <h1 className="ux-case-study__title">{t('digitalCphfw.title')}</h1>
+          <h1 className="ux-case-study__title ux-case-study__title--caps">
+            {t('digitalCphfw.title')}
+          </h1>
           <p className="ux-case-study__lede">{t('digitalCphfw.description')}</p>
           <ProjectCtas t={t} />
         </section>

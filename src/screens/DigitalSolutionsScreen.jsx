@@ -9,6 +9,7 @@ const MOSAICS = [
     coverPosition: 'left-top',
   },
   { key: 'projectTwo', route: 'digital-yoga', cover: DIGITAL_YOGA_COVER },
+  { key: 'projectThree', route: 'bla-sol' },
 ]
 
 export default function DigitalSolutionsScreen({ onNavigate }) {

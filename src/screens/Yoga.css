@@ -99,6 +99,12 @@
   background: #0b1520;
 }
 
+.yoga .ux-case-study__video-frame--empty {
+  aspect-ratio: 16 / 10;
+  min-height: 180px;
+  background: color-mix(in srgb, var(--deep-blue) 16%, #e8eef4);
+}
+
 .yoga .ux-case-study__video {
   position: static;
   width: 100%;

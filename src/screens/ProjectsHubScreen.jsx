@@ -53,7 +53,15 @@ export default function ProjectsHubScreen({
                     ) : null}
                   </div>
                   <div className="projects-hub__mosaic-copy">
-                    <h2 className="projects-hub__mosaic-title">{title}</h2>
+                    <h2
+                      className={`projects-hub__mosaic-title${
+                        /^cphfw$/i.test(title)
+                          ? ' projects-hub__mosaic-title--caps'
+                          : ''
+                      }`}
+                    >
+                      {title}
+                    </h2>
                     <p className="projects-hub__mosaic-description">
                       {description}
                     </p>

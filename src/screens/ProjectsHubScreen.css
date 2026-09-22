@@ -161,6 +161,10 @@ button.projects-hub__mosaic--link:focus-visible {
   color: var(--title-purple);
 }
 
+.projects-hub__mosaic-title--caps {
+  text-transform: uppercase;
+}
+
 .projects-hub__mosaic-description {
   margin: 0;
   font-family: var(--font-body);

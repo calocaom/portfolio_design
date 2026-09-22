@@ -188,7 +188,7 @@
   font-size: clamp(18px, 2.2vw, 26px);
   font-weight: 700;
   letter-spacing: 0.22em;
-  text-transform: lowercase;
+  text-transform: uppercase;
   color: var(--title-purple);
   cursor: pointer;
   transition:

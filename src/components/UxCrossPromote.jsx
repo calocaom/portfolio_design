@@ -33,7 +33,13 @@ export default function UxCrossPromote({
             }`}
           />
         </span>
-        <span className="ux-cross-promote__title">{title}</span>
+        <span
+          className={`ux-cross-promote__title${
+            /^cphfw$/i.test(title) ? ' ux-cross-promote__title--caps' : ''
+          }`}
+        >
+          {title}
+        </span>
       </button>
     </section>
   )
