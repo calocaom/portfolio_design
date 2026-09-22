@@ -578,7 +578,7 @@ export const translations = {
     },
     uxProject: {
       title: 'Blå Sol',
-      description: '',
+      description: 'Expanding navigation and linking people at the festival.',
       navCrumb: 'Blå Sol',
       problemDescription:
         'How may we create a feature for Blå Sol Festival that facilitates the attendees’ navigation around the area, reduces the struggle of finding their friends, and addresses their frustrations about crowded areas and long queues?',
@@ -615,11 +615,14 @@ export const translations = {
         prev: 'Previous screen',
         next: 'Next screen',
         legends: [
-          'Festival map with filters and locations',
-          'Map with live stages, toilets, and bars',
-          'Join or create a group from the map',
-          'Create a group or join an existing one',
-          'Group members, invitation code, and location sharing',
+          'The final result of the navigation solution of the festival with filters integrated based on user preference and research. The map extension follows the style and identity of the current Blå Sol app.',
+          'When filtering stages, users expected to see information about who is performing currently / next. The adjustments were implemented.',
+          'Information on the capabilities after creating a group is displayed on click in order to not overcrowd the screen and maintain visual aesthetics.',
+          'Create a group or join an existing group by invitation code are the alternatives to maintain simplicity of choices.',
+          'Group admin can create a personalised code to invite others, when adding an email the people will get a notification to join.',
+          'When filtering bars or restrooms, levels of people display on red, orange or green indicating the level of crowd.',
+          'After creating a group, a meeting point can be established on the map, time selection is available.',
+          'When creating a meeting point or being added to a group, a notification will appear if app notifications are consented.',
         ],
       },
       hifiDescription:
@@ -1250,7 +1253,7 @@ export const translations = {
     },
     uxProject: {
       title: 'Blå Sol',
-      description: '',
+      description: 'Udvider navigation og forbinder mennesker på festivalen.',
       navCrumb: 'Blå Sol',
       problemDescription:
         'Hvordan kan vi skabe en funktion til Blå Sol Festival, der gør det lettere for gæsterne at finde rundt i området, reducerer besværet med at finde deres venner, og imødekommer deres frustrationer over overfyldte områder og lange køer?',
@@ -1287,11 +1290,14 @@ export const translations = {
         prev: 'Forrige skærm',
         next: 'Næste skærm',
         legends: [
-          'Festivalkort med filtre og lokationer',
-          'Kort med live scener, toiletter og barer',
-          'Tilslut dig eller opret en gruppe fra kortet',
-          'Opret en gruppe eller tilslut dig en eksisterende',
-          'Gruppemedlemmer, invitationskode og lokationsdeling',
+          'Det endelige resultat af festivalens navigationsløsning med filtre integreret ud fra brugerpræferencer og research. Kortudvidelsen følger stilen og identiteten i den nuværende Blå Sol-app.',
+          'Når brugerne filtrerer scener, forventede de at se information om, hvem der optræder nu / næste. Justeringerne blev implementeret.',
+          'Information om mulighederne efter oprettelse af en gruppe vises ved klik, så skærmen ikke bliver overfyldt, og den visuelle æstetik bevares.',
+          'At oprette en gruppe eller tilslutte sig en eksisterende gruppe med invitationskode er alternativerne for at bevare enkelheden i valgene.',
+          'Gruppeadmin kan oprette en personlig kode for at invitere andre. Når en e-mail tilføjes, får personerne en notifikation om at deltage.',
+          'Når barer eller toiletter filtreres, vises niveauer af mennesker i rød, orange eller grøn, som angiver trængselsniveauet.',
+          'Efter oprettelse af en gruppe kan et mødested sættes på kortet, og tidspunkt kan vælges.',
+          'Når et mødested oprettes, eller man bliver tilføjet til en gruppe, vises en notifikation, hvis app-notifikationer er tilladt.',
         ],
       },
       hifiDescription:
@@ -1923,7 +1929,7 @@ export const translations = {
     },
     uxProject: {
       title: 'Blå Sol',
-      description: '',
+      description: 'Étendre la navigation et relier les personnes au festival.',
       navCrumb: 'Blå Sol',
       problemDescription:
         'Comment créer une fonctionnalité pour le Blå Sol Festival qui facilite la navigation des festivaliers dans l’espace, réduit la difficulté à retrouver leurs amis, et répond à leurs frustrations liées aux zones bondées et aux longues files d’attente ?',
@@ -1960,11 +1966,14 @@ export const translations = {
         prev: 'Écran précédent',
         next: 'Écran suivant',
         legends: [
-          'Carte du festival avec filtres et lieux',
-          'Carte avec scènes en live, toilettes et bars',
-          'Rejoindre ou créer un groupe depuis la carte',
-          'Créer un groupe ou rejoindre un groupe existant',
-          'Membres du groupe, code d’invitation et partage de localisation',
+          'Le résultat final de la solution de navigation du festival, avec des filtres intégrés selon les préférences des utilisateurs et la research. L’extension de la carte suit le style et l’identité de l’app Blå Sol actuelle.',
+          'En filtrant les scènes, les utilisateurs s’attendaient à voir qui se produit actuellement / ensuite. Les ajustements ont été mis en place.',
+          'Les informations sur les possibilités après la création d’un groupe s’affichent au clic, afin de ne pas surcharger l’écran et de préserver l’esthétique visuelle.',
+          'Créer un groupe ou rejoindre un groupe existant avec un code d’invitation sont les alternatives pour préserver la simplicité des choix.',
+          'L’administrateur du groupe peut créer un code personnalisé pour inviter d’autres personnes. Lors de l’ajout d’un e-mail, les personnes reçoivent une notification pour rejoindre le groupe.',
+          'En filtrant les bars ou les toilettes, les niveaux de fréquentation s’affichent en rouge, orange ou vert pour indiquer le niveau d’affluence.',
+          'Après la création d’un groupe, un point de rendez-vous peut être placé sur la carte, et le choix de l’heure est disponible.',
+          'Lors de la création d’un point de rendez-vous ou de l’ajout à un groupe, une notification apparaît si les notifications de l’app sont autorisées.',
         ],
       },
       hifiDescription:
@@ -2596,7 +2605,7 @@ export const translations = {
     },
     uxProject: {
       title: 'Blå Sol',
-      description: '',
+      description: 'Navigation erweitern und Menschen auf dem Festival verbinden.',
       navCrumb: 'Blå Sol',
       problemDescription:
         'Wie können wir eine Funktion für das Blå Sol Festival schaffen, die den Besucher:innen die Navigation auf dem Gelände erleichtert, die Suche nach Freund:innen vereinfacht und Frustrationen über überfüllte Bereiche und lange Warteschlangen adressiert?',
@@ -2633,11 +2642,14 @@ export const translations = {
         prev: 'Vorheriger Bildschirm',
         next: 'Nächster Bildschirm',
         legends: [
-          'Festival-Karte mit Filtern und Orten',
-          'Karte mit Live-Bühnen, Toiletten und Bars',
-          'Einer Gruppe beitreten oder sie von der Karte aus erstellen',
-          'Eine Gruppe erstellen oder einer bestehenden beitreten',
-          'Gruppenmitglieder, Einladungscode und Standortfreigabe',
+          'Das Endergebnis der Navigationslösung des Festivals mit Filtern, die auf Grundlage von Nutzerpräferenzen und Research integriert wurden. Die Kartenerweiterung folgt dem Stil und der Identität der aktuellen Blå Sol-App.',
+          'Beim Filtern der Bühnen erwarteten Nutzer:innen Informationen darüber, wer gerade / als Nächstes auftritt. Die Anpassungen wurden umgesetzt.',
+          'Informationen zu den Möglichkeiten nach dem Erstellen einer Gruppe werden per Klick angezeigt, damit der Bildschirm nicht überladen wird und die visuelle Ästhetik erhalten bleibt.',
+          'Eine Gruppe erstellen oder einer bestehenden Gruppe per Einladungscode beitreten sind die Alternativen, um die Einfachheit der Auswahl zu bewahren.',
+          'Der Gruppenadmin kann einen persönlichen Code erstellen, um andere einzuladen. Beim Hinzufügen einer E-Mail erhalten die Personen eine Benachrichtigung, der Gruppe beizutreten.',
+          'Beim Filtern der Bars oder Toiletten werden Personenzahlen in Rot, Orange oder Grün angezeigt und kennzeichnen den Grad der Überfüllung.',
+          'Nach dem Erstellen einer Gruppe kann ein Treffpunkt auf der Karte festgelegt werden, und eine Zeitauswahl ist verfügbar.',
+          'Beim Erstellen eines Treffpunkts oder beim Hinzufügen zu einer Gruppe erscheint eine Benachrichtigung, wenn App-Benachrichtigungen zugestimmt wurde.',
         ],
       },
       hifiDescription:
@@ -3269,7 +3281,7 @@ export const translations = {
     },
     uxProject: {
       title: 'Blå Sol',
-      description: '',
+      description: 'Expandir la navegación y conectar a las personas en el festival.',
       navCrumb: 'Blå Sol',
       problemDescription:
         '¿Cómo podemos crear una función para Blå Sol Festival que facilite la navegación de los asistentes por el recinto, reduzca la dificultad de encontrar a sus amigos y atienda sus frustraciones por las zonas abarrotadas y las colas largas?',
@@ -3306,11 +3318,14 @@ export const translations = {
         prev: 'Pantalla anterior',
         next: 'Pantalla siguiente',
         legends: [
-          'Mapa del festival con filtros y ubicaciones',
-          'Mapa con escenarios en vivo, baños y bares',
-          'Unirse o crear un grupo desde el mapa',
-          'Crear un grupo o unirse a uno existente',
-          'Miembros del grupo, código de invitación y ubicación compartida',
+          'El resultado final de la solución de navegación del festival, con filtros integrados según las preferencias de las personas usuarias y la research. La extensión del mapa sigue el estilo y la identidad de la app actual de Blå Sol.',
+          'Al filtrar escenarios, las personas usuarias esperaban ver información sobre quién actúa ahora / a continuación. Los ajustes se implementaron.',
+          'La información sobre las posibilidades después de crear un grupo se muestra al hacer clic, para no saturar la pantalla y mantener la estética visual.',
+          'Crear un grupo o unirse a un grupo existente con un código de invitación son las alternativas para mantener la simplicidad de las opciones.',
+          'El administrador del grupo puede crear un código personalizado para invitar a otras personas. Al añadir un correo, las personas recibirán una notificación para unirse.',
+          'Al filtrar bares o baños, los niveles de personas se muestran en rojo, naranja o verde e indican el nivel de aglomeración.',
+          'Después de crear un grupo, se puede establecer un punto de encuentro en el mapa, y la selección de hora está disponible.',
+          'Al crear un punto de encuentro o al ser añadido a un grupo, aparecerá una notificación si se han aceptado las notificaciones de la app.',
         ],
       },
       hifiDescription:

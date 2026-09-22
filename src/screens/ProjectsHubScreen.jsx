@@ -31,13 +31,15 @@ export default function ProjectsHubScreen({
           aria-label={t(`${i18nKey}.projectsAria`)}
         >
           <ul className="projects-hub__mosaic-grid">
-            {mosaics.map(({ key, route, cover, coverPosition }) => {
+            {mosaics.map(({ key, route, cover, coverPosition, coverFit }) => {
               const title = t(`${i18nKey}.mosaics.${key}.title`)
               const description = t(`${i18nKey}.mosaics.${key}.description`)
               const body = (
                 <>
                   <div
-                    className={`projects-hub__mosaic-panel${cover ? ' projects-hub__mosaic-panel--image' : ''}`}
+                    className={`projects-hub__mosaic-panel${cover ? ' projects-hub__mosaic-panel--image' : ''}${
+                      coverFit ? ` projects-hub__mosaic-panel--${coverFit}` : ''
+                    }`}
                     aria-hidden="true"
                   >
                     {cover ? (
@@ -48,7 +50,7 @@ export default function ProjectsHubScreen({
                           coverPosition
                             ? ` projects-hub__mosaic-image--${coverPosition}`
                             : ''
-                        }`}
+                        }${coverFit ? ` projects-hub__mosaic-image--${coverFit}` : ''}`}
                       />
                     ) : null}
                   </div>

@@ -127,12 +127,21 @@ button.projects-hub__mosaic--link:focus-visible {
   box-shadow: inset 0 0 0 1px color-mix(in srgb, #000000 18%, transparent);
 }
 
+.projects-hub__mosaic-panel--image.projects-hub__mosaic-panel--contain {
+  background: #3c3c3c;
+}
+
 .projects-hub__mosaic-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 45%;
+}
+
+.projects-hub__mosaic-image--contain {
+  object-fit: contain;
+  object-position: center;
 }
 
 .projects-hub__mosaic-image--top {

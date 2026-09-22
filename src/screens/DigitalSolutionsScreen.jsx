@@ -1,5 +1,5 @@
 import ProjectsHubScreen from './ProjectsHubScreen'
-import { DIGITAL_CPHFW_COVER, DIGITAL_YOGA_COVER } from '../assets'
+import { BLA_SOL_COVER, DIGITAL_CPHFW_COVER, DIGITAL_YOGA_COVER } from '../assets'
 
 const MOSAICS = [
   {
@@ -8,7 +8,12 @@ const MOSAICS = [
     cover: DIGITAL_CPHFW_COVER,
     coverPosition: 'left-top',
   },
-  { key: 'projectThree', route: 'bla-sol' },
+  {
+    key: 'projectThree',
+    route: 'bla-sol',
+    cover: BLA_SOL_COVER,
+    coverFit: 'contain',
+  },
   { key: 'projectTwo', route: 'digital-yoga', cover: DIGITAL_YOGA_COVER },
 ]
 

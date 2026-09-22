@@ -157,6 +157,26 @@
     touch-action: pan-y;
   }
 
+  .run-through__slide--active {
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    clip-path: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .run-through__slide--active .run-through__image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
   .run-through__slide--side,
   .run-through__slide--far {
     opacity: 0;
