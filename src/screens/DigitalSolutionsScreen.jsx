@@ -3,16 +3,16 @@ import { BLA_SOL_COVER, DIGITAL_CPHFW_COVER, DIGITAL_YOGA_COVER } from '../asset
 
 const MOSAICS = [
   {
-    key: 'projectOne',
-    route: 'digital-cphfw',
-    cover: DIGITAL_CPHFW_COVER,
-    coverPosition: 'left-top',
-  },
-  {
     key: 'projectThree',
     route: 'bla-sol',
     cover: BLA_SOL_COVER,
     coverFit: 'contain',
+  },
+  {
+    key: 'projectOne',
+    route: 'digital-cphfw',
+    cover: DIGITAL_CPHFW_COVER,
+    coverPosition: 'left-top',
   },
   { key: 'projectTwo', route: 'digital-yoga', cover: DIGITAL_YOGA_COVER },
 ]
