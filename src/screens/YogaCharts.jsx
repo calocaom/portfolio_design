@@ -1,4 +1,8 @@
 import {
+  BLA_SOL_COMPONENTS,
+  BLA_SOL_HIFI_TESTING,
+  BLA_SOL_STYLE_TILE,
+  BLA_SOL_WIREFRAMES,
   DIGITAL_CPHFW_HIFI_AFTER,
   DIGITAL_CPHFW_HIFI_BEFORE,
   DIGITAL_CPHFW_MOODBOARD,
@@ -448,6 +452,54 @@ export function HifiTestingChart() {
     <div className="yoga-portrait-chart">
       <img
         src={DIGITAL_YOGA_HIFI_TESTING}
+        alt=""
+        className="yoga-portrait-chart__img"
+      />
+    </div>
+  )
+}
+
+export function BlaSolHifiTestingChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={BLA_SOL_HIFI_TESTING}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function BlaSolComponentsChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={BLA_SOL_COMPONENTS}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function BlaSolWireframesChart() {
+  return (
+    <div className="yoga-ux-writing">
+      <img
+        src={BLA_SOL_WIREFRAMES}
+        alt=""
+        className="yoga-ux-writing__img"
+      />
+    </div>
+  )
+}
+
+export function BlaSolStyleTileChart() {
+  return (
+    <div className="yoga-portrait-chart">
+      <img
+        src={BLA_SOL_STYLE_TILE}
         alt=""
         className="yoga-portrait-chart__img"
       />

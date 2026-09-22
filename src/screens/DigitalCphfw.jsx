@@ -202,6 +202,7 @@ export default function DigitalCphfw({ onNavigate }) {
           route="digital-yoga"
           cover={DIGITAL_YOGA_COVER}
           title={t('digitalSolutions.mosaics.projectTwo.title')}
+          copyKey="digitalCrossPromote"
         />
 
         <Footer className="footer--in-flow" />

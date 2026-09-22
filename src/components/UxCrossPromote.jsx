@@ -7,6 +7,7 @@ export default function UxCrossPromote({
   cover,
   title,
   coverPosition,
+  copyKey = 'uxCrossPromote',
 }) {
   const { t } = useI18n()
 
@@ -15,9 +16,9 @@ export default function UxCrossPromote({
   return (
     <section
       className="ux-cross-promote"
-      aria-label={t('uxCrossPromote.aria')}
+      aria-label={t(`${copyKey}.aria`)}
     >
-      <h2 className="ux-cross-promote__heading">{t('uxCrossPromote.heading')}</h2>
+      <h2 className="ux-cross-promote__heading">{t(`${copyKey}.heading`)}</h2>
       <button
         type="button"
         className="ux-cross-promote__card"

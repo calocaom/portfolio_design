@@ -6,6 +6,11 @@
   background-color: #fbfcfd;
 }
 
+.yoga.bla-sol {
+  --page-bg: color-mix(in srgb, #4338ca 5.5%, #ffffff);
+  background-color: var(--page-bg);
+}
+
 .yoga .site-nav {
   background-color: var(--deep-purple);
   color: var(--light-violet);

@@ -200,6 +200,7 @@ export default function DigitalYoga({ onNavigate }) {
           cover={DIGITAL_CPHFW_COVER}
           title={t('digitalSolutions.mosaics.projectOne.title')}
           coverPosition="left-top"
+          copyKey="digitalCrossPromote"
         />
 
         <Footer className="footer--in-flow" />

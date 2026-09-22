@@ -4,22 +4,65 @@ import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
 import UxCrossPromote from '../components/UxCrossPromote'
+import RunThroughCarousel from '../components/RunThroughCarousel'
 import { DIGITAL_CPHFW_COVER } from '../assets'
 import { useI18n } from '../i18n/I18nContext'
+import { BlaSolComponentsChart, BlaSolHifiTestingChart, BlaSolStyleTileChart, BlaSolWireframesChart } from './YogaCharts'
 
 const META_KEYS = ['date', 'team', 'tools', 'methods', 'target', 'client']
 const FIGMA_PROTOTYPE_URL =
   'https://www.figma.com/design/72KpB53cGOVd8RvmTbNsO1/Bla--Sol---Exam-project?m=auto&t=Z9K5tmv6CGfBUkmQ-1'
 const CODED_SOLUTION_URL = 'https://barbaraborini.github.io/Exam-Project-BlaSol/'
 
+function ResultsCopy({ results }) {
+  if (!results) return null
+
+  return (
+    <div className="ux-case-study__findings">
+      {(results.paragraphs ?? []).map((paragraph) => (
+        <p
+          key={paragraph}
+          className="ux-case-study__section-text ux-case-study__section-text--center"
+        >
+          {paragraph}
+        </p>
+      ))}
+      {results.needsLabel ? (
+        <p className="ux-case-study__section-text ux-case-study__section-text--center">
+          {results.needsLabel}
+        </p>
+      ) : null}
+      {results.needs?.length ? (
+        <ul className="ux-case-study__findings-list">
+          {results.needs.map((item) => (
+            <li key={item.need}>
+              {item.need} → {item.response}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {results.closing ? (
+        <p className="ux-case-study__section-text ux-case-study__section-text--center">
+          {results.closing}
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
 export default function UxProject({ onNavigate }) {
   const { dict, t } = useI18n()
   const meta = dict.uxProject.meta
   const description = t('uxProject.description')
-  const topicTitles = (dict.digitalCphfw?.topics ?? []).map((topic) => topic.title)
+  const topics = (dict.digitalCphfw?.topics ?? []).filter(
+    (topic) =>
+      topic.title !== 'Site Map' &&
+      topic.title !== 'Design Principles' &&
+      topic.title !== 'Moodboard',
+  )
 
   return (
-    <div className="screen ux-case-study yoga">
+    <div className="screen ux-case-study yoga bla-sol">
       <main className="ux-case-study__content">
         <SiteNav
           activeId="works"
@@ -56,6 +99,21 @@ export default function UxProject({ onNavigate }) {
               {t('digitalCphfw.codedSolutionCta')}
             </a>
           </div>
+        </section>
+
+        <section
+          className="ux-case-study__run-through"
+          aria-label={t('uxProject.runThrough.aria')}
+        >
+          <AnimatedTitle className="ux-case-study__subtitle">
+            {t('uxProject.runThrough.title')}
+          </AnimatedTitle>
+          <RunThroughCarousel
+            legends={dict.uxProject.runThrough?.legends ?? []}
+            prevLabel={t('uxProject.runThrough.prev')}
+            nextLabel={t('uxProject.runThrough.next')}
+            label={t('uxProject.runThrough.aria')}
+          />
         </section>
 
         <div className="ux-case-study__body">
@@ -118,17 +176,79 @@ export default function UxProject({ onNavigate }) {
           </section>
 
           <div className="ux-case-study__topic-list">
-            {topicTitles.map((title) => (
+            {topics.map((topic) => {
+              const title =
+                topic.imageKey === 'ux-writing'
+                  ? t('uxProject.componentsTitle')
+                  : topic.title
+
+              return (
               <section
-                key={title}
+                key={topic.title}
                 className="ux-case-study__section"
                 aria-label={title}
               >
                 <AnimatedTitle className="ux-case-study__subtitle">
                   {title}
                 </AnimatedTitle>
+                {topic.imageKey === 'wireframes' ? (
+                  <>
+                    <p className="ux-case-study__section-text ux-case-study__section-text--center">
+                      {t('uxProject.wireframesDescription')}
+                    </p>
+                    <figure
+                      className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
+                      aria-label={t('uxProject.wireframesImageAlt')}
+                    >
+                      <BlaSolWireframesChart />
+                    </figure>
+                  </>
+                ) : null}
+                {topic.imageKey === 'style-tile' ? (
+                  <>
+                    <p className="ux-case-study__section-text ux-case-study__section-text--center">
+                      {t('uxProject.styleTileDescription')}
+                    </p>
+                    <figure
+                      className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
+                      aria-label={t('uxProject.styleTileImageAlt')}
+                    >
+                      <BlaSolStyleTileChart />
+                    </figure>
+                  </>
+                ) : null}
+                {topic.imageKey === 'ux-writing' ? (
+                  <>
+                    <p className="ux-case-study__section-text ux-case-study__section-text--center">
+                      {t('uxProject.componentsDescription')}
+                    </p>
+                    <figure
+                      className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
+                      aria-label={t('uxProject.componentsImageAlt')}
+                    >
+                      <BlaSolComponentsChart />
+                    </figure>
+                  </>
+                ) : null}
+                {topic.imageKey === 'hifi-testing' ? (
+                  <>
+                    <p className="ux-case-study__section-text ux-case-study__section-text--center">
+                      {t('uxProject.hifiDescription')}
+                    </p>
+                    <figure
+                      className="ux-case-study__figure ux-case-study__figure--sm yoga-chart"
+                      aria-label={t('uxProject.hifiImageAlt')}
+                    >
+                      <BlaSolHifiTestingChart />
+                    </figure>
+                  </>
+                ) : null}
+                {topic.title === 'Results' ? (
+                  <ResultsCopy results={dict.uxProject.results} />
+                ) : null}
               </section>
-            ))}
+              )
+            })}
           </div>
         </div>
 
@@ -138,6 +258,7 @@ export default function UxProject({ onNavigate }) {
           cover={DIGITAL_CPHFW_COVER}
           title={t('digitalSolutions.mosaics.projectOne.title')}
           coverPosition="left-top"
+          copyKey="digitalCrossPromote"
         />
 
         <Footer className="footer--in-flow" />

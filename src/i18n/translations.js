@@ -183,6 +183,10 @@ export const translations = {
       heading: 'Check my other UX / UI Project',
       aria: 'Other UX / UI project',
     },
+    digitalCrossPromote: {
+      heading: 'Check my other Design for Digital Solutions project',
+      aria: 'Other Design for Digital Solutions project',
+    },
     digitalCphfw: {
       title: 'CPHFW',
       description: 'A digital runway to network in Copenhagen Fashion Week',
@@ -579,16 +583,67 @@ export const translations = {
       problemDescription:
         'How may we create a feature for Blå Sol Festival that facilitates the attendees’ navigation around the area, reduces the struggle of finding their friends, and addresses their frustrations about crowded areas and long queues?',
       researchSummary: [
-        'While conducting desk research and interviewing people who match Blå Sol target audience and frequent music festival attenders, we identified some key issues they experience: They struggle to navigate the big festival areas and find relevant locations like stages, bars and toilets, they feel frustrated about long queues and crowded areas, and they spend too much time trying to find their friends around the festival after they split.',
-        'A solution is needed to facilitate the navigation and help finding main locations while reducing frustrations finding the people they attend with.',
+        'While conducting desk research and interviewing people who match Blå Sol target audience and frequent music festival attenders, we identified some key issues they experience: They struggle to navigate the big festival areas and find relevant locations like stages, bars and toilets. They feel frustrated about long queues and crowded areas, and they spend too much time trying to find their friends around the festival after they split.',
+        'We found the current solution used for Blå Sol app content and design functional and relevant to the user. However, an extension is needed to facilitate the navigation and help finding main locations while reducing frustrations finding the people they attend with.',
       ],
       meta: {
         date: '27th April - 22nd May 2026',
         team: '4 students',
         tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
-        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, CSS, Javascript and React',
         target: 'People ages 18 - 25',
         client: 'Blå Sol Festival',
+      },
+      hifiImageAlt:
+        'Blå Sol hi-fi testing table with before, testing feedback, after, and comments',
+      componentsTitle: 'Components',
+      componentsImageAlt:
+        'Blå Sol hi-fi components board with map, group, and meetup UI elements',
+      componentsDescription:
+        'The final collection of components created on Figma:',
+      wireframesDescription:
+        'The final wireframes following the company style and identity:',
+      wireframesImageAlt:
+        'Blå Sol map wireframes for sign-up, create group, join group, and my group',
+      styleTileImageAlt:
+        'Blå Sol style tile with typography, palette, adjectives, and map icons',
+      styleTileDescription:
+        'A short guide to brand identity templates:',
+      runThrough: {
+        title: 'Run-through the solution:',
+        aria: 'Blå Sol solution run-through',
+        prev: 'Previous screen',
+        next: 'Next screen',
+        legends: [
+          'Festival map with filters and locations',
+          'Map with live stages, toilets, and bars',
+          'Join or create a group from the map',
+          'Create a group or join an existing one',
+          'Group members, invitation code, and location sharing',
+        ],
+      },
+      hifiDescription:
+        'We conducted testing at two stages. Below is how we implemented the feedback of our testers who we found on site and belong to the target group.',
+      results: {
+        paragraphs: [
+          'The patterns from research and mapping led us to fulfill the users’ desires. We found that the need to see the program and artists as much as a way of navigating. The two first features were already on the current Blå Sol app, so we made a feature for the map.',
+          'We believe it is a relevant solution in comparison to alternatives (Google Maps, Apple Maps) because it showcases the map area with specific locations of the event. Our main priority through testing was to upgrade and ensure the well functioning of the solution.',
+        ],
+        needsLabel: 'In response to their need to:',
+        needs: [
+          {
+            need: 'An alternative to navigate and keep track of their companions',
+            response:
+              'The map features a way to make a private group, showing its member’s location, and allowing users to create common meetup points.',
+          },
+          {
+            need: 'Avoid long queues and find a place to take a break',
+            response:
+              'We indicate queue levels and crowded areas on the map. We thought festival volunteers could update this information.',
+          },
+        ],
+        closing:
+          'The solution provides two alternatives; to navigate manually, or to filter through map sections for both types of users.',
       },
     },
     projects: {
@@ -788,6 +843,10 @@ export const translations = {
     uxCrossPromote: {
       heading: 'Se mit andet UX / UI-projekt',
       aria: 'Andet UX / UI-projekt',
+    },
+    digitalCrossPromote: {
+      heading: 'Se mit andet Design til Digitale Løsninger-projekt',
+      aria: 'Andet Design til Digitale Løsninger-projekt',
     },
     digitalCphfw: {
       title: 'CPHFW',
@@ -1196,16 +1255,67 @@ export const translations = {
       problemDescription:
         'Hvordan kan vi skabe en funktion til Blå Sol Festival, der gør det lettere for gæsterne at finde rundt i området, reducerer besværet med at finde deres venner, og imødekommer deres frustrationer over overfyldte områder og lange køer?',
       researchSummary: [
-        'Mens vi gennemførte desk research og interviewede personer, der matcher Blå Sols målgruppe og ofte går til musikfestivaler, identificerede vi nogle centrale problemer: De har svært ved at finde rundt på de store festivalområder og finde relevante steder som scener, barer og toiletter, de er frustrerede over lange køer og overfyldte områder, og de bruger for meget tid på at finde deres venner på festivalen, efter de har splittet op.',
-        'Der er brug for en løsning, der letter navigationen og hjælper med at finde de vigtigste steder, samtidig med at frustrationerne ved at finde dem, man er til festival med, reduceres.',
+        'Mens vi gennemførte desk research og interviewede personer, der matcher Blå Sols målgruppe og ofte går til musikfestivaler, identificerede vi nogle centrale problemer: De har svært ved at finde rundt på de store festivalområder og finde relevante steder som scener, barer og toiletter. De er frustrerede over lange køer og overfyldte områder, og de bruger for meget tid på at finde deres venner på festivalen, efter de har splittet op.',
+        'Vi fandt, at den nuværende løsning til indhold og design i Blå Sol-appen er funktionel og relevant for brugeren. Der er dog brug for en udvidelse, der letter navigationen og hjælper med at finde de vigtigste steder, samtidig med at frustrationerne ved at finde dem, man er til festival med, reduceres.',
       ],
       meta: {
         date: '27. april - 22. maj 2026',
         team: '4 studerende',
         tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
-        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, CSS, Javascript and React',
         target: 'Personer i alderen 18–25',
         client: 'Blå Sol Festival',
+      },
+      hifiImageAlt:
+        'Blå Sol hi-fi-testtabel med før, testing feedback, efter og kommentarer',
+      componentsTitle: 'Komponenter',
+      componentsImageAlt:
+        'Blå Sol hi-fi-komponenter med kort-, gruppe- og meetup-elementer',
+      componentsDescription:
+        'Den endelige samling af komponenter oprettet i Figma:',
+      wireframesDescription:
+        'De endelige wireframes, der følger virksomhedens stil og identitet:',
+      wireframesImageAlt:
+        'Blå Sol-kortwireframes til sign-up, opret gruppe, join gruppe og min gruppe',
+      styleTileImageAlt:
+        'Blå Sol style tile med typografi, palet, adjektiver og kortikoner',
+      styleTileDescription:
+        'En kort guide til brandidentitets-skabeloner:',
+      runThrough: {
+        title: 'Gennemgang af løsningen:',
+        aria: 'Gennemgang af Blå Sol-løsningen',
+        prev: 'Forrige skærm',
+        next: 'Næste skærm',
+        legends: [
+          'Festivalkort med filtre og lokationer',
+          'Kort med live scener, toiletter og barer',
+          'Tilslut dig eller opret en gruppe fra kortet',
+          'Opret en gruppe eller tilslut dig en eksisterende',
+          'Gruppemedlemmer, invitationskode og lokationsdeling',
+        ],
+      },
+      hifiDescription:
+        'Vi gennemførte test i to stadier. Nedenfor er, hvordan vi implementerede feedbacken fra vores testers, som vi fandt on site og tilhører målgruppen.',
+      results: {
+        paragraphs: [
+          'Mønstrene fra research og mapping førte os til at opfylde brugernes ønsker. Vi fandt, at behovet for at se programmet og kunstnerne er lige så stort som behovet for at kunne navigere. De to første funktioner fandtes allerede i den nuværende Blå Sol-app, så vi lavede en funktion til kortet.',
+          'Vi mener, det er en relevant løsning i forhold til alternativer (Google Maps, Apple Maps), fordi den viser festivalområdet med specifikke steder for eventet. Vores hovedprioritet gennem test var at opgradere og sikre, at løsningen fungerer godt.',
+        ],
+        needsLabel: 'Som svar på deres behov for at:',
+        needs: [
+          {
+            need: 'Have et alternativ til at navigere og holde styr på deres ledsagere',
+            response:
+              'Kortet giver mulighed for at oprette en privat gruppe, der viser medlemmernes placering, og lader brugerne oprette fælles mødesteder.',
+          },
+          {
+            need: 'Undgå lange køer og finde et sted at holde pause',
+            response:
+              'Vi viser kø-niveauer og overfyldte områder på kortet. Vi tænkte, at festivalfrivillige kunne opdatere denne information.',
+          },
+        ],
+        closing:
+          'Løsningen giver to alternativer: at navigere manuelt, eller at filtrere via kortsektioner for begge typer brugere.',
       },
     },
     projects: {
@@ -1405,6 +1515,10 @@ export const translations = {
     uxCrossPromote: {
       heading: 'Découvrez mon autre projet UX / UI',
       aria: 'Autre projet UX / UI',
+    },
+    digitalCrossPromote: {
+      heading: 'Découvrez mon autre projet Design pour Solutions Numériques',
+      aria: 'Autre projet Design pour Solutions Numériques',
     },
     digitalCphfw: {
       title: 'CPHFW',
@@ -1814,16 +1928,67 @@ export const translations = {
       problemDescription:
         'Comment créer une fonctionnalité pour le Blå Sol Festival qui facilite la navigation des festivaliers dans l’espace, réduit la difficulté à retrouver leurs amis, et répond à leurs frustrations liées aux zones bondées et aux longues files d’attente ?',
       researchSummary: [
-        'En menant une desk research et en interviewant des personnes qui correspondent au public cible de Blå Sol et fréquentent souvent des festivals de musique, nous avons identifié plusieurs problèmes clés : elles ont du mal à s’orienter dans les grands espaces du festival et à trouver des lieux pertinents comme les scènes, les bars et les toilettes, elles sont frustrées par les longues files d’attente et les zones bondées, et elles passent trop de temps à retrouver leurs amis autour du festival après s’être séparées.',
-        'Une solution est nécessaire pour faciliter la navigation et aider à trouver les lieux principaux, tout en réduisant les frustrations liées à la recherche des personnes avec lesquelles elles viennent.',
+        'En menant une desk research et en interviewant des personnes qui correspondent au public cible de Blå Sol et fréquentent souvent des festivals de musique, nous avons identifié plusieurs problèmes clés : elles ont du mal à s’orienter dans les grands espaces du festival et à trouver des lieux pertinents comme les scènes, les bars et les toilettes. Elles sont frustrées par les longues files d’attente et les zones bondées, et elles passent trop de temps à retrouver leurs amis autour du festival après s’être séparées.',
+        'Nous avons trouvé la solution actuelle de contenu et de design de l’app Blå Sol fonctionnelle et pertinente pour l’utilisateur. Cependant, une extension est nécessaire pour faciliter la navigation et aider à trouver les lieux principaux, tout en réduisant les frustrations liées à la recherche des personnes avec lesquelles elles viennent.',
       ],
       meta: {
         date: '27 avril - 22 mai 2026',
         team: '4 étudiants',
         tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
-        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, CSS, Javascript and React',
         target: 'Personnes de 18 à 25 ans',
         client: 'Blå Sol Festival',
+      },
+      hifiImageAlt:
+        'Tableau de tests hi-fi Blå Sol avec avant, retours de test, après et commentaires',
+      componentsTitle: 'Composants',
+      componentsImageAlt:
+        'Planche de composants hi-fi Blå Sol avec éléments de carte, de groupe et de rendez-vous',
+      componentsDescription:
+        'La collection finale de composants créés sur Figma :',
+      wireframesDescription:
+        'Les wireframes finales suivant le style et l’identité de l’entreprise :',
+      wireframesImageAlt:
+        'Wireframes de la carte Blå Sol pour inscription, création de groupe, rejoindre un groupe et mon groupe',
+      styleTileImageAlt:
+        'Style tile Blå Sol avec typographie, palette, adjectifs et icônes de carte',
+      styleTileDescription:
+        'Un court guide des modèles d’identité de marque :',
+      runThrough: {
+        title: 'Parcours de la solution :',
+        aria: 'Parcours de la solution Blå Sol',
+        prev: 'Écran précédent',
+        next: 'Écran suivant',
+        legends: [
+          'Carte du festival avec filtres et lieux',
+          'Carte avec scènes en live, toilettes et bars',
+          'Rejoindre ou créer un groupe depuis la carte',
+          'Créer un groupe ou rejoindre un groupe existant',
+          'Membres du groupe, code d’invitation et partage de localisation',
+        ],
+      },
+      hifiDescription:
+        'Nous avons mené des tests en deux étapes. Ci-dessous, la façon dont nous avons mis en œuvre les retours de nos testeurs, rencontrés sur place et appartenant au groupe cible.',
+      results: {
+        paragraphs: [
+          'Les schémas issus de la research et du mapping nous ont conduits à répondre aux désirs des utilisateurs. Nous avons constaté que le besoin de voir le programme et les artistes est aussi important que celui de s’orienter. Les deux premières fonctionnalités existaient déjà dans l’app Blå Sol actuelle, nous avons donc créé une fonctionnalité pour la carte.',
+          'Nous pensons que c’est une solution pertinente par rapport aux alternatives (Google Maps, Apple Maps), car elle présente la zone de la carte avec les emplacements spécifiques de l’événement. Notre priorité principale pendant les tests était d’améliorer et d’assurer le bon fonctionnement de la solution.',
+        ],
+        needsLabel: 'En réponse à leur besoin de :',
+        needs: [
+          {
+            need: 'Une alternative pour s’orienter et suivre leurs compagnons',
+            response:
+              'La carte permet de créer un groupe privé, d’afficher la localisation de ses membres, et de créer des points de rendez-vous communs.',
+          },
+          {
+            need: 'Éviter les longues files d’attente et trouver un endroit pour faire une pause',
+            response:
+              'Nous indiquons les niveaux de files d’attente et les zones bondées sur la carte. Nous avons pensé que les bénévoles du festival pourraient mettre à jour ces informations.',
+          },
+        ],
+        closing:
+          'La solution offre deux alternatives : naviguer manuellement, ou filtrer par sections de la carte, pour les deux types d’utilisateurs.',
       },
     },
     projects: {
@@ -2023,6 +2188,10 @@ export const translations = {
     uxCrossPromote: {
       heading: 'Mein anderes UX / UI-Projekt ansehen',
       aria: 'Anderes UX / UI-Projekt',
+    },
+    digitalCrossPromote: {
+      heading: 'Mein anderes Design für Digitale Lösungen-Projekt ansehen',
+      aria: 'Anderes Design für Digitale Lösungen-Projekt',
     },
     digitalCphfw: {
       title: 'CPHFW',
@@ -2432,16 +2601,67 @@ export const translations = {
       problemDescription:
         'Wie können wir eine Funktion für das Blå Sol Festival schaffen, die den Besucher:innen die Navigation auf dem Gelände erleichtert, die Suche nach Freund:innen vereinfacht und Frustrationen über überfüllte Bereiche und lange Warteschlangen adressiert?',
       researchSummary: [
-        'Bei Desk Research und Interviews mit Personen, die zur Zielgruppe von Blå Sol passen und regelmäßig Musikfestivals besuchen, haben wir zentrale Probleme identifiziert: Sie tun sich schwer, sich auf den großen Festivalgeländen zurechtzufinden und relevante Orte wie Bühnen, Bars und Toiletten zu finden, sie sind frustriert über lange Warteschlangen und überfüllte Bereiche, und sie verbringen zu viel Zeit damit, ihre Freund:innen auf dem Festival wiederzufinden, nachdem sie sich getrennt haben.',
-        'Es braucht eine Lösung, die die Navigation erleichtert, beim Finden der wichtigsten Orte hilft und Frustrationen beim Wiederfinden der Menschen, mit denen man das Festival besucht, verringert.',
+        'Bei Desk Research und Interviews mit Personen, die zur Zielgruppe von Blå Sol passen und regelmäßig Musikfestivals besuchen, haben wir zentrale Probleme identifiziert: Sie tun sich schwer, sich auf den großen Festivalgeländen zurechtzufinden und relevante Orte wie Bühnen, Bars und Toiletten zu finden. Sie sind frustriert über lange Warteschlangen und überfüllte Bereiche, und sie verbringen zu viel Zeit damit, ihre Freund:innen auf dem Festival wiederzufinden, nachdem sie sich getrennt haben.',
+        'Wir fanden die aktuelle Lösung für Inhalt und Design der Blå Sol-App funktional und relevant für die Nutzer:innen. Es braucht jedoch eine Erweiterung, die die Navigation erleichtert, beim Finden der wichtigsten Orte hilft und Frustrationen beim Wiederfinden der Menschen, mit denen man das Festival besucht, verringert.',
       ],
       meta: {
         date: '27. April - 22. Mai 2026',
         team: '4 Studierende',
         tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
-        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, CSS, Javascript and React',
         target: 'Menschen zwischen 18 und 25 Jahren',
         client: 'Blå Sol Festival',
+      },
+      hifiImageAlt:
+        'Blå Sol Hi-fi-Testing-Tabelle mit Before, Testing-Feedback, After und Comments',
+      componentsTitle: 'Komponenten',
+      componentsImageAlt:
+        'Blå Sol Hi-fi-Komponenten mit Karten-, Gruppen- und Meetup-Elementen',
+      componentsDescription:
+        'Die finale Sammlung der in Figma erstellten Komponenten:',
+      wireframesDescription:
+        'Die finalen Wireframes gemäß Firmenstil und -identität:',
+      wireframesImageAlt:
+        'Blå Sol-Karten-Wireframes für Anmeldung, Gruppe erstellen, Gruppe beitreten und Meine Gruppe',
+      styleTileImageAlt:
+        'Blå Sol Style Tile mit Typografie, Palette, Adjektiven und Karten-Icons',
+      styleTileDescription:
+        'Ein kurzer Leitfaden zu Markenidentitäts-Vorlagen:',
+      runThrough: {
+        title: 'Durchlauf der Lösung:',
+        aria: 'Durchlauf der Blå Sol-Lösung',
+        prev: 'Vorheriger Bildschirm',
+        next: 'Nächster Bildschirm',
+        legends: [
+          'Festival-Karte mit Filtern und Orten',
+          'Karte mit Live-Bühnen, Toiletten und Bars',
+          'Einer Gruppe beitreten oder sie von der Karte aus erstellen',
+          'Eine Gruppe erstellen oder einer bestehenden beitreten',
+          'Gruppenmitglieder, Einladungscode und Standortfreigabe',
+        ],
+      },
+      hifiDescription:
+        'Wir haben in zwei Phasen getestet. Unten ist, wie wir das Feedback unserer Tester:innen umgesetzt haben, die wir vor Ort gefunden haben und zur Zielgruppe gehören.',
+      results: {
+        paragraphs: [
+          'Die Muster aus Research und Mapping haben uns dazu geführt, die Wünsche der Nutzer:innen zu erfüllen. Wir haben festgestellt, dass der Bedarf, Programm und Künstler:innen zu sehen, ebenso groß ist wie der, sich zurechtzufinden. Die ersten beiden Funktionen gab es bereits in der aktuellen Blå Sol-App, daher haben wir eine Funktion für die Karte entwickelt.',
+          'Wir halten sie für eine relevante Lösung im Vergleich zu Alternativen (Google Maps, Apple Maps), weil sie den Kartenbereich mit spezifischen Orten des Events zeigt. Unser Hauptziel beim Testing war, die Lösung zu verbessern und ihre zuverlässige Funktion sicherzustellen.',
+        ],
+        needsLabel: 'Als Antwort auf ihr Bedürfnis:',
+        needs: [
+          {
+            need: 'Eine Alternative, um zu navigieren und ihre Begleitung im Blick zu behalten',
+            response:
+              'Die Karte ermöglicht eine private Gruppe, zeigt den Standort der Mitglieder und lässt Nutzer:innen gemeinsame Treffpunkte anlegen.',
+          },
+          {
+            need: 'Lange Warteschlangen zu vermeiden und einen Ort zum Ausruhen zu finden',
+            response:
+              'Wir zeigen Warteschlangen-Level und überfüllte Bereiche auf der Karte. Festival-Freiwillige könnten diese Informationen aktualisieren.',
+          },
+        ],
+        closing:
+          'Die Lösung bietet zwei Alternativen: manuell zu navigieren oder über Kartenabschnitte zu filtern – für beide Nutzertypen.',
       },
     },
     projects: {
@@ -2641,6 +2861,10 @@ export const translations = {
     uxCrossPromote: {
       heading: 'Mira mi otro proyecto UX / UI',
       aria: 'Otro proyecto UX / UI',
+    },
+    digitalCrossPromote: {
+      heading: 'Mira mi otro proyecto de Diseño para Soluciones Digitales',
+      aria: 'Otro proyecto de Diseño para Soluciones Digitales',
     },
     digitalCphfw: {
       title: 'CPHFW',
@@ -3050,16 +3274,67 @@ export const translations = {
       problemDescription:
         '¿Cómo podemos crear una función para Blå Sol Festival que facilite la navegación de los asistentes por el recinto, reduzca la dificultad de encontrar a sus amigos y atienda sus frustraciones por las zonas abarrotadas y las colas largas?',
       researchSummary: [
-        'Al realizar desk research y entrevistar a personas que coinciden con el público objetivo de Blå Sol y asisten con frecuencia a festivales de música, identificamos algunos problemas clave: les cuesta orientarse en las grandes áreas del festival y encontrar ubicaciones relevantes como escenarios, bares y baños, se sienten frustradas por las colas largas y las zonas abarrotadas, y pasan demasiado tiempo buscando a sus amigos por el festival después de separarse.',
-        'Se necesita una solución que facilite la navegación y ayude a encontrar las ubicaciones principales, al tiempo que reduzca las frustraciones de encontrar a las personas con las que asisten.',
+        'Al realizar desk research y entrevistar a personas que coinciden con el público objetivo de Blå Sol y asisten con frecuencia a festivales de música, identificamos algunos problemas clave: les cuesta orientarse en las grandes áreas del festival y encontrar ubicaciones relevantes como escenarios, bares y baños. Se sienten frustradas por las colas largas y las zonas abarrotadas, y pasan demasiado tiempo buscando a sus amigos por el festival después de separarse.',
+        'Vimos que la solución actual de contenido y diseño de la app Blå Sol es funcional y relevante para las personas usuarias. Sin embargo, se necesita una extensión que facilite la navegación y ayude a encontrar las ubicaciones principales, al tiempo que reduzca las frustraciones de encontrar a las personas con las que asisten.',
       ],
       meta: {
         date: '27 de abril - 22 de mayo de 2026',
         team: '4 estudiantes',
         tools: 'Figjam, Figma, VS Code, Photoshop, Video Editing, Photography, Graphic Design',
-        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, HTML, CSS and Javascript, React',
+        methods: 'UX/ UI Research and Mapping, Design Theory and Principles, Testing, Content Creation, CSS, Javascript and React',
         target: 'Personas de 18 a 25 años',
         client: 'Blå Sol Festival',
+      },
+      hifiImageAlt:
+        'Tabla de pruebas hi-fi de Blå Sol con antes, feedback de testing, después y comentarios',
+      componentsTitle: 'Componentes',
+      componentsImageAlt:
+        'Componentes hi-fi de Blå Sol con elementos de mapa, grupo y puntos de encuentro',
+      componentsDescription:
+        'La colección final de componentes creados en Figma:',
+      wireframesDescription:
+        'Los wireframes finales siguiendo el estilo y la identidad de la empresa:',
+      wireframesImageAlt:
+        'Wireframes del mapa Blå Sol para registro, crear grupo, unirse a un grupo y mi grupo',
+      styleTileImageAlt:
+        'Style tile de Blå Sol con tipografía, paleta, adjetivos e iconos del mapa',
+      styleTileDescription:
+        'Una guía breve de plantillas de identidad de marca:',
+      runThrough: {
+        title: 'Recorrido de la solución:',
+        aria: 'Recorrido de la solución Blå Sol',
+        prev: 'Pantalla anterior',
+        next: 'Pantalla siguiente',
+        legends: [
+          'Mapa del festival con filtros y ubicaciones',
+          'Mapa con escenarios en vivo, baños y bares',
+          'Unirse o crear un grupo desde el mapa',
+          'Crear un grupo o unirse a uno existente',
+          'Miembros del grupo, código de invitación y ubicación compartida',
+        ],
+      },
+      hifiDescription:
+        'Realizamos pruebas en dos etapas. Abajo se muestra cómo implementamos el feedback de nuestras personas testers, a quienes encontramos in situ y que pertenecen al grupo objetivo.',
+      results: {
+        paragraphs: [
+          'Los patrones de la research y el mapping nos llevaron a cumplir los deseos de las personas usuarias. Vimos que la necesidad de ver el programa y los artistas es tan importante como la de orientarse. Las dos primeras funciones ya estaban en la app actual de Blå Sol, así que creamos una función para el mapa.',
+          'Creemos que es una solución relevante frente a alternativas (Google Maps, Apple Maps) porque muestra el área del mapa con ubicaciones específicas del evento. Nuestra prioridad principal en las pruebas fue mejorar y asegurar el buen funcionamiento de la solución.',
+        ],
+        needsLabel: 'En respuesta a su necesidad de:',
+        needs: [
+          {
+            need: 'Una alternativa para navegar y seguir a sus acompañantes',
+            response:
+              'El mapa permite crear un grupo privado, mostrar la ubicación de sus miembros y crear puntos de encuentro comunes.',
+          },
+          {
+            need: 'Evitar colas largas y encontrar un lugar para descansar',
+            response:
+              'Indicamos niveles de cola y zonas abarrotadas en el mapa. Pensamos que el voluntariado del festival podría actualizar esta información.',
+          },
+        ],
+        closing:
+          'La solución ofrece dos alternativas: navegar de forma manual o filtrar por secciones del mapa, para ambos tipos de usuarios.',
       },
     },
     projects: {

@@ -8,8 +8,8 @@ const MOSAICS = [
     cover: DIGITAL_CPHFW_COVER,
     coverPosition: 'left-top',
   },
-  { key: 'projectTwo', route: 'digital-yoga', cover: DIGITAL_YOGA_COVER },
   { key: 'projectThree', route: 'bla-sol' },
+  { key: 'projectTwo', route: 'digital-yoga', cover: DIGITAL_YOGA_COVER },
 ]
 
 export default function DigitalSolutionsScreen({ onNavigate }) {
