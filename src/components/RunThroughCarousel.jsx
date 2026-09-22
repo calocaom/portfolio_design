@@ -1,39 +1,20 @@
 import { useEffect, useRef, useState } from 'react'
 import './RunThroughCarousel.css'
-import {
-  BLA_SOL_RUNTHROUGH_1,
-  BLA_SOL_RUNTHROUGH_2,
-  BLA_SOL_RUNTHROUGH_3,
-  BLA_SOL_RUNTHROUGH_4,
-  BLA_SOL_RUNTHROUGH_5,
-  BLA_SOL_RUNTHROUGH_6,
-  BLA_SOL_RUNTHROUGH_8,
-  BLA_SOL_RUNTHROUGH_9,
-} from '../assets'
-
-const SLIDE_SOURCES = [
-  BLA_SOL_RUNTHROUGH_5,
-  BLA_SOL_RUNTHROUGH_4,
-  BLA_SOL_RUNTHROUGH_2,
-  BLA_SOL_RUNTHROUGH_1,
-  BLA_SOL_RUNTHROUGH_3,
-  BLA_SOL_RUNTHROUGH_6,
-  BLA_SOL_RUNTHROUGH_8,
-  BLA_SOL_RUNTHROUGH_9,
-]
 
 const SWIPE_THRESHOLD = 40
 
 export default function RunThroughCarousel({
+  slides,
   legends = [],
   prevLabel,
   nextLabel,
   label,
+  layout = 'portrait',
 }) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
   const viewportRef = useRef(null)
-  const count = SLIDE_SOURCES.length
+  const count = slides.length
 
   useEffect(() => {
     const media = window.matchMedia('(max-width: 640px)')
@@ -84,6 +65,30 @@ export default function RunThroughCarousel({
     }
   }, [count])
 
+  useEffect(() => {
+    if (layout !== 'landscape') return undefined
+    const viewport = viewportRef.current
+    if (!viewport) return undefined
+    const image = viewport.querySelector(
+      '.run-through__slide--active .run-through__image',
+    )
+    if (!image) return undefined
+
+    const sync = () => {
+      const height = image.offsetHeight
+      if (height > 0) viewport.style.height = `${height}px`
+    }
+
+    sync()
+    const observer = new ResizeObserver(sync)
+    observer.observe(image)
+    image.addEventListener('load', sync)
+    return () => {
+      observer.disconnect()
+      image.removeEventListener('load', sync)
+    }
+  }, [layout, activeIndex, count])
+
   function go(step) {
     setActiveIndex((current) => {
       const next = current + step
@@ -114,7 +119,9 @@ export default function RunThroughCarousel({
 
   return (
     <div
-      className="run-through"
+      className={`run-through${
+        layout === 'landscape' ? ' run-through--landscape' : ''
+      }`}
       aria-roledescription="carousel"
       aria-label={label}
       tabIndex={0}
@@ -132,7 +139,7 @@ export default function RunThroughCarousel({
         </button>
 
         <div className="run-through__viewport" ref={viewportRef}>
-          {SLIDE_SOURCES.map((src, index) => {
+          {slides.map((src, index) => {
             const offset = offsetFromActive(index)
             const isActive = offset === 0
             const isFar = Math.abs(offset) > 1
@@ -141,7 +148,7 @@ export default function RunThroughCarousel({
 
             return (
               <figure
-                key={src}
+                key={`${src}-${index}`}
                 className={`run-through__slide${
                   isActive
                     ? ' run-through__slide--active'

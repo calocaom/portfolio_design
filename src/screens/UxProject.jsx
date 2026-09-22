@@ -5,7 +5,28 @@ import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
 import UxCrossPromote from '../components/UxCrossPromote'
 import RunThroughCarousel from '../components/RunThroughCarousel'
-import { DIGITAL_CPHFW_COVER } from '../assets'
+import {
+  BLA_SOL_RUNTHROUGH_1,
+  BLA_SOL_RUNTHROUGH_2,
+  BLA_SOL_RUNTHROUGH_3,
+  BLA_SOL_RUNTHROUGH_4,
+  BLA_SOL_RUNTHROUGH_5,
+  BLA_SOL_RUNTHROUGH_6,
+  BLA_SOL_RUNTHROUGH_8,
+  BLA_SOL_RUNTHROUGH_9,
+  DIGITAL_CPHFW_COVER,
+} from '../assets'
+
+const BLA_SOL_SLIDES = [
+  BLA_SOL_RUNTHROUGH_5,
+  BLA_SOL_RUNTHROUGH_4,
+  BLA_SOL_RUNTHROUGH_2,
+  BLA_SOL_RUNTHROUGH_1,
+  BLA_SOL_RUNTHROUGH_3,
+  BLA_SOL_RUNTHROUGH_6,
+  BLA_SOL_RUNTHROUGH_8,
+  BLA_SOL_RUNTHROUGH_9,
+]
 import { useI18n } from '../i18n/I18nContext'
 import { BlaSolComponentsChart, BlaSolHifiTestingChart, BlaSolStyleTileChart, BlaSolWireframesChart } from './YogaCharts'
 
@@ -109,6 +130,7 @@ export default function UxProject({ onNavigate }) {
             {t('uxProject.runThrough.title')}
           </AnimatedTitle>
           <RunThroughCarousel
+            slides={BLA_SOL_SLIDES}
             legends={dict.uxProject.runThrough?.legends ?? []}
             prevLabel={t('uxProject.runThrough.prev')}
             nextLabel={t('uxProject.runThrough.next')}

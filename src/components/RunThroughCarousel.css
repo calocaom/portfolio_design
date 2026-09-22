@@ -8,7 +8,8 @@
   overflow: clip;
 }
 
-.bla-sol .ux-case-study__intro {
+.bla-sol .ux-case-study__intro,
+.yoga.has-run-through .ux-case-study__intro {
   padding-bottom: clamp(8px, 1.2vw, 16px);
 }
 
@@ -139,6 +140,28 @@
   outline-offset: 3px;
 }
 
+.run-through--landscape .run-through__viewport {
+  --slide-w: min(68%, 56rem);
+  --step: calc(var(--slide-w) * 0.84);
+  height: auto;
+  min-height: 12rem;
+}
+
+.run-through--landscape .run-through__slide {
+  left: calc(50% + var(--offset) * var(--step));
+  width: var(--slide-w);
+  height: auto;
+  border-radius: 16px;
+  clip-path: inset(0 round 16px);
+  transform: translate(-50%, -50%) scale(var(--slide-scale));
+}
+
+.run-through--landscape .run-through__image {
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
 .run-through__legend {
   margin: clamp(14px, 2vw, 22px) 0 0;
   min-height: 1.5em;
@@ -188,5 +211,25 @@
     width: 36px;
     height: 36px;
     font-size: 26px;
+  }
+
+  .run-through--landscape .run-through__viewport {
+    --slide-w: 100%;
+    margin-inline: 44px;
+    min-height: 0;
+  }
+
+  .run-through--landscape .run-through__slide--active {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    clip-path: inset(0 round 12px);
+  }
+
+  .run-through--landscape .run-through__slide--active .run-through__image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
   }
 }

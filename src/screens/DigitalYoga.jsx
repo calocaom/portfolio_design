@@ -4,6 +4,7 @@ import SiteNav from '../components/SiteNav'
 import Footer from '../components/Footer'
 import AnimatedTitle from '../components/AnimatedTitle'
 import UxCrossPromote from '../components/UxCrossPromote'
+import YogaRunThrough, { hasYogaRunThrough } from '../components/YogaRunThrough'
 import { DIGITAL_CPHFW_COVER } from '../assets'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
@@ -71,7 +72,11 @@ export default function DigitalYoga({ onNavigate }) {
   const meta = dict.digitalYoga.meta
 
   return (
-    <div className="screen ux-case-study yoga">
+    <div
+      className={`screen ux-case-study yoga${
+        hasYogaRunThrough ? ' has-run-through' : ''
+      }`}
+    >
       <main className="ux-case-study__content">
         <SiteNav
           activeId="works"
@@ -97,6 +102,8 @@ export default function DigitalYoga({ onNavigate }) {
             {t('digitalYoga.figmaCta')}
           </a>
         </section>
+
+        <YogaRunThrough />
 
         <div className="ux-case-study__body">
           <div className="ux-case-study__split">
