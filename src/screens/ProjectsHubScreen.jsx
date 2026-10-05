@@ -37,7 +37,7 @@ export default function ProjectsHubScreen({
               const body = (
                 <>
                   <div
-                    className={`projects-hub__mosaic-panel${cover ? ' projects-hub__mosaic-panel--image' : ''}${
+                    className={`projects-hub__mosaic-panel scroll-zoom${cover ? ' projects-hub__mosaic-panel--image' : ''}${
                       coverFit ? ` projects-hub__mosaic-panel--${coverFit}` : ''
                     }`}
                     aria-hidden="true"

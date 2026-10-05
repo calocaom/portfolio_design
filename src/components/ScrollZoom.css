@@ -1,0 +1,62 @@
+.scroll-zoom {
+  --zoom-rest: 1.08;
+  --zoom-hover: 1.16;
+  --zoom-press: 1.03;
+  --shift-amt: -7%;
+  --scroll-shift: 0;
+  --zoom-origin: center center;
+}
+
+.scroll-zoom img {
+  transform: translate3d(0, calc(var(--scroll-shift) * var(--shift-amt)), 0)
+    scale(var(--zoom-rest));
+  transform-origin: var(--zoom-origin);
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+:is(a, button):hover .scroll-zoom img,
+.scroll-zoom:hover img {
+  transform: translate3d(0, calc(var(--scroll-shift) * var(--shift-amt)), 0)
+    scale(var(--zoom-hover));
+}
+
+:is(a, button):active .scroll-zoom img,
+.scroll-zoom:active img {
+  transform: translate3d(0, calc(var(--scroll-shift) * var(--shift-amt) * 0.35), 0)
+    scale(var(--zoom-press));
+  transition-duration: 0.12s;
+}
+
+.project-row__hex--art.scroll-zoom {
+  --zoom-rest: 1.22;
+  --zoom-hover: 1.3;
+  --zoom-press: 1.16;
+}
+
+.about-screen__hex.scroll-zoom:has(.about-screen__hex-image--art) {
+  --zoom-rest: 1.35;
+  --zoom-hover: 1.42;
+  --zoom-press: 1.28;
+}
+
+.projects-hub__mosaic-panel--contain.scroll-zoom {
+  --zoom-rest: 1;
+  --zoom-hover: 1.035;
+  --zoom-press: 0.985;
+  --shift-amt: -3%;
+}
+
+.makeup-fx-screen__mosaic-cover.scroll-zoom {
+  --zoom-rest: 1.26;
+  --zoom-hover: 1.34;
+  --zoom-press: 1.18;
+  --zoom-origin: top left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-zoom img {
+    transform: none;
+    transition: none;
+  }
+}

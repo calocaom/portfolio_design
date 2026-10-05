@@ -3,7 +3,7 @@
  *
  * Portfolio website: routes nav targets to pages.
  * home / works open MainPage and scroll to section.
- * about, contact, makeup-fx, digital-solutions, digital-cphfw, digital-yoga, ux-ui, botanical, yoga, and bla-sol open their pages.
+ * about, contact, makeup-fx, photography, digital-solutions, digital-cphfw, digital-yoga, ux-ui, botanical, yoga, and bla-sol open their pages.
  * Hash routes (e.g. #yoga) open a page on load / new tab and drive browser history (back / forward).
  */
 
@@ -20,12 +20,15 @@ import UxUiScreen from './screens/UxUiScreen'
 import Botanical from './screens/Botanical'
 import Yoga from './screens/Yoga'
 import UxProject from './screens/UxProject'
+import Photography from './screens/Photography'
+import ScrollZoom from './components/ScrollZoom'
 
 const MAIN_SECTION_IDS = new Set(['home', 'works'])
 const HASH_PAGES = new Set([
   'about',
   'contact',
   'makeup-fx',
+  'photography',
   'digital-solutions',
   'digital-cphfw',
   'digital-yoga',
@@ -91,6 +94,7 @@ export default function App() {
 
   return (
     <div className="site">
+      <ScrollZoom page={page} />
       {page === 'main' && (
         <MainPage
           onNavigate={handleNavigate}
@@ -109,6 +113,10 @@ export default function App() {
 
       {page === 'makeup-fx' && (
         <MakeupFxScreen onNavigate={handleNavigate} />
+      )}
+
+      {page === 'photography' && (
+        <Photography onNavigate={handleNavigate} />
       )}
 
       {page === 'digital-solutions' && (

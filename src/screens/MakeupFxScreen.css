@@ -121,7 +121,7 @@
 
 .makeup-fx-screen__testimonials {
   width: 100%;
-  padding: 0 var(--content-padding) clamp(48px, 8vw, 96px);
+  padding: 0 var(--content-padding) clamp(28px, 4vw, 48px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +318,6 @@
 
 .makeup-fx-screen__mosaic-image--sfx,
 .makeup-fx-screen__mosaic-image--fashion {
-  transform: scale(1.26);
   transform-origin: top left;
 }
 
@@ -346,5 +345,179 @@
   .makeup-fx-screen__mosaic-grid {
     grid-template-columns: 1fr;
     max-width: 420px;
+  }
+}
+
+.makeup-fx-screen__other-works {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(8px, 2vw, 16px) var(--content-padding) clamp(48px, 8vw, 96px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(20px, 3vw, 36px);
+}
+
+.makeup-fx-screen__other-title {
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+.makeup-fx-screen__hex-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(12px, 2vw, 32px);
+  width: 100%;
+  max-width: 920px;
+  min-width: 0;
+}
+
+.makeup-fx-screen__hex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 200px;
+}
+
+.makeup-fx-screen__hex {
+  --hex-size: min(188px, 100%);
+
+  position: relative;
+  width: 100%;
+  max-width: var(--hex-size);
+  height: auto;
+  aspect-ratio: 1 / 1.1547;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow: hidden;
+  transition: transform 0.25s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  text-transform: none;
+}
+
+.makeup-fx-screen__hex--empty {
+  background: color-mix(in srgb, var(--deep-purple) 28%, #1a1020);
+}
+
+.makeup-fx-screen__hex--static {
+  cursor: default;
+}
+
+.makeup-fx-screen__hex:hover {
+  transform: scale(1.05);
+}
+
+.makeup-fx-screen__hex--static:hover {
+  transform: none;
+}
+
+.makeup-fx-screen__hex:hover .makeup-fx-screen__hex-veil {
+  background: rgba(8, 3, 16, 0.32);
+}
+
+.makeup-fx-screen__hex:focus-visible {
+  outline: 2px solid var(--title-violet);
+  outline-offset: 4px;
+}
+
+.makeup-fx-screen__hex-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.makeup-fx-screen__hex-image--art {
+  object-fit: cover;
+  object-position: center center;
+  background-color: #ececef;
+}
+
+.makeup-fx-screen__hex.scroll-zoom:has(.makeup-fx-screen__hex-image--art) {
+  --zoom-rest: 1.35;
+  --zoom-hover: 1.42;
+  --zoom-press: 1.28;
+}
+
+.makeup-fx-screen__hex-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(8, 3, 16, 0.4);
+  transition: background 0.25s ease;
+  pointer-events: none;
+}
+
+.makeup-fx-screen__hex-title {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15em;
+  padding: 16% 10%;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 1.2vw, 16px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  text-align: center;
+  color: var(--title-violet);
+  pointer-events: none;
+}
+
+.makeup-fx-screen__hex-title-line {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
+/* Phones and tablets: two by two, sized to the viewport so the row never scrolls sideways. */
+@media (max-width: 1024px) {
+  .makeup-fx-screen__hex-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    gap: clamp(16px, 3vw, 28px) clamp(10px, 2.4vw, 24px);
+    width: 100%;
+    max-width: min(520px, 100%);
+  }
+
+  .makeup-fx-screen__hex-item {
+    width: 100%;
+    max-width: 188px;
+    flex: none;
+  }
+
+  .makeup-fx-screen__hex {
+    --hex-size: min(168px, 100%);
+    width: min(168px, 100%);
+  }
+
+  .makeup-fx-screen__hex-title {
+    font-size: clamp(10px, 2.6vw, 14px);
+    letter-spacing: 0.02em;
+    padding: 16% 8%;
   }
 }

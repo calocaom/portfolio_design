@@ -578,53 +578,54 @@ export default function AboutScreen({ onNavigate }) {
                 const project = dict.projects[id]
                 const href = PROJECT_LINKS[id]
                 const route = PROJECT_ROUTES[id]
+                const image = PROJECT_IMAGES[id]
                 const label = project.title.replace(/\n/g, ' ')
+                const hexClass = `about-screen__hex scroll-zoom${image ? '' : ' about-screen__hex--empty'}`
+                const cover = (
+                  <>
+                    {image ? (
+                      <img
+                        src={image}
+                        alt=""
+                        className={`about-screen__hex-image${id === 5 ? ' about-screen__hex-image--art' : ''}`}
+                      />
+                    ) : null}
+                    <span className="about-screen__hex-veil" aria-hidden="true" />
+                    <span className="about-screen__hex-title">
+                      {project.title.split('\n').map((line) => (
+                        <span key={line} className="about-screen__hex-title-line">
+                          {line}
+                        </span>
+                      ))}
+                    </span>
+                  </>
+                )
 
                 return (
                   <li key={id} className="about-screen__hex-item">
                     {href ? (
                       <a
-                        className="about-screen__hex"
+                        className={hexClass}
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${label} (opens in a new tab)`}
                       >
-                        <img
-                          src={PROJECT_IMAGES[id]}
-                          alt=""
-                          className={`about-screen__hex-image${id === 5 ? ' about-screen__hex-image--art' : ''}`}
-                        />
-                        <span className="about-screen__hex-veil" aria-hidden="true" />
-                        <span className="about-screen__hex-title">
-                          {project.title.split('\n').map((line) => (
-                            <span key={line} className="about-screen__hex-title-line">
-                              {line}
-                            </span>
-                          ))}
-                        </span>
+                        {cover}
                       </a>
-                    ) : (
+                    ) : route ? (
                       <button
                         type="button"
-                        className="about-screen__hex"
-                        onClick={() => onNavigate?.(route ?? 'works')}
+                        className={hexClass}
+                        onClick={() => onNavigate?.(route)}
                         aria-label={label}
                       >
-                        <img
-                          src={PROJECT_IMAGES[id]}
-                          alt=""
-                          className={`about-screen__hex-image${id === 5 ? ' about-screen__hex-image--art' : ''}`}
-                        />
-                        <span className="about-screen__hex-veil" aria-hidden="true" />
-                        <span className="about-screen__hex-title">
-                          {project.title.split('\n').map((line) => (
-                            <span key={line} className="about-screen__hex-title-line">
-                              {line}
-                            </span>
-                          ))}
-                        </span>
+                        {cover}
                       </button>
+                    ) : (
+                      <div className={`${hexClass} about-screen__hex--static`} aria-label={label}>
+                        {cover}
+                      </div>
                     )}
                   </li>
                 )

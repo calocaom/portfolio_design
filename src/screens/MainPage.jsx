@@ -48,24 +48,31 @@ function ProjectRow({ id, index, project, href, route, titleLabel, pageRef, onNa
   const isClickable = Boolean(href || route)
   const rowClass = `project-row${index % 2 === 1 ? ' project-row--reverse' : ''}${isClickable ? ' project-row--clickable' : ''}${inView ? ' project-row--in-view' : ''}`
 
+  const image = PROJECT_IMAGES[id]
   const body = (
     <div className="project-row__veil">
-      <div className={`project-row__hex${id === 5 ? ' project-row__hex--art' : ''}`}>
-        <img
-          src={PROJECT_IMAGES[id]}
-          alt=""
-          className="project-row__hex-image"
-        />
+      <div
+        className={`project-row__hex scroll-zoom${id === 5 ? ' project-row__hex--art' : ''}${
+          image ? '' : ' project-row__hex--empty'
+        }`}
+      >
+        {image ? (
+          <img src={image} alt="" className="project-row__hex-image" />
+        ) : null}
       </div>
       <div className="project-row__copy">
         <AnimatedTitle>{project.title}</AnimatedTitle>
-        <p className="project-row__description">{project.description}</p>
-        <span
-          className={`project-row__cta${id === 5 ? ' project-row__cta--art' : ''}`}
-          aria-hidden="true"
-        >
-          {id === 5 ? t('seeMoreArtProjects') : t('seeMyProjects')}
-        </span>
+        {project.description ? (
+          <p className="project-row__description">{project.description}</p>
+        ) : null}
+        {isClickable ? (
+          <span
+            className={`project-row__cta${id === 5 ? ' project-row__cta--art' : ''}`}
+            aria-hidden="true"
+          >
+            {id === 5 ? t('seeMoreArtProjects') : t('seeMyProjects')}
+          </span>
+        ) : null}
       </div>
     </div>
   )

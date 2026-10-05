@@ -312,6 +312,7 @@
 .main-page--light .site-nav--menu-open .site-nav__burger,
 .makeup-fx-screen .site-nav--menu-open .site-nav__burger,
 .projects-hub .site-nav--menu-open .site-nav__burger,
+.photography-screen .site-nav--menu-open .site-nav__burger,
 .ux-case-study .site-nav--menu-open .site-nav__burger {
   color: var(--deep-purple);
 }

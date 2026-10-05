@@ -721,8 +721,20 @@
   color: inherit;
 }
 
+.about-screen__hex--empty {
+  background: color-mix(in srgb, var(--deep-purple) 28%, #1a1020);
+}
+
+.about-screen__hex--static {
+  cursor: default;
+}
+
 .about-screen__hex:hover {
   transform: scale(1.05);
+}
+
+.about-screen__hex--static:hover {
+  transform: none;
 }
 
 .about-screen__hex:hover .about-screen__hex-veil {
@@ -746,7 +758,6 @@
 .about-screen__hex-image--art {
   object-fit: cover;
   object-position: center center;
-  transform: scale(1.35);
   background-color: #ececef;
 }
 
@@ -819,5 +830,57 @@
 
   .about-screen__education-item {
     align-items: center;
+  }
+}
+
+/* Phones (≤640) and tablets (≤1024): 3 works, then 2 centered. Desktop stays flex-wrap. */
+@media (max-width: 1024px) {
+  .about-screen__hex-grid {
+    --hex-gap: clamp(8px, 1.8vw, 20px);
+
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-flow: row;
+    column-gap: var(--hex-gap);
+    row-gap: clamp(12px, 2.4vw, 28px);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-items: stretch;
+    align-items: start;
+  }
+
+  .about-screen__hex-item {
+    grid-column: span 2;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .about-screen__hex-item:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .about-screen__hex-item:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+
+  .about-screen__hex {
+    /* Fill the cell (one third of the row). Cap near the desktop max so
+       wide tablets stay readable. At 390px the cell is ~104px. */
+    --hex-size: min(188px, 100%);
+
+    width: min(188px, 100%);
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 1 / 1.1547;
+    margin-inline: auto;
+  }
+
+  .about-screen__hex-title {
+    font-size: clamp(9px, 2.35vw, 15px);
+    letter-spacing: 0.03em;
+    padding: 16% 9%;
   }
 }

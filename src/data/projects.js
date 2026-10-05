@@ -1,6 +1,7 @@
 import {
   CAROUSEL_10,
   DIGITAL_SOLUTIONS_COVER,
+  PHOTOGRAPHY_COVER,
   PROJECT_ART,
 } from '../assets'
 import { publicUrl } from '../utils/publicUrl'
@@ -10,6 +11,7 @@ export const PROJECT_IMAGES = {
   2: CAROUSEL_10,
   4: publicUrl('portfolios/mua/06.png'),
   5: PROJECT_ART,
+  6: PHOTOGRAPHY_COVER,
 }
 
 /** External URLs opened in a new tab when a project row / hex is clicked */
@@ -22,6 +24,7 @@ export const PROJECT_ROUTES = {
   1: 'digital-solutions',
   2: 'ux-ui',
   4: 'makeup-fx',
+  6: 'photography',
 }
 
-export const PROJECT_IDS = [1, 2, 4, 5]
+export const PROJECT_IDS = [1, 2, 4, 6, 5]

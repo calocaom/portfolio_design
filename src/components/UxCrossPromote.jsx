@@ -25,7 +25,7 @@ export default function UxCrossPromote({
         onClick={() => onNavigate?.(route)}
         aria-label={title}
       >
-        <span className="ux-cross-promote__thumb" aria-hidden="true">
+        <span className="ux-cross-promote__thumb scroll-zoom" aria-hidden="true">
           <img
             src={cover}
             alt=""

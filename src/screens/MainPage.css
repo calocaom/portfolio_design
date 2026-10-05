@@ -271,6 +271,10 @@ button.project-row:focus-visible .project-row__veil {
   transition: filter 0.3s ease, transform 0.25s ease;
 }
 
+.project-row__hex--empty {
+  background: color-mix(in srgb, var(--deep-purple) 16%, #ffffff);
+}
+
 .project-row__hex--art {
   background-color: #ececef;
 }
@@ -278,7 +282,6 @@ button.project-row:focus-visible .project-row__veil {
 .project-row__hex--art .project-row__hex-image {
   object-fit: cover;
   object-position: center center;
-  transform: scale(1.22);
 }
 
 .project-row__copy {

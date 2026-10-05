@@ -144,6 +144,7 @@ export const translations = {
       magazineLoading: 'Loading portfolio…',
       magazineError: 'Could not load this portfolio.',
       magazineCounter: 'Pages {current} of {total}',
+      otherWorks: 'See other works',
     },
     uxUi: {
       title: 'UX / UI Design Projects',
@@ -663,6 +664,22 @@ export const translations = {
           'The solution provides two alternatives; to navigate manually, or to filter through map sections for both types of users.',
       },
     },
+    photography: {
+      title: 'Photography and Video,\nEditing and Animation',
+      sectionTitle: 'Photography',
+      editingTitle: 'Photo Editing',
+      editingLede: 'Photography, light adjustments and touch ups with Adobe Photoshop.',
+      otherWorks: 'Check My Other Works',
+      navCrumb: 'Photography and Video',
+      lede:
+        'For the last years I have been documenting my travels with analog photography & other visual arts.',
+      wheelAria: 'Wheel of photographs',
+      filtersAria: 'Photograph filters',
+      prev: 'Previous photograph',
+      next: 'Next photograph',
+      close: 'Close',
+      blog: 'omarphotography.tumblr.com',
+    },
     projects: {
       1: {
         title: 'Design for\nDigital Solutions',
@@ -676,6 +693,10 @@ export const translations = {
         title: 'Design for Makeup FX',
         description:
           'Character Design, Prosthetics, Fashion Makeup, Beauty Makeup, SFX Makeup, Airbrush and Bodypainting, Editorial Photography and Editing, 3D Modeling and Props Fabrication',
+      },
+      6: {
+        title: 'Photography and Video,\nEditing and Animation',
+        description: '',
       },
       5: {
         title: 'Art',
@@ -822,6 +843,7 @@ export const translations = {
       magazineLoading: 'Indlæser portefølje…',
       magazineError: 'Kunne ikke indlæse denne portefølje.',
       magazineCounter: 'Side {current} af {total}',
+      otherWorks: 'Se andre værker',
     },
     uxUi: {
       title: 'UX / UI Design Projekter',
@@ -1352,6 +1374,22 @@ export const translations = {
           'Løsningen giver to alternativer: at navigere manuelt, eller at filtrere via kortsektioner for begge typer brugere.',
       },
     },
+    photography: {
+      title: 'Fotografi og video,\nRedigering og animation',
+      sectionTitle: 'Fotografi',
+      editingTitle: 'Fotoredigering',
+      editingLede: 'Fotografi, lysjusteringer og retouchering med Adobe Photoshop.',
+      otherWorks: 'Tjek Mine Andre Værker',
+      navCrumb: 'Fotografi og video',
+      lede:
+        'De seneste år har jeg dokumenteret mine rejser med analog fotografi & andre visuelle kunstarter.',
+      wheelAria: 'Hjul af fotografier',
+      filtersAria: 'Fotofiltre',
+      prev: 'Forrige fotografi',
+      next: 'Næste fotografi',
+      close: 'Luk',
+      blog: 'omarphotography.tumblr.com',
+    },
     projects: {
       1: {
         title: 'Design til\nDigitale Løsninger',
@@ -1365,6 +1403,10 @@ export const translations = {
         title: 'Design til Makeup FX',
         description:
           'Karakterdesign, Proteser, Fashion Makeup, Beauty Makeup, SFX Makeup, Airbrush og Bodypainting, Editorial Fotografi og Redigering, 3D-Modellering og Prop-Fremstilling',
+      },
+      6: {
+        title: 'Fotografi og video,\nRedigering og animation',
+        description: '',
       },
       5: {
         title: 'Kunst',
@@ -1511,6 +1553,7 @@ export const translations = {
       magazineLoading: 'Chargement du portfolio…',
       magazineError: 'Impossible de charger ce portfolio.',
       magazineCounter: 'Pages {current} sur {total}',
+      otherWorks: "Voir d'autres travaux",
     },
     uxUi: {
       title: 'Projets UX / UI Design',
@@ -2042,6 +2085,22 @@ export const translations = {
           'La solution offre deux alternatives : naviguer manuellement, ou filtrer par sections de la carte, pour les deux types d’utilisateurs.',
       },
     },
+    photography: {
+      title: 'Photographie et vidéo,\nMontage et animation',
+      sectionTitle: 'Photographie',
+      editingTitle: 'Retouche Photo',
+      editingLede: 'Photographie, ajustements de lumière et retouches avec Adobe Photoshop.',
+      otherWorks: 'Voir Mes Autres Travaux',
+      navCrumb: 'Photographie et vidéo',
+      lede:
+        'Ces dernières années, j’ai documenté mes voyages par la photographie analogique et d’autres arts visuels.',
+      wheelAria: 'Roue de photographies',
+      filtersAria: 'Filtres de photographies',
+      prev: 'Photographie précédente',
+      next: 'Photographie suivante',
+      close: 'Fermer',
+      blog: 'omarphotography.tumblr.com',
+    },
     projects: {
       1: {
         title: 'Design pour\nSolutions Numériques',
@@ -2055,6 +2114,10 @@ export const translations = {
         title: 'Design pour Makeup FX',
         description:
           'Character Design, Prothèses, Makeup Mode, Makeup Beauté, Makeup SFX, Aérographe et Bodypainting, Photographie Éditoriale et Retouche, Modélisation 3D et Fabrication d’Accessoires',
+      },
+      6: {
+        title: 'Photographie et vidéo,\nMontage et animation',
+        description: '',
       },
       5: {
         title: 'Art',
@@ -2201,6 +2264,7 @@ export const translations = {
       magazineLoading: 'Portfolio wird geladen…',
       magazineError: 'Dieses Portfolio konnte nicht geladen werden.',
       magazineCounter: 'Seiten {current} von {total}',
+      otherWorks: 'Weitere Arbeiten ansehen',
     },
     uxUi: {
       title: 'UX / UI Design Projekte',
@@ -2732,6 +2796,22 @@ export const translations = {
           'Die Lösung bietet zwei Alternativen: manuell zu navigieren oder über Kartenabschnitte zu filtern – für beide Nutzertypen.',
       },
     },
+    photography: {
+      title: 'Fotografie und Video,\nSchnitt und Animation',
+      sectionTitle: 'Fotografie',
+      editingTitle: 'Fotobearbeitung',
+      editingLede: 'Fotografie, Lichtanpassungen und Retuschen mit Adobe Photoshop.',
+      otherWorks: 'Meine Anderen Arbeiten Ansehen',
+      navCrumb: 'Fotografie und Video',
+      lede:
+        'In den letzten Jahren habe ich meine Reisen mit analoger Fotografie & anderen visuellen Künsten dokumentiert.',
+      wheelAria: 'Rad aus Fotografien',
+      filtersAria: 'Fotofilter',
+      prev: 'Vorherige Fotografie',
+      next: 'Nächste Fotografie',
+      close: 'Schließen',
+      blog: 'omarphotography.tumblr.com',
+    },
     projects: {
       1: {
         title: 'Design für\nDigitale Lösungen',
@@ -2745,6 +2825,10 @@ export const translations = {
         title: 'Design für Makeup FX',
         description:
           'Character Design, Prothetik, Fashion Makeup, Beauty Makeup, SFX Makeup, Airbrush und Bodypainting, Editorial-Fotografie und Retusche, 3D-Modellierung und Props-Herstellung',
+      },
+      6: {
+        title: 'Fotografie und Video,\nSchnitt und Animation',
+        description: '',
       },
       5: {
         title: 'Kunst',
@@ -2891,6 +2975,7 @@ export const translations = {
       magazineLoading: 'Cargando portafolio…',
       magazineError: 'No se pudo cargar este portafolio.',
       magazineCounter: 'Páginas {current} de {total}',
+      otherWorks: 'Ver otros trabajos',
     },
     uxUi: {
       title: 'Proyectos UX / UI Design',
@@ -3422,6 +3507,22 @@ export const translations = {
           'La solución ofrece dos alternativas: navegar de forma manual o filtrar por secciones del mapa, para ambos tipos de usuarios.',
       },
     },
+    photography: {
+      title: 'Fotografía y vídeo,\nEdición y animación',
+      sectionTitle: 'Fotografía',
+      editingTitle: 'Edición Fotográfica',
+      editingLede: 'Fotografía, ajustes de luz y retoques con Adobe Photoshop.',
+      otherWorks: 'Ver Mis Otros Trabajos',
+      navCrumb: 'Fotografía y vídeo',
+      lede:
+        'En los últimos años he documentado mis viajes con fotografía analógica y otras artes visuales.',
+      wheelAria: 'Rueda de fotografías',
+      filtersAria: 'Filtros de fotografías',
+      prev: 'Fotografía anterior',
+      next: 'Fotografía siguiente',
+      close: 'Cerrar',
+      blog: 'omarphotography.tumblr.com',
+    },
     projects: {
       1: {
         title: 'Diseño para\nSoluciones Digitales',
@@ -3435,6 +3536,10 @@ export const translations = {
         title: 'Diseño para Makeup FX',
         description:
           'Diseño de Personajes, Prótesis, Makeup de Moda, Makeup de Belleza, Makeup SFX, Aerógrafo y Bodypainting, Fotografía Editorial y Edición, Modelado 3D y Fabricación de Props',
+      },
+      6: {
+        title: 'Fotografía y vídeo,\nEdición y animación',
+        description: '',
       },
       5: {
         title: 'Arte',

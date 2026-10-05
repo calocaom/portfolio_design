@@ -7,6 +7,7 @@ import AnimatedTitle from '../components/AnimatedTitle'
 import WatercolorBrush from '../components/WatercolorBrush'
 import { useI18n } from '../i18n/I18nContext'
 import { publicUrl } from '../utils/publicUrl'
+import { PROJECT_IMAGES, PROJECT_LINKS, PROJECT_ROUTES } from '../data/projects'
 
 const MUA_SFX_PAGES = Array.from({ length: 18 }, (_, i) => {
   const n = String(i + 1).padStart(2, '0')
@@ -33,8 +34,11 @@ const MOSAIC_IMAGES = {
 
 const MOSAIC_KEYS = ['sfx', 'fashion']
 
+/** Other works only — Makeup FX (id 4) stays off this screen. */
+const OTHER_WORK_IDS = [1, 2, 6, 5]
+
 export default function MakeupFxScreen({ onNavigate }) {
-  const { t } = useI18n()
+  const { t, dict } = useI18n()
   const screenRef = useRef(null)
   const [openPortfolio, setOpenPortfolio] = useState(null)
 
@@ -103,7 +107,7 @@ export default function MakeupFxScreen({ onNavigate }) {
                   <figure className="makeup-fx-screen__mosaic">
                     <button
                       type="button"
-                      className={`makeup-fx-screen__mosaic-cover${imageSrc ? '' : ' makeup-fx-screen__mosaic-cover--empty'}`}
+                      className={`makeup-fx-screen__mosaic-cover scroll-zoom${imageSrc ? '' : ' makeup-fx-screen__mosaic-cover--empty'}`}
                       onClick={() => setOpenPortfolio(key)}
                       aria-label={`${t('makeupFx.explore')}: ${label}`}
                     >
@@ -160,6 +164,74 @@ export default function MakeupFxScreen({ onNavigate }) {
               {t('about.testimonialsLegend')}
             </figcaption>
           </figure>
+        </section>
+
+        <section
+          className="makeup-fx-screen__other-works"
+          aria-label={t('makeupFx.otherWorks')}
+        >
+          <h2 className="makeup-fx-screen__subtitle makeup-fx-screen__other-title">
+            {t('makeupFx.otherWorks')}
+          </h2>
+
+          <ul className="makeup-fx-screen__hex-grid">
+            {OTHER_WORK_IDS.map((id) => {
+              const project = dict.projects[id]
+              const href = PROJECT_LINKS[id]
+              const route = PROJECT_ROUTES[id]
+              const image = PROJECT_IMAGES[id]
+              const label = project.title.replace(/\n/g, ' ')
+              const hexClass = `makeup-fx-screen__hex scroll-zoom${image ? '' : ' makeup-fx-screen__hex--empty'}`
+              const cover = (
+                <>
+                  {image ? (
+                    <img
+                      src={image}
+                      alt=""
+                      className={`makeup-fx-screen__hex-image${id === 5 ? ' makeup-fx-screen__hex-image--art' : ''}`}
+                    />
+                  ) : null}
+                  <span className="makeup-fx-screen__hex-veil" aria-hidden="true" />
+                  <span className="makeup-fx-screen__hex-title">
+                    {project.title.split('\n').map((line) => (
+                      <span key={line} className="makeup-fx-screen__hex-title-line">
+                        {line}
+                      </span>
+                    ))}
+                  </span>
+                </>
+              )
+
+              return (
+                <li key={id} className="makeup-fx-screen__hex-item">
+                  {href ? (
+                    <a
+                      className={hexClass}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${label} (opens in a new tab)`}
+                    >
+                      {cover}
+                    </a>
+                  ) : route ? (
+                    <button
+                      type="button"
+                      className={hexClass}
+                      onClick={() => onNavigate?.(route)}
+                      aria-label={label}
+                    >
+                      {cover}
+                    </button>
+                  ) : (
+                    <div className={`${hexClass} makeup-fx-screen__hex--static`} aria-label={label}>
+                      {cover}
+                    </div>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
         </section>
 
         <Footer className="footer--in-flow" />
