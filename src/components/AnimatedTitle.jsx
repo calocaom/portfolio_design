@@ -1,7 +1,7 @@
 import './AnimatedTitle.css'
 import { useEffect, useRef, useState } from 'react'
 
-export default function AnimatedTitle({ children, className = '', id }) {
+export default function AnimatedTitle({ children, className = '', id, as: Tag = 'h2' }) {
   const ref = useRef(null)
   const [active, setActive] = useState(false)
   const [playId, setPlayId] = useState(0)
@@ -14,7 +14,7 @@ export default function AnimatedTitle({ children, className = '', id }) {
     if (!el) return
 
     const root = el.closest(
-      '.main-page, .about-screen, .makeup-fx-screen, .ux-case-study',
+      '.main-page, .about-screen, .makeup-fx-screen, .ux-case-study, .photography-screen',
     )
 
     const observer = new IntersectionObserver(
@@ -40,7 +40,7 @@ export default function AnimatedTitle({ children, className = '', id }) {
   let runningIndex = 0
 
   return (
-    <h2
+    <Tag
       id={id}
       ref={ref}
       className={`project-row__title${active ? ' project-row__title--in' : ''}${className ? ` ${className}` : ''}`}
@@ -51,25 +51,56 @@ export default function AnimatedTitle({ children, className = '', id }) {
         const chars = Array.from(line)
         runningIndex += chars.length
 
+        const tokens = []
+        let word = []
+        chars.forEach((char, localIndex) => {
+          const index = lineStart + localIndex
+          if (char === ' ') {
+            if (word.length) {
+              tokens.push({ kind: 'word', chars: word })
+              word = []
+            }
+            tokens.push({ kind: 'space', index })
+          } else {
+            word.push({ char, index })
+          }
+        })
+        if (word.length) tokens.push({ kind: 'word', chars: word })
+
         return (
           <span key={`${playId}-line-${lineIndex}`} className="project-row__line">
-            {chars.map((char, localIndex) => {
-              const index = lineStart + localIndex
+            {tokens.map((token, tokenIndex) => {
+              if (token.kind === 'space') {
+                return (
+                  <span
+                    key={`${playId}-${token.index}-space`}
+                    className="project-row__char"
+                    style={{ '--i': token.index }}
+                    aria-hidden="true"
+                  >
+                    {'\u00A0'}
+                  </span>
+                )
+              }
 
               return (
-                <span
-                  key={`${playId}-${index}-${char}`}
-                  className="project-row__char"
-                  style={{ '--i': index }}
-                  aria-hidden="true"
-                >
-                  {char === ' ' ? '\u00A0' : char}
+                <span key={`${playId}-word-${lineIndex}-${tokenIndex}`} className="project-row__word">
+                  {token.chars.map(({ char, index }) => (
+                    <span
+                      key={`${playId}-${index}-${char}`}
+                      className="project-row__char"
+                      style={{ '--i': index }}
+                      aria-hidden="true"
+                    >
+                      {char}
+                    </span>
+                  ))}
                 </span>
               )
             })}
           </span>
         )
       })}
-    </h2>
+    </Tag>
   )
 }

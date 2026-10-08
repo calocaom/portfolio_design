@@ -669,6 +669,42 @@ export const translations = {
       sectionTitle: 'Photography',
       editingTitle: 'Photo Editing',
       editingLede: 'Photography, light adjustments and touch ups with Adobe Photoshop.',
+      logoTitle: 'Logo Design',
+      videoTitle: 'Video Editing',
+      videoCaptionBefore:
+        'Edited with Adobe After Effects and Inshot app. The video reunites content i have reunited over the last years to introduce my brand and give a hint of who I am as a person and professional. This video was created for "',
+      videoCaptionLink: 'About',
+      videoCaptionAfter: '" section on this website.',
+      videoBrandTitle: 'Brand Design',
+      videoReelsTitle: 'REELS',
+      videoReelCaption: 'Reel video edited with Adobe after effects and Inshot app.',
+      videoOfferTitle: 'Product',
+      videoOfferCaptionBefore:
+        'The video was edited using After Effects and inshot app after collecting self made content. The video offers and explains the ',
+      videoOfferCaptionLink: 'solution made for the Botanical Garden in Aarhus.',
+      videoOfferCaptionAfter: '',
+      animationTitle: 'Animation and Illustration',
+      logoCaptionBefore: '',
+      logoCaptionLink: 'Yoga',
+      logoCaptionAfter: ' website logo design',
+      logoSiteCaption: 'I created my new logo and variations you see on this website.',
+      gardenCaption:
+        'Digital illustration made with Adobe Photoshop. The piece is based on The Japanese Garden at Butchart Gardens, Victoria, Canada.',
+      shipCaption:
+        'Hand drawn pirate ship enhanced and animated on Adobe Photoshop. It is based on the Pym adventures written by Edgar Allan Poe.',
+      dreamCaption: 'Illustration of a dream fully created on Adobe Photoshop.',
+      caribbeanCaption:
+        'Digital painting made fully on Adobe Photoshop based on an underwater scene of the Caribbean Sea in Mexico.',
+      mothCaption: 'Digital painting of a moth fully painted on Procreate app.',
+      domkirkeCaption: 'Aarhus Domkirke illustration fully made on Procreate app.',
+      flensburgCaption: 'Illustration in watercolor based on a door in Flensburg, Germany.',
+      albaniaCaption:
+        'Figure painting of a statue in Albania. Painted with home-made extract pigment from avocado.',
+      florenceCaption:
+        'Figure painting of a sculpture in Florence. Painted with home-made extract pigment from avocado.',
+      sketchCaption: 'Figure drawing 5 min sketches in watercolour.',
+      findMore: 'Find more at omarcaloca.com',
+      goToSectionStart: 'Go to start of this section',
       otherWorks: 'Check My Other Works',
       navCrumb: 'Photography and Video',
       lede:
@@ -1379,6 +1415,42 @@ export const translations = {
       sectionTitle: 'Fotografi',
       editingTitle: 'Fotoredigering',
       editingLede: 'Fotografi, lysjusteringer og retouchering med Adobe Photoshop.',
+      logoTitle: 'Logodesign',
+      videoTitle: 'Videoredigering',
+      videoCaptionBefore:
+        'Redigeret med Adobe After Effects og InShot-appen. Videoen samler indhold, jeg har samlet gennem de seneste år, for at introducere mit brand og give et hint om, hvem jeg er som person og professionel. Denne video blev skabt til "',
+      videoCaptionLink: 'Om',
+      videoCaptionAfter: '"-sektionen på denne hjemmeside.',
+      videoBrandTitle: 'Branddesign',
+      videoReelsTitle: 'REELS',
+      videoReelCaption: 'Reel-video redigeret med Adobe After Effects og InShot-appen.',
+      videoOfferTitle: 'Produkt',
+      videoOfferCaptionBefore:
+        'Videoen blev redigeret med After Effects og InShot-appen efter indsamling af selvproduceret indhold. Videoen tilbyder og forklarer ',
+      videoOfferCaptionLink: 'løsningen lavet til Botanisk Have i Aarhus.',
+      videoOfferCaptionAfter: '',
+      animationTitle: 'Animation og illustration',
+      logoCaptionBefore: 'Logodesign til ',
+      logoCaptionLink: 'Yoga',
+      logoCaptionAfter: '-hjemmesiden',
+      logoSiteCaption: 'Jeg skabte mit nye logo og de variationer, du ser på denne hjemmeside.',
+      gardenCaption:
+        'Digital illustration lavet med Adobe Photoshop. Værket er baseret på The Japanese Garden i Butchart Gardens, Victoria, Canada.',
+      shipCaption:
+        'Håndtegnet piratskib, forbedret og animeret i Adobe Photoshop. Det er baseret på Pym-eventyrene skrevet af Edgar Allan Poe.',
+      dreamCaption: 'Illustration af en drøm, fuldt ud skabt i Adobe Photoshop.',
+      caribbeanCaption:
+        'Digitalt maleri lavet fuldt ud i Adobe Photoshop, baseret på en undervandsscene fra Det Caribiske Hav i Mexico.',
+      mothCaption: 'Digitalt maleri af et møl, malet fuldt ud i Procreate-appen.',
+      domkirkeCaption: 'Illustration af Aarhus Domkirke, lavet fuldt ud i Procreate-appen.',
+      flensburgCaption: 'Akvarelillustration baseret på en dør i Flensburg, Tyskland.',
+      albaniaCaption:
+        'Figurmaleri af en statue i Albanien. Malet med hjemmelavet pigmentudtræk fra avocado.',
+      florenceCaption:
+        'Figurmaleri af en skulptur i Firenze. Malet med hjemmelavet pigmentudtræk fra avocado.',
+      sketchCaption: 'Figurtegning, 5-minutters skitser i akvarel.',
+      findMore: 'Find mere på omarcaloca.com',
+      goToSectionStart: 'Gå til starten af dette afsnit',
       otherWorks: 'Tjek Mine Andre Værker',
       navCrumb: 'Fotografi og video',
       lede:
@@ -2090,6 +2162,42 @@ export const translations = {
       sectionTitle: 'Photographie',
       editingTitle: 'Retouche Photo',
       editingLede: 'Photographie, ajustements de lumière et retouches avec Adobe Photoshop.',
+      logoTitle: 'Conception de logo',
+      videoTitle: 'Montage vidéo',
+      videoCaptionBefore:
+        'Montée avec Adobe After Effects et l’application InShot. La vidéo réunit du contenu que j’ai réuni au cours des dernières années pour présenter ma marque et donner un aperçu de qui je suis en tant que personne et professionnel. Cette vidéo a été créée pour la section « ',
+      videoCaptionLink: 'À propos',
+      videoCaptionAfter: ' » de ce site.',
+      videoBrandTitle: 'Design de marque',
+      videoReelsTitle: 'REELS',
+      videoReelCaption: 'Vidéo reel montée avec Adobe After Effects et l’application InShot.',
+      videoOfferTitle: 'Produit',
+      videoOfferCaptionBefore:
+        'La vidéo a été montée avec After Effects et l’application InShot après avoir rassemblé du contenu réalisé par moi-même. La vidéo propose et explique la ',
+      videoOfferCaptionLink: 'solution conçue pour le Jardin botanique d’Aarhus.',
+      videoOfferCaptionAfter: '',
+      animationTitle: 'Animation et illustration',
+      logoCaptionBefore: 'Conception du logo du site ',
+      logoCaptionLink: 'Yoga',
+      logoCaptionAfter: '',
+      logoSiteCaption: 'J’ai créé mon nouveau logo et les variations que vous voyez sur ce site.',
+      gardenCaption:
+        'Illustration numérique réalisée avec Adobe Photoshop. L’œuvre s’inspire de The Japanese Garden aux Butchart Gardens, Victoria, Canada.',
+      shipCaption:
+        'Navire pirate dessiné à la main, amélioré et animé avec Adobe Photoshop. Il s’inspire des aventures de Pym écrites par Edgar Allan Poe.',
+      dreamCaption: 'Illustration d’un rêve, entièrement créée avec Adobe Photoshop.',
+      caribbeanCaption:
+        'Peinture numérique entièrement réalisée avec Adobe Photoshop, d’après une scène sous-marine de la mer des Caraïbes au Mexique.',
+      mothCaption: 'Peinture numérique d’un papillon de nuit, entièrement peinte avec l’application Procreate.',
+      domkirkeCaption: 'Illustration de l’Aarhus Domkirke, entièrement réalisée avec l’application Procreate.',
+      flensburgCaption: 'Illustration à l’aquarelle d’après une porte à Flensburg, en Allemagne.',
+      albaniaCaption:
+        'Peinture de figure d’une statue en Albanie. Peinte avec un pigment extrait maison d’avocat.',
+      florenceCaption:
+        'Peinture de figure d’une sculpture à Florence. Peinte avec un pigment extrait maison d’avocat.',
+      sketchCaption: 'Dessin de figure, croquis de 5 minutes à l’aquarelle.',
+      findMore: 'En trouver plus sur omarcaloca.com',
+      goToSectionStart: 'Aller au début de cette section',
       otherWorks: 'Voir Mes Autres Travaux',
       navCrumb: 'Photographie et vidéo',
       lede:
@@ -2801,6 +2909,42 @@ export const translations = {
       sectionTitle: 'Fotografie',
       editingTitle: 'Fotobearbeitung',
       editingLede: 'Fotografie, Lichtanpassungen und Retuschen mit Adobe Photoshop.',
+      logoTitle: 'Logodesign',
+      videoTitle: 'Videobearbeitung',
+      videoCaptionBefore:
+        'Geschnitten mit Adobe After Effects und der InShot-App. Das Video vereint Inhalte, die ich in den letzten Jahren zusammengetragen habe, um meine Marke vorzustellen und einen Eindruck davon zu geben, wer ich als Person und Profi bin. Dieses Video wurde für den Abschnitt „',
+      videoCaptionLink: 'Über mich',
+      videoCaptionAfter: '“ auf dieser Website erstellt.',
+      videoBrandTitle: 'Markendesign',
+      videoReelsTitle: 'REELS',
+      videoReelCaption: 'Reel-Video, geschnitten mit Adobe After Effects und der InShot-App.',
+      videoOfferTitle: 'Produkt',
+      videoOfferCaptionBefore:
+        'Das Video wurde mit After Effects und der InShot-App geschnitten, nachdem selbst erstelltes Material gesammelt wurde. Das Video bietet und erklärt die ',
+      videoOfferCaptionLink: 'Lösung für den Botanischen Garten in Aarhus.',
+      videoOfferCaptionAfter: '',
+      animationTitle: 'Animation und Illustration',
+      logoCaptionBefore: 'Logodesign für die ',
+      logoCaptionLink: 'Yoga',
+      logoCaptionAfter: '-Website',
+      logoSiteCaption: 'Ich habe mein neues Logo und die Variationen erstellt, die Sie auf dieser Website sehen.',
+      gardenCaption:
+        'Digitale Illustration, erstellt mit Adobe Photoshop. Das Werk basiert auf The Japanese Garden in den Butchart Gardens, Victoria, Kanada.',
+      shipCaption:
+        'Handgezeichnetes Piratenschiff, in Adobe Photoshop verbessert und animiert. Es basiert auf den Pym-Abenteuern von Edgar Allan Poe.',
+      dreamCaption: 'Illustration eines Traums, vollständig mit Adobe Photoshop erstellt.',
+      caribbeanCaption:
+        'Digitales Gemälde, vollständig mit Adobe Photoshop erstellt, nach einer Unterwasserszene der Karibik in Mexiko.',
+      mothCaption: 'Digitales Gemälde einer Motte, vollständig mit der Procreate-App gemalt.',
+      domkirkeCaption: 'Illustration der Aarhus Domkirke, vollständig mit der Procreate-App erstellt.',
+      flensburgCaption: 'Aquarellillustration nach einer Tür in Flensburg, Deutschland.',
+      albaniaCaption:
+        'Figurenmalerei einer Statue in Albanien. Gemalt mit selbst hergestelltem Pigmentextrakt aus Avocado.',
+      florenceCaption:
+        'Figurenmalerei einer Skulptur in Florenz. Gemalt mit selbst hergestelltem Pigmentextrakt aus Avocado.',
+      sketchCaption: 'Figurenzeichnung, 5-Minuten-Skizzen in Aquarell.',
+      findMore: 'Mehr finden auf omarcaloca.com',
+      goToSectionStart: 'Zum Anfang dieses Abschnitts',
       otherWorks: 'Meine Anderen Arbeiten Ansehen',
       navCrumb: 'Fotografie und Video',
       lede:
@@ -3512,6 +3656,42 @@ export const translations = {
       sectionTitle: 'Fotografía',
       editingTitle: 'Edición Fotográfica',
       editingLede: 'Fotografía, ajustes de luz y retoques con Adobe Photoshop.',
+      logoTitle: 'Diseño de logo',
+      videoTitle: 'Edición de vídeo',
+      videoCaptionBefore:
+        'Editado con Adobe After Effects y la app InShot. El video reúne contenido que he reunido durante los últimos años para presentar mi marca y dar una idea de quién soy como persona y profesional. Este video fue creado para la sección "',
+      videoCaptionLink: 'Acerca',
+      videoCaptionAfter: '" de este sitio web.',
+      videoBrandTitle: 'Diseño de marca',
+      videoReelsTitle: 'REELS',
+      videoReelCaption: 'Video reel editado con Adobe After Effects y la app InShot.',
+      videoOfferTitle: 'Producto',
+      videoOfferCaptionBefore:
+        'El video fue editado con After Effects y la app InShot después de reunir contenido hecho por mí. El video ofrece y explica la ',
+      videoOfferCaptionLink: 'solución creada para el Jardín Botánico de Aarhus.',
+      videoOfferCaptionAfter: '',
+      animationTitle: 'Animación e ilustración',
+      logoCaptionBefore: 'Diseño del logo del sitio web de ',
+      logoCaptionLink: 'Yoga',
+      logoCaptionAfter: '',
+      logoSiteCaption: 'Creé mi nuevo logo y las variaciones que ves en este sitio web.',
+      gardenCaption:
+        'Ilustración digital hecha con Adobe Photoshop. La obra está basada en The Japanese Garden de Butchart Gardens, Victoria, Canadá.',
+      shipCaption:
+        'Barco pirata dibujado a mano, mejorado y animado en Adobe Photoshop. Está basado en las aventuras de Pym escritas por Edgar Allan Poe.',
+      dreamCaption: 'Ilustración de un sueño, creada por completo con Adobe Photoshop.',
+      caribbeanCaption:
+        'Pintura digital hecha por completo con Adobe Photoshop, basada en una escena submarina del mar Caribe en México.',
+      mothCaption: 'Pintura digital de una polilla, pintada por completo con la app Procreate.',
+      domkirkeCaption: 'Ilustración de Aarhus Domkirke, hecha por completo con la app Procreate.',
+      flensburgCaption: 'Ilustración en acuarela basada en una puerta en Flensburg, Alemania.',
+      albaniaCaption:
+        'Pintura de figura de una estatua en Albania. Pintada con pigmento extraído de forma casera del aguacate.',
+      florenceCaption:
+        'Pintura de figura de una escultura en Florencia. Pintada con pigmento extraído de forma casera del aguacate.',
+      sketchCaption: 'Dibujo de figura, bocetos de 5 minutos en acuarela.',
+      findMore: 'Encuentra más en omarcaloca.com',
+      goToSectionStart: 'Ir al inicio de esta sección',
       otherWorks: 'Ver Mis Otros Trabajos',
       navCrumb: 'Fotografía y vídeo',
       lede:

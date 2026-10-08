@@ -43,7 +43,7 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.2;
-  text-transform: capitalize;
+  text-transform: none;
   color: var(--title-violet);
 }
 
@@ -54,6 +54,38 @@
   height: 1px;
   margin: 0 auto 0.55em;
   background: color-mix(in srgb, var(--light-violet) 45%, transparent);
+}
+
+.photography-screen .project-row__title.photography-screen__section-title {
+  align-items: center;
+  width: 100%;
+  margin: clamp(28px, 4vw, 44px) 0 0;
+  font-family: var(--font-title);
+  font-size: clamp(28px, 3.4vw, 44px);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  color: var(--title-violet);
+}
+
+.photography-screen .photography-screen__section-title .project-row__line,
+.photography-screen .photography-screen__fold .project-row__line {
+  justify-content: center;
+}
+
+.photography-screen .project-row__title.photography-screen__section-title::before {
+  align-self: center;
+  flex: 0 0 auto;
+}
+
+.photography-screen__fold .project-row__title {
+  display: flex;
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: inherit;
+  align-items: center;
 }
 
 .photography-screen [hidden] {
@@ -71,7 +103,7 @@
   background: transparent;
   font: inherit;
   letter-spacing: inherit;
-  text-transform: capitalize;
+  text-transform: none;
   color: inherit;
   cursor: pointer;
 }
@@ -101,7 +133,8 @@
   text-align: center;
 }
 
-.photography-screen__editing .photography-screen__section-title {
+.photography-screen__editing .photography-screen__section-title,
+.photography-screen__editing .project-row__title.photography-screen__section-title {
   margin-top: 0;
 }
 
@@ -128,6 +161,168 @@
   height: auto;
 }
 
+.photography-screen__disciplines {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--content-padding) clamp(28px, 4vw, 48px);
+  text-align: center;
+}
+
+.photography-screen__disciplines .photography-screen__section-title {
+  text-transform: none;
+}
+
+.photography-screen__logo-project {
+  margin: clamp(16px, 2vw, 24px) 0 0;
+}
+
+.photography-screen__logo-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 854 / 480;
+  object-fit: contain;
+  background: #0b1520;
+  border-radius: clamp(4px, 0.6vw, 8px);
+}
+
+.photography-screen__logo-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: clamp(4px, 0.6vw, 8px);
+}
+
+.photography-screen__logo-hero--desktop {
+  display: none;
+}
+
+.photography-screen .project-row__title.photography-screen__piece-title {
+  align-items: center;
+  width: 100%;
+  margin: clamp(14px, 1.8vw, 20px) 0 0;
+  font-family: var(--font-title);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-transform: none;
+  color: var(--title-violet);
+}
+
+.photography-screen .photography-screen__piece-title .project-row__line {
+  justify-content: center;
+}
+
+.photography-screen__logo-caption {
+  margin: clamp(10px, 1.4vw, 14px) 0 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.45;
+  color: color-mix(in srgb, var(--light-violet) 82%, transparent);
+}
+
+.photography-screen__logo-link {
+  color: var(--title-violet);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.photography-screen__logo-link:hover {
+  color: var(--white);
+}
+
+.photography-screen__logo-link:focus-visible {
+  outline: 2px solid var(--light-violet);
+  outline-offset: 3px;
+}
+
+.photography-screen__illustrations {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 28px);
+  margin-top: clamp(16px, 2vw, 24px);
+  width: 100%;
+}
+
+.photography-screen__illustration {
+  margin: 0;
+  min-width: 0;
+}
+
+.photography-screen__illustration--landscape,
+.photography-screen__illustration--pair {
+  grid-column: 1 / -1;
+}
+
+.photography-screen__illustration--pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(16px, 2vw, 28px);
+}
+
+.photography-screen__illustration--pair .photography-screen__logo-caption {
+  grid-column: 1 / -1;
+}
+
+.photography-screen__more {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: clamp(8px, 1.6vw, 18px);
+  padding: 0.7em 1.45em;
+  border: 1px solid color-mix(in srgb, var(--light-violet) 55%, transparent);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: none;
+  color: var(--light-violet);
+}
+
+.photography-screen__more:hover {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.photography-screen__more:focus-visible {
+  outline: 2px solid var(--light-violet);
+  outline-offset: 3px;
+}
+
+.photography-screen__illustration img,
+.photography-screen__illustration video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: clamp(4px, 0.6vw, 8px);
+}
+
+@media (min-width: 721px) {
+  .photography-screen__disciplines {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(16px, 2.2vw, 32px);
+    align-items: start;
+  }
+
+  .photography-screen__discipline--illustration {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1025px) {
+  .photography-screen__logo-hero--desktop {
+    display: block;
+  }
+
+  .photography-screen__logo-hero--mobile {
+    display: none;
+  }
+}
+
 .photography-screen__other-works {
   width: min(100%, 72rem);
   margin: 0 auto;
@@ -135,7 +330,8 @@
   text-align: center;
 }
 
-.photography-screen__other-works .photography-screen__section-title {
+.photography-screen__other-works .photography-screen__section-title,
+.photography-screen__other-works .project-row__title.photography-screen__section-title {
   margin-top: clamp(36px, 5vw, 56px);
   font-size: clamp(18px, 2vw, 28px);
   font-weight: 700;
@@ -267,6 +463,55 @@
   outline-offset: 2px;
 }
 
+.photography-screen__random {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: 0.42em;
+  margin: 0.85em 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  color: var(--title-violet);
+  cursor: pointer;
+  text-transform: none;
+}
+
+.photography-screen__random-hex {
+  width: 0.85em;
+  height: calc(0.85em * 1.1547005);
+  flex: 0 0 auto;
+  background: currentColor;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: photography-random-spin 16s linear infinite;
+}
+
+@keyframes photography-random-spin {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.photography-screen__random:hover span:last-child,
+.photography-screen__random--active span:last-child {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.photography-screen__random--active {
+  font-weight: 700;
+}
+
+.photography-screen__random:focus-visible {
+  outline: 2px solid var(--light-violet);
+  outline-offset: 3px;
+}
+
 .photography-screen__portrait-hex {
   --hex-w: 216px;
   --shoulder: 648;
@@ -345,6 +590,10 @@
     font-size: 11px;
   }
 
+  .photography-screen__random {
+    font-size: 14px;
+  }
+
   .photography-screen__portrait-hex {
     --hex-w: 148px;
   }
@@ -364,5 +613,45 @@
 
   .photography-screen__editing-photos img {
     width: min(100%, 420px);
+  }
+
+  .photography-screen__content {
+    padding-bottom: calc(5.25rem + env(safe-area-inset-bottom));
+  }
+
+  .photography-screen__section-jump {
+    position: fixed;
+    z-index: 24;
+    left: 50%;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    max-width: calc(100% - 32px);
+    margin: 0;
+    padding: 0.72em 1.2em;
+    border: 1px solid color-mix(in srgb, var(--light-violet) 48%, transparent);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--deep-purple) 62%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--light-violet);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+  }
+
+  .photography-screen__section-jump:hover {
+    background: color-mix(in srgb, var(--deep-purple) 78%, transparent);
+    color: var(--white);
+    border-color: color-mix(in srgb, var(--light-violet) 70%, transparent);
+  }
+
+  .photography-screen__section-jump:focus-visible {
+    outline: 2px solid var(--light-violet);
+    outline-offset: 3px;
   }
 }

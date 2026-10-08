@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './UxCaseStudy.css'
 import './Yoga.css'
 import SiteNav from '../components/SiteNav'
@@ -70,6 +71,51 @@ function TopicDescription({ topic }) {
 export default function DigitalYoga({ onNavigate }) {
   const { dict, t } = useI18n()
   const meta = dict.digitalYoga.meta
+
+  useEffect(() => {
+    let debounce
+    let stop
+    let observer
+
+    function scrollToLogo() {
+      const raw = window.location.hash.replace(/^#\/?/, '')
+      const [page, section] = raw.split('/')
+      if (page !== 'digital-yoga' || section !== 'logo') return
+
+      const logo = document.getElementById('digital-yoga-logo')
+      logo?.scrollIntoView({ behavior: 'auto', block: 'start' })
+    }
+
+    function watchLayout() {
+      window.clearTimeout(debounce)
+      window.clearTimeout(stop)
+      observer?.disconnect()
+
+      const raw = window.location.hash.replace(/^#\/?/, '')
+      const [page, section] = raw.split('/')
+      if (page !== 'digital-yoga' || section !== 'logo') return
+
+      const content = document.querySelector('.ux-case-study__content')
+      scrollToLogo()
+      if (!content) return
+
+      observer = new ResizeObserver(() => {
+        window.clearTimeout(debounce)
+        debounce = window.setTimeout(scrollToLogo, 80)
+      })
+      observer.observe(content)
+      stop = window.setTimeout(() => observer?.disconnect(), 3000)
+    }
+
+    watchLayout()
+    window.addEventListener('hashchange', watchLayout)
+    return () => {
+      window.clearTimeout(debounce)
+      window.clearTimeout(stop)
+      observer?.disconnect()
+      window.removeEventListener('hashchange', watchLayout)
+    }
+  }, [])
 
   return (
     <div
@@ -152,6 +198,7 @@ export default function DigitalYoga({ onNavigate }) {
               return (
                 <section
                   key={topic.title}
+                  id={topic.videoSrc ? 'digital-yoga-logo' : undefined}
                   className="ux-case-study__section"
                   aria-label={topic.title}
                 >

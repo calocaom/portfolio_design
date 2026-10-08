@@ -21,6 +21,11 @@
   flex-wrap: wrap;
 }
 
+.project-row__word {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
 .project-row__char {
   display: inline-block;
   color: inherit;
