@@ -128,10 +128,12 @@ function PhotoPopup({ photo, closeLabel, onClose, unwrap, land, backdropCloses }
             <span className="photo-wheel__ripple photo-wheel__ripple--late" aria-hidden="true" />
           </>
         ) : null}
-        <button type="button" className="photo-wheel__popup-close" aria-label={closeLabel} onClick={onClose}>
-          ×
-        </button>
-        <img src={photo.src} alt="" draggable={false} />
+        <div className="photo-wheel__popup-frame">
+          <button type="button" className="photo-wheel__popup-close" aria-label={closeLabel} onClick={onClose}>
+            ×
+          </button>
+          <img src={photo.src} alt="" draggable={false} />
+        </div>
         {lines.length ? (
           <p className="photo-wheel__caption">
             {lines.map((line, index) => (
